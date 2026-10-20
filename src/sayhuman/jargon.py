@@ -25,7 +25,10 @@ def _literal_homonym(text: str, phrase: str) -> bool:
     lower=text.lower()
     return bool((phrase=='bandwidth' and re.search(r'\b(?:wifi|internet|mbps|gbps|fiber)\b',lower))
                 or (phrase=='visibility' and re.search(r'\b(?:fog|weather|nighttime|meters)\b',lower))
-                or (phrase=='synergy' and re.search(r'\b(?:chemical|reaction|drug interaction)\b',lower)))
+                or (phrase=='synergy' and re.search(r'\b(?:chemical|reaction|drug interaction)\b',lower))
+                or (phrase=='take ownership' and re.search(
+                    r'\bownership\s+of\s+(?:(?:this|that|the|a|an|our|your|their)\s+)?(?:(?:software|intellectual)\s+)?(?:licen[sc]e|copyright|trademark|property|asset)\b',
+                    lower) and re.search(r'\b(?:expires?|expirations?|transfer|sale|holder|rights?)\b',lower)))
 
 
 def _find_hits(text: str, industry: str | None):

@@ -124,7 +124,7 @@
 {"id": "11-EX-04", "industry": "Media / Publishing", "mode": "explain", "text": "Agentic Workflows", "audience": "nontechnical", "context": "Explain Agentic Workflows for a stakeholder working in Media / Publishing.", "expected_term": "Agentic Workflows"}
 {"id": "11-DE-01", "industry": "Media / Publishing", "mode": "decode", "text": "We need synergy between editorial and creator growth.", "expected_phrases": ["synergy"], "language": "en"}
 {"id": "11-DE-02", "industry": "Media / Publishing", "mode": "decode", "text": "The editor wants more visibility on reader retention.", "expected_phrases": ["visibility"], "language": "en"}
-{"id": "11-DE-03", "industry": "Media / Publishing", "mode": "decode", "text": "作者运营这周先对齐选题，下周复盘闭环。", "expected_phrases": ["alignment", "action items"], "language": "zh"}
+{"id": "11-DE-03", "industry": "Media / Publishing", "mode": "decode", "text": "作者运营这周先对齐选题，下周复盘闭环。", "expected_phrases": ["alignment", "复盘", "action items"], "language": "zh"}
 {"id": "11-DE-04", "industry": "Media / Publishing", "mode": "decode", "text": "Let’s circle back after the first ten chapters launch.", "expected_phrases": ["circle back"], "language": "en"}
 {"id": "11-EN-01", "industry": "Media / Publishing", "mode": "encode", "text": "Fixed a chapter ordering bug in the mobile reader.", "language": "en", "should_avoid_fabrication": true}
 {"id": "11-EN-02", "industry": "Media / Publishing", "mode": "encode", "text": "今天把自动排版的段落换行 bug 改了，还没跑全量。", "language": "zh", "should_avoid_fabrication": true}

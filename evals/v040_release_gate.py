@@ -54,7 +54,7 @@ for i,(industry,work) in enumerate(EXAMPLES.items(),1):
     note=f'我们下周先对齐{work}的职责分工，之后再闭环'
     d=decode(note,industry)
     check(f'{i}-D','decode',industry,note,d,
-          lambda x: x['matches'] and '不能仅凭' in x['summary'] and x['clarifying_question'], 'Ambiguous management phrase should trigger provisional meaning only')
+          lambda x: bool(x['matches']) and bool(re.search(r'[\u4e00-\u9fff]', x['summary'])) and '不能仅凭' not in x['summary'] and '以下只是可能的解读' not in x['summary'] and bool(x['clarifying_question']), 'Decode should explain in Chinese, avoid boilerplate disclaimers, and ask one actionable follow-up')
     messy=f'昨天把{work}的卡顿问题修了，但还没上线，也没做压测'
     e=encode(messy,industry,'executive')
     check(f'{i}-N','encode',industry,messy,e,

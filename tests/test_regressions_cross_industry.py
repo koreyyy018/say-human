@@ -69,3 +69,13 @@ def test_no_unverified_compliance_claim():
     result=encode('Do NOT say our API is HIPAA compliant; we only changed the login text.')
     assert 'compliance_not_verified' in result['risk_flags']
     assert 'has not been established' in result['executive_update']
+
+
+def test_ownership_legal_noun_not_corporate_jargon():
+    assert decode('Ownership of this software license expires on Friday.')['matches'] == []
+    matches=decode('Please take ownership of the onboarding task.')['matches']
+    assert any(item['phrase']=='take ownership' for item in matches)
+
+def test_publishing_retrospective_is_valid_additional_match():
+    matches=decode('作者运营这周先对齐选题，下周复盘闭环。')['matches']
+    assert {m['phrase'] for m in matches} == {'alignment','复盘','action items'}

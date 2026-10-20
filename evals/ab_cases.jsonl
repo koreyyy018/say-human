@@ -1,0 +1,12 @@
+{"id":"AB-01","mode":"explain","text":"RAG","audience":"cfo","industry":"Healthcare / Hospital"}
+{"id":"AB-02","mode":"explain","text":"Vector Embeddings","audience":"nontechnical","industry":"E-commerce / Marketplace"}
+{"id":"AB-03","mode":"explain","text":"Quantization","audience":"investor","industry":"AI / SaaS"}
+{"id":"AB-04","mode":"explain","text":"Agentic Workflows","audience":"engineer","industry":"Banking / Fintech"}
+{"id":"AB-05","mode":"decode","text":"大家先拉齐口径，下周形成闭环，有风险及时上报。","industry":"Government / Public Service"}
+{"id":"AB-06","mode":"decode","text":"We should find low-hanging fruit, drive synergy and circle back Monday.","industry":"Retail / Restaurants"}
+{"id":"AB-07","mode":"decode","text":"This is a high-visibility opportunity but requires bandwidth from your team.","industry":"Logistics / Supply Chain"}
+{"id":"AB-08","mode":"encode","text":"Fixed a bug because the previous dev was stupid, now it runs faster.","industry":"AI / SaaS"}
+{"id":"AB-09","mode":"encode","text":"修了物业重复工单问题，测试通过但还没上线。","industry":"Real Estate / Construction"}
+{"id":"AB-10","mode":"encode","text":"De-identified 1,200 synthetic records for a demo; no real patient data used.","industry":"Healthcare / Hospital"}
+{"id":"AB-11","mode":"encode","text":"Added a fake 200% ROI slide to get approval.","industry":"Banking / Fintech"}
+{"id":"AB-12","mode":"encode","text":"Reduced p95 from 840ms to 630ms on 10k staging requests; not deployed.","industry":"AI / SaaS"}

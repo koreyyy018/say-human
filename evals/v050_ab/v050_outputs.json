@@ -1,0 +1,2862 @@
+[
+  {
+    "id": "R01-D01",
+    "text": "**一句人话：** 不同用户或会话的数据不能混入彼此的回答。\n\n**建议追问（可以这样回）：** 如何验证用户间信息不会串线？",
+    "matches": [
+      "会话隔离"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R01-D02",
+    "text": "**一句人话：** 测试样本可能已经出现在训练或调参过程中。\n\n**建议追问（可以这样回）：** 评测数据如何隔离，是否有独立留出集？",
+    "matches": [
+      "评测集污染"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R01-D03",
+    "text": "**一句人话：** 在答案发送前识别没有依据的内容。\n\n**建议追问（可以这样回）：** 引用缺失时如何处理，误拦截有多少？",
+    "matches": [
+      "幻觉拦截"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R01-D04",
+    "text": "**一句人话：** 新模型异常时切回已经验证的版本。\n\n**建议追问（可以这样回）：** 哪些指标触发回退，多久能恢复？",
+    "matches": [
+      "模型回退"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R01-D05",
+    "text": "**一句人话：** 搜索阶段能否找到回答所需的资料。\n\n**建议追问（可以这样回）：** 哪些典型问题没有检索到正确文档？",
+    "matches": [
+      "检索召回"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R01-D06",
+    "text": "**一句人话：** 按问题难度选择不同模型处理，避免所有请求都走最贵的模型。\n\n**建议追问（可以这样回）：** 不同任务怎么分流、失败时怎么回退？",
+    "matches": [
+      "模型路由"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R01-D07",
+    "text": "**一句人话：** 安排模型调用外部工具的先后步骤。\n\n**建议追问（可以这样回）：** 每一步的权限、失败重试和人工审批是什么？",
+    "matches": [
+      "工具编排"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R01-D08",
+    "text": "**一句人话：** 让人工接管模型处理不了或风险较高的环节。\n\n**建议追问（可以这样回）：** 什么情况下必须转人工，交接信息有哪些？",
+    "matches": [
+      "人机协同"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R01-D09",
+    "text": "**一句人话：** 让智能体在真实业务中完成有限任务。\n\n**建议追问（可以这样回）：** 这项工作由谁负责，完成后按什么标准验收？",
+    "matches": [
+      "Agent落地"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R01-D10",
+    "text": "**一句人话：** 减少模型调用产生的费用。\n\n**建议追问（可以这样回）：** 方便确定下次讨论时间，以及到时需要作出的决定吗？",
+    "matches": [
+      "降Token成本"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R01-D11",
+    "text": "**一句人话：** 统一如何评估模型输出质量。\n\n**建议追问（可以这样回）：** 我们先确定要对齐的是哪些内容，以及最后由谁拍板？",
+    "matches": [
+      "模型效果对齐"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R01-D12",
+    "text": "**一句人话：** 减少模型无依据的回答。\n\n**建议追问（可以这样回）：** 为了往下推进，能否明确一下要交付的结果和时间？",
+    "matches": [
+      "幻觉治理"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R01-D13",
+    "text": "**一句人话：** 把用户反馈反哺模型或流程优化。\n\n**建议追问（可以这样回）：** 这项工作由谁负责，完成后按什么标准验收？",
+    "matches": [
+      "效果闭环"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R01-D14",
+    "text": "**一句人话：** 给模型输出设一套可复核的质量标准。\n\n**建议追问（可以这样回）：** 打算用哪些典型问题和错误类型来验证？",
+    "matches": [],
+    "resolution": "semantic-fallback",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R01-D15",
+    "text": "**一句人话：** 明确机器人何时要把问题交给真人处理。\n\n**建议追问（可以这样回）：** 触发人工接管的条件和交接记录是什么？",
+    "matches": [],
+    "resolution": "semantic-fallback",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R01-D16",
+    "text": "**一句人话：** 保证回答使用的是当前有效的资料。\n\n**建议追问（可以这样回）：** 谁更新资料，怎样避免旧版本继续被引用？",
+    "matches": [],
+    "resolution": "semantic-fallback",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R01-D17",
+    "text": "**一句人话：** 用同一套数据和指标比较新旧版本。\n\n**建议追问（可以这样回）：** 评测集、关键指标和通过门槛是什么？",
+    "matches": [],
+    "resolution": "semantic-fallback",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R01-D18",
+    "text": "**一句人话：** 这句话已经很清楚：周三下午两点开模型评审会。",
+    "matches": [],
+    "resolution": "plain-language",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": false,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R01-D19",
+    "text": "**一句人话：** 这句话已经很清楚：昨天把产品说明文档发给了客户。",
+    "matches": [],
+    "resolution": "plain-language",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": false,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R01-D20",
+    "text": "**一句人话：** 这句话已经很清楚：监控屏上显示 WiFi bandwidth 升到了 500 Mbps，先确认网络设备。",
+    "matches": [],
+    "resolution": "plain-language",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": false,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R02-D01",
+    "text": "**一句人话：** 检查交易是否符合反洗钱风险规则。\n\n**建议追问（可以这样回）：** 命中如何复核，正常交易如何避免误伤？",
+    "matches": [
+      "反洗钱筛查"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R02-D02",
+    "text": "**一句人话：** 投资后提供经营、资源或管理支持。\n\n**建议追问（可以这样回）：** 具体提供什么、是否有可验证的改进？",
+    "matches": [
+      "投后赋能"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R02-D03",
+    "text": "**一句人话：** 限制对单一客户、行业或地区的过度暴露。\n\n**建议追问（可以这样回）：** 当前最集中的风险在哪里？",
+    "matches": [
+      "集中度管控"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R02-D04",
+    "text": "**一句人话：** 按客户需求和风险特点分组提供服务。\n\n**建议追问（可以这样回）：** 分组依据、适用服务及合规审核是什么？",
+    "matches": [
+      "客户分群经营"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R02-D05",
+    "text": "**一句人话：** 产品价值从高点跌下来多少。\n\n**建议追问（可以这样回）：** 统计周期、基准和投资者影响是什么？",
+    "matches": [
+      "净值回撤"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R02-D06",
+    "text": "**一句人话：** 存贷款之间的利差变小，影响利息收入。\n\n**建议追问（可以这样回）：** 主要是哪一类资产或负债推动变化？",
+    "matches": [
+      "净息差承压"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R02-D07",
+    "text": "**一句人话：** 已有风险准备能覆盖多少潜在不良损失。\n\n**建议追问（可以这样回）：** 使用哪个监管和财报口径？",
+    "matches": [
+      "拨备覆盖"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R02-D08",
+    "text": "**一句人话：** 与类似金融机构的指标作可比比较。\n\n**建议追问（可以这样回）：** 规模和会计口径一致吗？",
+    "matches": [
+      "同业对标"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R02-D09",
+    "text": "**一句人话：** 机构愿意承受的风险范围。\n\n**建议追问（可以这样回）：** 为了往下推进，能否明确一下要交付的结果和时间？",
+    "matches": [
+      "风险偏好"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R02-D10",
+    "text": "**一句人话：** 减少或处置出现风险的贷款资产。\n\n**建议追问（可以这样回）：** 方便确定下次讨论时间，以及到时需要作出的决定吗？",
+    "matches": [
+      "不良压降"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R02-D11",
+    "text": "**一句人话：** 使资产负债对利率变化的敏感程度协调。\n\n**建议追问（可以这样回）：** 为了往下推进，能否明确一下要交付的结果和时间？",
+    "matches": [
+      "久期匹配"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R02-D12",
+    "text": "**一句人话：** 缩短信贷审批耗时并保持必要核验。\n\n**建议追问（可以这样回）：** 我们以哪个指标为准，和哪段时间的数据作比较？",
+    "matches": [
+      "授信提效"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R02-D13",
+    "text": "**一句人话：** 预留应对资金波动的余量。\n\n**建议追问（可以这样回）：** 为了往下推进，能否明确一下要交付的结果和时间？",
+    "matches": [
+      "流动性安全垫"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R02-D14",
+    "text": "**一句人话：** 重点是减少流程等待时间，先找到耗时最多的环节。\n\n**建议追问（可以这样回）：** 目前平均等待多久，希望改善哪一段？",
+    "matches": [],
+    "resolution": "semantic-fallback",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R02-D15",
+    "text": "**一句人话：** 先统一各方遵守的定义和执行标准。\n\n**建议追问（可以这样回）：** 标准由谁确认，哪些场景属于例外？",
+    "matches": [],
+    "resolution": "semantic-fallback",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R02-D16",
+    "text": "**一句人话：** 把客户贷款风险分层梳理，先明确需要重点复核的人群。\n\n**建议追问（可以这样回）：** 分类依据和复核流程是什么？",
+    "matches": [],
+    "resolution": "semantic-fallback",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R02-D17",
+    "text": "**一句人话：** 把每一步的处理记录和责任人对应起来。\n\n**建议追问（可以这样回）：** 在哪个环节留下记录，由谁确认完成？",
+    "matches": [],
+    "resolution": "semantic-fallback",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R02-D18",
+    "text": "**一句人话：** 这句话已经很清楚：本周五上午提交第二季度财务表。",
+    "matches": [],
+    "resolution": "plain-language",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": false,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R02-D19",
+    "text": "**一句人话：** 这句话已经很清楚：已经通知客户更新联系方式。",
+    "matches": [],
+    "resolution": "plain-language",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": false,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R02-D20",
+    "text": "**一句人话：** 这句话已经很清楚：投资净值是1.02，这是一条普通数字记录。",
+    "matches": [],
+    "resolution": "plain-language",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": false,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R03-D01",
+    "text": "**一句人话：** 将门诊预约细分到具体时间段。\n\n**建议追问（可以这样回）：** 峰值等待和医生实际接诊能力匹配吗？",
+    "matches": [
+      "分时段预约"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R03-D02",
+    "text": "**一句人话：** 医保机构拒绝支付某项费用。\n\n**建议追问（可以这样回）：** 拒付原因、申诉材料和责任环节是什么？",
+    "matches": [
+      "医保拒付"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R03-D03",
+    "text": "**一句人话：** 把就诊人流从拥挤时段引导到其他时段。\n\n**建议追问（可以这样回）：** 候诊时长、失约率如何变化？",
+    "matches": [
+      "门诊削峰"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R03-D04",
+    "text": "**一句人话：** 按病种分值等规则进行医保支付管理。\n\n**建议追问（可以这样回）：** 哪个病种的结算偏差最值得排查？",
+    "matches": [
+      "DIP付费"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R03-D05",
+    "text": "**一句人话：** 隐藏或处理能够识别患者身份的信息。\n\n**建议追问（可以这样回）：** 哪些字段仍可重新识别患者？",
+    "matches": [
+      "医疗数据脱敏"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R03-D06",
+    "text": "**一句人话：** 按照院内标准核查诊疗记录和流程质量。\n\n**建议追问（可以这样回）：** 哪些问题属于必须整改的缺陷？",
+    "matches": [
+      "临床质控"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R03-D07",
+    "text": "**一句人话：** 护士在患者身边核对并移交关键信息。\n\n**建议追问（可以这样回）：** 谁签收、哪些高风险事项必须复述？",
+    "matches": [
+      "病区床旁交接"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R03-D08",
+    "text": "**一句人话：** 由适当的专业委员会评估用药方案或目录。\n\n**建议追问（可以这样回）：** 审批依据、责任人和例外流程是什么？",
+    "matches": [
+      "药事会审"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R03-D09",
+    "text": "**一句人话：** 管理医保相关费用与支付规则。\n\n**建议追问（可以这样回）：** 为了往下推进，能否明确一下要交付的结果和时间？",
+    "matches": [
+      "医保控费"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R03-D10",
+    "text": "**一句人话：** 优化床位使用与住院流程。\n\n**建议追问（可以这样回）：** 方便确定下次讨论时间，以及到时需要作出的决定吗？",
+    "matches": [
+      "床位周转"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R03-D11",
+    "text": "**一句人话：** 检查临床记录完整性、规范性和一致性。\n\n**建议追问（可以这样回）：** 为了往下推进，能否明确一下要交付的结果和时间？",
+    "matches": [
+      "病历质控"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R03-D12",
+    "text": "**一句人话：** 不同医疗机构协调转诊、服务和资源。\n\n**建议追问（可以这样回）：** 为了往下推进，能否明确一下要交付的结果和时间？",
+    "matches": [
+      "医联体协同"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R03-D13",
+    "text": "**一句人话：** 按病情和资源把患者引导至合适机构。\n\n**建议追问（可以这样回）：** 为了往下推进，能否明确一下要交付的结果和时间？",
+    "matches": [
+      "分级诊疗"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R03-D14",
+    "text": "**一句人话：** 重点是减少流程等待时间，先找到耗时最多的环节。\n\n**建议追问（可以这样回）：** 目前平均等待多久，希望改善哪一段？",
+    "matches": [],
+    "resolution": "semantic-fallback",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R03-D15",
+    "text": "**一句人话：** 让负责的医生及时收到检查结果并确认处理。\n\n**建议追问（可以这样回）：** 结果由谁接收，如何记录交接时间？",
+    "matches": [],
+    "resolution": "semantic-fallback",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R03-D16",
+    "text": "**一句人话：** 先统一各方遵守的定义和执行标准。\n\n**建议追问（可以这样回）：** 标准由谁确认，哪些场景属于例外？",
+    "matches": [],
+    "resolution": "semantic-fallback",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R03-D17",
+    "text": "**一句人话：** 需要让关键异常及时被发现并有人处理。\n\n**建议追问（可以这样回）：** 异常触发条件、接收人和处置时限是什么？",
+    "matches": [],
+    "resolution": "semantic-fallback",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R03-D18",
+    "text": "**一句人话：** 这句话已经很清楚：今天门诊上午八点开始接诊。",
+    "matches": [],
+    "resolution": "plain-language",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": false,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R03-D19",
+    "text": "**一句人话：** 要求很明确：请把打印机里的纸补充一下。",
+    "matches": [],
+    "resolution": "plain-language",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": false,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R03-D20",
+    "text": "**一句人话：** 这句话已经很清楚：护士说病历卡上写着上周体温37度。",
+    "matches": [],
+    "resolution": "plain-language",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": false,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R04-D01",
+    "text": "**一句人话：** 产品中最影响客户体验或安全的质量要求。\n\n**建议追问（可以这样回）：** 哪些特性必须检测，超限谁停线？",
+    "matches": [
+      "CTQ关键质量特性"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R04-D02",
+    "text": "**一句人话：** 产品首次经过流程就合格的比例。\n\n**建议追问（可以这样回）：** 返工品是否计入，统计口径是什么？",
+    "matches": [
+      "直通率"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R04-D03",
+    "text": "**一句人话：** 每百万件来料中的不良数量。\n\n**建议追问（可以这样回）：** 样本量和缺陷分类怎么统计？",
+    "matches": [
+      "供应商PPM"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R04-D04",
+    "text": "**一句人话：** 切换生产产品时损失的工时与产能。\n\n**建议追问（可以这样回）：** 哪道工序造成的停机最多？",
+    "matches": [
+      "换线损失"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R04-D05",
+    "text": "**一句人话：** 从小批量验证切换到稳定批量生产。\n\n**建议追问（可以这样回）：** 质量、产能和交付条件是否满足？",
+    "matches": [
+      "试产转量产"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R04-D06",
+    "text": "**一句人话：** 是否按承诺日期交付订单。\n\n**建议追问（可以这样回）：** 延期订单如何分级和通知客户？",
+    "matches": [
+      "交期兑现"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R04-D07",
+    "text": "**一句人话：** 记录原料、设备、人员到成品的关联信息。\n\n**建议追问（可以这样回）：** 出现缺陷能追到哪些批次？",
+    "matches": [
+      "追溯链条"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R04-D08",
+    "text": "**一句人话：** 用过程数据监测生产是否稳定。\n\n**建议追问（可以这样回）：** 异常规则、采样频率和处理流程是什么？",
+    "matches": [
+      "SPC过程控制"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R04-D09",
+    "text": "**一句人话：** 让新产线或新产品合格品比例逐渐提高。\n\n**建议追问（可以这样回）：** 为了往下推进，能否明确一下要交付的结果和时间？",
+    "matches": [
+      "良率爬坡"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R04-D10",
+    "text": "**一句人话：** 设备停运造成的生产能力损失。\n\n**建议追问（可以这样回）：** 方便确定下次讨论时间，以及到时需要作出的决定吗？",
+    "matches": [
+      "停机损失"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R04-D11",
+    "text": "**一句人话：** 工艺或物料变更应经过审批和记录。\n\n**建议追问（可以这样回）：** 为了往下推进，能否明确一下要交付的结果和时间？",
+    "matches": [
+      "变更受控"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R04-D12",
+    "text": "**一句人话：** 供应商交付原材料不符合规定要求。\n\n**建议追问（可以这样回）：** 为了往下推进，能否明确一下要交付的结果和时间？",
+    "matches": [
+      "来料异常"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R04-D13",
+    "text": "**一句人话：** 减少生产过程中的浪费和不必要步骤。\n\n**建议追问（可以这样回）：** 我们以哪个指标为准，和哪段时间的数据作比较？",
+    "matches": [
+      "精益改善"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R04-D14",
+    "text": "**一句人话：** 让工作结果满足进入下一阶段的验收条件。\n\n**建议追问（可以这样回）：** 哪些验收指标达标以后才能推进？",
+    "matches": [],
+    "resolution": "semantic-fallback",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R04-D15",
+    "text": "**一句人话：** 先找出反复发生问题的原因，再明确改善措施。\n\n**建议追问（可以这样回）：** 需要按哪些原因分类，以及先处理哪一类？",
+    "matches": [],
+    "resolution": "semantic-fallback",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R04-D16",
+    "text": "**一句人话：** 让工作结果满足进入下一阶段的验收条件。\n\n**建议追问（可以这样回）：** 哪些验收指标达标以后才能推进？",
+    "matches": [],
+    "resolution": "semantic-fallback",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R04-D17",
+    "text": "**一句人话：** 重点是减少流程等待时间，先找到耗时最多的环节。\n\n**建议追问（可以这样回）：** 目前平均等待多久，希望改善哪一段？",
+    "matches": [],
+    "resolution": "semantic-fallback",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R04-D18",
+    "text": "**一句人话：** 这句话已经很清楚：晚上七点停止一号线清洁设备。",
+    "matches": [],
+    "resolution": "plain-language",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": false,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R04-D19",
+    "text": "**一句人话：** 要求很明确：先把仓库的水关掉再下班。",
+    "matches": [],
+    "resolution": "plain-language",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": false,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R04-D20",
+    "text": "**一句人话：** 这句话已经很清楚：车间说机器上显示数字18，请记录仪器读数。",
+    "matches": [],
+    "resolution": "plain-language",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": false,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R05-D01",
+    "text": "**一句人话：** 现有货量能支撑多少预期销售。\n\n**建议追问（可以这样回）：** 高峰活动会不会缺货？",
+    "matches": [
+      "库存深度"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R05-D02",
+    "text": "**一句人话：** 查找导致用户退货的原因并改善。\n\n**建议追问（可以这样回）：** 退货原因中哪类最常见？",
+    "matches": [
+      "退货率治理"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R05-D03",
+    "text": "**一句人话：** 用户售后请求未能及时处理。\n\n**建议追问（可以这样回）：** 积压量、最长等待时间和负责团队是谁？",
+    "matches": [
+      "售后工单积压"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R05-D04",
+    "text": "**一句人话：** 调整商品组合、库存和定价。\n\n**建议追问（可以这样回）：** 优先调整哪些SKU、依据什么指标？",
+    "matches": [
+      "货盘优化"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R05-D05",
+    "text": "**一句人话：** 把进来的访客引导到浏览、咨询或下单。\n\n**建议追问（可以这样回）：** 流量主要掉在流程的哪一步？",
+    "matches": [
+      "流量承接"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R05-D06",
+    "text": "**一句人话：** 集中测试有望卖得好的商品。\n\n**建议追问（可以这样回）：** 目标用户、测试预算和退出条件是什么？",
+    "matches": [
+      "爆品孵化"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R05-D07",
+    "text": "**一句人话：** 决定直播间商品出现的顺序。\n\n**建议追问（可以这样回）：** 顺序如何兼顾库存、利润和用户需求？",
+    "matches": [
+      "直播排品"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R05-D08",
+    "text": "**一句人话：** 各个具体商品是否真正产生销售。\n\n**建议追问（可以这样回）：** 滞销和断货分别如何处理？",
+    "matches": [
+      "SKU动销"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R05-D09",
+    "text": "**一句人话：** 提高平均每笔订单成交额。\n\n**建议追问（可以这样回）：** 我们以哪个指标为准，和哪段时间的数据作比较？",
+    "matches": [
+      "客单价提升"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R05-D10",
+    "text": "**一句人话：** 不直接按广告点击付费获得的访问。\n\n**建议追问（可以这样回）：** 方便确定下次讨论时间，以及到时需要作出的决定吗？",
+    "matches": [
+      "自然流量"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R05-D11",
+    "text": "**一句人话：** 广告或推广投入与对应产出的比例。\n\n**建议追问（可以这样回）：** 为了往下推进，能否明确一下要交付的结果和时间？",
+    "matches": [
+      "投产比"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R05-D12",
+    "text": "**一句人话：** 平台或活动提供的展示位置。\n\n**建议追问（可以这样回）：** 为了往下推进，能否明确一下要交付的结果和时间？",
+    "matches": [
+      "坑位资源"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R05-D13",
+    "text": "**一句人话：** 把公开渠道触达的客户引导到自有服务场景。\n\n**建议追问（可以这样回）：** 为了往下推进，能否明确一下要交付的结果和时间？",
+    "matches": [
+      "私域承接"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R05-D14",
+    "text": "**一句人话：** 重点是让领到券的客户真正完成使用。\n\n**建议追问（可以这样回）：** 领券到使用在哪一步流失最多？",
+    "matches": [],
+    "resolution": "semantic-fallback",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R05-D15",
+    "text": "**一句人话：** 要改善库存和商品流转，减少缺货或多余操作。\n\n**建议追问（可以这样回）：** 先对哪些商品或仓位做小范围验证？",
+    "matches": [],
+    "resolution": "semantic-fallback",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R05-D16",
+    "text": "**一句人话：** 重点是让已有用户愿意再次使用或购买。\n\n**建议追问（可以这样回）：** 用哪个用户群和时间周期来评估？",
+    "matches": [],
+    "resolution": "semantic-fallback",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R05-D17",
+    "text": "**一句人话：** 先找出反复发生问题的原因，再明确改善措施。\n\n**建议追问（可以这样回）：** 需要按哪些原因分类，以及先处理哪一类？",
+    "matches": [],
+    "resolution": "semantic-fallback",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R05-D18",
+    "text": "**一句人话：** 这句话已经很清楚：明天八点把新商品照片上架。",
+    "matches": [],
+    "resolution": "plain-language",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": false,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R05-D19",
+    "text": "**一句人话：** 这句话已经很清楚：这周五给客户补发快递单号。",
+    "matches": [],
+    "resolution": "plain-language",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": false,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R05-D20",
+    "text": "**一句人话：** 这里是在引用一个术语或标题，没有提出相关项目任务：商品标题写着“全域网球拍”，这里的全域是商标的一部分。",
+    "matches": [],
+    "resolution": "plain-language",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": false,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R06-D01",
+    "text": "**一句人话：** 从了解课程到报名入学各阶段的转化。\n\n**建议追问（可以这样回）：** 哪个阶段出现大量流失？",
+    "matches": [
+      "招生漏斗"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R06-D02",
+    "text": "**一句人话：** 各老师按同一标准评价作业。\n\n**建议追问（可以这样回）：** 评分标准在哪里，如何处理分歧？",
+    "matches": [
+      "考核口径拉齐"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R06-D03",
+    "text": "**一句人话：** 把备课、教学、练习与反馈联系起来。\n\n**建议追问（可以这样回）：** 哪一步没人负责或缺少记录？",
+    "matches": [
+      "教学生态闭环"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R06-D04",
+    "text": "**一句人话：** 学生参与讨论并形成有效学习反馈。\n\n**建议追问（可以这样回）：** 怎样区分热闹与真正学会？",
+    "matches": [
+      "课堂有效互动"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R06-D05",
+    "text": "**一句人话：** 教育服务满足适用政策要求。\n\n**建议追问（可以这样回）：** 当前地区和课程类别适用什么规定？",
+    "matches": [
+      "双减合规"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R06-D06",
+    "text": "**一句人话：** 将教学目标拆到章节、课时或知识点。\n\n**建议追问（可以这样回）：** 要细化到哪一级才方便教学？",
+    "matches": [
+      "课程颗粒度"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R06-D07",
+    "text": "**一句人话：** 根据学生实际水平布置不同练习。\n\n**建议追问（可以这样回）：** 如何避免把学生固定贴标签？",
+    "matches": [
+      "分层作业"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R06-D08",
+    "text": "**一句人话：** 已有学员是否继续购买课程。\n\n**建议追问（可以这样回）：** 继续学习是否确实满足学生需要？",
+    "matches": [
+      "续费留存"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R06-D09",
+    "text": "**一句人话：** 汇总学习记录用于了解学习进展。\n\n**建议追问（可以这样回）：** 为了往下推进，能否明确一下要交付的结果和时间？",
+    "matches": [
+      "学情画像"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R06-D10",
+    "text": "**一句人话：** 家庭与学校共同配合教育支持。\n\n**建议追问（可以这样回）：** 方便确定下次讨论时间，以及到时需要作出的决定吗？",
+    "matches": [
+      "家校协同"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R06-D11",
+    "text": "**一句人话：** 确认学生掌握某个学习目标。\n\n**建议追问（可以这样回）：** 为了往下推进，能否明确一下要交付的结果和时间？",
+    "matches": [
+      "知识点过关"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R06-D12",
+    "text": "**一句人话：** 教师共同设计课程并复核教学质量。\n\n**建议追问（可以这样回）：** 为了往下推进，能否明确一下要交付的结果和时间？",
+    "matches": [
+      "教研共建"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R06-D13",
+    "text": "**一句人话：** 已开始学习者中完成课程的比例。\n\n**建议追问（可以这样回）：** 为了往下推进，能否明确一下要交付的结果和时间？",
+    "matches": [
+      "完课率"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R06-D14",
+    "text": "**一句人话：** 重点是让教学过程能根据实际学习反馈改进。\n\n**建议追问（可以这样回）：** 如何判断学生是否掌握，谁来复核？",
+    "matches": [],
+    "resolution": "semantic-fallback",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R06-D15",
+    "text": "**一句人话：** 先统一各方遵守的定义和执行标准。\n\n**建议追问（可以这样回）：** 标准由谁确认，哪些场景属于例外？",
+    "matches": [],
+    "resolution": "semantic-fallback",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R06-D16",
+    "text": "**一句人话：** 找出报名意向到实际开始上课之间的流失环节。\n\n**建议追问（可以这样回）：** 报名后哪一步流失最多？",
+    "matches": [],
+    "resolution": "semantic-fallback",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R06-D17",
+    "text": "**一句人话：** 重点是让教学过程能根据实际学习反馈改进。\n\n**建议追问（可以这样回）：** 如何判断学生是否掌握，谁来复核？",
+    "matches": [],
+    "resolution": "semantic-fallback",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R06-D18",
+    "text": "**一句人话：** 这句话已经很清楚：下周一早上有语文公开课。",
+    "matches": [],
+    "resolution": "plain-language",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": false,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R06-D19",
+    "text": "**一句人话：** 要求很明确：请把第二节课的练习打印出来。",
+    "matches": [],
+    "resolution": "plain-language",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": false,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R06-D20",
+    "text": "**一句人话：** 这里是在引用一个术语或标题，没有提出相关项目任务：今天学生在课堂提到了“增长飞轮”这个词，但不是经营会议。",
+    "matches": [],
+    "resolution": "plain-language",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": false,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R07-D01",
+    "text": "**一句人话：** 将仓库订单分批安排拣货。\n\n**建议追问（可以这样回）：** 每波订单怎么分组才能减少拥堵？",
+    "matches": [
+      "波次拣货"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R07-D02",
+    "text": "**一句人话：** 温控货物运输过程中温度超标。\n\n**建议追问（可以这样回）：** 超标数据如何记录、产品如何处置？",
+    "matches": [
+      "冷链断链"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R07-D03",
+    "text": "**一句人话：** 车辆运载量占可用容量的比例。\n\n**建议追问（可以这样回）：** 是否为追求满载牺牲时效？",
+    "matches": [
+      "满载率"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R07-D04",
+    "text": "**一句人话：** 重新安排货架位置减少拣货路程。\n\n**建议追问（可以这样回）：** 是否影响安全和先进先出？",
+    "matches": [
+      "库位优化"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R07-D05",
+    "text": "**一句人话：** 不同线路或团队共用可调配车辆与司机。\n\n**建议追问（可以这样回）：** 谁有调度权，高峰如何分配？",
+    "matches": [
+      "运力池化"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R07-D06",
+    "text": "**一句人话：** 改进退货或拒收包裹的处理流程。\n\n**建议追问（可以这样回）：** 滞留在退货流程的哪个环节？",
+    "matches": [
+      "逆向件治理"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R07-D07",
+    "text": "**一句人话：** 包裹是否送到并获得有效签收。\n\n**建议追问（可以这样回）：** 异常签收如何核查？",
+    "matches": [
+      "妥投率"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R07-D08",
+    "text": "**一句人话：** 是否在承诺时间内把货送达。\n\n**建议追问（可以这样回）：** 承诺时效按发货还是揽收计算？",
+    "matches": [
+      "时效达成"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R07-D09",
+    "text": "**一句人话：** 追踪派送、签收与异常申诉。\n\n**建议追问（可以这样回）：** 这项工作由谁负责，完成后按什么标准验收？",
+    "matches": [
+      "签收闭环"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R07-D10",
+    "text": "**一句人话：** 处理退货、回收或维修件的运输流程。\n\n**建议追问（可以这样回）：** 方便确定下次讨论时间，以及到时需要作出的决定吗？",
+    "matches": [
+      "逆向物流"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R07-D11",
+    "text": "**一句人话：** 协调不同城市之间的主运输路线。\n\n**建议追问（可以这样回）：** 为了往下推进，能否明确一下要交付的结果和时间？",
+    "matches": [
+      "干线拉通"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R07-D12",
+    "text": "**一句人话：** 把仓储作业和配送安排统一协调。\n\n**建议追问（可以这样回）：** 为了往下推进，能否明确一下要交付的结果和时间？",
+    "matches": [
+      "仓配一体"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R07-D13",
+    "text": "**一句人话：** 衡量货物从入库到售出的流转效率。\n\n**建议追问（可以这样回）：** 为了往下推进，能否明确一下要交付的结果和时间？",
+    "matches": [
+      "库存周转"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R07-D14",
+    "text": "**一句人话：** 缩短包裹在运输节点停留的时间。\n\n**建议追问（可以这样回）：** 哪个中转环节最久，如何统计滞留时间？",
+    "matches": [],
+    "resolution": "semantic-fallback",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R07-D15",
+    "text": "**一句人话：** 要改善库存和商品流转，减少缺货或多余操作。\n\n**建议追问（可以这样回）：** 先对哪些商品或仓位做小范围验证？",
+    "matches": [],
+    "resolution": "semantic-fallback",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R07-D16",
+    "text": "**一句人话：** 把每一步的处理记录和责任人对应起来。\n\n**建议追问（可以这样回）：** 在哪个环节留下记录，由谁确认完成？",
+    "matches": [],
+    "resolution": "semantic-fallback",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R07-D17",
+    "text": "**一句人话：** 重点是减少流程等待时间，先找到耗时最多的环节。\n\n**建议追问（可以这样回）：** 目前平均等待多久，希望改善哪一段？",
+    "matches": [],
+    "resolution": "semantic-fallback",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R07-D18",
+    "text": "**一句人话：** 这句话已经很清楚：货车预计周五上午抵达三号仓。",
+    "matches": [],
+    "resolution": "plain-language",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": false,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R07-D19",
+    "text": "**一句人话：** 要求很明确：把这两箱样品放在指定货架上。",
+    "matches": [],
+    "resolution": "plain-language",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": false,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R07-D20",
+    "text": "**一句人话：** 这句话已经很清楚：司机说明天八点送货，没有其他要求。",
+    "matches": [],
+    "resolution": "plain-language",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": false,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R08-D01",
+    "text": "**一句人话：** 写清岗位需要的技能、经验和任务。\n\n**建议追问（可以这样回）：** 哪些要求是必须的，哪些可以培训？",
+    "matches": [
+      "岗位画像"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R08-D02",
+    "text": "**一句人话：** 未来关键岗位没有足够准备好的人选。\n\n**建议追问（可以这样回）：** 关键岗位的继任计划是什么？",
+    "matches": [
+      "梯队断层"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R08-D03",
+    "text": "**一句人话：** 调整岗位或培养方式以发挥已有员工能力。\n\n**建议追问（可以这样回）：** 员工意愿和业务需要如何兼顾？",
+    "matches": [
+      "人才盘活"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R08-D04",
+    "text": "**一句人话：** 按绩效和潜力等维度讨论人才发展。\n\n**建议追问（可以这样回）：** 数据来源是什么，如何防止主观偏见？",
+    "matches": [
+      "人才九宫格"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R08-D05",
+    "text": "**一句人话：** 降低核心岗位人员离职风险。\n\n**建议追问（可以这样回）：** 流失原因和改善措施有什么依据？",
+    "matches": [
+      "关键岗位保留"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R08-D06",
+    "text": "**一句人话：** 让人力资源在业务规划早期就参与。\n\n**建议追问（可以这样回）：** 人力团队需要参与哪次具体决策？",
+    "matches": [
+      "HRBP前置"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R08-D07",
+    "text": "**一句人话：** 团队间统一绩效评级标准并核查差异。\n\n**建议追问（可以这样回）：** 同岗位评价依据是否一致？",
+    "matches": [
+      "绩效分布校准"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R08-D08",
+    "text": "**一句人话：** 企业薪酬待遇与可比市场水平的关系。\n\n**建议追问（可以这样回）：** 比较的城市、岗位和总包口径一致吗？",
+    "matches": [
+      "薪酬竞争力"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R08-D09",
+    "text": "**一句人话：** 统一不同部门的绩效评价尺度。\n\n**建议追问（可以这样回）：** 我们以哪个指标为准，和哪段时间的数据作比较？",
+    "matches": [
+      "绩效校准"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R08-D10",
+    "text": "**一句人话：** 为重要岗位准备培养或接替人选。\n\n**建议追问（可以这样回）：** 方便确定下次讨论时间，以及到时需要作出的决定吗？",
+    "matches": [
+      "人才梯队"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R08-D11",
+    "text": "**一句人话：** 某一职级或岗位的薪酬允许范围。\n\n**建议追问（可以这样回）：** 为了往下推进，能否明确一下要交付的结果和时间？",
+    "matches": [
+      "薪酬带宽"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R08-D12",
+    "text": "**一句人话：** 调整组织结构、职责或人员安排。\n\n**建议追问（可以这样回）：** 我们以哪个指标为准，和哪段时间的数据作比较？",
+    "matches": [
+      "组织优化"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R08-D13",
+    "text": "**一句人话：** 描述团队整体能力水平的管理用语。\n\n**建议追问（可以这样回）：** 为了往下推进，能否明确一下要交付的结果和时间？",
+    "matches": [
+      "人才密度"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R08-D14",
+    "text": "**一句人话：** 把试用期考核要求写清楚，让员工知道按什么评估。\n\n**建议追问（可以这样回）：** 哪些目标和证据会在试用期评估？",
+    "matches": [],
+    "resolution": "semantic-fallback",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R08-D15",
+    "text": "**一句人话：** 要提前准备关键岗位的交接和接替安排。\n\n**建议追问（可以这样回）：** 谁接手哪些工作，交接时间如何安排？",
+    "matches": [],
+    "resolution": "semantic-fallback",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R08-D16",
+    "text": "**一句人话：** 先统一各方遵守的定义和执行标准。\n\n**建议追问（可以这样回）：** 标准由谁确认，哪些场景属于例外？",
+    "matches": [],
+    "resolution": "semantic-fallback",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R08-D17",
+    "text": "**一句人话：** 让培训内容真正用于日常工作，而不只是参加课程。\n\n**建议追问（可以这样回）：** 培训后如何观察实际工作表现？",
+    "matches": [],
+    "resolution": "semantic-fallback",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R08-D18",
+    "text": "**一句人话：** 这句话已经很清楚：明天上午十点安排新同事入职。",
+    "matches": [],
+    "resolution": "plain-language",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": false,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R08-D19",
+    "text": "**一句人话：** 要求很明确：请把会议室钥匙还给前台。",
+    "matches": [],
+    "resolution": "plain-language",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": false,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R08-D20",
+    "text": "**一句人话：** 这里是在引用一个术语或标题，没有提出相关项目任务：邮件主题写着“人才梯队分享会”，不涉及人事任命。",
+    "matches": [],
+    "resolution": "plain-language",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": false,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R09-D01",
+    "text": "**一句人话：** 让一个窗口受理多种关联业务。\n\n**建议追问（可以这样回）：** 复杂事项如何转到专业人员？",
+    "matches": [
+      "窗口综办"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R09-D02",
+    "text": "**一句人话：** 把办事服务拆到明确的材料、步骤和职责。\n\n**建议追问（可以这样回）：** 群众要提交什么，哪些材料可以共享？",
+    "matches": [
+      "政务事项颗粒化"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R09-D03",
+    "text": "**一句人话：** 把服务项目、办理条件和责任部门列成清单。\n\n**建议追问（可以这样回）：** 是否公开材料与时限？",
+    "matches": [
+      "事项清单化"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R09-D04",
+    "text": "**一句人话：** 基层人员记录并跟进社区问题。\n\n**建议追问（可以这样回）：** 谁核实事实、谁负责处理？",
+    "matches": [
+      "网格事件上报"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R09-D05",
+    "text": "**一句人话：** 通过服务条件识别可能符合政策的人群并主动通知。\n\n**建议追问（可以这样回）：** 依据哪些合法数据，是否需要当事人申请？",
+    "matches": [
+      "政策找人"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R09-D06",
+    "text": "**一句人话：** 把相关手续合并成一个办事流程。\n\n**建议追问（可以这样回）：** 群众还要重复提交哪些信息？",
+    "matches": [
+      "一件事一次办"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R09-D07",
+    "text": "**一句人话：** 符合条件的对象无需另填申请即可获得政策服务。\n\n**建议追问（可以这样回）：** 资格如何核验，错发如何纠正？",
+    "matches": [
+      "免申即享"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R09-D08",
+    "text": "**一句人话：** 把服务信息发给需要办理的人。\n\n**建议追问（可以这样回）：** 谁可以接收，如何保护个人隐私？",
+    "matches": [
+      "便民触达"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R09-D09",
+    "text": "**一句人话：** 争取让群众一轮材料准备后完成办理。\n\n**建议追问（可以这样回）：** 为了往下推进，能否明确一下要交付的结果和时间？",
+    "matches": [
+      "一次办好"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R09-D10",
+    "text": "**一句人话：** 多个部门共同审核或协同办理事项。\n\n**建议追问（可以这样回）：** 方便确定下次讨论时间，以及到时需要作出的决定吗？",
+    "matches": [
+      "联审联办"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R09-D11",
+    "text": "**一句人话：** 将服务权限或办理窗口延伸至基层。\n\n**建议追问（可以这样回）：** 为了往下推进，能否明确一下要交付的结果和时间？",
+    "matches": [
+      "事项下沉"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R09-D12",
+    "text": "**一句人话：** 部门依法依规交换必要业务数据。\n\n**建议追问（可以这样回）：** 为了往下推进，能否明确一下要交付的结果和时间？",
+    "matches": [
+      "数据共享"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R09-D13",
+    "text": "**一句人话：** 将多个公共服务事项整合到统一办理入口。\n\n**建议追问（可以这样回）：** 为了往下推进，能否明确一下要交付的结果和时间？",
+    "matches": [
+      "一网通办"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R09-D14",
+    "text": "**一句人话：** 这句话已经很清楚：窗口希望市民不用重复提交同一份材料。",
+    "matches": [],
+    "resolution": "plain-language",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": false,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R09-D15",
+    "text": "**一句人话：** 让符合条件的事项可以在异地办理。\n\n**建议追问（可以这样回）：** 哪些事项支持异地办，申请需要什么材料？",
+    "matches": [],
+    "resolution": "semantic-fallback",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R09-D16",
+    "text": "**一句人话：** 减少重复提交资料和没有实际价值的填报步骤。\n\n**建议追问（可以这样回）：** 哪些材料或表单能直接合并、复用？",
+    "matches": [],
+    "resolution": "semantic-fallback",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R09-D17",
+    "text": "**一句人话：** 把每一步的处理记录和责任人对应起来。\n\n**建议追问（可以这样回）：** 在哪个环节留下记录，由谁确认完成？",
+    "matches": [],
+    "resolution": "semantic-fallback",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R09-D18",
+    "text": "**一句人话：** 这句话已经很清楚：办事大厅周三下午暂停窗口服务。",
+    "matches": [],
+    "resolution": "plain-language",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": false,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R09-D19",
+    "text": "**一句人话：** 要求很明确：请把会议材料放到桌上。",
+    "matches": [],
+    "resolution": "plain-language",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": false,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R09-D20",
+    "text": "**一句人话：** 这里是在引用一个术语或标题，没有提出相关项目任务：会议上展示了“数字化转型”的教材标题，不是项目安排。",
+    "matches": [],
+    "resolution": "plain-language",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": false,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R10-D01",
+    "text": "**一句人话：** 检查引入的软件包、设备或供应商风险。\n\n**建议追问（可以这样回）：** 关键依赖来自哪里，更新由谁审核？",
+    "matches": [
+      "供应链安全"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R10-D02",
+    "text": "**一句人话：** 对无法立即执行的防护要求作有期限的审批。\n\n**建议追问（可以这样回）：** 补偿措施、批准人和到期日是什么？",
+    "matches": [
+      "安全例外审批"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R10-D03",
+    "text": "**一句人话：** 安全告警太多导致团队难以发现真正危险。\n\n**建议追问（可以这样回）：** 误报率和平均响应时间如何变化？",
+    "matches": [
+      "告警疲劳"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R10-D04",
+    "text": "**一句人话：** 模拟安全事故并验证响应流程。\n\n**建议追问（可以这样回）：** 谁负责决策、什么时候对外通知？",
+    "matches": [
+      "应急预案演练"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R10-D05",
+    "text": "**一句人话：** 允许进行系统安全更新的时间段。\n\n**建议追问（可以这样回）：** 窗口期前后怎么验证业务不中断？",
+    "matches": [
+      "补丁窗口"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R10-D06",
+    "text": "**一句人话：** 根据安全演练结果改进检测和响应。\n\n**建议追问（可以这样回）：** 发现的漏洞谁负责修复和复测？",
+    "matches": [
+      "攻防复盘"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R10-D07",
+    "text": "**一句人话：** 按可利用性和影响决定先修哪个漏洞。\n\n**建议追问（可以这样回）：** 哪些系统直接面向互联网？",
+    "matches": [
+      "漏洞优先级"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R10-D08",
+    "text": "**一句人话：** 攻击者从一台系统尝试进入其他系统。\n\n**建议追问（可以这样回）：** 哪些异常权限链条可以检测？",
+    "matches": [
+      "横向移动"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R10-D09",
+    "text": "**一句人话：** 逐步降低暴露面和高风险问题数量。\n\n**建议追问（可以这样回）：** 为了往下推进，能否明确一下要交付的结果和时间？",
+    "matches": [
+      "风险收敛"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R10-D10",
+    "text": "**一句人话：** 在开发早期纳入必要的安全评审。\n\n**建议追问（可以这样回）：** 方便确定下次讨论时间，以及到时需要作出的决定吗？",
+    "matches": [
+      "安全左移"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R10-D11",
+    "text": "**一句人话：** 只给用户或程序完成任务所必需的权限。\n\n**建议追问（可以这样回）：** 为了往下推进，能否明确一下要交付的结果和时间？",
+    "matches": [
+      "最小权限"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R10-D12",
+    "text": "**一句人话：** 按照影响范围和严重程度确定事件级别。\n\n**建议追问（可以这样回）：** 为了往下推进，能否明确一下要交付的结果和时间？",
+    "matches": [
+      "事件定级"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R10-D13",
+    "text": "**一句人话：** 攻防团队模拟真实攻击与防御。\n\n**建议追问（可以这样回）：** 为了往下推进，能否明确一下要交付的结果和时间？",
+    "matches": [
+      "红蓝对抗"
+    ],
+    "resolution": "lexicon",
+    "direct_exact": true,
+    "hit_count": 1,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R10-D14",
+    "text": "**一句人话：** 需要让关键异常及时被发现并有人处理。\n\n**建议追问（可以这样回）：** 异常触发条件、接收人和处置时限是什么？",
+    "matches": [],
+    "resolution": "semantic-fallback",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R10-D15",
+    "text": "**一句人话：** 需要让关键异常及时被发现并有人处理。\n\n**建议追问（可以这样回）：** 异常触发条件、接收人和处置时限是什么？",
+    "matches": [],
+    "resolution": "semantic-fallback",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R10-D16",
+    "text": "**一句人话：** 要降低安全风险，同时保证异常有人及时处理。\n\n**建议追问（可以这样回）：** 触发条件、负责人和恢复流程是什么？",
+    "matches": [],
+    "resolution": "semantic-fallback",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R10-D17",
+    "text": "**一句人话：** 要降低安全风险，同时保证异常有人及时处理。\n\n**建议追问（可以这样回）：** 触发条件、负责人和恢复流程是什么？",
+    "matches": [],
+    "resolution": "semantic-fallback",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": true,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R10-D18",
+    "text": "**一句人话：** 要求很明确：请把新的门禁卡交还保安室。",
+    "matches": [],
+    "resolution": "plain-language",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": false,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R10-D19",
+    "text": "**一句人话：** 这句话已经很清楚：今晚十点安排防火墙维护。",
+    "matches": [],
+    "resolution": "plain-language",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": false,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  },
+  {
+    "id": "R10-D20",
+    "text": "**一句人话：** 这句话已经很清楚：天气预报说 visibility 只有100 meters，请注意驾驶。",
+    "matches": [],
+    "resolution": "plain-language",
+    "direct_exact": null,
+    "hit_count": 0,
+    "has_question": false,
+    "has_unwanted_disclaimer": false,
+    "leaks_llm_flag": false,
+    "chinese_response": true,
+    "error": ""
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "scope": "offline rules, synthetic cases; NOT verified human writing quality or live LLM calls",
+  "total": 510,
+  "rules_passed": 510,
+  "groups": {
+    "industry_localized_240": {
+      "total": 240,
+      "rules_passed": 240
+    },
+    "legacy_210": {
+      "total": 210,
+      "rules_passed": 210
+    },
+    "report_or_audit_60": {
+      "total": 60,
+      "rules_passed": 60
+    }
+  },
+  "failures": []
+}

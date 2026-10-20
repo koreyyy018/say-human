@@ -1,0 +1,4852 @@
+{
+  "version": "0.4.0",
+  "kind": "local deterministic engine checks, NOT real agent sessions",
+  "scenarios": 200,
+  "passed": 200,
+  "failed": 0,
+  "categories": {
+    "explain": {
+      "passed": 30,
+      "total": 30
+    },
+    "align": {
+      "passed": 30,
+      "total": 30
+    },
+    "decode": {
+      "passed": 15,
+      "total": 15
+    },
+    "encode": {
+      "passed": 15,
+      "total": 15
+    },
+    "audit-unsafe": {
+      "passed": 15,
+      "total": 15
+    },
+    "audit-safe": {
+      "passed": 15,
+      "total": 15
+    },
+    "empathy": {
+      "passed": 15,
+      "total": 15
+    },
+    "no-forced-empathy": {
+      "passed": 15,
+      "total": 15
+    },
+    "adversarial-rollout": {
+      "passed": 25,
+      "total": 25
+    },
+    "preserved-uncertainty": {
+      "passed": 25,
+      "total": 25
+    }
+  },
+  "examples": [
+    {
+      "id": "1-E1",
+      "category": "explain",
+      "industry": "ai",
+      "input": "Vector Embeddings",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "term": "Vector Embeddings",
+        "technical": "Dense numeric representations learned so related items can be compared by distance or similarity.",
+        "human": "A supermarket map that shelves 'sneakers' near 'running shoes' even when the labels use different words.",
+        "business": "Can improve semantic search and discovery; measure search relevance and time-to-answer against index cost.",
+        "caveat": "Similarity is not factual equivalence or guaranteed intent understanding.",
+        "audience": "cfo",
+        "mode": "explain",
+        "source": "curated-offline-glossary",
+        "audience_guidance": "For a CFO, compare total cost and avoided work against the current process; request evidence on search relevance and index/query operating cost.",
+        "language": "en",
+        "industry_scenario": "Hypothetical AI / SaaS example: for model-assisted customer support, a team could retrieve semantically similar records and inspect false matches. This does not imply a live deployment.",
+        "industry_measurement": "Measure accepted-answer rate, escalation rate and cost per resolved ticket against a baseline; do not assume cost savings."
+      }
+    },
+    {
+      "id": "1-E2",
+      "category": "explain",
+      "industry": "ai",
+      "input": "RAG",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "term": "RAG",
+        "technical": "先从外部资料中检索相关内容，再把它作为上下文用于生成答案。",
+        "human": "像开卷考试。学生先翻到规定教材的相关页，再回答题目并写出处；翻错页照样可能答错。",
+        "business": "无需每次重训模型就能接入更新的业务资料，但要验证召回、引用和错答率。",
+        "caveat": "RAG 只能减少部分无依据回答，不能彻底消除幻觉。",
+        "audience": "product",
+        "mode": "explain",
+        "source": "curated-offline-glossary",
+        "audience_guidance": "产品验收：定义用户任务和验收指标，检查检索命中率、引用正确率和无依据回答率。",
+        "language": "zh",
+        "industry_scenario": "【假设案例·AI / SaaS】在“模型问答与客服工单”中，可以先检索经授权的资料、附上出处，再给答复。这只是应用示意，不代表某机构已部署。",
+        "industry_measurement": "优先验证：答案采纳率、人工转接率与单次成本；同时比较上线前基线，不预设节省金额。"
+      }
+    },
+    {
+      "id": "1-A1",
+      "category": "align",
+      "industry": "ai",
+      "input": "希望客服助手操作快一点，但不要牺牲安全或隐私",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "align",
+        "language": "zh",
+        "source_goal": "希望客服助手操作快一点，但不要牺牲安全或隐私",
+        "audience": "product",
+        "industry": "AI / SaaS",
+        "status": "draft_for_discussion_not_approved",
+        "desired_outcome": "希望客服助手操作快一点，但不要牺牲安全或隐私",
+        "proposed_metrics": [
+          "响应时间"
+        ],
+        "acceptance_plan": "先记录当前基线，并使用约定的实际用户操作与负载开展对照测试；阈值、测试时长与业务方确认后写入验收标准。",
+        "constraints": [
+          "权限和个人信息保护",
+          "异常时人工接管与回退",
+          "记录模型/系统成本",
+          "明确责任人与验收人"
+        ],
+        "questions": [
+          "面向哪类用户及哪项操作？",
+          "目前的基线和最大痛点是什么？",
+          "谁批准目标阈值与上线范围？"
+        ],
+        "disclaimer": "建议的测量方案，不代表用户已批准任何阈值、结果或上线计划。",
+        "source": "offline-requirements-scaffold"
+      }
+    },
+    {
+      "id": "1-A2",
+      "category": "align",
+      "industry": "ai",
+      "input": "Reduce the operational cost of 客服助手 without removing safety checks",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "align",
+        "language": "en",
+        "source_goal": "Reduce the operational cost of 客服助手 without removing safety checks",
+        "audience": "cfo",
+        "industry": "AI / SaaS",
+        "status": "draft_for_discussion_not_approved",
+        "desired_outcome": "Reduce the operational cost of 客服助手 without removing safety checks",
+        "proposed_metrics": [
+          "cost per successfully completed task"
+        ],
+        "acceptance_plan": "Record a baseline, evaluate with total cost including labor, infrastructure and rework, and agree thresholds and duration with the stakeholder before acceptance.",
+        "constraints": [
+          "Access and privacy",
+          "Human fallback and rollback",
+          "Capture system and review cost",
+          "Named owner and approver"
+        ],
+        "questions": [
+          "Which users and task are in scope?",
+          "What is the measured baseline?",
+          "Who approves thresholds and rollout scope?"
+        ],
+        "disclaimer": "A measurement proposal, not approved targets, results or rollout.",
+        "source": "offline-requirements-scaffold"
+      }
+    },
+    {
+      "id": "1-D",
+      "category": "decode",
+      "industry": "ai",
+      "input": "我们下周先对齐客服助手的职责分工，之后再闭环",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "decode",
+        "input": "我们下周先对齐客服助手的职责分工，之后再闭环",
+        "matches": [
+          {
+            "phrase": "alignment",
+            "plain_english": "Reach agreement on goals and responsibilities.",
+            "plain_language": "让各方就目标、规则和分工达成一致。",
+            "possible_subtext": "可能存在口径不统一或尚未作出的决定。"
+          },
+          {
+            "phrase": "action items",
+            "plain_english": "Concrete tasks with owners and dates.",
+            "plain_language": "把讨论转成有负责人和截止时间的具体任务。",
+            "possible_subtext": "只说闭环却没有责任人与时间表，仍然无法执行。"
+          }
+        ],
+        "summary": "以下只是可能的解读，不能仅凭黑话推断发言者的真实意图。",
+        "certainty": "可能的解读，发言者动机未经证实",
+        "clarifying_question": "这件事由谁负责、何时完成、用什么指标判断效果？",
+        "source": "offline-phrasebook",
+        "industry_followup": "如何核验答案采纳率、人工转接率与单次成本？"
+      }
+    },
+    {
+      "id": "1-N",
+      "category": "encode",
+      "industry": "ai",
+      "input": "昨天把客服助手的卡顿问题修了，但还没上线，也没做压测",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "encode",
+        "source_note": "昨天把客服助手的卡顿问题修了，但还没上线，也没做压测",
+        "executive_update": "已修复客服助手的卡顿问题，但尚未上线，也尚未进行压力测试。",
+        "headline": "进展：已修复客服助手的卡顿问题，但尚未上线，也尚未进行压力测试",
+        "business_relevance": "优先验证：答案采纳率、人工转接率与单次成本；同时比较上线前基线，不预设节省金额。",
+        "impact": "原始记录尚未给出可核实的量化收益。",
+        "next_step": "完成待办验证并确认上线范围；不要把测试结果写成生产收益。",
+        "risk_flags": [
+          "restricted_evidence_or_rollout"
+        ],
+        "evidence_ledger": {
+          "numeric_claims_in_source": [],
+          "new_numbers_in_output": [],
+          "independent_verification": false
+        },
+        "style": "executive",
+        "source": "offline-conservative-rewrite"
+      }
+    },
+    {
+      "id": "1-U",
+      "category": "audit-unsafe",
+      "industry": "ai",
+      "input": "客服助手尚未上线，成本变化还没有测量 -> 客服助手已经全量上线，效率提升40%",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "客服助手尚未上线，成本变化还没有测量",
+        "candidate": "客服助手已经全量上线，效率提升40%",
+        "source_numbers": [],
+        "candidate_numbers": [
+          "40%"
+        ],
+        "new_numeric_claims": [
+          "40%"
+        ],
+        "risk_flags": [
+          "new_numeric_claims",
+          "unsupported_deployment_status"
+        ],
+        "status": "review_required",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "1-S",
+      "category": "audit-safe",
+      "industry": "ai",
+      "input": "客服助手尚未上线，成本变化还没有测量 -> 客服助手尚未上线，成本变化尚未测量",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "客服助手尚未上线，成本变化还没有测量",
+        "candidate": "客服助手尚未上线，成本变化尚未测量",
+        "source_numbers": [],
+        "candidate_numbers": [],
+        "new_numeric_claims": [],
+        "risk_flags": [],
+        "status": "no_rule_based_flags",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "1-W",
+      "category": "empathy",
+      "industry": "ai",
+      "input": "我烦死了，客服助手还没正式上线，老板一直追问",
+      "passed": true,
+      "failure_reason": "",
+      "output": "还没正式上线就先把进度说清楚，比硬写成绩更可靠。"
+    },
+    {
+      "id": "1-Q",
+      "category": "no-forced-empathy",
+      "industry": "ai",
+      "input": "修复了客服助手",
+      "passed": true,
+      "failure_reason": "",
+      "output": null
+    },
+    {
+      "id": "2-E1",
+      "category": "explain",
+      "industry": "finance",
+      "input": "Vector Embeddings",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "term": "Vector Embeddings",
+        "technical": "Dense numeric representations learned so related items can be compared by distance or similarity.",
+        "human": "A supermarket map that shelves 'sneakers' near 'running shoes' even when the labels use different words.",
+        "business": "Can improve semantic search and discovery; measure search relevance and time-to-answer against index cost.",
+        "caveat": "Similarity is not factual equivalence or guaranteed intent understanding.",
+        "audience": "cfo",
+        "mode": "explain",
+        "source": "curated-offline-glossary",
+        "audience_guidance": "For a CFO, compare total cost and avoided work against the current process; request evidence on search relevance and index/query operating cost.",
+        "language": "en",
+        "industry_scenario": "Hypothetical Banking / Fintech example: for reconciliation and fraud-review queues, a team could retrieve semantically similar records and inspect false matches. This does not imply a live deployment.",
+        "industry_measurement": "Measure false alerts, missed cases and review time against a baseline; do not assume cost savings."
+      }
+    },
+    {
+      "id": "2-E2",
+      "category": "explain",
+      "industry": "finance",
+      "input": "RAG",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "term": "RAG",
+        "technical": "先从外部资料中检索相关内容，再把它作为上下文用于生成答案。",
+        "human": "像开卷考试。学生先翻到规定教材的相关页，再回答题目并写出处；翻错页照样可能答错。",
+        "business": "无需每次重训模型就能接入更新的业务资料，但要验证召回、引用和错答率。",
+        "caveat": "RAG 只能减少部分无依据回答，不能彻底消除幻觉。",
+        "audience": "product",
+        "mode": "explain",
+        "source": "curated-offline-glossary",
+        "audience_guidance": "产品验收：定义用户任务和验收指标，检查检索命中率、引用正确率和无依据回答率。",
+        "language": "zh",
+        "industry_scenario": "【假设案例·Banking / Fintech】在“交易对账与反欺诈复核”中，可以先检索经授权的资料、附上出处，再给答复。这只是应用示意，不代表某机构已部署。",
+        "industry_measurement": "优先验证：错误警报、漏报率及人工复核时间；同时比较上线前基线，不预设节省金额。"
+      }
+    },
+    {
+      "id": "2-A1",
+      "category": "align",
+      "industry": "finance",
+      "input": "希望交易对账操作快一点，但不要牺牲安全或隐私",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "align",
+        "language": "zh",
+        "source_goal": "希望交易对账操作快一点，但不要牺牲安全或隐私",
+        "audience": "product",
+        "industry": "Banking / Fintech",
+        "status": "draft_for_discussion_not_approved",
+        "desired_outcome": "希望交易对账操作快一点，但不要牺牲安全或隐私",
+        "proposed_metrics": [
+          "响应时间"
+        ],
+        "acceptance_plan": "先记录当前基线，并使用约定的实际用户操作与负载开展对照测试；阈值、测试时长与业务方确认后写入验收标准。",
+        "constraints": [
+          "权限和个人信息保护",
+          "异常时人工接管与回退",
+          "记录模型/系统成本",
+          "明确责任人与验收人"
+        ],
+        "questions": [
+          "面向哪类用户及哪项操作？",
+          "目前的基线和最大痛点是什么？",
+          "谁批准目标阈值与上线范围？"
+        ],
+        "disclaimer": "建议的测量方案，不代表用户已批准任何阈值、结果或上线计划。",
+        "source": "offline-requirements-scaffold"
+      }
+    },
+    {
+      "id": "2-A2",
+      "category": "align",
+      "industry": "finance",
+      "input": "Reduce the operational cost of 交易对账 without removing safety checks",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "align",
+        "language": "en",
+        "source_goal": "Reduce the operational cost of 交易对账 without removing safety checks",
+        "audience": "cfo",
+        "industry": "Banking / Fintech",
+        "status": "draft_for_discussion_not_approved",
+        "desired_outcome": "Reduce the operational cost of 交易对账 without removing safety checks",
+        "proposed_metrics": [
+          "cost per successfully completed task"
+        ],
+        "acceptance_plan": "Record a baseline, evaluate with total cost including labor, infrastructure and rework, and agree thresholds and duration with the stakeholder before acceptance.",
+        "constraints": [
+          "Access and privacy",
+          "Human fallback and rollback",
+          "Capture system and review cost",
+          "Named owner and approver"
+        ],
+        "questions": [
+          "Which users and task are in scope?",
+          "What is the measured baseline?",
+          "Who approves thresholds and rollout scope?"
+        ],
+        "disclaimer": "A measurement proposal, not approved targets, results or rollout.",
+        "source": "offline-requirements-scaffold"
+      }
+    },
+    {
+      "id": "2-D",
+      "category": "decode",
+      "industry": "finance",
+      "input": "我们下周先对齐交易对账的职责分工，之后再闭环",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "decode",
+        "input": "我们下周先对齐交易对账的职责分工，之后再闭环",
+        "matches": [
+          {
+            "phrase": "alignment",
+            "plain_english": "Reach agreement on goals and responsibilities.",
+            "plain_language": "让各方就目标、规则和分工达成一致。",
+            "possible_subtext": "可能存在口径不统一或尚未作出的决定。"
+          },
+          {
+            "phrase": "action items",
+            "plain_english": "Concrete tasks with owners and dates.",
+            "plain_language": "把讨论转成有负责人和截止时间的具体任务。",
+            "possible_subtext": "只说闭环却没有责任人与时间表，仍然无法执行。"
+          }
+        ],
+        "summary": "以下只是可能的解读，不能仅凭黑话推断发言者的真实意图。",
+        "certainty": "可能的解读，发言者动机未经证实",
+        "clarifying_question": "这件事由谁负责、何时完成、用什么指标判断效果？",
+        "source": "offline-phrasebook",
+        "industry_followup": "如何核验错误警报、漏报率及人工复核时间？"
+      }
+    },
+    {
+      "id": "2-N",
+      "category": "encode",
+      "industry": "finance",
+      "input": "昨天把交易对账的卡顿问题修了，但还没上线，也没做压测",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "encode",
+        "source_note": "昨天把交易对账的卡顿问题修了，但还没上线，也没做压测",
+        "executive_update": "已修复交易对账的卡顿问题，但尚未上线，也尚未进行压力测试。",
+        "headline": "进展：已修复交易对账的卡顿问题，但尚未上线，也尚未进行压力测试",
+        "business_relevance": "优先验证：错误警报、漏报率及人工复核时间；同时比较上线前基线，不预设节省金额。",
+        "impact": "原始记录尚未给出可核实的量化收益。",
+        "next_step": "完成待办验证并确认上线范围；不要把测试结果写成生产收益。",
+        "risk_flags": [
+          "restricted_evidence_or_rollout"
+        ],
+        "evidence_ledger": {
+          "numeric_claims_in_source": [],
+          "new_numbers_in_output": [],
+          "independent_verification": false
+        },
+        "style": "executive",
+        "source": "offline-conservative-rewrite"
+      }
+    },
+    {
+      "id": "2-U",
+      "category": "audit-unsafe",
+      "industry": "finance",
+      "input": "交易对账尚未上线，成本变化还没有测量 -> 交易对账已经全量上线，效率提升40%",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "交易对账尚未上线，成本变化还没有测量",
+        "candidate": "交易对账已经全量上线，效率提升40%",
+        "source_numbers": [],
+        "candidate_numbers": [
+          "40%"
+        ],
+        "new_numeric_claims": [
+          "40%"
+        ],
+        "risk_flags": [
+          "new_numeric_claims",
+          "unsupported_deployment_status"
+        ],
+        "status": "review_required",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "2-S",
+      "category": "audit-safe",
+      "industry": "finance",
+      "input": "交易对账尚未上线，成本变化还没有测量 -> 交易对账尚未上线，成本变化尚未测量",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "交易对账尚未上线，成本变化还没有测量",
+        "candidate": "交易对账尚未上线，成本变化尚未测量",
+        "source_numbers": [],
+        "candidate_numbers": [],
+        "new_numeric_claims": [],
+        "risk_flags": [],
+        "status": "no_rule_based_flags",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "2-W",
+      "category": "empathy",
+      "industry": "finance",
+      "input": "我烦死了，交易对账还没正式上线，老板一直追问",
+      "passed": true,
+      "failure_reason": "",
+      "output": "还没正式上线就先把进度说清楚，比硬写成绩更可靠。"
+    },
+    {
+      "id": "2-Q",
+      "category": "no-forced-empathy",
+      "industry": "finance",
+      "input": "修复了交易对账",
+      "passed": true,
+      "failure_reason": "",
+      "output": null
+    },
+    {
+      "id": "3-E1",
+      "category": "explain",
+      "industry": "healthcare",
+      "input": "Vector Embeddings",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "term": "Vector Embeddings",
+        "technical": "Dense numeric representations learned so related items can be compared by distance or similarity.",
+        "human": "A supermarket map that shelves 'sneakers' near 'running shoes' even when the labels use different words.",
+        "business": "Can improve semantic search and discovery; measure search relevance and time-to-answer against index cost.",
+        "caveat": "Similarity is not factual equivalence or guaranteed intent understanding.",
+        "audience": "cfo",
+        "mode": "explain",
+        "source": "curated-offline-glossary",
+        "audience_guidance": "For a CFO, compare total cost and avoided work against the current process; request evidence on search relevance and index/query operating cost.",
+        "language": "en",
+        "industry_scenario": "Hypothetical Healthcare / Hospital example: for appointment guidance and internal knowledge lookup, a team could retrieve semantically similar records and inspect false matches. This does not imply a live deployment.",
+        "industry_measurement": "Measure citation accuracy, unsafe suggestions and human review against a baseline; do not assume cost savings."
+      }
+    },
+    {
+      "id": "3-E2",
+      "category": "explain",
+      "industry": "healthcare",
+      "input": "RAG",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "term": "RAG",
+        "technical": "先从外部资料中检索相关内容，再把它作为上下文用于生成答案。",
+        "human": "像开卷考试。学生先翻到规定教材的相关页，再回答题目并写出处；翻错页照样可能答错。",
+        "business": "无需每次重训模型就能接入更新的业务资料，但要验证召回、引用和错答率。",
+        "caveat": "RAG 只能减少部分无依据回答，不能彻底消除幻觉。",
+        "audience": "product",
+        "mode": "explain",
+        "source": "curated-offline-glossary",
+        "audience_guidance": "产品验收：定义用户任务和验收指标，检查检索命中率、引用正确率和无依据回答率。",
+        "language": "zh",
+        "industry_scenario": "【假设案例·Healthcare / Hospital】在“预约指引与院内知识查询”中，可以先检索经授权的资料、附上出处，再给答复。这只是应用示意，不代表某机构已部署。",
+        "industry_measurement": "优先验证：引用准确率、错误建议率及人工复核；同时比较上线前基线，不预设节省金额。"
+      }
+    },
+    {
+      "id": "3-A1",
+      "category": "align",
+      "industry": "healthcare",
+      "input": "希望预约挂号操作快一点，但不要牺牲安全或隐私",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "align",
+        "language": "zh",
+        "source_goal": "希望预约挂号操作快一点，但不要牺牲安全或隐私",
+        "audience": "product",
+        "industry": "Healthcare / Hospital",
+        "status": "draft_for_discussion_not_approved",
+        "desired_outcome": "希望预约挂号操作快一点，但不要牺牲安全或隐私",
+        "proposed_metrics": [
+          "响应时间"
+        ],
+        "acceptance_plan": "先记录当前基线，并使用约定的实际用户操作与负载开展对照测试；阈值、测试时长与业务方确认后写入验收标准。",
+        "constraints": [
+          "权限和个人信息保护",
+          "异常时人工接管与回退",
+          "记录模型/系统成本",
+          "明确责任人与验收人"
+        ],
+        "questions": [
+          "面向哪类用户及哪项操作？",
+          "目前的基线和最大痛点是什么？",
+          "谁批准目标阈值与上线范围？"
+        ],
+        "disclaimer": "建议的测量方案，不代表用户已批准任何阈值、结果或上线计划。",
+        "source": "offline-requirements-scaffold"
+      }
+    },
+    {
+      "id": "3-A2",
+      "category": "align",
+      "industry": "healthcare",
+      "input": "Reduce the operational cost of 预约挂号 without removing safety checks",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "align",
+        "language": "en",
+        "source_goal": "Reduce the operational cost of 预约挂号 without removing safety checks",
+        "audience": "cfo",
+        "industry": "Healthcare / Hospital",
+        "status": "draft_for_discussion_not_approved",
+        "desired_outcome": "Reduce the operational cost of 预约挂号 without removing safety checks",
+        "proposed_metrics": [
+          "cost per successfully completed task"
+        ],
+        "acceptance_plan": "Record a baseline, evaluate with total cost including labor, infrastructure and rework, and agree thresholds and duration with the stakeholder before acceptance.",
+        "constraints": [
+          "Access and privacy",
+          "Human fallback and rollback",
+          "Capture system and review cost",
+          "Named owner and approver"
+        ],
+        "questions": [
+          "Which users and task are in scope?",
+          "What is the measured baseline?",
+          "Who approves thresholds and rollout scope?"
+        ],
+        "disclaimer": "A measurement proposal, not approved targets, results or rollout.",
+        "source": "offline-requirements-scaffold"
+      }
+    },
+    {
+      "id": "3-D",
+      "category": "decode",
+      "industry": "healthcare",
+      "input": "我们下周先对齐预约挂号的职责分工，之后再闭环",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "decode",
+        "input": "我们下周先对齐预约挂号的职责分工，之后再闭环",
+        "matches": [
+          {
+            "phrase": "alignment",
+            "plain_english": "Reach agreement on goals and responsibilities.",
+            "plain_language": "让各方就目标、规则和分工达成一致。",
+            "possible_subtext": "可能存在口径不统一或尚未作出的决定。"
+          },
+          {
+            "phrase": "action items",
+            "plain_english": "Concrete tasks with owners and dates.",
+            "plain_language": "把讨论转成有负责人和截止时间的具体任务。",
+            "possible_subtext": "只说闭环却没有责任人与时间表，仍然无法执行。"
+          }
+        ],
+        "summary": "以下只是可能的解读，不能仅凭黑话推断发言者的真实意图。",
+        "certainty": "可能的解读，发言者动机未经证实",
+        "clarifying_question": "这件事由谁负责、何时完成、用什么指标判断效果？",
+        "source": "offline-phrasebook",
+        "industry_followup": "如何核验引用准确率、错误建议率及人工复核？"
+      }
+    },
+    {
+      "id": "3-N",
+      "category": "encode",
+      "industry": "healthcare",
+      "input": "昨天把预约挂号的卡顿问题修了，但还没上线，也没做压测",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "encode",
+        "source_note": "昨天把预约挂号的卡顿问题修了，但还没上线，也没做压测",
+        "executive_update": "已修复预约挂号的卡顿问题，但尚未上线，也尚未进行压力测试。",
+        "headline": "进展：已修复预约挂号的卡顿问题，但尚未上线，也尚未进行压力测试",
+        "business_relevance": "优先验证：引用准确率、错误建议率及人工复核；同时比较上线前基线，不预设节省金额。",
+        "impact": "原始记录尚未给出可核实的量化收益。",
+        "next_step": "完成待办验证并确认上线范围；不要把测试结果写成生产收益。",
+        "risk_flags": [
+          "restricted_evidence_or_rollout"
+        ],
+        "evidence_ledger": {
+          "numeric_claims_in_source": [],
+          "new_numbers_in_output": [],
+          "independent_verification": false
+        },
+        "style": "executive",
+        "source": "offline-conservative-rewrite"
+      }
+    },
+    {
+      "id": "3-U",
+      "category": "audit-unsafe",
+      "industry": "healthcare",
+      "input": "预约挂号尚未上线，成本变化还没有测量 -> 预约挂号已经全量上线，效率提升40%",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "预约挂号尚未上线，成本变化还没有测量",
+        "candidate": "预约挂号已经全量上线，效率提升40%",
+        "source_numbers": [],
+        "candidate_numbers": [
+          "40%"
+        ],
+        "new_numeric_claims": [
+          "40%"
+        ],
+        "risk_flags": [
+          "new_numeric_claims",
+          "unsupported_deployment_status"
+        ],
+        "status": "review_required",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "3-S",
+      "category": "audit-safe",
+      "industry": "healthcare",
+      "input": "预约挂号尚未上线，成本变化还没有测量 -> 预约挂号尚未上线，成本变化尚未测量",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "预约挂号尚未上线，成本变化还没有测量",
+        "candidate": "预约挂号尚未上线，成本变化尚未测量",
+        "source_numbers": [],
+        "candidate_numbers": [],
+        "new_numeric_claims": [],
+        "risk_flags": [],
+        "status": "no_rule_based_flags",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "3-W",
+      "category": "empathy",
+      "industry": "healthcare",
+      "input": "我烦死了，预约挂号还没正式上线，老板一直追问",
+      "passed": true,
+      "failure_reason": "",
+      "output": "还没正式上线就先把进度说清楚，比硬写成绩更可靠。"
+    },
+    {
+      "id": "3-Q",
+      "category": "no-forced-empathy",
+      "industry": "healthcare",
+      "input": "修复了预约挂号",
+      "passed": true,
+      "failure_reason": "",
+      "output": null
+    },
+    {
+      "id": "4-E1",
+      "category": "explain",
+      "industry": "manufacturing",
+      "input": "Vector Embeddings",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "term": "Vector Embeddings",
+        "technical": "Dense numeric representations learned so related items can be compared by distance or similarity.",
+        "human": "A supermarket map that shelves 'sneakers' near 'running shoes' even when the labels use different words.",
+        "business": "Can improve semantic search and discovery; measure search relevance and time-to-answer against index cost.",
+        "caveat": "Similarity is not factual equivalence or guaranteed intent understanding.",
+        "audience": "cfo",
+        "mode": "explain",
+        "source": "curated-offline-glossary",
+        "audience_guidance": "For a CFO, compare total cost and avoided work against the current process; request evidence on search relevance and index/query operating cost.",
+        "language": "en",
+        "industry_scenario": "Hypothetical Manufacturing / Factory example: for equipment maintenance and quality checks, a team could retrieve semantically similar records and inspect false matches. This does not imply a live deployment.",
+        "industry_measurement": "Measure downtime, false alarms and manual-review effort against a baseline; do not assume cost savings."
+      }
+    },
+    {
+      "id": "4-E2",
+      "category": "explain",
+      "industry": "manufacturing",
+      "input": "RAG",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "term": "RAG",
+        "technical": "先从外部资料中检索相关内容，再把它作为上下文用于生成答案。",
+        "human": "像开卷考试。学生先翻到规定教材的相关页，再回答题目并写出处；翻错页照样可能答错。",
+        "business": "无需每次重训模型就能接入更新的业务资料，但要验证召回、引用和错答率。",
+        "caveat": "RAG 只能减少部分无依据回答，不能彻底消除幻觉。",
+        "audience": "product",
+        "mode": "explain",
+        "source": "curated-offline-glossary",
+        "audience_guidance": "产品验收：定义用户任务和验收指标，检查检索命中率、引用正确率和无依据回答率。",
+        "language": "zh",
+        "industry_scenario": "【假设案例·Manufacturing / Factory】在“设备维护与质量巡检”中，可以先检索经授权的资料、附上出处，再给答复。这只是应用示意，不代表某机构已部署。",
+        "industry_measurement": "优先验证：停机时长、误报与人工复核成本；同时比较上线前基线，不预设节省金额。"
+      }
+    },
+    {
+      "id": "4-A1",
+      "category": "align",
+      "industry": "manufacturing",
+      "input": "希望生产线巡检操作快一点，但不要牺牲安全或隐私",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "align",
+        "language": "zh",
+        "source_goal": "希望生产线巡检操作快一点，但不要牺牲安全或隐私",
+        "audience": "product",
+        "industry": "Manufacturing / Factory",
+        "status": "draft_for_discussion_not_approved",
+        "desired_outcome": "希望生产线巡检操作快一点，但不要牺牲安全或隐私",
+        "proposed_metrics": [
+          "响应时间"
+        ],
+        "acceptance_plan": "先记录当前基线，并使用约定的实际用户操作与负载开展对照测试；阈值、测试时长与业务方确认后写入验收标准。",
+        "constraints": [
+          "权限和个人信息保护",
+          "异常时人工接管与回退",
+          "记录模型/系统成本",
+          "明确责任人与验收人"
+        ],
+        "questions": [
+          "面向哪类用户及哪项操作？",
+          "目前的基线和最大痛点是什么？",
+          "谁批准目标阈值与上线范围？"
+        ],
+        "disclaimer": "建议的测量方案，不代表用户已批准任何阈值、结果或上线计划。",
+        "source": "offline-requirements-scaffold"
+      }
+    },
+    {
+      "id": "4-A2",
+      "category": "align",
+      "industry": "manufacturing",
+      "input": "Reduce the operational cost of 生产线巡检 without removing safety checks",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "align",
+        "language": "en",
+        "source_goal": "Reduce the operational cost of 生产线巡检 without removing safety checks",
+        "audience": "cfo",
+        "industry": "Manufacturing / Factory",
+        "status": "draft_for_discussion_not_approved",
+        "desired_outcome": "Reduce the operational cost of 生产线巡检 without removing safety checks",
+        "proposed_metrics": [
+          "cost per successfully completed task"
+        ],
+        "acceptance_plan": "Record a baseline, evaluate with total cost including labor, infrastructure and rework, and agree thresholds and duration with the stakeholder before acceptance.",
+        "constraints": [
+          "Access and privacy",
+          "Human fallback and rollback",
+          "Capture system and review cost",
+          "Named owner and approver"
+        ],
+        "questions": [
+          "Which users and task are in scope?",
+          "What is the measured baseline?",
+          "Who approves thresholds and rollout scope?"
+        ],
+        "disclaimer": "A measurement proposal, not approved targets, results or rollout.",
+        "source": "offline-requirements-scaffold"
+      }
+    },
+    {
+      "id": "4-D",
+      "category": "decode",
+      "industry": "manufacturing",
+      "input": "我们下周先对齐生产线巡检的职责分工，之后再闭环",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "decode",
+        "input": "我们下周先对齐生产线巡检的职责分工，之后再闭环",
+        "matches": [
+          {
+            "phrase": "alignment",
+            "plain_english": "Reach agreement on goals and responsibilities.",
+            "plain_language": "让各方就目标、规则和分工达成一致。",
+            "possible_subtext": "可能存在口径不统一或尚未作出的决定。"
+          },
+          {
+            "phrase": "action items",
+            "plain_english": "Concrete tasks with owners and dates.",
+            "plain_language": "把讨论转成有负责人和截止时间的具体任务。",
+            "possible_subtext": "只说闭环却没有责任人与时间表，仍然无法执行。"
+          }
+        ],
+        "summary": "以下只是可能的解读，不能仅凭黑话推断发言者的真实意图。",
+        "certainty": "可能的解读，发言者动机未经证实",
+        "clarifying_question": "这件事由谁负责、何时完成、用什么指标判断效果？",
+        "source": "offline-phrasebook",
+        "industry_followup": "如何核验停机时长、误报与人工复核成本？"
+      }
+    },
+    {
+      "id": "4-N",
+      "category": "encode",
+      "industry": "manufacturing",
+      "input": "昨天把生产线巡检的卡顿问题修了，但还没上线，也没做压测",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "encode",
+        "source_note": "昨天把生产线巡检的卡顿问题修了，但还没上线，也没做压测",
+        "executive_update": "已修复生产线巡检的卡顿问题，但尚未上线，也尚未进行压力测试。",
+        "headline": "进展：已修复生产线巡检的卡顿问题，但尚未上线，也尚未进行压力测试",
+        "business_relevance": "优先验证：停机时长、误报与人工复核成本；同时比较上线前基线，不预设节省金额。",
+        "impact": "原始记录尚未给出可核实的量化收益。",
+        "next_step": "完成待办验证并确认上线范围；不要把测试结果写成生产收益。",
+        "risk_flags": [
+          "restricted_evidence_or_rollout"
+        ],
+        "evidence_ledger": {
+          "numeric_claims_in_source": [],
+          "new_numbers_in_output": [],
+          "independent_verification": false
+        },
+        "style": "executive",
+        "source": "offline-conservative-rewrite"
+      }
+    },
+    {
+      "id": "4-U",
+      "category": "audit-unsafe",
+      "industry": "manufacturing",
+      "input": "生产线巡检尚未上线，成本变化还没有测量 -> 生产线巡检已经全量上线，效率提升40%",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "生产线巡检尚未上线，成本变化还没有测量",
+        "candidate": "生产线巡检已经全量上线，效率提升40%",
+        "source_numbers": [],
+        "candidate_numbers": [
+          "40%"
+        ],
+        "new_numeric_claims": [
+          "40%"
+        ],
+        "risk_flags": [
+          "new_numeric_claims",
+          "unsupported_deployment_status"
+        ],
+        "status": "review_required",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "4-S",
+      "category": "audit-safe",
+      "industry": "manufacturing",
+      "input": "生产线巡检尚未上线，成本变化还没有测量 -> 生产线巡检尚未上线，成本变化尚未测量",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "生产线巡检尚未上线，成本变化还没有测量",
+        "candidate": "生产线巡检尚未上线，成本变化尚未测量",
+        "source_numbers": [],
+        "candidate_numbers": [],
+        "new_numeric_claims": [],
+        "risk_flags": [],
+        "status": "no_rule_based_flags",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "4-W",
+      "category": "empathy",
+      "industry": "manufacturing",
+      "input": "我烦死了，生产线巡检还没正式上线，老板一直追问",
+      "passed": true,
+      "failure_reason": "",
+      "output": "还没正式上线就先把进度说清楚，比硬写成绩更可靠。"
+    },
+    {
+      "id": "4-Q",
+      "category": "no-forced-empathy",
+      "industry": "manufacturing",
+      "input": "修复了生产线巡检",
+      "passed": true,
+      "failure_reason": "",
+      "output": null
+    },
+    {
+      "id": "5-E1",
+      "category": "explain",
+      "industry": "ecommerce",
+      "input": "Vector Embeddings",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "term": "Vector Embeddings",
+        "technical": "Dense numeric representations learned so related items can be compared by distance or similarity.",
+        "human": "A supermarket map that shelves 'sneakers' near 'running shoes' even when the labels use different words.",
+        "business": "Can improve semantic search and discovery; measure search relevance and time-to-answer against index cost.",
+        "caveat": "Similarity is not factual equivalence or guaranteed intent understanding.",
+        "audience": "cfo",
+        "mode": "explain",
+        "source": "curated-offline-glossary",
+        "audience_guidance": "For a CFO, compare total cost and avoided work against the current process; request evidence on search relevance and index/query operating cost.",
+        "language": "en",
+        "industry_scenario": "Hypothetical E-commerce / Marketplace example: for product search and after-sales support, a team could retrieve semantically similar records and inspect false matches. This does not imply a live deployment.",
+        "industry_measurement": "Measure search relevance, refund errors and response time against a baseline; do not assume cost savings."
+      }
+    },
+    {
+      "id": "5-E2",
+      "category": "explain",
+      "industry": "ecommerce",
+      "input": "RAG",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "term": "RAG",
+        "technical": "先从外部资料中检索相关内容，再把它作为上下文用于生成答案。",
+        "human": "像开卷考试。学生先翻到规定教材的相关页，再回答题目并写出处；翻错页照样可能答错。",
+        "business": "无需每次重训模型就能接入更新的业务资料，但要验证召回、引用和错答率。",
+        "caveat": "RAG 只能减少部分无依据回答，不能彻底消除幻觉。",
+        "audience": "product",
+        "mode": "explain",
+        "source": "curated-offline-glossary",
+        "audience_guidance": "产品验收：定义用户任务和验收指标，检查检索命中率、引用正确率和无依据回答率。",
+        "language": "zh",
+        "industry_scenario": "【假设案例·E-commerce / Marketplace】在“商品检索与售后咨询”中，可以先检索经授权的资料、附上出处，再给答复。这只是应用示意，不代表某机构已部署。",
+        "industry_measurement": "优先验证：检索准确率、退款错误率与响应时长；同时比较上线前基线，不预设节省金额。"
+      }
+    },
+    {
+      "id": "5-A1",
+      "category": "align",
+      "industry": "ecommerce",
+      "input": "希望商品检索操作快一点，但不要牺牲安全或隐私",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "align",
+        "language": "zh",
+        "source_goal": "希望商品检索操作快一点，但不要牺牲安全或隐私",
+        "audience": "product",
+        "industry": "E-commerce / Marketplace",
+        "status": "draft_for_discussion_not_approved",
+        "desired_outcome": "希望商品检索操作快一点，但不要牺牲安全或隐私",
+        "proposed_metrics": [
+          "响应时间"
+        ],
+        "acceptance_plan": "先记录当前基线，并使用约定的实际用户操作与负载开展对照测试；阈值、测试时长与业务方确认后写入验收标准。",
+        "constraints": [
+          "权限和个人信息保护",
+          "异常时人工接管与回退",
+          "记录模型/系统成本",
+          "明确责任人与验收人"
+        ],
+        "questions": [
+          "面向哪类用户及哪项操作？",
+          "目前的基线和最大痛点是什么？",
+          "谁批准目标阈值与上线范围？"
+        ],
+        "disclaimer": "建议的测量方案，不代表用户已批准任何阈值、结果或上线计划。",
+        "source": "offline-requirements-scaffold"
+      }
+    },
+    {
+      "id": "5-A2",
+      "category": "align",
+      "industry": "ecommerce",
+      "input": "Reduce the operational cost of 商品检索 without removing safety checks",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "align",
+        "language": "en",
+        "source_goal": "Reduce the operational cost of 商品检索 without removing safety checks",
+        "audience": "cfo",
+        "industry": "E-commerce / Marketplace",
+        "status": "draft_for_discussion_not_approved",
+        "desired_outcome": "Reduce the operational cost of 商品检索 without removing safety checks",
+        "proposed_metrics": [
+          "cost per successfully completed task"
+        ],
+        "acceptance_plan": "Record a baseline, evaluate with total cost including labor, infrastructure and rework, and agree thresholds and duration with the stakeholder before acceptance.",
+        "constraints": [
+          "Access and privacy",
+          "Human fallback and rollback",
+          "Capture system and review cost",
+          "Named owner and approver"
+        ],
+        "questions": [
+          "Which users and task are in scope?",
+          "What is the measured baseline?",
+          "Who approves thresholds and rollout scope?"
+        ],
+        "disclaimer": "A measurement proposal, not approved targets, results or rollout.",
+        "source": "offline-requirements-scaffold"
+      }
+    },
+    {
+      "id": "5-D",
+      "category": "decode",
+      "industry": "ecommerce",
+      "input": "我们下周先对齐商品检索的职责分工，之后再闭环",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "decode",
+        "input": "我们下周先对齐商品检索的职责分工，之后再闭环",
+        "matches": [
+          {
+            "phrase": "alignment",
+            "plain_english": "Reach agreement on goals and responsibilities.",
+            "plain_language": "让各方就目标、规则和分工达成一致。",
+            "possible_subtext": "可能存在口径不统一或尚未作出的决定。"
+          },
+          {
+            "phrase": "action items",
+            "plain_english": "Concrete tasks with owners and dates.",
+            "plain_language": "把讨论转成有负责人和截止时间的具体任务。",
+            "possible_subtext": "只说闭环却没有责任人与时间表，仍然无法执行。"
+          }
+        ],
+        "summary": "以下只是可能的解读，不能仅凭黑话推断发言者的真实意图。",
+        "certainty": "可能的解读，发言者动机未经证实",
+        "clarifying_question": "这件事由谁负责、何时完成、用什么指标判断效果？",
+        "source": "offline-phrasebook",
+        "industry_followup": "如何核验检索准确率、退款错误率与响应时长？"
+      }
+    },
+    {
+      "id": "5-N",
+      "category": "encode",
+      "industry": "ecommerce",
+      "input": "昨天把商品检索的卡顿问题修了，但还没上线，也没做压测",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "encode",
+        "source_note": "昨天把商品检索的卡顿问题修了，但还没上线，也没做压测",
+        "executive_update": "已修复商品检索的卡顿问题，但尚未上线，也尚未进行压力测试。",
+        "headline": "进展：已修复商品检索的卡顿问题，但尚未上线，也尚未进行压力测试",
+        "business_relevance": "优先验证：检索准确率、退款错误率与响应时长；同时比较上线前基线，不预设节省金额。",
+        "impact": "原始记录尚未给出可核实的量化收益。",
+        "next_step": "完成待办验证并确认上线范围；不要把测试结果写成生产收益。",
+        "risk_flags": [
+          "restricted_evidence_or_rollout"
+        ],
+        "evidence_ledger": {
+          "numeric_claims_in_source": [],
+          "new_numbers_in_output": [],
+          "independent_verification": false
+        },
+        "style": "executive",
+        "source": "offline-conservative-rewrite"
+      }
+    },
+    {
+      "id": "5-U",
+      "category": "audit-unsafe",
+      "industry": "ecommerce",
+      "input": "商品检索尚未上线，成本变化还没有测量 -> 商品检索已经全量上线，效率提升40%",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "商品检索尚未上线，成本变化还没有测量",
+        "candidate": "商品检索已经全量上线，效率提升40%",
+        "source_numbers": [],
+        "candidate_numbers": [
+          "40%"
+        ],
+        "new_numeric_claims": [
+          "40%"
+        ],
+        "risk_flags": [
+          "new_numeric_claims",
+          "unsupported_deployment_status"
+        ],
+        "status": "review_required",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "5-S",
+      "category": "audit-safe",
+      "industry": "ecommerce",
+      "input": "商品检索尚未上线，成本变化还没有测量 -> 商品检索尚未上线，成本变化尚未测量",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "商品检索尚未上线，成本变化还没有测量",
+        "candidate": "商品检索尚未上线，成本变化尚未测量",
+        "source_numbers": [],
+        "candidate_numbers": [],
+        "new_numeric_claims": [],
+        "risk_flags": [],
+        "status": "no_rule_based_flags",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "5-W",
+      "category": "empathy",
+      "industry": "ecommerce",
+      "input": "我烦死了，商品检索还没正式上线，老板一直追问",
+      "passed": true,
+      "failure_reason": "",
+      "output": "还没正式上线就先把进度说清楚，比硬写成绩更可靠。"
+    },
+    {
+      "id": "5-Q",
+      "category": "no-forced-empathy",
+      "industry": "ecommerce",
+      "input": "修复了商品检索",
+      "passed": true,
+      "failure_reason": "",
+      "output": null
+    },
+    {
+      "id": "6-E1",
+      "category": "explain",
+      "industry": "education",
+      "input": "Vector Embeddings",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "term": "Vector Embeddings",
+        "technical": "Dense numeric representations learned so related items can be compared by distance or similarity.",
+        "human": "A supermarket map that shelves 'sneakers' near 'running shoes' even when the labels use different words.",
+        "business": "Can improve semantic search and discovery; measure search relevance and time-to-answer against index cost.",
+        "caveat": "Similarity is not factual equivalence or guaranteed intent understanding.",
+        "audience": "cfo",
+        "mode": "explain",
+        "source": "curated-offline-glossary",
+        "audience_guidance": "For a CFO, compare total cost and avoided work against the current process; request evidence on search relevance and index/query operating cost.",
+        "language": "en",
+        "industry_scenario": "Hypothetical Education / EdTech example: for course-material lookup and tutoring, a team could retrieve semantically similar records and inspect false matches. This does not imply a live deployment.",
+        "industry_measurement": "Measure answer accuracy, source coverage and teacher review against a baseline; do not assume cost savings."
+      }
+    },
+    {
+      "id": "6-E2",
+      "category": "explain",
+      "industry": "education",
+      "input": "RAG",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "term": "RAG",
+        "technical": "先从外部资料中检索相关内容，再把它作为上下文用于生成答案。",
+        "human": "像开卷考试。学生先翻到规定教材的相关页，再回答题目并写出处；翻错页照样可能答错。",
+        "business": "无需每次重训模型就能接入更新的业务资料，但要验证召回、引用和错答率。",
+        "caveat": "RAG 只能减少部分无依据回答，不能彻底消除幻觉。",
+        "audience": "product",
+        "mode": "explain",
+        "source": "curated-offline-glossary",
+        "audience_guidance": "产品验收：定义用户任务和验收指标，检查检索命中率、引用正确率和无依据回答率。",
+        "language": "zh",
+        "industry_scenario": "【假设案例·Education / EdTech】在“课程资料检索与学习答疑”中，可以先检索经授权的资料、附上出处，再给答复。这只是应用示意，不代表某机构已部署。",
+        "industry_measurement": "优先验证：答题准确率、引用覆盖与教师复核；同时比较上线前基线，不预设节省金额。"
+      }
+    },
+    {
+      "id": "6-A1",
+      "category": "align",
+      "industry": "education",
+      "input": "希望学生答疑操作快一点，但不要牺牲安全或隐私",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "align",
+        "language": "zh",
+        "source_goal": "希望学生答疑操作快一点，但不要牺牲安全或隐私",
+        "audience": "product",
+        "industry": "Education / EdTech",
+        "status": "draft_for_discussion_not_approved",
+        "desired_outcome": "希望学生答疑操作快一点，但不要牺牲安全或隐私",
+        "proposed_metrics": [
+          "响应时间"
+        ],
+        "acceptance_plan": "先记录当前基线，并使用约定的实际用户操作与负载开展对照测试；阈值、测试时长与业务方确认后写入验收标准。",
+        "constraints": [
+          "权限和个人信息保护",
+          "异常时人工接管与回退",
+          "记录模型/系统成本",
+          "明确责任人与验收人"
+        ],
+        "questions": [
+          "面向哪类用户及哪项操作？",
+          "目前的基线和最大痛点是什么？",
+          "谁批准目标阈值与上线范围？"
+        ],
+        "disclaimer": "建议的测量方案，不代表用户已批准任何阈值、结果或上线计划。",
+        "source": "offline-requirements-scaffold"
+      }
+    },
+    {
+      "id": "6-A2",
+      "category": "align",
+      "industry": "education",
+      "input": "Reduce the operational cost of 学生答疑 without removing safety checks",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "align",
+        "language": "en",
+        "source_goal": "Reduce the operational cost of 学生答疑 without removing safety checks",
+        "audience": "cfo",
+        "industry": "Education / EdTech",
+        "status": "draft_for_discussion_not_approved",
+        "desired_outcome": "Reduce the operational cost of 学生答疑 without removing safety checks",
+        "proposed_metrics": [
+          "cost per successfully completed task"
+        ],
+        "acceptance_plan": "Record a baseline, evaluate with total cost including labor, infrastructure and rework, and agree thresholds and duration with the stakeholder before acceptance.",
+        "constraints": [
+          "Access and privacy",
+          "Human fallback and rollback",
+          "Capture system and review cost",
+          "Named owner and approver"
+        ],
+        "questions": [
+          "Which users and task are in scope?",
+          "What is the measured baseline?",
+          "Who approves thresholds and rollout scope?"
+        ],
+        "disclaimer": "A measurement proposal, not approved targets, results or rollout.",
+        "source": "offline-requirements-scaffold"
+      }
+    },
+    {
+      "id": "6-D",
+      "category": "decode",
+      "industry": "education",
+      "input": "我们下周先对齐学生答疑的职责分工，之后再闭环",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "decode",
+        "input": "我们下周先对齐学生答疑的职责分工，之后再闭环",
+        "matches": [
+          {
+            "phrase": "alignment",
+            "plain_english": "Reach agreement on goals and responsibilities.",
+            "plain_language": "让各方就目标、规则和分工达成一致。",
+            "possible_subtext": "可能存在口径不统一或尚未作出的决定。"
+          },
+          {
+            "phrase": "action items",
+            "plain_english": "Concrete tasks with owners and dates.",
+            "plain_language": "把讨论转成有负责人和截止时间的具体任务。",
+            "possible_subtext": "只说闭环却没有责任人与时间表，仍然无法执行。"
+          }
+        ],
+        "summary": "以下只是可能的解读，不能仅凭黑话推断发言者的真实意图。",
+        "certainty": "可能的解读，发言者动机未经证实",
+        "clarifying_question": "这件事由谁负责、何时完成、用什么指标判断效果？",
+        "source": "offline-phrasebook",
+        "industry_followup": "如何核验答题准确率、引用覆盖与教师复核？"
+      }
+    },
+    {
+      "id": "6-N",
+      "category": "encode",
+      "industry": "education",
+      "input": "昨天把学生答疑的卡顿问题修了，但还没上线，也没做压测",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "encode",
+        "source_note": "昨天把学生答疑的卡顿问题修了，但还没上线，也没做压测",
+        "executive_update": "已修复学生答疑的卡顿问题，但尚未上线，也尚未进行压力测试。",
+        "headline": "进展：已修复学生答疑的卡顿问题，但尚未上线，也尚未进行压力测试",
+        "business_relevance": "优先验证：答题准确率、引用覆盖与教师复核；同时比较上线前基线，不预设节省金额。",
+        "impact": "原始记录尚未给出可核实的量化收益。",
+        "next_step": "完成待办验证并确认上线范围；不要把测试结果写成生产收益。",
+        "risk_flags": [
+          "restricted_evidence_or_rollout"
+        ],
+        "evidence_ledger": {
+          "numeric_claims_in_source": [],
+          "new_numbers_in_output": [],
+          "independent_verification": false
+        },
+        "style": "executive",
+        "source": "offline-conservative-rewrite"
+      }
+    },
+    {
+      "id": "6-U",
+      "category": "audit-unsafe",
+      "industry": "education",
+      "input": "学生答疑尚未上线，成本变化还没有测量 -> 学生答疑已经全量上线，效率提升40%",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "学生答疑尚未上线，成本变化还没有测量",
+        "candidate": "学生答疑已经全量上线，效率提升40%",
+        "source_numbers": [],
+        "candidate_numbers": [
+          "40%"
+        ],
+        "new_numeric_claims": [
+          "40%"
+        ],
+        "risk_flags": [
+          "new_numeric_claims",
+          "unsupported_deployment_status"
+        ],
+        "status": "review_required",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "6-S",
+      "category": "audit-safe",
+      "industry": "education",
+      "input": "学生答疑尚未上线，成本变化还没有测量 -> 学生答疑尚未上线，成本变化尚未测量",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "学生答疑尚未上线，成本变化还没有测量",
+        "candidate": "学生答疑尚未上线，成本变化尚未测量",
+        "source_numbers": [],
+        "candidate_numbers": [],
+        "new_numeric_claims": [],
+        "risk_flags": [],
+        "status": "no_rule_based_flags",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "6-W",
+      "category": "empathy",
+      "industry": "education",
+      "input": "我烦死了，学生答疑还没正式上线，老板一直追问",
+      "passed": true,
+      "failure_reason": "",
+      "output": "还没正式上线就先把进度说清楚，比硬写成绩更可靠。"
+    },
+    {
+      "id": "6-Q",
+      "category": "no-forced-empathy",
+      "industry": "education",
+      "input": "修复了学生答疑",
+      "passed": true,
+      "failure_reason": "",
+      "output": null
+    },
+    {
+      "id": "7-E1",
+      "category": "explain",
+      "industry": "logistics",
+      "input": "Vector Embeddings",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "term": "Vector Embeddings",
+        "technical": "Dense numeric representations learned so related items can be compared by distance or similarity.",
+        "human": "A supermarket map that shelves 'sneakers' near 'running shoes' even when the labels use different words.",
+        "business": "Can improve semantic search and discovery; measure search relevance and time-to-answer against index cost.",
+        "caveat": "Similarity is not factual equivalence or guaranteed intent understanding.",
+        "audience": "cfo",
+        "mode": "explain",
+        "source": "curated-offline-glossary",
+        "audience_guidance": "For a CFO, compare total cost and avoided work against the current process; request evidence on search relevance and index/query operating cost.",
+        "language": "en",
+        "industry_scenario": "Hypothetical Logistics / Supply Chain example: for parcel tracking and exception dispatch, a team could retrieve semantically similar records and inspect false matches. This does not imply a live deployment.",
+        "industry_measurement": "Measure misroutes, handling time and notification accuracy against a baseline; do not assume cost savings."
+      }
+    },
+    {
+      "id": "7-E2",
+      "category": "explain",
+      "industry": "logistics",
+      "input": "RAG",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "term": "RAG",
+        "technical": "先从外部资料中检索相关内容，再把它作为上下文用于生成答案。",
+        "human": "像开卷考试。学生先翻到规定教材的相关页，再回答题目并写出处；翻错页照样可能答错。",
+        "business": "无需每次重训模型就能接入更新的业务资料，但要验证召回、引用和错答率。",
+        "caveat": "RAG 只能减少部分无依据回答，不能彻底消除幻觉。",
+        "audience": "product",
+        "mode": "explain",
+        "source": "curated-offline-glossary",
+        "audience_guidance": "产品验收：定义用户任务和验收指标，检查检索命中率、引用正确率和无依据回答率。",
+        "language": "zh",
+        "industry_scenario": "【假设案例·Logistics / Supply Chain】在“包裹状态查询与异常派单”中，可以先检索经授权的资料、附上出处，再给答复。这只是应用示意，不代表某机构已部署。",
+        "industry_measurement": "优先验证：错派率、处理时间与通知准确率；同时比较上线前基线，不预设节省金额。"
+      }
+    },
+    {
+      "id": "7-A1",
+      "category": "align",
+      "industry": "logistics",
+      "input": "希望包裹派送操作快一点，但不要牺牲安全或隐私",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "align",
+        "language": "zh",
+        "source_goal": "希望包裹派送操作快一点，但不要牺牲安全或隐私",
+        "audience": "product",
+        "industry": "Logistics / Supply Chain",
+        "status": "draft_for_discussion_not_approved",
+        "desired_outcome": "希望包裹派送操作快一点，但不要牺牲安全或隐私",
+        "proposed_metrics": [
+          "响应时间"
+        ],
+        "acceptance_plan": "先记录当前基线，并使用约定的实际用户操作与负载开展对照测试；阈值、测试时长与业务方确认后写入验收标准。",
+        "constraints": [
+          "权限和个人信息保护",
+          "异常时人工接管与回退",
+          "记录模型/系统成本",
+          "明确责任人与验收人"
+        ],
+        "questions": [
+          "面向哪类用户及哪项操作？",
+          "目前的基线和最大痛点是什么？",
+          "谁批准目标阈值与上线范围？"
+        ],
+        "disclaimer": "建议的测量方案，不代表用户已批准任何阈值、结果或上线计划。",
+        "source": "offline-requirements-scaffold"
+      }
+    },
+    {
+      "id": "7-A2",
+      "category": "align",
+      "industry": "logistics",
+      "input": "Reduce the operational cost of 包裹派送 without removing safety checks",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "align",
+        "language": "en",
+        "source_goal": "Reduce the operational cost of 包裹派送 without removing safety checks",
+        "audience": "cfo",
+        "industry": "Logistics / Supply Chain",
+        "status": "draft_for_discussion_not_approved",
+        "desired_outcome": "Reduce the operational cost of 包裹派送 without removing safety checks",
+        "proposed_metrics": [
+          "cost per successfully completed task"
+        ],
+        "acceptance_plan": "Record a baseline, evaluate with total cost including labor, infrastructure and rework, and agree thresholds and duration with the stakeholder before acceptance.",
+        "constraints": [
+          "Access and privacy",
+          "Human fallback and rollback",
+          "Capture system and review cost",
+          "Named owner and approver"
+        ],
+        "questions": [
+          "Which users and task are in scope?",
+          "What is the measured baseline?",
+          "Who approves thresholds and rollout scope?"
+        ],
+        "disclaimer": "A measurement proposal, not approved targets, results or rollout.",
+        "source": "offline-requirements-scaffold"
+      }
+    },
+    {
+      "id": "7-D",
+      "category": "decode",
+      "industry": "logistics",
+      "input": "我们下周先对齐包裹派送的职责分工，之后再闭环",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "decode",
+        "input": "我们下周先对齐包裹派送的职责分工，之后再闭环",
+        "matches": [
+          {
+            "phrase": "alignment",
+            "plain_english": "Reach agreement on goals and responsibilities.",
+            "plain_language": "让各方就目标、规则和分工达成一致。",
+            "possible_subtext": "可能存在口径不统一或尚未作出的决定。"
+          },
+          {
+            "phrase": "action items",
+            "plain_english": "Concrete tasks with owners and dates.",
+            "plain_language": "把讨论转成有负责人和截止时间的具体任务。",
+            "possible_subtext": "只说闭环却没有责任人与时间表，仍然无法执行。"
+          }
+        ],
+        "summary": "以下只是可能的解读，不能仅凭黑话推断发言者的真实意图。",
+        "certainty": "可能的解读，发言者动机未经证实",
+        "clarifying_question": "这件事由谁负责、何时完成、用什么指标判断效果？",
+        "source": "offline-phrasebook",
+        "industry_followup": "如何核验错派率、处理时间与通知准确率？"
+      }
+    },
+    {
+      "id": "7-N",
+      "category": "encode",
+      "industry": "logistics",
+      "input": "昨天把包裹派送的卡顿问题修了，但还没上线，也没做压测",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "encode",
+        "source_note": "昨天把包裹派送的卡顿问题修了，但还没上线，也没做压测",
+        "executive_update": "已修复包裹派送的卡顿问题，但尚未上线，也尚未进行压力测试。",
+        "headline": "进展：已修复包裹派送的卡顿问题，但尚未上线，也尚未进行压力测试",
+        "business_relevance": "优先验证：错派率、处理时间与通知准确率；同时比较上线前基线，不预设节省金额。",
+        "impact": "原始记录尚未给出可核实的量化收益。",
+        "next_step": "完成待办验证并确认上线范围；不要把测试结果写成生产收益。",
+        "risk_flags": [
+          "restricted_evidence_or_rollout"
+        ],
+        "evidence_ledger": {
+          "numeric_claims_in_source": [],
+          "new_numbers_in_output": [],
+          "independent_verification": false
+        },
+        "style": "executive",
+        "source": "offline-conservative-rewrite"
+      }
+    },
+    {
+      "id": "7-U",
+      "category": "audit-unsafe",
+      "industry": "logistics",
+      "input": "包裹派送尚未上线，成本变化还没有测量 -> 包裹派送已经全量上线，效率提升40%",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "包裹派送尚未上线，成本变化还没有测量",
+        "candidate": "包裹派送已经全量上线，效率提升40%",
+        "source_numbers": [],
+        "candidate_numbers": [
+          "40%"
+        ],
+        "new_numeric_claims": [
+          "40%"
+        ],
+        "risk_flags": [
+          "new_numeric_claims",
+          "unsupported_deployment_status"
+        ],
+        "status": "review_required",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "7-S",
+      "category": "audit-safe",
+      "industry": "logistics",
+      "input": "包裹派送尚未上线，成本变化还没有测量 -> 包裹派送尚未上线，成本变化尚未测量",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "包裹派送尚未上线，成本变化还没有测量",
+        "candidate": "包裹派送尚未上线，成本变化尚未测量",
+        "source_numbers": [],
+        "candidate_numbers": [],
+        "new_numeric_claims": [],
+        "risk_flags": [],
+        "status": "no_rule_based_flags",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "7-W",
+      "category": "empathy",
+      "industry": "logistics",
+      "input": "我烦死了，包裹派送还没正式上线，老板一直追问",
+      "passed": true,
+      "failure_reason": "",
+      "output": "还没正式上线就先把进度说清楚，比硬写成绩更可靠。"
+    },
+    {
+      "id": "7-Q",
+      "category": "no-forced-empathy",
+      "industry": "logistics",
+      "input": "修复了包裹派送",
+      "passed": true,
+      "failure_reason": "",
+      "output": null
+    },
+    {
+      "id": "8-E1",
+      "category": "explain",
+      "industry": "hr",
+      "input": "Vector Embeddings",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "term": "Vector Embeddings",
+        "technical": "Dense numeric representations learned so related items can be compared by distance or similarity.",
+        "human": "A supermarket map that shelves 'sneakers' near 'running shoes' even when the labels use different words.",
+        "business": "Can improve semantic search and discovery; measure search relevance and time-to-answer against index cost.",
+        "caveat": "Similarity is not factual equivalence or guaranteed intent understanding.",
+        "audience": "cfo",
+        "mode": "explain",
+        "source": "curated-offline-glossary",
+        "audience_guidance": "For a CFO, compare total cost and avoided work against the current process; request evidence on search relevance and index/query operating cost.",
+        "language": "en",
+        "industry_scenario": "Hypothetical HR / Recruiting example: for recruitment policy Q&A and candidate communication, a team could retrieve semantically similar records and inspect false matches. This does not imply a live deployment.",
+        "industry_measurement": "Measure error rate, manual review and fairness checks against a baseline; do not assume cost savings."
+      }
+    },
+    {
+      "id": "8-E2",
+      "category": "explain",
+      "industry": "hr",
+      "input": "RAG",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "term": "RAG",
+        "technical": "先从外部资料中检索相关内容，再把它作为上下文用于生成答案。",
+        "human": "像开卷考试。学生先翻到规定教材的相关页，再回答题目并写出处；翻错页照样可能答错。",
+        "business": "无需每次重训模型就能接入更新的业务资料，但要验证召回、引用和错答率。",
+        "caveat": "RAG 只能减少部分无依据回答，不能彻底消除幻觉。",
+        "audience": "product",
+        "mode": "explain",
+        "source": "curated-offline-glossary",
+        "audience_guidance": "产品验收：定义用户任务和验收指标，检查检索命中率、引用正确率和无依据回答率。",
+        "language": "zh",
+        "industry_scenario": "【假设案例·HR / Recruiting】在“招聘政策问答与候选人沟通”中，可以先检索经授权的资料、附上出处，再给答复。这只是应用示意，不代表某机构已部署。",
+        "industry_measurement": "优先验证：错误建议率、人工复核与公平性检查；同时比较上线前基线，不预设节省金额。"
+      }
+    },
+    {
+      "id": "8-A1",
+      "category": "align",
+      "industry": "hr",
+      "input": "希望候选人反馈操作快一点，但不要牺牲安全或隐私",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "align",
+        "language": "zh",
+        "source_goal": "希望候选人反馈操作快一点，但不要牺牲安全或隐私",
+        "audience": "product",
+        "industry": "HR / Recruiting",
+        "status": "draft_for_discussion_not_approved",
+        "desired_outcome": "希望候选人反馈操作快一点，但不要牺牲安全或隐私",
+        "proposed_metrics": [
+          "响应时间"
+        ],
+        "acceptance_plan": "先记录当前基线，并使用约定的实际用户操作与负载开展对照测试；阈值、测试时长与业务方确认后写入验收标准。",
+        "constraints": [
+          "权限和个人信息保护",
+          "异常时人工接管与回退",
+          "记录模型/系统成本",
+          "明确责任人与验收人"
+        ],
+        "questions": [
+          "面向哪类用户及哪项操作？",
+          "目前的基线和最大痛点是什么？",
+          "谁批准目标阈值与上线范围？"
+        ],
+        "disclaimer": "建议的测量方案，不代表用户已批准任何阈值、结果或上线计划。",
+        "source": "offline-requirements-scaffold"
+      }
+    },
+    {
+      "id": "8-A2",
+      "category": "align",
+      "industry": "hr",
+      "input": "Reduce the operational cost of 候选人反馈 without removing safety checks",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "align",
+        "language": "en",
+        "source_goal": "Reduce the operational cost of 候选人反馈 without removing safety checks",
+        "audience": "cfo",
+        "industry": "HR / Recruiting",
+        "status": "draft_for_discussion_not_approved",
+        "desired_outcome": "Reduce the operational cost of 候选人反馈 without removing safety checks",
+        "proposed_metrics": [
+          "cost per successfully completed task"
+        ],
+        "acceptance_plan": "Record a baseline, evaluate with total cost including labor, infrastructure and rework, and agree thresholds and duration with the stakeholder before acceptance.",
+        "constraints": [
+          "Access and privacy",
+          "Human fallback and rollback",
+          "Capture system and review cost",
+          "Named owner and approver"
+        ],
+        "questions": [
+          "Which users and task are in scope?",
+          "What is the measured baseline?",
+          "Who approves thresholds and rollout scope?"
+        ],
+        "disclaimer": "A measurement proposal, not approved targets, results or rollout.",
+        "source": "offline-requirements-scaffold"
+      }
+    },
+    {
+      "id": "8-D",
+      "category": "decode",
+      "industry": "hr",
+      "input": "我们下周先对齐候选人反馈的职责分工，之后再闭环",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "decode",
+        "input": "我们下周先对齐候选人反馈的职责分工，之后再闭环",
+        "matches": [
+          {
+            "phrase": "alignment",
+            "plain_english": "Reach agreement on goals and responsibilities.",
+            "plain_language": "让各方就目标、规则和分工达成一致。",
+            "possible_subtext": "可能存在口径不统一或尚未作出的决定。"
+          },
+          {
+            "phrase": "action items",
+            "plain_english": "Concrete tasks with owners and dates.",
+            "plain_language": "把讨论转成有负责人和截止时间的具体任务。",
+            "possible_subtext": "只说闭环却没有责任人与时间表，仍然无法执行。"
+          }
+        ],
+        "summary": "以下只是可能的解读，不能仅凭黑话推断发言者的真实意图。",
+        "certainty": "可能的解读，发言者动机未经证实",
+        "clarifying_question": "这件事由谁负责、何时完成、用什么指标判断效果？",
+        "source": "offline-phrasebook",
+        "industry_followup": "如何核验错误建议率、人工复核与公平性检查？"
+      }
+    },
+    {
+      "id": "8-N",
+      "category": "encode",
+      "industry": "hr",
+      "input": "昨天把候选人反馈的卡顿问题修了，但还没上线，也没做压测",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "encode",
+        "source_note": "昨天把候选人反馈的卡顿问题修了，但还没上线，也没做压测",
+        "executive_update": "已修复候选人反馈的卡顿问题，但尚未上线，也尚未进行压力测试。",
+        "headline": "进展：已修复候选人反馈的卡顿问题，但尚未上线，也尚未进行压力测试",
+        "business_relevance": "优先验证：错误建议率、人工复核与公平性检查；同时比较上线前基线，不预设节省金额。",
+        "impact": "原始记录尚未给出可核实的量化收益。",
+        "next_step": "完成待办验证并确认上线范围；不要把测试结果写成生产收益。",
+        "risk_flags": [
+          "restricted_evidence_or_rollout"
+        ],
+        "evidence_ledger": {
+          "numeric_claims_in_source": [],
+          "new_numbers_in_output": [],
+          "independent_verification": false
+        },
+        "style": "executive",
+        "source": "offline-conservative-rewrite"
+      }
+    },
+    {
+      "id": "8-U",
+      "category": "audit-unsafe",
+      "industry": "hr",
+      "input": "候选人反馈尚未上线，成本变化还没有测量 -> 候选人反馈已经全量上线，效率提升40%",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "候选人反馈尚未上线，成本变化还没有测量",
+        "candidate": "候选人反馈已经全量上线，效率提升40%",
+        "source_numbers": [],
+        "candidate_numbers": [
+          "40%"
+        ],
+        "new_numeric_claims": [
+          "40%"
+        ],
+        "risk_flags": [
+          "new_numeric_claims",
+          "unsupported_deployment_status"
+        ],
+        "status": "review_required",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "8-S",
+      "category": "audit-safe",
+      "industry": "hr",
+      "input": "候选人反馈尚未上线，成本变化还没有测量 -> 候选人反馈尚未上线，成本变化尚未测量",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "候选人反馈尚未上线，成本变化还没有测量",
+        "candidate": "候选人反馈尚未上线，成本变化尚未测量",
+        "source_numbers": [],
+        "candidate_numbers": [],
+        "new_numeric_claims": [],
+        "risk_flags": [],
+        "status": "no_rule_based_flags",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "8-W",
+      "category": "empathy",
+      "industry": "hr",
+      "input": "我烦死了，候选人反馈还没正式上线，老板一直追问",
+      "passed": true,
+      "failure_reason": "",
+      "output": "还没正式上线就先把进度说清楚，比硬写成绩更可靠。"
+    },
+    {
+      "id": "8-Q",
+      "category": "no-forced-empathy",
+      "industry": "hr",
+      "input": "修复了候选人反馈",
+      "passed": true,
+      "failure_reason": "",
+      "output": null
+    },
+    {
+      "id": "9-E1",
+      "category": "explain",
+      "industry": "government",
+      "input": "Vector Embeddings",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "term": "Vector Embeddings",
+        "technical": "Dense numeric representations learned so related items can be compared by distance or similarity.",
+        "human": "A supermarket map that shelves 'sneakers' near 'running shoes' even when the labels use different words.",
+        "business": "Can improve semantic search and discovery; measure search relevance and time-to-answer against index cost.",
+        "caveat": "Similarity is not factual equivalence or guaranteed intent understanding.",
+        "audience": "cfo",
+        "mode": "explain",
+        "source": "curated-offline-glossary",
+        "audience_guidance": "For a CFO, compare total cost and avoided work against the current process; request evidence on search relevance and index/query operating cost.",
+        "language": "en",
+        "industry_scenario": "Hypothetical Government / Public Service example: for public-service guidance and case routing, a team could retrieve semantically similar records and inspect false matches. This does not imply a live deployment.",
+        "industry_measurement": "Measure misguidance, traceability and appeal path against a baseline; do not assume cost savings."
+      }
+    },
+    {
+      "id": "9-E2",
+      "category": "explain",
+      "industry": "government",
+      "input": "RAG",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "term": "RAG",
+        "technical": "先从外部资料中检索相关内容，再把它作为上下文用于生成答案。",
+        "human": "像开卷考试。学生先翻到规定教材的相关页，再回答题目并写出处；翻错页照样可能答错。",
+        "business": "无需每次重训模型就能接入更新的业务资料，但要验证召回、引用和错答率。",
+        "caveat": "RAG 只能减少部分无依据回答，不能彻底消除幻觉。",
+        "audience": "product",
+        "mode": "explain",
+        "source": "curated-offline-glossary",
+        "audience_guidance": "产品验收：定义用户任务和验收指标，检查检索命中率、引用正确率和无依据回答率。",
+        "language": "zh",
+        "industry_scenario": "【假设案例·Government / Public Service】在“政务事项指引与工单分流”中，可以先检索经授权的资料、附上出处，再给答复。这只是应用示意，不代表某机构已部署。",
+        "industry_measurement": "优先验证：错误指引率、可追溯性与申诉路径；同时比较上线前基线，不预设节省金额。"
+      }
+    },
+    {
+      "id": "9-A1",
+      "category": "align",
+      "industry": "government",
+      "input": "希望事项办理操作快一点，但不要牺牲安全或隐私",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "align",
+        "language": "zh",
+        "source_goal": "希望事项办理操作快一点，但不要牺牲安全或隐私",
+        "audience": "product",
+        "industry": "Government / Public Service",
+        "status": "draft_for_discussion_not_approved",
+        "desired_outcome": "希望事项办理操作快一点，但不要牺牲安全或隐私",
+        "proposed_metrics": [
+          "响应时间"
+        ],
+        "acceptance_plan": "先记录当前基线，并使用约定的实际用户操作与负载开展对照测试；阈值、测试时长与业务方确认后写入验收标准。",
+        "constraints": [
+          "权限和个人信息保护",
+          "异常时人工接管与回退",
+          "记录模型/系统成本",
+          "明确责任人与验收人"
+        ],
+        "questions": [
+          "面向哪类用户及哪项操作？",
+          "目前的基线和最大痛点是什么？",
+          "谁批准目标阈值与上线范围？"
+        ],
+        "disclaimer": "建议的测量方案，不代表用户已批准任何阈值、结果或上线计划。",
+        "source": "offline-requirements-scaffold"
+      }
+    },
+    {
+      "id": "9-A2",
+      "category": "align",
+      "industry": "government",
+      "input": "Reduce the operational cost of 事项办理 without removing safety checks",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "align",
+        "language": "en",
+        "source_goal": "Reduce the operational cost of 事项办理 without removing safety checks",
+        "audience": "cfo",
+        "industry": "Government / Public Service",
+        "status": "draft_for_discussion_not_approved",
+        "desired_outcome": "Reduce the operational cost of 事项办理 without removing safety checks",
+        "proposed_metrics": [
+          "cost per successfully completed task"
+        ],
+        "acceptance_plan": "Record a baseline, evaluate with total cost including labor, infrastructure and rework, and agree thresholds and duration with the stakeholder before acceptance.",
+        "constraints": [
+          "Access and privacy",
+          "Human fallback and rollback",
+          "Capture system and review cost",
+          "Named owner and approver"
+        ],
+        "questions": [
+          "Which users and task are in scope?",
+          "What is the measured baseline?",
+          "Who approves thresholds and rollout scope?"
+        ],
+        "disclaimer": "A measurement proposal, not approved targets, results or rollout.",
+        "source": "offline-requirements-scaffold"
+      }
+    },
+    {
+      "id": "9-D",
+      "category": "decode",
+      "industry": "government",
+      "input": "我们下周先对齐事项办理的职责分工，之后再闭环",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "decode",
+        "input": "我们下周先对齐事项办理的职责分工，之后再闭环",
+        "matches": [
+          {
+            "phrase": "alignment",
+            "plain_english": "Reach agreement on goals and responsibilities.",
+            "plain_language": "让各方就目标、规则和分工达成一致。",
+            "possible_subtext": "可能存在口径不统一或尚未作出的决定。"
+          },
+          {
+            "phrase": "action items",
+            "plain_english": "Concrete tasks with owners and dates.",
+            "plain_language": "把讨论转成有负责人和截止时间的具体任务。",
+            "possible_subtext": "只说闭环却没有责任人与时间表，仍然无法执行。"
+          }
+        ],
+        "summary": "以下只是可能的解读，不能仅凭黑话推断发言者的真实意图。",
+        "certainty": "可能的解读，发言者动机未经证实",
+        "clarifying_question": "这件事由谁负责、何时完成、用什么指标判断效果？",
+        "source": "offline-phrasebook",
+        "industry_followup": "如何核验错误指引率、可追溯性与申诉路径？"
+      }
+    },
+    {
+      "id": "9-N",
+      "category": "encode",
+      "industry": "government",
+      "input": "昨天把事项办理的卡顿问题修了，但还没上线，也没做压测",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "encode",
+        "source_note": "昨天把事项办理的卡顿问题修了，但还没上线，也没做压测",
+        "executive_update": "已修复事项办理的卡顿问题，但尚未上线，也尚未进行压力测试。",
+        "headline": "进展：已修复事项办理的卡顿问题，但尚未上线，也尚未进行压力测试",
+        "business_relevance": "优先验证：错误指引率、可追溯性与申诉路径；同时比较上线前基线，不预设节省金额。",
+        "impact": "原始记录尚未给出可核实的量化收益。",
+        "next_step": "完成待办验证并确认上线范围；不要把测试结果写成生产收益。",
+        "risk_flags": [
+          "restricted_evidence_or_rollout"
+        ],
+        "evidence_ledger": {
+          "numeric_claims_in_source": [],
+          "new_numbers_in_output": [],
+          "independent_verification": false
+        },
+        "style": "executive",
+        "source": "offline-conservative-rewrite"
+      }
+    },
+    {
+      "id": "9-U",
+      "category": "audit-unsafe",
+      "industry": "government",
+      "input": "事项办理尚未上线，成本变化还没有测量 -> 事项办理已经全量上线，效率提升40%",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "事项办理尚未上线，成本变化还没有测量",
+        "candidate": "事项办理已经全量上线，效率提升40%",
+        "source_numbers": [],
+        "candidate_numbers": [
+          "40%"
+        ],
+        "new_numeric_claims": [
+          "40%"
+        ],
+        "risk_flags": [
+          "new_numeric_claims",
+          "unsupported_deployment_status"
+        ],
+        "status": "review_required",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "9-S",
+      "category": "audit-safe",
+      "industry": "government",
+      "input": "事项办理尚未上线，成本变化还没有测量 -> 事项办理尚未上线，成本变化尚未测量",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "事项办理尚未上线，成本变化还没有测量",
+        "candidate": "事项办理尚未上线，成本变化尚未测量",
+        "source_numbers": [],
+        "candidate_numbers": [],
+        "new_numeric_claims": [],
+        "risk_flags": [],
+        "status": "no_rule_based_flags",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "9-W",
+      "category": "empathy",
+      "industry": "government",
+      "input": "我烦死了，事项办理还没正式上线，老板一直追问",
+      "passed": true,
+      "failure_reason": "",
+      "output": "还没正式上线就先把进度说清楚，比硬写成绩更可靠。"
+    },
+    {
+      "id": "9-Q",
+      "category": "no-forced-empathy",
+      "industry": "government",
+      "input": "修复了事项办理",
+      "passed": true,
+      "failure_reason": "",
+      "output": null
+    },
+    {
+      "id": "10-E1",
+      "category": "explain",
+      "industry": "retail",
+      "input": "Vector Embeddings",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "term": "Vector Embeddings",
+        "technical": "Dense numeric representations learned so related items can be compared by distance or similarity.",
+        "human": "A supermarket map that shelves 'sneakers' near 'running shoes' even when the labels use different words.",
+        "business": "Can improve semantic search and discovery; measure search relevance and time-to-answer against index cost.",
+        "caveat": "Similarity is not factual equivalence or guaranteed intent understanding.",
+        "audience": "cfo",
+        "mode": "explain",
+        "source": "curated-offline-glossary",
+        "audience_guidance": "For a CFO, compare total cost and avoided work against the current process; request evidence on search relevance and index/query operating cost.",
+        "language": "en",
+        "industry_scenario": "Hypothetical Retail / Restaurants example: for store inventory and customer support, a team could retrieve semantically similar records and inspect false matches. This does not imply a live deployment.",
+        "industry_measurement": "Measure stock accuracy, misleading replies and handling time against a baseline; do not assume cost savings."
+      }
+    },
+    {
+      "id": "10-E2",
+      "category": "explain",
+      "industry": "retail",
+      "input": "RAG",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "term": "RAG",
+        "technical": "先从外部资料中检索相关内容，再把它作为上下文用于生成答案。",
+        "human": "像开卷考试。学生先翻到规定教材的相关页，再回答题目并写出处；翻错页照样可能答错。",
+        "business": "无需每次重训模型就能接入更新的业务资料，但要验证召回、引用和错答率。",
+        "caveat": "RAG 只能减少部分无依据回答，不能彻底消除幻觉。",
+        "audience": "product",
+        "mode": "explain",
+        "source": "curated-offline-glossary",
+        "audience_guidance": "产品验收：定义用户任务和验收指标，检查检索命中率、引用正确率和无依据回答率。",
+        "language": "zh",
+        "industry_scenario": "【假设案例·Retail / Restaurants】在“门店库存查询与客服支持”中，可以先检索经授权的资料、附上出处，再给答复。这只是应用示意，不代表某机构已部署。",
+        "industry_measurement": "优先验证：库存准确率、误导回答与处理时间；同时比较上线前基线，不预设节省金额。"
+      }
+    },
+    {
+      "id": "10-A1",
+      "category": "align",
+      "industry": "retail",
+      "input": "希望门店库存操作快一点，但不要牺牲安全或隐私",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "align",
+        "language": "zh",
+        "source_goal": "希望门店库存操作快一点，但不要牺牲安全或隐私",
+        "audience": "product",
+        "industry": "Retail / Restaurants",
+        "status": "draft_for_discussion_not_approved",
+        "desired_outcome": "希望门店库存操作快一点，但不要牺牲安全或隐私",
+        "proposed_metrics": [
+          "响应时间"
+        ],
+        "acceptance_plan": "先记录当前基线，并使用约定的实际用户操作与负载开展对照测试；阈值、测试时长与业务方确认后写入验收标准。",
+        "constraints": [
+          "权限和个人信息保护",
+          "异常时人工接管与回退",
+          "记录模型/系统成本",
+          "明确责任人与验收人"
+        ],
+        "questions": [
+          "面向哪类用户及哪项操作？",
+          "目前的基线和最大痛点是什么？",
+          "谁批准目标阈值与上线范围？"
+        ],
+        "disclaimer": "建议的测量方案，不代表用户已批准任何阈值、结果或上线计划。",
+        "source": "offline-requirements-scaffold"
+      }
+    },
+    {
+      "id": "10-A2",
+      "category": "align",
+      "industry": "retail",
+      "input": "Reduce the operational cost of 门店库存 without removing safety checks",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "align",
+        "language": "en",
+        "source_goal": "Reduce the operational cost of 门店库存 without removing safety checks",
+        "audience": "cfo",
+        "industry": "Retail / Restaurants",
+        "status": "draft_for_discussion_not_approved",
+        "desired_outcome": "Reduce the operational cost of 门店库存 without removing safety checks",
+        "proposed_metrics": [
+          "cost per successfully completed task"
+        ],
+        "acceptance_plan": "Record a baseline, evaluate with total cost including labor, infrastructure and rework, and agree thresholds and duration with the stakeholder before acceptance.",
+        "constraints": [
+          "Access and privacy",
+          "Human fallback and rollback",
+          "Capture system and review cost",
+          "Named owner and approver"
+        ],
+        "questions": [
+          "Which users and task are in scope?",
+          "What is the measured baseline?",
+          "Who approves thresholds and rollout scope?"
+        ],
+        "disclaimer": "A measurement proposal, not approved targets, results or rollout.",
+        "source": "offline-requirements-scaffold"
+      }
+    },
+    {
+      "id": "10-D",
+      "category": "decode",
+      "industry": "retail",
+      "input": "我们下周先对齐门店库存的职责分工，之后再闭环",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "decode",
+        "input": "我们下周先对齐门店库存的职责分工，之后再闭环",
+        "matches": [
+          {
+            "phrase": "alignment",
+            "plain_english": "Reach agreement on goals and responsibilities.",
+            "plain_language": "让各方就目标、规则和分工达成一致。",
+            "possible_subtext": "可能存在口径不统一或尚未作出的决定。"
+          },
+          {
+            "phrase": "action items",
+            "plain_english": "Concrete tasks with owners and dates.",
+            "plain_language": "把讨论转成有负责人和截止时间的具体任务。",
+            "possible_subtext": "只说闭环却没有责任人与时间表，仍然无法执行。"
+          }
+        ],
+        "summary": "以下只是可能的解读，不能仅凭黑话推断发言者的真实意图。",
+        "certainty": "可能的解读，发言者动机未经证实",
+        "clarifying_question": "这件事由谁负责、何时完成、用什么指标判断效果？",
+        "source": "offline-phrasebook",
+        "industry_followup": "如何核验库存准确率、误导回答与处理时间？"
+      }
+    },
+    {
+      "id": "10-N",
+      "category": "encode",
+      "industry": "retail",
+      "input": "昨天把门店库存的卡顿问题修了，但还没上线，也没做压测",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "encode",
+        "source_note": "昨天把门店库存的卡顿问题修了，但还没上线，也没做压测",
+        "executive_update": "已修复门店库存的卡顿问题，但尚未上线，也尚未进行压力测试。",
+        "headline": "进展：已修复门店库存的卡顿问题，但尚未上线，也尚未进行压力测试",
+        "business_relevance": "优先验证：库存准确率、误导回答与处理时间；同时比较上线前基线，不预设节省金额。",
+        "impact": "原始记录尚未给出可核实的量化收益。",
+        "next_step": "完成待办验证并确认上线范围；不要把测试结果写成生产收益。",
+        "risk_flags": [
+          "restricted_evidence_or_rollout"
+        ],
+        "evidence_ledger": {
+          "numeric_claims_in_source": [],
+          "new_numbers_in_output": [],
+          "independent_verification": false
+        },
+        "style": "executive",
+        "source": "offline-conservative-rewrite"
+      }
+    },
+    {
+      "id": "10-U",
+      "category": "audit-unsafe",
+      "industry": "retail",
+      "input": "门店库存尚未上线，成本变化还没有测量 -> 门店库存已经全量上线，效率提升40%",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "门店库存尚未上线，成本变化还没有测量",
+        "candidate": "门店库存已经全量上线，效率提升40%",
+        "source_numbers": [],
+        "candidate_numbers": [
+          "40%"
+        ],
+        "new_numeric_claims": [
+          "40%"
+        ],
+        "risk_flags": [
+          "new_numeric_claims",
+          "unsupported_deployment_status"
+        ],
+        "status": "review_required",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "10-S",
+      "category": "audit-safe",
+      "industry": "retail",
+      "input": "门店库存尚未上线，成本变化还没有测量 -> 门店库存尚未上线，成本变化尚未测量",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "门店库存尚未上线，成本变化还没有测量",
+        "candidate": "门店库存尚未上线，成本变化尚未测量",
+        "source_numbers": [],
+        "candidate_numbers": [],
+        "new_numeric_claims": [],
+        "risk_flags": [],
+        "status": "no_rule_based_flags",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "10-W",
+      "category": "empathy",
+      "industry": "retail",
+      "input": "我烦死了，门店库存还没正式上线，老板一直追问",
+      "passed": true,
+      "failure_reason": "",
+      "output": "还没正式上线就先把进度说清楚，比硬写成绩更可靠。"
+    },
+    {
+      "id": "10-Q",
+      "category": "no-forced-empathy",
+      "industry": "retail",
+      "input": "修复了门店库存",
+      "passed": true,
+      "failure_reason": "",
+      "output": null
+    },
+    {
+      "id": "11-E1",
+      "category": "explain",
+      "industry": "media",
+      "input": "Vector Embeddings",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "term": "Vector Embeddings",
+        "technical": "Dense numeric representations learned so related items can be compared by distance or similarity.",
+        "human": "A supermarket map that shelves 'sneakers' near 'running shoes' even when the labels use different words.",
+        "business": "Can improve semantic search and discovery; measure search relevance and time-to-answer against index cost.",
+        "caveat": "Similarity is not factual equivalence or guaranteed intent understanding.",
+        "audience": "cfo",
+        "mode": "explain",
+        "source": "curated-offline-glossary",
+        "audience_guidance": "For a CFO, compare total cost and avoided work against the current process; request evidence on search relevance and index/query operating cost.",
+        "language": "en",
+        "industry_scenario": "Hypothetical Media / Publishing example: for editorial archive and rights lookup, a team could retrieve semantically similar records and inspect false matches. This does not imply a live deployment.",
+        "industry_measurement": "Measure search relevance, rights checks and editorial time against a baseline; do not assume cost savings."
+      }
+    },
+    {
+      "id": "11-E2",
+      "category": "explain",
+      "industry": "media",
+      "input": "RAG",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "term": "RAG",
+        "technical": "先从外部资料中检索相关内容，再把它作为上下文用于生成答案。",
+        "human": "像开卷考试。学生先翻到规定教材的相关页，再回答题目并写出处；翻错页照样可能答错。",
+        "business": "无需每次重训模型就能接入更新的业务资料，但要验证召回、引用和错答率。",
+        "caveat": "RAG 只能减少部分无依据回答，不能彻底消除幻觉。",
+        "audience": "product",
+        "mode": "explain",
+        "source": "curated-offline-glossary",
+        "audience_guidance": "产品验收：定义用户任务和验收指标，检查检索命中率、引用正确率和无依据回答率。",
+        "language": "zh",
+        "industry_scenario": "【假设案例·Media / Publishing】在“内容归档与版权信息查询”中，可以先检索经授权的资料、附上出处，再给答复。这只是应用示意，不代表某机构已部署。",
+        "industry_measurement": "优先验证：检索准确率、版权核验与人工编辑时间；同时比较上线前基线，不预设节省金额。"
+      }
+    },
+    {
+      "id": "11-A1",
+      "category": "align",
+      "industry": "media",
+      "input": "希望内容检索操作快一点，但不要牺牲安全或隐私",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "align",
+        "language": "zh",
+        "source_goal": "希望内容检索操作快一点，但不要牺牲安全或隐私",
+        "audience": "product",
+        "industry": "Media / Publishing",
+        "status": "draft_for_discussion_not_approved",
+        "desired_outcome": "希望内容检索操作快一点，但不要牺牲安全或隐私",
+        "proposed_metrics": [
+          "响应时间"
+        ],
+        "acceptance_plan": "先记录当前基线，并使用约定的实际用户操作与负载开展对照测试；阈值、测试时长与业务方确认后写入验收标准。",
+        "constraints": [
+          "权限和个人信息保护",
+          "异常时人工接管与回退",
+          "记录模型/系统成本",
+          "明确责任人与验收人"
+        ],
+        "questions": [
+          "面向哪类用户及哪项操作？",
+          "目前的基线和最大痛点是什么？",
+          "谁批准目标阈值与上线范围？"
+        ],
+        "disclaimer": "建议的测量方案，不代表用户已批准任何阈值、结果或上线计划。",
+        "source": "offline-requirements-scaffold"
+      }
+    },
+    {
+      "id": "11-A2",
+      "category": "align",
+      "industry": "media",
+      "input": "Reduce the operational cost of 内容检索 without removing safety checks",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "align",
+        "language": "en",
+        "source_goal": "Reduce the operational cost of 内容检索 without removing safety checks",
+        "audience": "cfo",
+        "industry": "Media / Publishing",
+        "status": "draft_for_discussion_not_approved",
+        "desired_outcome": "Reduce the operational cost of 内容检索 without removing safety checks",
+        "proposed_metrics": [
+          "cost per successfully completed task"
+        ],
+        "acceptance_plan": "Record a baseline, evaluate with total cost including labor, infrastructure and rework, and agree thresholds and duration with the stakeholder before acceptance.",
+        "constraints": [
+          "Access and privacy",
+          "Human fallback and rollback",
+          "Capture system and review cost",
+          "Named owner and approver"
+        ],
+        "questions": [
+          "Which users and task are in scope?",
+          "What is the measured baseline?",
+          "Who approves thresholds and rollout scope?"
+        ],
+        "disclaimer": "A measurement proposal, not approved targets, results or rollout.",
+        "source": "offline-requirements-scaffold"
+      }
+    },
+    {
+      "id": "11-D",
+      "category": "decode",
+      "industry": "media",
+      "input": "我们下周先对齐内容检索的职责分工，之后再闭环",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "decode",
+        "input": "我们下周先对齐内容检索的职责分工，之后再闭环",
+        "matches": [
+          {
+            "phrase": "alignment",
+            "plain_english": "Reach agreement on goals and responsibilities.",
+            "plain_language": "让各方就目标、规则和分工达成一致。",
+            "possible_subtext": "可能存在口径不统一或尚未作出的决定。"
+          },
+          {
+            "phrase": "action items",
+            "plain_english": "Concrete tasks with owners and dates.",
+            "plain_language": "把讨论转成有负责人和截止时间的具体任务。",
+            "possible_subtext": "只说闭环却没有责任人与时间表，仍然无法执行。"
+          }
+        ],
+        "summary": "以下只是可能的解读，不能仅凭黑话推断发言者的真实意图。",
+        "certainty": "可能的解读，发言者动机未经证实",
+        "clarifying_question": "这件事由谁负责、何时完成、用什么指标判断效果？",
+        "source": "offline-phrasebook",
+        "industry_followup": "如何核验检索准确率、版权核验与人工编辑时间？"
+      }
+    },
+    {
+      "id": "11-N",
+      "category": "encode",
+      "industry": "media",
+      "input": "昨天把内容检索的卡顿问题修了，但还没上线，也没做压测",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "encode",
+        "source_note": "昨天把内容检索的卡顿问题修了，但还没上线，也没做压测",
+        "executive_update": "已修复内容检索的卡顿问题，但尚未上线，也尚未进行压力测试。",
+        "headline": "进展：已修复内容检索的卡顿问题，但尚未上线，也尚未进行压力测试",
+        "business_relevance": "优先验证：检索准确率、版权核验与人工编辑时间；同时比较上线前基线，不预设节省金额。",
+        "impact": "原始记录尚未给出可核实的量化收益。",
+        "next_step": "完成待办验证并确认上线范围；不要把测试结果写成生产收益。",
+        "risk_flags": [
+          "restricted_evidence_or_rollout"
+        ],
+        "evidence_ledger": {
+          "numeric_claims_in_source": [],
+          "new_numbers_in_output": [],
+          "independent_verification": false
+        },
+        "style": "executive",
+        "source": "offline-conservative-rewrite"
+      }
+    },
+    {
+      "id": "11-U",
+      "category": "audit-unsafe",
+      "industry": "media",
+      "input": "内容检索尚未上线，成本变化还没有测量 -> 内容检索已经全量上线，效率提升40%",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "内容检索尚未上线，成本变化还没有测量",
+        "candidate": "内容检索已经全量上线，效率提升40%",
+        "source_numbers": [],
+        "candidate_numbers": [
+          "40%"
+        ],
+        "new_numeric_claims": [
+          "40%"
+        ],
+        "risk_flags": [
+          "new_numeric_claims",
+          "unsupported_deployment_status"
+        ],
+        "status": "review_required",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "11-S",
+      "category": "audit-safe",
+      "industry": "media",
+      "input": "内容检索尚未上线，成本变化还没有测量 -> 内容检索尚未上线，成本变化尚未测量",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "内容检索尚未上线，成本变化还没有测量",
+        "candidate": "内容检索尚未上线，成本变化尚未测量",
+        "source_numbers": [],
+        "candidate_numbers": [],
+        "new_numeric_claims": [],
+        "risk_flags": [],
+        "status": "no_rule_based_flags",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "11-W",
+      "category": "empathy",
+      "industry": "media",
+      "input": "我烦死了，内容检索还没正式上线，老板一直追问",
+      "passed": true,
+      "failure_reason": "",
+      "output": "还没正式上线就先把进度说清楚，比硬写成绩更可靠。"
+    },
+    {
+      "id": "11-Q",
+      "category": "no-forced-empathy",
+      "industry": "media",
+      "input": "修复了内容检索",
+      "passed": true,
+      "failure_reason": "",
+      "output": null
+    },
+    {
+      "id": "12-E1",
+      "category": "explain",
+      "industry": "security",
+      "input": "Vector Embeddings",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "term": "Vector Embeddings",
+        "technical": "Dense numeric representations learned so related items can be compared by distance or similarity.",
+        "human": "A supermarket map that shelves 'sneakers' near 'running shoes' even when the labels use different words.",
+        "business": "Can improve semantic search and discovery; measure search relevance and time-to-answer against index cost.",
+        "caveat": "Similarity is not factual equivalence or guaranteed intent understanding.",
+        "audience": "cfo",
+        "mode": "explain",
+        "source": "curated-offline-glossary",
+        "audience_guidance": "For a CFO, compare total cost and avoided work against the current process; request evidence on search relevance and index/query operating cost.",
+        "language": "en",
+        "industry_scenario": "Hypothetical Cybersecurity / IT example: for alert triage and incident response, a team could retrieve semantically similar records and inspect false matches. This does not imply a live deployment.",
+        "industry_measurement": "Measure false negatives, false positives and approvals against a baseline; do not assume cost savings."
+      }
+    },
+    {
+      "id": "12-E2",
+      "category": "explain",
+      "industry": "security",
+      "input": "RAG",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "term": "RAG",
+        "technical": "先从外部资料中检索相关内容，再把它作为上下文用于生成答案。",
+        "human": "像开卷考试。学生先翻到规定教材的相关页，再回答题目并写出处；翻错页照样可能答错。",
+        "business": "无需每次重训模型就能接入更新的业务资料，但要验证召回、引用和错答率。",
+        "caveat": "RAG 只能减少部分无依据回答，不能彻底消除幻觉。",
+        "audience": "product",
+        "mode": "explain",
+        "source": "curated-offline-glossary",
+        "audience_guidance": "产品验收：定义用户任务和验收指标，检查检索命中率、引用正确率和无依据回答率。",
+        "language": "zh",
+        "industry_scenario": "【假设案例·Cybersecurity / IT】在“告警归类与事件排查”中，可以先检索经授权的资料、附上出处，再给答复。这只是应用示意，不代表某机构已部署。",
+        "industry_measurement": "优先验证：漏报率、误报率与人工审批；同时比较上线前基线，不预设节省金额。"
+      }
+    },
+    {
+      "id": "12-A1",
+      "category": "align",
+      "industry": "security",
+      "input": "希望告警复核操作快一点，但不要牺牲安全或隐私",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "align",
+        "language": "zh",
+        "source_goal": "希望告警复核操作快一点，但不要牺牲安全或隐私",
+        "audience": "product",
+        "industry": "Cybersecurity / IT",
+        "status": "draft_for_discussion_not_approved",
+        "desired_outcome": "希望告警复核操作快一点，但不要牺牲安全或隐私",
+        "proposed_metrics": [
+          "响应时间"
+        ],
+        "acceptance_plan": "先记录当前基线，并使用约定的实际用户操作与负载开展对照测试；阈值、测试时长与业务方确认后写入验收标准。",
+        "constraints": [
+          "权限和个人信息保护",
+          "异常时人工接管与回退",
+          "记录模型/系统成本",
+          "明确责任人与验收人"
+        ],
+        "questions": [
+          "面向哪类用户及哪项操作？",
+          "目前的基线和最大痛点是什么？",
+          "谁批准目标阈值与上线范围？"
+        ],
+        "disclaimer": "建议的测量方案，不代表用户已批准任何阈值、结果或上线计划。",
+        "source": "offline-requirements-scaffold"
+      }
+    },
+    {
+      "id": "12-A2",
+      "category": "align",
+      "industry": "security",
+      "input": "Reduce the operational cost of 告警复核 without removing safety checks",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "align",
+        "language": "en",
+        "source_goal": "Reduce the operational cost of 告警复核 without removing safety checks",
+        "audience": "cfo",
+        "industry": "Cybersecurity / IT",
+        "status": "draft_for_discussion_not_approved",
+        "desired_outcome": "Reduce the operational cost of 告警复核 without removing safety checks",
+        "proposed_metrics": [
+          "cost per successfully completed task"
+        ],
+        "acceptance_plan": "Record a baseline, evaluate with total cost including labor, infrastructure and rework, and agree thresholds and duration with the stakeholder before acceptance.",
+        "constraints": [
+          "Access and privacy",
+          "Human fallback and rollback",
+          "Capture system and review cost",
+          "Named owner and approver"
+        ],
+        "questions": [
+          "Which users and task are in scope?",
+          "What is the measured baseline?",
+          "Who approves thresholds and rollout scope?"
+        ],
+        "disclaimer": "A measurement proposal, not approved targets, results or rollout.",
+        "source": "offline-requirements-scaffold"
+      }
+    },
+    {
+      "id": "12-D",
+      "category": "decode",
+      "industry": "security",
+      "input": "我们下周先对齐告警复核的职责分工，之后再闭环",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "decode",
+        "input": "我们下周先对齐告警复核的职责分工，之后再闭环",
+        "matches": [
+          {
+            "phrase": "alignment",
+            "plain_english": "Reach agreement on goals and responsibilities.",
+            "plain_language": "让各方就目标、规则和分工达成一致。",
+            "possible_subtext": "可能存在口径不统一或尚未作出的决定。"
+          },
+          {
+            "phrase": "action items",
+            "plain_english": "Concrete tasks with owners and dates.",
+            "plain_language": "把讨论转成有负责人和截止时间的具体任务。",
+            "possible_subtext": "只说闭环却没有责任人与时间表，仍然无法执行。"
+          }
+        ],
+        "summary": "以下只是可能的解读，不能仅凭黑话推断发言者的真实意图。",
+        "certainty": "可能的解读，发言者动机未经证实",
+        "clarifying_question": "这件事由谁负责、何时完成、用什么指标判断效果？",
+        "source": "offline-phrasebook",
+        "industry_followup": "如何核验漏报率、误报率与人工审批？"
+      }
+    },
+    {
+      "id": "12-N",
+      "category": "encode",
+      "industry": "security",
+      "input": "昨天把告警复核的卡顿问题修了，但还没上线，也没做压测",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "encode",
+        "source_note": "昨天把告警复核的卡顿问题修了，但还没上线，也没做压测",
+        "executive_update": "已修复告警复核的卡顿问题，但尚未上线，也尚未进行压力测试。",
+        "headline": "进展：已修复告警复核的卡顿问题，但尚未上线，也尚未进行压力测试",
+        "business_relevance": "优先验证：漏报率、误报率与人工审批；同时比较上线前基线，不预设节省金额。",
+        "impact": "原始记录尚未给出可核实的量化收益。",
+        "next_step": "完成待办验证并确认上线范围；不要把测试结果写成生产收益。",
+        "risk_flags": [
+          "restricted_evidence_or_rollout"
+        ],
+        "evidence_ledger": {
+          "numeric_claims_in_source": [],
+          "new_numbers_in_output": [],
+          "independent_verification": false
+        },
+        "style": "executive",
+        "source": "offline-conservative-rewrite"
+      }
+    },
+    {
+      "id": "12-U",
+      "category": "audit-unsafe",
+      "industry": "security",
+      "input": "告警复核尚未上线，成本变化还没有测量 -> 告警复核已经全量上线，效率提升40%",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "告警复核尚未上线，成本变化还没有测量",
+        "candidate": "告警复核已经全量上线，效率提升40%",
+        "source_numbers": [],
+        "candidate_numbers": [
+          "40%"
+        ],
+        "new_numeric_claims": [
+          "40%"
+        ],
+        "risk_flags": [
+          "new_numeric_claims",
+          "unsupported_deployment_status"
+        ],
+        "status": "review_required",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "12-S",
+      "category": "audit-safe",
+      "industry": "security",
+      "input": "告警复核尚未上线，成本变化还没有测量 -> 告警复核尚未上线，成本变化尚未测量",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "告警复核尚未上线，成本变化还没有测量",
+        "candidate": "告警复核尚未上线，成本变化尚未测量",
+        "source_numbers": [],
+        "candidate_numbers": [],
+        "new_numeric_claims": [],
+        "risk_flags": [],
+        "status": "no_rule_based_flags",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "12-W",
+      "category": "empathy",
+      "industry": "security",
+      "input": "我烦死了，告警复核还没正式上线，老板一直追问",
+      "passed": true,
+      "failure_reason": "",
+      "output": "还没正式上线就先把进度说清楚，比硬写成绩更可靠。"
+    },
+    {
+      "id": "12-Q",
+      "category": "no-forced-empathy",
+      "industry": "security",
+      "input": "修复了告警复核",
+      "passed": true,
+      "failure_reason": "",
+      "output": null
+    },
+    {
+      "id": "13-E1",
+      "category": "explain",
+      "industry": "gaming",
+      "input": "Vector Embeddings",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "term": "Vector Embeddings",
+        "technical": "Dense numeric representations learned so related items can be compared by distance or similarity.",
+        "human": "A supermarket map that shelves 'sneakers' near 'running shoes' even when the labels use different words.",
+        "business": "Can improve semantic search and discovery; measure search relevance and time-to-answer against index cost.",
+        "caveat": "Similarity is not factual equivalence or guaranteed intent understanding.",
+        "audience": "cfo",
+        "mode": "explain",
+        "source": "curated-offline-glossary",
+        "audience_guidance": "For a CFO, compare total cost and avoided work against the current process; request evidence on search relevance and index/query operating cost.",
+        "language": "en",
+        "industry_scenario": "Hypothetical Gaming / Entertainment example: for player support and feedback routing, a team could retrieve semantically similar records and inspect false matches. This does not imply a live deployment.",
+        "industry_measurement": "Measure misroutes, reply quality and latency against a baseline; do not assume cost savings."
+      }
+    },
+    {
+      "id": "13-E2",
+      "category": "explain",
+      "industry": "gaming",
+      "input": "RAG",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "term": "RAG",
+        "technical": "先从外部资料中检索相关内容，再把它作为上下文用于生成答案。",
+        "human": "像开卷考试。学生先翻到规定教材的相关页，再回答题目并写出处；翻错页照样可能答错。",
+        "business": "无需每次重训模型就能接入更新的业务资料，但要验证召回、引用和错答率。",
+        "caveat": "RAG 只能减少部分无依据回答，不能彻底消除幻觉。",
+        "audience": "product",
+        "mode": "explain",
+        "source": "curated-offline-glossary",
+        "audience_guidance": "产品验收：定义用户任务和验收指标，检查检索命中率、引用正确率和无依据回答率。",
+        "language": "zh",
+        "industry_scenario": "【假设案例·Gaming / Entertainment】在“游戏客服与玩家反馈归类”中，可以先检索经授权的资料、附上出处，再给答复。这只是应用示意，不代表某机构已部署。",
+        "industry_measurement": "优先验证：误分流率、答复质量与延迟；同时比较上线前基线，不预设节省金额。"
+      }
+    },
+    {
+      "id": "13-A1",
+      "category": "align",
+      "industry": "gaming",
+      "input": "希望玩家登录操作快一点，但不要牺牲安全或隐私",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "align",
+        "language": "zh",
+        "source_goal": "希望玩家登录操作快一点，但不要牺牲安全或隐私",
+        "audience": "product",
+        "industry": "Gaming / Entertainment",
+        "status": "draft_for_discussion_not_approved",
+        "desired_outcome": "希望玩家登录操作快一点，但不要牺牲安全或隐私",
+        "proposed_metrics": [
+          "响应时间"
+        ],
+        "acceptance_plan": "先记录当前基线，并使用约定的实际用户操作与负载开展对照测试；阈值、测试时长与业务方确认后写入验收标准。",
+        "constraints": [
+          "权限和个人信息保护",
+          "异常时人工接管与回退",
+          "记录模型/系统成本",
+          "明确责任人与验收人"
+        ],
+        "questions": [
+          "面向哪类用户及哪项操作？",
+          "目前的基线和最大痛点是什么？",
+          "谁批准目标阈值与上线范围？"
+        ],
+        "disclaimer": "建议的测量方案，不代表用户已批准任何阈值、结果或上线计划。",
+        "source": "offline-requirements-scaffold"
+      }
+    },
+    {
+      "id": "13-A2",
+      "category": "align",
+      "industry": "gaming",
+      "input": "Reduce the operational cost of 玩家登录 without removing safety checks",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "align",
+        "language": "en",
+        "source_goal": "Reduce the operational cost of 玩家登录 without removing safety checks",
+        "audience": "cfo",
+        "industry": "Gaming / Entertainment",
+        "status": "draft_for_discussion_not_approved",
+        "desired_outcome": "Reduce the operational cost of 玩家登录 without removing safety checks",
+        "proposed_metrics": [
+          "cost per successfully completed task"
+        ],
+        "acceptance_plan": "Record a baseline, evaluate with total cost including labor, infrastructure and rework, and agree thresholds and duration with the stakeholder before acceptance.",
+        "constraints": [
+          "Access and privacy",
+          "Human fallback and rollback",
+          "Capture system and review cost",
+          "Named owner and approver"
+        ],
+        "questions": [
+          "Which users and task are in scope?",
+          "What is the measured baseline?",
+          "Who approves thresholds and rollout scope?"
+        ],
+        "disclaimer": "A measurement proposal, not approved targets, results or rollout.",
+        "source": "offline-requirements-scaffold"
+      }
+    },
+    {
+      "id": "13-D",
+      "category": "decode",
+      "industry": "gaming",
+      "input": "我们下周先对齐玩家登录的职责分工，之后再闭环",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "decode",
+        "input": "我们下周先对齐玩家登录的职责分工，之后再闭环",
+        "matches": [
+          {
+            "phrase": "alignment",
+            "plain_english": "Reach agreement on goals and responsibilities.",
+            "plain_language": "让各方就目标、规则和分工达成一致。",
+            "possible_subtext": "可能存在口径不统一或尚未作出的决定。"
+          },
+          {
+            "phrase": "action items",
+            "plain_english": "Concrete tasks with owners and dates.",
+            "plain_language": "把讨论转成有负责人和截止时间的具体任务。",
+            "possible_subtext": "只说闭环却没有责任人与时间表，仍然无法执行。"
+          }
+        ],
+        "summary": "以下只是可能的解读，不能仅凭黑话推断发言者的真实意图。",
+        "certainty": "可能的解读，发言者动机未经证实",
+        "clarifying_question": "这件事由谁负责、何时完成、用什么指标判断效果？",
+        "source": "offline-phrasebook",
+        "industry_followup": "如何核验误分流率、答复质量与延迟？"
+      }
+    },
+    {
+      "id": "13-N",
+      "category": "encode",
+      "industry": "gaming",
+      "input": "昨天把玩家登录的卡顿问题修了，但还没上线，也没做压测",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "encode",
+        "source_note": "昨天把玩家登录的卡顿问题修了，但还没上线，也没做压测",
+        "executive_update": "已修复玩家登录的卡顿问题，但尚未上线，也尚未进行压力测试。",
+        "headline": "进展：已修复玩家登录的卡顿问题，但尚未上线，也尚未进行压力测试",
+        "business_relevance": "优先验证：误分流率、答复质量与延迟；同时比较上线前基线，不预设节省金额。",
+        "impact": "原始记录尚未给出可核实的量化收益。",
+        "next_step": "完成待办验证并确认上线范围；不要把测试结果写成生产收益。",
+        "risk_flags": [
+          "restricted_evidence_or_rollout"
+        ],
+        "evidence_ledger": {
+          "numeric_claims_in_source": [],
+          "new_numbers_in_output": [],
+          "independent_verification": false
+        },
+        "style": "executive",
+        "source": "offline-conservative-rewrite"
+      }
+    },
+    {
+      "id": "13-U",
+      "category": "audit-unsafe",
+      "industry": "gaming",
+      "input": "玩家登录尚未上线，成本变化还没有测量 -> 玩家登录已经全量上线，效率提升40%",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "玩家登录尚未上线，成本变化还没有测量",
+        "candidate": "玩家登录已经全量上线，效率提升40%",
+        "source_numbers": [],
+        "candidate_numbers": [
+          "40%"
+        ],
+        "new_numeric_claims": [
+          "40%"
+        ],
+        "risk_flags": [
+          "new_numeric_claims",
+          "unsupported_deployment_status"
+        ],
+        "status": "review_required",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "13-S",
+      "category": "audit-safe",
+      "industry": "gaming",
+      "input": "玩家登录尚未上线，成本变化还没有测量 -> 玩家登录尚未上线，成本变化尚未测量",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "玩家登录尚未上线，成本变化还没有测量",
+        "candidate": "玩家登录尚未上线，成本变化尚未测量",
+        "source_numbers": [],
+        "candidate_numbers": [],
+        "new_numeric_claims": [],
+        "risk_flags": [],
+        "status": "no_rule_based_flags",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "13-W",
+      "category": "empathy",
+      "industry": "gaming",
+      "input": "我烦死了，玩家登录还没正式上线，老板一直追问",
+      "passed": true,
+      "failure_reason": "",
+      "output": "还没正式上线就先把进度说清楚，比硬写成绩更可靠。"
+    },
+    {
+      "id": "13-Q",
+      "category": "no-forced-empathy",
+      "industry": "gaming",
+      "input": "修复了玩家登录",
+      "passed": true,
+      "failure_reason": "",
+      "output": null
+    },
+    {
+      "id": "14-E1",
+      "category": "explain",
+      "industry": "energy",
+      "input": "Vector Embeddings",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "term": "Vector Embeddings",
+        "technical": "Dense numeric representations learned so related items can be compared by distance or similarity.",
+        "human": "A supermarket map that shelves 'sneakers' near 'running shoes' even when the labels use different words.",
+        "business": "Can improve semantic search and discovery; measure search relevance and time-to-answer against index cost.",
+        "caveat": "Similarity is not factual equivalence or guaranteed intent understanding.",
+        "audience": "cfo",
+        "mode": "explain",
+        "source": "curated-offline-glossary",
+        "audience_guidance": "For a CFO, compare total cost and avoided work against the current process; request evidence on search relevance and index/query operating cost.",
+        "language": "en",
+        "industry_scenario": "Hypothetical Energy / Utilities example: for inspection knowledge lookup and equipment alerts, a team could retrieve semantically similar records and inspect false matches. This does not imply a live deployment.",
+        "industry_measurement": "Measure missed alerts, safety review and response time against a baseline; do not assume cost savings."
+      }
+    },
+    {
+      "id": "14-E2",
+      "category": "explain",
+      "industry": "energy",
+      "input": "RAG",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "term": "RAG",
+        "technical": "先从外部资料中检索相关内容，再把它作为上下文用于生成答案。",
+        "human": "像开卷考试。学生先翻到规定教材的相关页，再回答题目并写出处；翻错页照样可能答错。",
+        "business": "无需每次重训模型就能接入更新的业务资料，但要验证召回、引用和错答率。",
+        "caveat": "RAG 只能减少部分无依据回答，不能彻底消除幻觉。",
+        "audience": "product",
+        "mode": "explain",
+        "source": "curated-offline-glossary",
+        "audience_guidance": "产品验收：定义用户任务和验收指标，检查检索命中率、引用正确率和无依据回答率。",
+        "language": "zh",
+        "industry_scenario": "【假设案例·Energy / Utilities】在“巡检知识查询与设备告警”中，可以先检索经授权的资料、附上出处，再给答复。这只是应用示意，不代表某机构已部署。",
+        "industry_measurement": "优先验证：漏报率、安全审查与响应时间；同时比较上线前基线，不预设节省金额。"
+      }
+    },
+    {
+      "id": "14-A1",
+      "category": "align",
+      "industry": "energy",
+      "input": "希望设备巡检操作快一点，但不要牺牲安全或隐私",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "align",
+        "language": "zh",
+        "source_goal": "希望设备巡检操作快一点，但不要牺牲安全或隐私",
+        "audience": "product",
+        "industry": "Energy / Utilities",
+        "status": "draft_for_discussion_not_approved",
+        "desired_outcome": "希望设备巡检操作快一点，但不要牺牲安全或隐私",
+        "proposed_metrics": [
+          "响应时间"
+        ],
+        "acceptance_plan": "先记录当前基线，并使用约定的实际用户操作与负载开展对照测试；阈值、测试时长与业务方确认后写入验收标准。",
+        "constraints": [
+          "权限和个人信息保护",
+          "异常时人工接管与回退",
+          "记录模型/系统成本",
+          "明确责任人与验收人"
+        ],
+        "questions": [
+          "面向哪类用户及哪项操作？",
+          "目前的基线和最大痛点是什么？",
+          "谁批准目标阈值与上线范围？"
+        ],
+        "disclaimer": "建议的测量方案，不代表用户已批准任何阈值、结果或上线计划。",
+        "source": "offline-requirements-scaffold"
+      }
+    },
+    {
+      "id": "14-A2",
+      "category": "align",
+      "industry": "energy",
+      "input": "Reduce the operational cost of 设备巡检 without removing safety checks",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "align",
+        "language": "en",
+        "source_goal": "Reduce the operational cost of 设备巡检 without removing safety checks",
+        "audience": "cfo",
+        "industry": "Energy / Utilities",
+        "status": "draft_for_discussion_not_approved",
+        "desired_outcome": "Reduce the operational cost of 设备巡检 without removing safety checks",
+        "proposed_metrics": [
+          "cost per successfully completed task"
+        ],
+        "acceptance_plan": "Record a baseline, evaluate with total cost including labor, infrastructure and rework, and agree thresholds and duration with the stakeholder before acceptance.",
+        "constraints": [
+          "Access and privacy",
+          "Human fallback and rollback",
+          "Capture system and review cost",
+          "Named owner and approver"
+        ],
+        "questions": [
+          "Which users and task are in scope?",
+          "What is the measured baseline?",
+          "Who approves thresholds and rollout scope?"
+        ],
+        "disclaimer": "A measurement proposal, not approved targets, results or rollout.",
+        "source": "offline-requirements-scaffold"
+      }
+    },
+    {
+      "id": "14-D",
+      "category": "decode",
+      "industry": "energy",
+      "input": "我们下周先对齐设备巡检的职责分工，之后再闭环",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "decode",
+        "input": "我们下周先对齐设备巡检的职责分工，之后再闭环",
+        "matches": [
+          {
+            "phrase": "alignment",
+            "plain_english": "Reach agreement on goals and responsibilities.",
+            "plain_language": "让各方就目标、规则和分工达成一致。",
+            "possible_subtext": "可能存在口径不统一或尚未作出的决定。"
+          },
+          {
+            "phrase": "action items",
+            "plain_english": "Concrete tasks with owners and dates.",
+            "plain_language": "把讨论转成有负责人和截止时间的具体任务。",
+            "possible_subtext": "只说闭环却没有责任人与时间表，仍然无法执行。"
+          }
+        ],
+        "summary": "以下只是可能的解读，不能仅凭黑话推断发言者的真实意图。",
+        "certainty": "可能的解读，发言者动机未经证实",
+        "clarifying_question": "这件事由谁负责、何时完成、用什么指标判断效果？",
+        "source": "offline-phrasebook",
+        "industry_followup": "如何核验漏报率、安全审查与响应时间？"
+      }
+    },
+    {
+      "id": "14-N",
+      "category": "encode",
+      "industry": "energy",
+      "input": "昨天把设备巡检的卡顿问题修了，但还没上线，也没做压测",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "encode",
+        "source_note": "昨天把设备巡检的卡顿问题修了，但还没上线，也没做压测",
+        "executive_update": "已修复设备巡检的卡顿问题，但尚未上线，也尚未进行压力测试。",
+        "headline": "进展：已修复设备巡检的卡顿问题，但尚未上线，也尚未进行压力测试",
+        "business_relevance": "优先验证：漏报率、安全审查与响应时间；同时比较上线前基线，不预设节省金额。",
+        "impact": "原始记录尚未给出可核实的量化收益。",
+        "next_step": "完成待办验证并确认上线范围；不要把测试结果写成生产收益。",
+        "risk_flags": [
+          "restricted_evidence_or_rollout"
+        ],
+        "evidence_ledger": {
+          "numeric_claims_in_source": [],
+          "new_numbers_in_output": [],
+          "independent_verification": false
+        },
+        "style": "executive",
+        "source": "offline-conservative-rewrite"
+      }
+    },
+    {
+      "id": "14-U",
+      "category": "audit-unsafe",
+      "industry": "energy",
+      "input": "设备巡检尚未上线，成本变化还没有测量 -> 设备巡检已经全量上线，效率提升40%",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "设备巡检尚未上线，成本变化还没有测量",
+        "candidate": "设备巡检已经全量上线，效率提升40%",
+        "source_numbers": [],
+        "candidate_numbers": [
+          "40%"
+        ],
+        "new_numeric_claims": [
+          "40%"
+        ],
+        "risk_flags": [
+          "new_numeric_claims",
+          "unsupported_deployment_status"
+        ],
+        "status": "review_required",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "14-S",
+      "category": "audit-safe",
+      "industry": "energy",
+      "input": "设备巡检尚未上线，成本变化还没有测量 -> 设备巡检尚未上线，成本变化尚未测量",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "设备巡检尚未上线，成本变化还没有测量",
+        "candidate": "设备巡检尚未上线，成本变化尚未测量",
+        "source_numbers": [],
+        "candidate_numbers": [],
+        "new_numeric_claims": [],
+        "risk_flags": [],
+        "status": "no_rule_based_flags",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "14-W",
+      "category": "empathy",
+      "industry": "energy",
+      "input": "我烦死了，设备巡检还没正式上线，老板一直追问",
+      "passed": true,
+      "failure_reason": "",
+      "output": "还没正式上线就先把进度说清楚，比硬写成绩更可靠。"
+    },
+    {
+      "id": "14-Q",
+      "category": "no-forced-empathy",
+      "industry": "energy",
+      "input": "修复了设备巡检",
+      "passed": true,
+      "failure_reason": "",
+      "output": null
+    },
+    {
+      "id": "15-E1",
+      "category": "explain",
+      "industry": "realestate",
+      "input": "Vector Embeddings",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "term": "Vector Embeddings",
+        "technical": "Dense numeric representations learned so related items can be compared by distance or similarity.",
+        "human": "A supermarket map that shelves 'sneakers' near 'running shoes' even when the labels use different words.",
+        "business": "Can improve semantic search and discovery; measure search relevance and time-to-answer against index cost.",
+        "caveat": "Similarity is not factual equivalence or guaranteed intent understanding.",
+        "audience": "cfo",
+        "mode": "explain",
+        "source": "curated-offline-glossary",
+        "audience_guidance": "For a CFO, compare total cost and avoided work against the current process; request evidence on search relevance and index/query operating cost.",
+        "language": "en",
+        "industry_scenario": "Hypothetical Real Estate / Construction example: for construction documentation and repair dispatch, a team could retrieve semantically similar records and inspect false matches. This does not imply a live deployment.",
+        "industry_measurement": "Measure routing accuracy, on-site verification and error cost against a baseline; do not assume cost savings."
+      }
+    },
+    {
+      "id": "15-E2",
+      "category": "explain",
+      "industry": "realestate",
+      "input": "RAG",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "term": "RAG",
+        "technical": "先从外部资料中检索相关内容，再把它作为上下文用于生成答案。",
+        "human": "像开卷考试。学生先翻到规定教材的相关页，再回答题目并写出处；翻错页照样可能答错。",
+        "business": "无需每次重训模型就能接入更新的业务资料，但要验证召回、引用和错答率。",
+        "caveat": "RAG 只能减少部分无依据回答，不能彻底消除幻觉。",
+        "audience": "product",
+        "mode": "explain",
+        "source": "curated-offline-glossary",
+        "audience_guidance": "产品验收：定义用户任务和验收指标，检查检索命中率、引用正确率和无依据回答率。",
+        "language": "zh",
+        "industry_scenario": "【假设案例·Real Estate / Construction】在“施工文档检索与报修派单”中，可以先检索经授权的资料、附上出处，再给答复。这只是应用示意，不代表某机构已部署。",
+        "industry_measurement": "优先验证：工单准确率、现场复核与错误成本；同时比较上线前基线，不预设节省金额。"
+      }
+    },
+    {
+      "id": "15-A1",
+      "category": "align",
+      "industry": "realestate",
+      "input": "希望报修调度操作快一点，但不要牺牲安全或隐私",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "align",
+        "language": "zh",
+        "source_goal": "希望报修调度操作快一点，但不要牺牲安全或隐私",
+        "audience": "product",
+        "industry": "Real Estate / Construction",
+        "status": "draft_for_discussion_not_approved",
+        "desired_outcome": "希望报修调度操作快一点，但不要牺牲安全或隐私",
+        "proposed_metrics": [
+          "响应时间"
+        ],
+        "acceptance_plan": "先记录当前基线，并使用约定的实际用户操作与负载开展对照测试；阈值、测试时长与业务方确认后写入验收标准。",
+        "constraints": [
+          "权限和个人信息保护",
+          "异常时人工接管与回退",
+          "记录模型/系统成本",
+          "明确责任人与验收人"
+        ],
+        "questions": [
+          "面向哪类用户及哪项操作？",
+          "目前的基线和最大痛点是什么？",
+          "谁批准目标阈值与上线范围？"
+        ],
+        "disclaimer": "建议的测量方案，不代表用户已批准任何阈值、结果或上线计划。",
+        "source": "offline-requirements-scaffold"
+      }
+    },
+    {
+      "id": "15-A2",
+      "category": "align",
+      "industry": "realestate",
+      "input": "Reduce the operational cost of 报修调度 without removing safety checks",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "align",
+        "language": "en",
+        "source_goal": "Reduce the operational cost of 报修调度 without removing safety checks",
+        "audience": "cfo",
+        "industry": "Real Estate / Construction",
+        "status": "draft_for_discussion_not_approved",
+        "desired_outcome": "Reduce the operational cost of 报修调度 without removing safety checks",
+        "proposed_metrics": [
+          "cost per successfully completed task"
+        ],
+        "acceptance_plan": "Record a baseline, evaluate with total cost including labor, infrastructure and rework, and agree thresholds and duration with the stakeholder before acceptance.",
+        "constraints": [
+          "Access and privacy",
+          "Human fallback and rollback",
+          "Capture system and review cost",
+          "Named owner and approver"
+        ],
+        "questions": [
+          "Which users and task are in scope?",
+          "What is the measured baseline?",
+          "Who approves thresholds and rollout scope?"
+        ],
+        "disclaimer": "A measurement proposal, not approved targets, results or rollout.",
+        "source": "offline-requirements-scaffold"
+      }
+    },
+    {
+      "id": "15-D",
+      "category": "decode",
+      "industry": "realestate",
+      "input": "我们下周先对齐报修调度的职责分工，之后再闭环",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "decode",
+        "input": "我们下周先对齐报修调度的职责分工，之后再闭环",
+        "matches": [
+          {
+            "phrase": "alignment",
+            "plain_english": "Reach agreement on goals and responsibilities.",
+            "plain_language": "让各方就目标、规则和分工达成一致。",
+            "possible_subtext": "可能存在口径不统一或尚未作出的决定。"
+          },
+          {
+            "phrase": "action items",
+            "plain_english": "Concrete tasks with owners and dates.",
+            "plain_language": "把讨论转成有负责人和截止时间的具体任务。",
+            "possible_subtext": "只说闭环却没有责任人与时间表，仍然无法执行。"
+          }
+        ],
+        "summary": "以下只是可能的解读，不能仅凭黑话推断发言者的真实意图。",
+        "certainty": "可能的解读，发言者动机未经证实",
+        "clarifying_question": "这件事由谁负责、何时完成、用什么指标判断效果？",
+        "source": "offline-phrasebook",
+        "industry_followup": "如何核验工单准确率、现场复核与错误成本？"
+      }
+    },
+    {
+      "id": "15-N",
+      "category": "encode",
+      "industry": "realestate",
+      "input": "昨天把报修调度的卡顿问题修了，但还没上线，也没做压测",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "encode",
+        "source_note": "昨天把报修调度的卡顿问题修了，但还没上线，也没做压测",
+        "executive_update": "已修复报修调度的卡顿问题，但尚未上线，也尚未进行压力测试。",
+        "headline": "进展：已修复报修调度的卡顿问题，但尚未上线，也尚未进行压力测试",
+        "business_relevance": "优先验证：工单准确率、现场复核与错误成本；同时比较上线前基线，不预设节省金额。",
+        "impact": "原始记录尚未给出可核实的量化收益。",
+        "next_step": "完成待办验证并确认上线范围；不要把测试结果写成生产收益。",
+        "risk_flags": [
+          "restricted_evidence_or_rollout"
+        ],
+        "evidence_ledger": {
+          "numeric_claims_in_source": [],
+          "new_numbers_in_output": [],
+          "independent_verification": false
+        },
+        "style": "executive",
+        "source": "offline-conservative-rewrite"
+      }
+    },
+    {
+      "id": "15-U",
+      "category": "audit-unsafe",
+      "industry": "realestate",
+      "input": "报修调度尚未上线，成本变化还没有测量 -> 报修调度已经全量上线，效率提升40%",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "报修调度尚未上线，成本变化还没有测量",
+        "candidate": "报修调度已经全量上线，效率提升40%",
+        "source_numbers": [],
+        "candidate_numbers": [
+          "40%"
+        ],
+        "new_numeric_claims": [
+          "40%"
+        ],
+        "risk_flags": [
+          "new_numeric_claims",
+          "unsupported_deployment_status"
+        ],
+        "status": "review_required",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "15-S",
+      "category": "audit-safe",
+      "industry": "realestate",
+      "input": "报修调度尚未上线，成本变化还没有测量 -> 报修调度尚未上线，成本变化尚未测量",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "报修调度尚未上线，成本变化还没有测量",
+        "candidate": "报修调度尚未上线，成本变化尚未测量",
+        "source_numbers": [],
+        "candidate_numbers": [],
+        "new_numeric_claims": [],
+        "risk_flags": [],
+        "status": "no_rule_based_flags",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "15-W",
+      "category": "empathy",
+      "industry": "realestate",
+      "input": "我烦死了，报修调度还没正式上线，老板一直追问",
+      "passed": true,
+      "failure_reason": "",
+      "output": "还没正式上线就先把进度说清楚，比硬写成绩更可靠。"
+    },
+    {
+      "id": "15-Q",
+      "category": "no-forced-empathy",
+      "industry": "realestate",
+      "input": "修复了报修调度",
+      "passed": true,
+      "failure_reason": "",
+      "output": null
+    },
+    {
+      "id": "B1",
+      "category": "adversarial-rollout",
+      "industry": "generic",
+      "input": "第1号任务目前尚未上线，尚未做对照测试 -> 第1号任务已经全量上线，实测提升1%",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "第1号任务目前尚未上线，尚未做对照测试",
+        "candidate": "第1号任务已经全量上线，实测提升1%",
+        "source_numbers": [
+          "1"
+        ],
+        "candidate_numbers": [
+          "1",
+          "1%"
+        ],
+        "new_numeric_claims": [
+          "1%"
+        ],
+        "risk_flags": [
+          "new_numeric_claims",
+          "unsupported_deployment_status"
+        ],
+        "status": "review_required",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "B2",
+      "category": "adversarial-rollout",
+      "industry": "generic",
+      "input": "第2号任务目前尚未上线，尚未做对照测试 -> 第2号任务已经全量上线，实测提升2%",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "第2号任务目前尚未上线，尚未做对照测试",
+        "candidate": "第2号任务已经全量上线，实测提升2%",
+        "source_numbers": [
+          "2"
+        ],
+        "candidate_numbers": [
+          "2",
+          "2%"
+        ],
+        "new_numeric_claims": [
+          "2%"
+        ],
+        "risk_flags": [
+          "new_numeric_claims",
+          "unsupported_deployment_status"
+        ],
+        "status": "review_required",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "B3",
+      "category": "adversarial-rollout",
+      "industry": "generic",
+      "input": "第3号任务目前尚未上线，尚未做对照测试 -> 第3号任务已经全量上线，实测提升3%",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "第3号任务目前尚未上线，尚未做对照测试",
+        "candidate": "第3号任务已经全量上线，实测提升3%",
+        "source_numbers": [
+          "3"
+        ],
+        "candidate_numbers": [
+          "3",
+          "3%"
+        ],
+        "new_numeric_claims": [
+          "3%"
+        ],
+        "risk_flags": [
+          "new_numeric_claims",
+          "unsupported_deployment_status"
+        ],
+        "status": "review_required",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "B4",
+      "category": "adversarial-rollout",
+      "industry": "generic",
+      "input": "第4号任务目前尚未上线，尚未做对照测试 -> 第4号任务已经全量上线，实测提升4%",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "第4号任务目前尚未上线，尚未做对照测试",
+        "candidate": "第4号任务已经全量上线，实测提升4%",
+        "source_numbers": [
+          "4"
+        ],
+        "candidate_numbers": [
+          "4",
+          "4%"
+        ],
+        "new_numeric_claims": [
+          "4%"
+        ],
+        "risk_flags": [
+          "new_numeric_claims",
+          "unsupported_deployment_status"
+        ],
+        "status": "review_required",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "B5",
+      "category": "adversarial-rollout",
+      "industry": "generic",
+      "input": "第5号任务目前尚未上线，尚未做对照测试 -> 第5号任务已经全量上线，实测提升5%",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "第5号任务目前尚未上线，尚未做对照测试",
+        "candidate": "第5号任务已经全量上线，实测提升5%",
+        "source_numbers": [
+          "5"
+        ],
+        "candidate_numbers": [
+          "5",
+          "5%"
+        ],
+        "new_numeric_claims": [
+          "5%"
+        ],
+        "risk_flags": [
+          "new_numeric_claims",
+          "unsupported_deployment_status"
+        ],
+        "status": "review_required",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "B6",
+      "category": "adversarial-rollout",
+      "industry": "generic",
+      "input": "第6号任务目前尚未上线，尚未做对照测试 -> 第6号任务已经全量上线，实测提升6%",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "第6号任务目前尚未上线，尚未做对照测试",
+        "candidate": "第6号任务已经全量上线，实测提升6%",
+        "source_numbers": [
+          "6"
+        ],
+        "candidate_numbers": [
+          "6",
+          "6%"
+        ],
+        "new_numeric_claims": [
+          "6%"
+        ],
+        "risk_flags": [
+          "new_numeric_claims",
+          "unsupported_deployment_status"
+        ],
+        "status": "review_required",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "B7",
+      "category": "adversarial-rollout",
+      "industry": "generic",
+      "input": "第7号任务目前尚未上线，尚未做对照测试 -> 第7号任务已经全量上线，实测提升7%",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "第7号任务目前尚未上线，尚未做对照测试",
+        "candidate": "第7号任务已经全量上线，实测提升7%",
+        "source_numbers": [
+          "7"
+        ],
+        "candidate_numbers": [
+          "7",
+          "7%"
+        ],
+        "new_numeric_claims": [
+          "7%"
+        ],
+        "risk_flags": [
+          "new_numeric_claims",
+          "unsupported_deployment_status"
+        ],
+        "status": "review_required",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "B8",
+      "category": "adversarial-rollout",
+      "industry": "generic",
+      "input": "第8号任务目前尚未上线，尚未做对照测试 -> 第8号任务已经全量上线，实测提升8%",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "第8号任务目前尚未上线，尚未做对照测试",
+        "candidate": "第8号任务已经全量上线，实测提升8%",
+        "source_numbers": [
+          "8"
+        ],
+        "candidate_numbers": [
+          "8",
+          "8%"
+        ],
+        "new_numeric_claims": [
+          "8%"
+        ],
+        "risk_flags": [
+          "new_numeric_claims",
+          "unsupported_deployment_status"
+        ],
+        "status": "review_required",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "B9",
+      "category": "adversarial-rollout",
+      "industry": "generic",
+      "input": "第9号任务目前尚未上线，尚未做对照测试 -> 第9号任务已经全量上线，实测提升9%",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "第9号任务目前尚未上线，尚未做对照测试",
+        "candidate": "第9号任务已经全量上线，实测提升9%",
+        "source_numbers": [
+          "9"
+        ],
+        "candidate_numbers": [
+          "9",
+          "9%"
+        ],
+        "new_numeric_claims": [
+          "9%"
+        ],
+        "risk_flags": [
+          "new_numeric_claims",
+          "unsupported_deployment_status"
+        ],
+        "status": "review_required",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "B10",
+      "category": "adversarial-rollout",
+      "industry": "generic",
+      "input": "第10号任务目前尚未上线，尚未做对照测试 -> 第10号任务已经全量上线，实测提升10%",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "第10号任务目前尚未上线，尚未做对照测试",
+        "candidate": "第10号任务已经全量上线，实测提升10%",
+        "source_numbers": [
+          "10"
+        ],
+        "candidate_numbers": [
+          "10",
+          "10%"
+        ],
+        "new_numeric_claims": [
+          "10%"
+        ],
+        "risk_flags": [
+          "new_numeric_claims",
+          "unsupported_deployment_status"
+        ],
+        "status": "review_required",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "B11",
+      "category": "adversarial-rollout",
+      "industry": "generic",
+      "input": "第11号任务目前尚未上线，尚未做对照测试 -> 第11号任务已经全量上线，实测提升11%",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "第11号任务目前尚未上线，尚未做对照测试",
+        "candidate": "第11号任务已经全量上线，实测提升11%",
+        "source_numbers": [
+          "11"
+        ],
+        "candidate_numbers": [
+          "11",
+          "11%"
+        ],
+        "new_numeric_claims": [
+          "11%"
+        ],
+        "risk_flags": [
+          "new_numeric_claims",
+          "unsupported_deployment_status"
+        ],
+        "status": "review_required",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "B12",
+      "category": "adversarial-rollout",
+      "industry": "generic",
+      "input": "第12号任务目前尚未上线，尚未做对照测试 -> 第12号任务已经全量上线，实测提升12%",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "第12号任务目前尚未上线，尚未做对照测试",
+        "candidate": "第12号任务已经全量上线，实测提升12%",
+        "source_numbers": [
+          "12"
+        ],
+        "candidate_numbers": [
+          "12",
+          "12%"
+        ],
+        "new_numeric_claims": [
+          "12%"
+        ],
+        "risk_flags": [
+          "new_numeric_claims",
+          "unsupported_deployment_status"
+        ],
+        "status": "review_required",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "B13",
+      "category": "adversarial-rollout",
+      "industry": "generic",
+      "input": "第13号任务目前尚未上线，尚未做对照测试 -> 第13号任务已经全量上线，实测提升13%",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "第13号任务目前尚未上线，尚未做对照测试",
+        "candidate": "第13号任务已经全量上线，实测提升13%",
+        "source_numbers": [
+          "13"
+        ],
+        "candidate_numbers": [
+          "13",
+          "13%"
+        ],
+        "new_numeric_claims": [
+          "13%"
+        ],
+        "risk_flags": [
+          "new_numeric_claims",
+          "unsupported_deployment_status"
+        ],
+        "status": "review_required",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "B14",
+      "category": "adversarial-rollout",
+      "industry": "generic",
+      "input": "第14号任务目前尚未上线，尚未做对照测试 -> 第14号任务已经全量上线，实测提升14%",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "第14号任务目前尚未上线，尚未做对照测试",
+        "candidate": "第14号任务已经全量上线，实测提升14%",
+        "source_numbers": [
+          "14"
+        ],
+        "candidate_numbers": [
+          "14",
+          "14%"
+        ],
+        "new_numeric_claims": [
+          "14%"
+        ],
+        "risk_flags": [
+          "new_numeric_claims",
+          "unsupported_deployment_status"
+        ],
+        "status": "review_required",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "B15",
+      "category": "adversarial-rollout",
+      "industry": "generic",
+      "input": "第15号任务目前尚未上线，尚未做对照测试 -> 第15号任务已经全量上线，实测提升15%",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "第15号任务目前尚未上线，尚未做对照测试",
+        "candidate": "第15号任务已经全量上线，实测提升15%",
+        "source_numbers": [
+          "15"
+        ],
+        "candidate_numbers": [
+          "15",
+          "15%"
+        ],
+        "new_numeric_claims": [
+          "15%"
+        ],
+        "risk_flags": [
+          "new_numeric_claims",
+          "unsupported_deployment_status"
+        ],
+        "status": "review_required",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "B16",
+      "category": "adversarial-rollout",
+      "industry": "generic",
+      "input": "第16号任务目前尚未上线，尚未做对照测试 -> 第16号任务已经全量上线，实测提升16%",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "第16号任务目前尚未上线，尚未做对照测试",
+        "candidate": "第16号任务已经全量上线，实测提升16%",
+        "source_numbers": [
+          "16"
+        ],
+        "candidate_numbers": [
+          "16",
+          "16%"
+        ],
+        "new_numeric_claims": [
+          "16%"
+        ],
+        "risk_flags": [
+          "new_numeric_claims",
+          "unsupported_deployment_status"
+        ],
+        "status": "review_required",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "B17",
+      "category": "adversarial-rollout",
+      "industry": "generic",
+      "input": "第17号任务目前尚未上线，尚未做对照测试 -> 第17号任务已经全量上线，实测提升17%",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "第17号任务目前尚未上线，尚未做对照测试",
+        "candidate": "第17号任务已经全量上线，实测提升17%",
+        "source_numbers": [
+          "17"
+        ],
+        "candidate_numbers": [
+          "17",
+          "17%"
+        ],
+        "new_numeric_claims": [
+          "17%"
+        ],
+        "risk_flags": [
+          "new_numeric_claims",
+          "unsupported_deployment_status"
+        ],
+        "status": "review_required",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "B18",
+      "category": "adversarial-rollout",
+      "industry": "generic",
+      "input": "第18号任务目前尚未上线，尚未做对照测试 -> 第18号任务已经全量上线，实测提升18%",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "第18号任务目前尚未上线，尚未做对照测试",
+        "candidate": "第18号任务已经全量上线，实测提升18%",
+        "source_numbers": [
+          "18"
+        ],
+        "candidate_numbers": [
+          "18",
+          "18%"
+        ],
+        "new_numeric_claims": [
+          "18%"
+        ],
+        "risk_flags": [
+          "new_numeric_claims",
+          "unsupported_deployment_status"
+        ],
+        "status": "review_required",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "B19",
+      "category": "adversarial-rollout",
+      "industry": "generic",
+      "input": "第19号任务目前尚未上线，尚未做对照测试 -> 第19号任务已经全量上线，实测提升19%",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "第19号任务目前尚未上线，尚未做对照测试",
+        "candidate": "第19号任务已经全量上线，实测提升19%",
+        "source_numbers": [
+          "19"
+        ],
+        "candidate_numbers": [
+          "19",
+          "19%"
+        ],
+        "new_numeric_claims": [
+          "19%"
+        ],
+        "risk_flags": [
+          "new_numeric_claims",
+          "unsupported_deployment_status"
+        ],
+        "status": "review_required",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "B20",
+      "category": "adversarial-rollout",
+      "industry": "generic",
+      "input": "第20号任务目前尚未上线，尚未做对照测试 -> 第20号任务已经全量上线，实测提升20%",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "第20号任务目前尚未上线，尚未做对照测试",
+        "candidate": "第20号任务已经全量上线，实测提升20%",
+        "source_numbers": [
+          "20"
+        ],
+        "candidate_numbers": [
+          "20",
+          "20%"
+        ],
+        "new_numeric_claims": [
+          "20%"
+        ],
+        "risk_flags": [
+          "new_numeric_claims",
+          "unsupported_deployment_status"
+        ],
+        "status": "review_required",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "B21",
+      "category": "adversarial-rollout",
+      "industry": "generic",
+      "input": "第21号任务目前尚未上线，尚未做对照测试 -> 第21号任务已经全量上线，实测提升21%",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "第21号任务目前尚未上线，尚未做对照测试",
+        "candidate": "第21号任务已经全量上线，实测提升21%",
+        "source_numbers": [
+          "21"
+        ],
+        "candidate_numbers": [
+          "21",
+          "21%"
+        ],
+        "new_numeric_claims": [
+          "21%"
+        ],
+        "risk_flags": [
+          "new_numeric_claims",
+          "unsupported_deployment_status"
+        ],
+        "status": "review_required",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "B22",
+      "category": "adversarial-rollout",
+      "industry": "generic",
+      "input": "第22号任务目前尚未上线，尚未做对照测试 -> 第22号任务已经全量上线，实测提升22%",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "第22号任务目前尚未上线，尚未做对照测试",
+        "candidate": "第22号任务已经全量上线，实测提升22%",
+        "source_numbers": [
+          "22"
+        ],
+        "candidate_numbers": [
+          "22",
+          "22%"
+        ],
+        "new_numeric_claims": [
+          "22%"
+        ],
+        "risk_flags": [
+          "new_numeric_claims",
+          "unsupported_deployment_status"
+        ],
+        "status": "review_required",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "B23",
+      "category": "adversarial-rollout",
+      "industry": "generic",
+      "input": "第23号任务目前尚未上线，尚未做对照测试 -> 第23号任务已经全量上线，实测提升23%",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "第23号任务目前尚未上线，尚未做对照测试",
+        "candidate": "第23号任务已经全量上线，实测提升23%",
+        "source_numbers": [
+          "23"
+        ],
+        "candidate_numbers": [
+          "23",
+          "23%"
+        ],
+        "new_numeric_claims": [
+          "23%"
+        ],
+        "risk_flags": [
+          "new_numeric_claims",
+          "unsupported_deployment_status"
+        ],
+        "status": "review_required",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "B24",
+      "category": "adversarial-rollout",
+      "industry": "generic",
+      "input": "第24号任务目前尚未上线，尚未做对照测试 -> 第24号任务已经全量上线，实测提升24%",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "第24号任务目前尚未上线，尚未做对照测试",
+        "candidate": "第24号任务已经全量上线，实测提升24%",
+        "source_numbers": [
+          "24"
+        ],
+        "candidate_numbers": [
+          "24",
+          "24%"
+        ],
+        "new_numeric_claims": [
+          "24%"
+        ],
+        "risk_flags": [
+          "new_numeric_claims",
+          "unsupported_deployment_status"
+        ],
+        "status": "review_required",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "B25",
+      "category": "adversarial-rollout",
+      "industry": "generic",
+      "input": "第25号任务目前尚未上线，尚未做对照测试 -> 第25号任务已经全量上线，实测提升25%",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "第25号任务目前尚未上线，尚未做对照测试",
+        "candidate": "第25号任务已经全量上线，实测提升25%",
+        "source_numbers": [
+          "25"
+        ],
+        "candidate_numbers": [
+          "25",
+          "25%"
+        ],
+        "new_numeric_claims": [
+          "25%"
+        ],
+        "risk_flags": [
+          "new_numeric_claims",
+          "unsupported_deployment_status"
+        ],
+        "status": "review_required",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "C1",
+      "category": "preserved-uncertainty",
+      "industry": "generic",
+      "input": "第1项功能仍在测试环境，结果尚未验证 -> 第1项功能仍在测试环境，结果尚未验证",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "第1项功能仍在测试环境，结果尚未验证",
+        "candidate": "第1项功能仍在测试环境，结果尚未验证",
+        "source_numbers": [
+          "1"
+        ],
+        "candidate_numbers": [
+          "1"
+        ],
+        "new_numeric_claims": [],
+        "risk_flags": [],
+        "status": "no_rule_based_flags",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "C2",
+      "category": "preserved-uncertainty",
+      "industry": "generic",
+      "input": "第2项功能仍在测试环境，结果尚未验证 -> 第2项功能仍在测试环境，结果尚未验证",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "第2项功能仍在测试环境，结果尚未验证",
+        "candidate": "第2项功能仍在测试环境，结果尚未验证",
+        "source_numbers": [
+          "2"
+        ],
+        "candidate_numbers": [
+          "2"
+        ],
+        "new_numeric_claims": [],
+        "risk_flags": [],
+        "status": "no_rule_based_flags",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "C3",
+      "category": "preserved-uncertainty",
+      "industry": "generic",
+      "input": "第3项功能仍在测试环境，结果尚未验证 -> 第3项功能仍在测试环境，结果尚未验证",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "第3项功能仍在测试环境，结果尚未验证",
+        "candidate": "第3项功能仍在测试环境，结果尚未验证",
+        "source_numbers": [
+          "3"
+        ],
+        "candidate_numbers": [
+          "3"
+        ],
+        "new_numeric_claims": [],
+        "risk_flags": [],
+        "status": "no_rule_based_flags",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "C4",
+      "category": "preserved-uncertainty",
+      "industry": "generic",
+      "input": "第4项功能仍在测试环境，结果尚未验证 -> 第4项功能仍在测试环境，结果尚未验证",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "第4项功能仍在测试环境，结果尚未验证",
+        "candidate": "第4项功能仍在测试环境，结果尚未验证",
+        "source_numbers": [
+          "4"
+        ],
+        "candidate_numbers": [
+          "4"
+        ],
+        "new_numeric_claims": [],
+        "risk_flags": [],
+        "status": "no_rule_based_flags",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "C5",
+      "category": "preserved-uncertainty",
+      "industry": "generic",
+      "input": "第5项功能仍在测试环境，结果尚未验证 -> 第5项功能仍在测试环境，结果尚未验证",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "第5项功能仍在测试环境，结果尚未验证",
+        "candidate": "第5项功能仍在测试环境，结果尚未验证",
+        "source_numbers": [
+          "5"
+        ],
+        "candidate_numbers": [
+          "5"
+        ],
+        "new_numeric_claims": [],
+        "risk_flags": [],
+        "status": "no_rule_based_flags",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "C6",
+      "category": "preserved-uncertainty",
+      "industry": "generic",
+      "input": "第6项功能仍在测试环境，结果尚未验证 -> 第6项功能仍在测试环境，结果尚未验证",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "第6项功能仍在测试环境，结果尚未验证",
+        "candidate": "第6项功能仍在测试环境，结果尚未验证",
+        "source_numbers": [
+          "6"
+        ],
+        "candidate_numbers": [
+          "6"
+        ],
+        "new_numeric_claims": [],
+        "risk_flags": [],
+        "status": "no_rule_based_flags",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "C7",
+      "category": "preserved-uncertainty",
+      "industry": "generic",
+      "input": "第7项功能仍在测试环境，结果尚未验证 -> 第7项功能仍在测试环境，结果尚未验证",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "第7项功能仍在测试环境，结果尚未验证",
+        "candidate": "第7项功能仍在测试环境，结果尚未验证",
+        "source_numbers": [
+          "7"
+        ],
+        "candidate_numbers": [
+          "7"
+        ],
+        "new_numeric_claims": [],
+        "risk_flags": [],
+        "status": "no_rule_based_flags",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "C8",
+      "category": "preserved-uncertainty",
+      "industry": "generic",
+      "input": "第8项功能仍在测试环境，结果尚未验证 -> 第8项功能仍在测试环境，结果尚未验证",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "第8项功能仍在测试环境，结果尚未验证",
+        "candidate": "第8项功能仍在测试环境，结果尚未验证",
+        "source_numbers": [
+          "8"
+        ],
+        "candidate_numbers": [
+          "8"
+        ],
+        "new_numeric_claims": [],
+        "risk_flags": [],
+        "status": "no_rule_based_flags",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "C9",
+      "category": "preserved-uncertainty",
+      "industry": "generic",
+      "input": "第9项功能仍在测试环境，结果尚未验证 -> 第9项功能仍在测试环境，结果尚未验证",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "第9项功能仍在测试环境，结果尚未验证",
+        "candidate": "第9项功能仍在测试环境，结果尚未验证",
+        "source_numbers": [
+          "9"
+        ],
+        "candidate_numbers": [
+          "9"
+        ],
+        "new_numeric_claims": [],
+        "risk_flags": [],
+        "status": "no_rule_based_flags",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "C10",
+      "category": "preserved-uncertainty",
+      "industry": "generic",
+      "input": "第10项功能仍在测试环境，结果尚未验证 -> 第10项功能仍在测试环境，结果尚未验证",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "第10项功能仍在测试环境，结果尚未验证",
+        "candidate": "第10项功能仍在测试环境，结果尚未验证",
+        "source_numbers": [
+          "10"
+        ],
+        "candidate_numbers": [
+          "10"
+        ],
+        "new_numeric_claims": [],
+        "risk_flags": [],
+        "status": "no_rule_based_flags",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "C11",
+      "category": "preserved-uncertainty",
+      "industry": "generic",
+      "input": "第11项功能仍在测试环境，结果尚未验证 -> 第11项功能仍在测试环境，结果尚未验证",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "第11项功能仍在测试环境，结果尚未验证",
+        "candidate": "第11项功能仍在测试环境，结果尚未验证",
+        "source_numbers": [
+          "11"
+        ],
+        "candidate_numbers": [
+          "11"
+        ],
+        "new_numeric_claims": [],
+        "risk_flags": [],
+        "status": "no_rule_based_flags",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "C12",
+      "category": "preserved-uncertainty",
+      "industry": "generic",
+      "input": "第12项功能仍在测试环境，结果尚未验证 -> 第12项功能仍在测试环境，结果尚未验证",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "第12项功能仍在测试环境，结果尚未验证",
+        "candidate": "第12项功能仍在测试环境，结果尚未验证",
+        "source_numbers": [
+          "12"
+        ],
+        "candidate_numbers": [
+          "12"
+        ],
+        "new_numeric_claims": [],
+        "risk_flags": [],
+        "status": "no_rule_based_flags",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "C13",
+      "category": "preserved-uncertainty",
+      "industry": "generic",
+      "input": "第13项功能仍在测试环境，结果尚未验证 -> 第13项功能仍在测试环境，结果尚未验证",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "第13项功能仍在测试环境，结果尚未验证",
+        "candidate": "第13项功能仍在测试环境，结果尚未验证",
+        "source_numbers": [
+          "13"
+        ],
+        "candidate_numbers": [
+          "13"
+        ],
+        "new_numeric_claims": [],
+        "risk_flags": [],
+        "status": "no_rule_based_flags",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "C14",
+      "category": "preserved-uncertainty",
+      "industry": "generic",
+      "input": "第14项功能仍在测试环境，结果尚未验证 -> 第14项功能仍在测试环境，结果尚未验证",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "第14项功能仍在测试环境，结果尚未验证",
+        "candidate": "第14项功能仍在测试环境，结果尚未验证",
+        "source_numbers": [
+          "14"
+        ],
+        "candidate_numbers": [
+          "14"
+        ],
+        "new_numeric_claims": [],
+        "risk_flags": [],
+        "status": "no_rule_based_flags",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "C15",
+      "category": "preserved-uncertainty",
+      "industry": "generic",
+      "input": "第15项功能仍在测试环境，结果尚未验证 -> 第15项功能仍在测试环境，结果尚未验证",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "第15项功能仍在测试环境，结果尚未验证",
+        "candidate": "第15项功能仍在测试环境，结果尚未验证",
+        "source_numbers": [
+          "15"
+        ],
+        "candidate_numbers": [
+          "15"
+        ],
+        "new_numeric_claims": [],
+        "risk_flags": [],
+        "status": "no_rule_based_flags",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "C16",
+      "category": "preserved-uncertainty",
+      "industry": "generic",
+      "input": "第16项功能仍在测试环境，结果尚未验证 -> 第16项功能仍在测试环境，结果尚未验证",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "第16项功能仍在测试环境，结果尚未验证",
+        "candidate": "第16项功能仍在测试环境，结果尚未验证",
+        "source_numbers": [
+          "16"
+        ],
+        "candidate_numbers": [
+          "16"
+        ],
+        "new_numeric_claims": [],
+        "risk_flags": [],
+        "status": "no_rule_based_flags",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "C17",
+      "category": "preserved-uncertainty",
+      "industry": "generic",
+      "input": "第17项功能仍在测试环境，结果尚未验证 -> 第17项功能仍在测试环境，结果尚未验证",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "第17项功能仍在测试环境，结果尚未验证",
+        "candidate": "第17项功能仍在测试环境，结果尚未验证",
+        "source_numbers": [
+          "17"
+        ],
+        "candidate_numbers": [
+          "17"
+        ],
+        "new_numeric_claims": [],
+        "risk_flags": [],
+        "status": "no_rule_based_flags",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "C18",
+      "category": "preserved-uncertainty",
+      "industry": "generic",
+      "input": "第18项功能仍在测试环境，结果尚未验证 -> 第18项功能仍在测试环境，结果尚未验证",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "第18项功能仍在测试环境，结果尚未验证",
+        "candidate": "第18项功能仍在测试环境，结果尚未验证",
+        "source_numbers": [
+          "18"
+        ],
+        "candidate_numbers": [
+          "18"
+        ],
+        "new_numeric_claims": [],
+        "risk_flags": [],
+        "status": "no_rule_based_flags",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "C19",
+      "category": "preserved-uncertainty",
+      "industry": "generic",
+      "input": "第19项功能仍在测试环境，结果尚未验证 -> 第19项功能仍在测试环境，结果尚未验证",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "第19项功能仍在测试环境，结果尚未验证",
+        "candidate": "第19项功能仍在测试环境，结果尚未验证",
+        "source_numbers": [
+          "19"
+        ],
+        "candidate_numbers": [
+          "19"
+        ],
+        "new_numeric_claims": [],
+        "risk_flags": [],
+        "status": "no_rule_based_flags",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "C20",
+      "category": "preserved-uncertainty",
+      "industry": "generic",
+      "input": "第20项功能仍在测试环境，结果尚未验证 -> 第20项功能仍在测试环境，结果尚未验证",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "第20项功能仍在测试环境，结果尚未验证",
+        "candidate": "第20项功能仍在测试环境，结果尚未验证",
+        "source_numbers": [
+          "20"
+        ],
+        "candidate_numbers": [
+          "20"
+        ],
+        "new_numeric_claims": [],
+        "risk_flags": [],
+        "status": "no_rule_based_flags",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "C21",
+      "category": "preserved-uncertainty",
+      "industry": "generic",
+      "input": "第21项功能仍在测试环境，结果尚未验证 -> 第21项功能仍在测试环境，结果尚未验证",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "第21项功能仍在测试环境，结果尚未验证",
+        "candidate": "第21项功能仍在测试环境，结果尚未验证",
+        "source_numbers": [
+          "21"
+        ],
+        "candidate_numbers": [
+          "21"
+        ],
+        "new_numeric_claims": [],
+        "risk_flags": [],
+        "status": "no_rule_based_flags",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "C22",
+      "category": "preserved-uncertainty",
+      "industry": "generic",
+      "input": "第22项功能仍在测试环境，结果尚未验证 -> 第22项功能仍在测试环境，结果尚未验证",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "第22项功能仍在测试环境，结果尚未验证",
+        "candidate": "第22项功能仍在测试环境，结果尚未验证",
+        "source_numbers": [
+          "22"
+        ],
+        "candidate_numbers": [
+          "22"
+        ],
+        "new_numeric_claims": [],
+        "risk_flags": [],
+        "status": "no_rule_based_flags",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "C23",
+      "category": "preserved-uncertainty",
+      "industry": "generic",
+      "input": "第23项功能仍在测试环境，结果尚未验证 -> 第23项功能仍在测试环境，结果尚未验证",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "第23项功能仍在测试环境，结果尚未验证",
+        "candidate": "第23项功能仍在测试环境，结果尚未验证",
+        "source_numbers": [
+          "23"
+        ],
+        "candidate_numbers": [
+          "23"
+        ],
+        "new_numeric_claims": [],
+        "risk_flags": [],
+        "status": "no_rule_based_flags",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "C24",
+      "category": "preserved-uncertainty",
+      "industry": "generic",
+      "input": "第24项功能仍在测试环境，结果尚未验证 -> 第24项功能仍在测试环境，结果尚未验证",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "第24项功能仍在测试环境，结果尚未验证",
+        "candidate": "第24项功能仍在测试环境，结果尚未验证",
+        "source_numbers": [
+          "24"
+        ],
+        "candidate_numbers": [
+          "24"
+        ],
+        "new_numeric_claims": [],
+        "risk_flags": [],
+        "status": "no_rule_based_flags",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    },
+    {
+      "id": "C25",
+      "category": "preserved-uncertainty",
+      "industry": "generic",
+      "input": "第25项功能仍在测试环境，结果尚未验证 -> 第25项功能仍在测试环境，结果尚未验证",
+      "passed": true,
+      "failure_reason": "",
+      "output": {
+        "mode": "audit",
+        "source": "第25项功能仍在测试环境，结果尚未验证",
+        "candidate": "第25项功能仍在测试环境，结果尚未验证",
+        "source_numbers": [
+          "25"
+        ],
+        "candidate_numbers": [
+          "25"
+        ],
+        "new_numeric_claims": [],
+        "risk_flags": [],
+        "status": "no_rule_based_flags",
+        "disclaimer": "Heuristic checks only. Passing does not prove factual, legal, or semantic accuracy."
+      }
+    }
+  ],
+  "limits": [
+    "Synthetic domain nouns, not representative end-user inputs.",
+    "Rule compliance is not subjective communication quality.",
+    "No real Cursor, Codex or Claude agent runs.",
+    "Heuristic claim auditing may miss paraphrased false claims."
+  ]
+}

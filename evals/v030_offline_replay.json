@@ -1,0 +1,2358 @@
+{
+  "disclaimer": "Real CLI parser/handler invocations in-process, synthetic user content. Automated invariants are NOT editorial or external-model quality scores.",
+  "passed": 90,
+  "total": 90,
+  "cases": [
+    {
+      "industry": "ai",
+      "mode": "explain",
+      "tone": "neutral",
+      "passed": true,
+      "check": "metaphor + grounded constraints + industry scene",
+      "input": "Tokens",
+      "output": {
+        "term": "Tokens",
+        "technical": "模型内部表示文字等信息的单位，也是许多服务的计费依据。",
+        "human": "像打车计价器，不直接按照你写了几个汉字收费，而是按照分词规则和输入输出用量走表。",
+        "business": "根据输入、输出和模型单价计算单次完成任务的总费用。",
+        "caveat": "Token 不是字符数量；价格也绝不是所有场景都可以忽略。",
+        "audience": "cfo",
+        "mode": "explain",
+        "source": "curated-offline-glossary",
+        "audience_guidance": "财务决策：与原流程比较总成本与节省的人力，要求核实输入输出用量与单次成功任务的成本。",
+        "language": "zh",
+        "industry_scenario": "【假设案例·AI / SaaS】在“模型问答与客服工单”中，可以测量输入与输出用量，核算单位任务成本。这只是应用示意，不代表某机构已部署。",
+        "industry_measurement": "优先验证：答案采纳率、人工转接率与单次成本；同时比较上线前基线，不预设节省金额。"
+      },
+      "error": ""
+    },
+    {
+      "industry": "ai",
+      "mode": "decode",
+      "tone": "neutral",
+      "passed": true,
+      "check": "conditional interpretations and actionable question",
+      "input": "请先拉齐 AI 客服的优先级，我有点烦。",
+      "output": {
+        "mode": "decode",
+        "input": "请先拉齐 AI 客服的优先级，我有点烦。",
+        "matches": [
+          {
+            "phrase": "alignment",
+            "plain_english": "Reach agreement on goals and responsibilities.",
+            "plain_language": "让各方就目标、规则和分工达成一致。",
+            "possible_subtext": "可能存在口径不统一或尚未作出的决定。"
+          }
+        ],
+        "summary": "以下只是可能的解读，不能仅凭黑话推断发言者的真实意图。",
+        "certainty": "可能的解读，发言者动机未经证实",
+        "clarifying_question": "这件事由谁负责、何时完成、用什么指标判断效果？",
+        "source": "offline-phrasebook",
+        "industry_followup": "如何核验答案采纳率、人工转接率与单次成本？"
+      },
+      "error": ""
+    },
+    {
+      "industry": "ai",
+      "mode": "encode",
+      "tone": "neutral",
+      "passed": true,
+      "check": "no fabricated metrics, pending validation or deployment preserved",
+      "input": "已经修了 AI 客服的重试缺陷，还没上线。",
+      "output": {
+        "mode": "encode",
+        "source_note": "已经修了 AI 客服的重试缺陷，还没上线。",
+        "executive_update": "已经已修复 AI 客服的重试缺陷，尚未上线。",
+        "headline": "进展：已经已修复 AI 客服的重试缺陷，尚未上线",
+        "business_relevance": "优先验证：答案采纳率、人工转接率与单次成本；同时比较上线前基线，不预设节省金额。",
+        "impact": "原始记录尚未给出可核实的量化收益。",
+        "next_step": "完成待办验证并确认上线范围；不要把测试结果写成生产收益。",
+        "risk_flags": [
+          "restricted_evidence_or_rollout"
+        ],
+        "evidence_ledger": {
+          "numeric_claims_in_source": [],
+          "new_numbers_in_output": [],
+          "independent_verification": false
+        },
+        "style": "executive",
+        "source": "offline-conservative-rewrite"
+      },
+      "error": ""
+    },
+    {
+      "industry": "ai",
+      "mode": "explain",
+      "tone": "playful",
+      "passed": true,
+      "check": "metaphor + grounded constraints + industry scene",
+      "input": "Tokens",
+      "output": {
+        "term": "Tokens",
+        "technical": "模型内部表示文字等信息的单位，也是许多服务的计费依据。",
+        "human": "像打车计价器，不直接按照你写了几个汉字收费，而是按照分词规则和输入输出用量走表。",
+        "business": "根据输入、输出和模型单价计算单次完成任务的总费用。",
+        "caveat": "Token 不是字符数量；价格也绝不是所有场景都可以忽略。",
+        "audience": "cfo",
+        "mode": "explain",
+        "source": "curated-offline-glossary",
+        "audience_guidance": "财务决策：与原流程比较总成本与节省的人力，要求核实输入输出用量与单次成功任务的成本。",
+        "language": "zh",
+        "industry_scenario": "【假设案例·AI / SaaS】在“模型问答与客服工单”中，可以测量输入与输出用量，核算单位任务成本。这只是应用示意，不代表某机构已部署。",
+        "industry_measurement": "优先验证：答案采纳率、人工转接率与单次成本；同时比较上线前基线，不预设节省金额。",
+        "connection_note": "Think of this as removing the jargon wrapper, not adding another manual."
+      },
+      "error": ""
+    },
+    {
+      "industry": "ai",
+      "mode": "decode",
+      "tone": "playful",
+      "passed": true,
+      "check": "conditional interpretations and actionable question",
+      "input": "请先拉齐 AI 客服的优先级，我有点烦。",
+      "output": {
+        "mode": "decode",
+        "input": "请先拉齐 AI 客服的优先级，我有点烦。",
+        "matches": [
+          {
+            "phrase": "alignment",
+            "plain_english": "Reach agreement on goals and responsibilities.",
+            "plain_language": "让各方就目标、规则和分工达成一致。",
+            "possible_subtext": "可能存在口径不统一或尚未作出的决定。"
+          }
+        ],
+        "summary": "以下只是可能的解读，不能仅凭黑话推断发言者的真实意图。",
+        "certainty": "可能的解读，发言者动机未经证实",
+        "clarifying_question": "这件事由谁负责、何时完成、用什么指标判断效果？",
+        "source": "offline-phrasebook",
+        "industry_followup": "如何核验答案采纳率、人工转接率与单次成本？",
+        "connection_note": "先给黑话开个灯：下一步由谁做、什么时候做？"
+      },
+      "error": ""
+    },
+    {
+      "industry": "ai",
+      "mode": "encode",
+      "tone": "playful",
+      "passed": true,
+      "check": "no fabricated metrics, pending validation or deployment preserved",
+      "input": "已经修了 AI 客服的重试缺陷，还没上线。",
+      "output": {
+        "mode": "encode",
+        "source_note": "已经修了 AI 客服的重试缺陷，还没上线。",
+        "executive_update": "已经已修复 AI 客服的重试缺陷，尚未上线。",
+        "headline": "进展：已经已修复 AI 客服的重试缺陷，尚未上线",
+        "business_relevance": "优先验证：答案采纳率、人工转接率与单次成本；同时比较上线前基线，不预设节省金额。",
+        "impact": "原始记录尚未给出可核实的量化收益。",
+        "next_step": "完成待办验证并确认上线范围；不要把测试结果写成生产收益。",
+        "risk_flags": [
+          "restricted_evidence_or_rollout"
+        ],
+        "evidence_ledger": {
+          "numeric_claims_in_source": [],
+          "new_numbers_in_output": [],
+          "independent_verification": false
+        },
+        "style": "executive",
+        "source": "offline-conservative-rewrite",
+        "connection_note": "真正的成果不靠 PPT 里的魔法百分比撑场面。"
+      },
+      "error": ""
+    },
+    {
+      "industry": "finance",
+      "mode": "explain",
+      "tone": "neutral",
+      "passed": true,
+      "check": "metaphor + grounded constraints + industry scene",
+      "input": "RAG",
+      "output": {
+        "term": "RAG",
+        "technical": "先从外部资料中检索相关内容，再把它作为上下文用于生成答案。",
+        "human": "像开卷考试。学生先翻到规定教材的相关页，再回答题目并写出处；翻错页照样可能答错。",
+        "business": "无需每次重训模型就能接入更新的业务资料，但要验证召回、引用和错答率。",
+        "caveat": "RAG 只能减少部分无依据回答，不能彻底消除幻觉。",
+        "audience": "cfo",
+        "mode": "explain",
+        "source": "curated-offline-glossary",
+        "audience_guidance": "财务决策：与原流程比较总成本与节省的人力，要求核实检索命中率、引用正确率和无依据回答率。",
+        "language": "zh",
+        "industry_scenario": "【假设案例·Banking / Fintech】在“交易对账与反欺诈复核”中，可以先检索经授权的资料、附上出处，再给答复。这只是应用示意，不代表某机构已部署。",
+        "industry_measurement": "优先验证：错误警报、漏报率及人工复核时间；同时比较上线前基线，不预设节省金额。"
+      },
+      "error": ""
+    },
+    {
+      "industry": "finance",
+      "mode": "decode",
+      "tone": "neutral",
+      "passed": true,
+      "check": "conditional interpretations and actionable question",
+      "input": "领导说反欺诈验证要闭环，我有点困惑。",
+      "output": {
+        "mode": "decode",
+        "input": "领导说反欺诈验证要闭环，我有点困惑。",
+        "matches": [
+          {
+            "phrase": "action items",
+            "plain_english": "Concrete tasks with owners and dates.",
+            "plain_language": "把讨论转成有负责人和截止时间的具体任务。",
+            "possible_subtext": "只说闭环却没有责任人与时间表，仍然无法执行。"
+          }
+        ],
+        "summary": "以下只是可能的解读，不能仅凭黑话推断发言者的真实意图。",
+        "certainty": "可能的解读，发言者动机未经证实",
+        "clarifying_question": "这件事由谁负责、何时完成、用什么指标判断效果？",
+        "source": "offline-phrasebook",
+        "industry_followup": "如何核验错误警报、漏报率及人工复核时间？"
+      },
+      "error": ""
+    },
+    {
+      "industry": "finance",
+      "mode": "encode",
+      "tone": "neutral",
+      "passed": true,
+      "check": "no fabricated metrics, pending validation or deployment preserved",
+      "input": "修复反欺诈告警展示问题，目前只在测试环境验证。",
+      "output": {
+        "mode": "encode",
+        "source_note": "修复反欺诈告警展示问题，目前只在测试环境验证。",
+        "executive_update": "修复反欺诈告警展示问题，目前仅在测试环境验证。",
+        "headline": "进展：修复反欺诈告警展示问题，目前仅在测试环境验证",
+        "business_relevance": "优先验证：错误警报、漏报率及人工复核时间；同时比较上线前基线，不预设节省金额。",
+        "impact": "原始记录尚未给出可核实的量化收益。",
+        "next_step": "完成待办验证并确认上线范围；不要把测试结果写成生产收益。",
+        "risk_flags": [
+          "restricted_evidence_or_rollout"
+        ],
+        "evidence_ledger": {
+          "numeric_claims_in_source": [],
+          "new_numbers_in_output": [],
+          "independent_verification": false
+        },
+        "style": "executive",
+        "source": "offline-conservative-rewrite"
+      },
+      "error": ""
+    },
+    {
+      "industry": "finance",
+      "mode": "explain",
+      "tone": "playful",
+      "passed": true,
+      "check": "metaphor + grounded constraints + industry scene",
+      "input": "RAG",
+      "output": {
+        "term": "RAG",
+        "technical": "先从外部资料中检索相关内容，再把它作为上下文用于生成答案。",
+        "human": "像开卷考试。学生先翻到规定教材的相关页，再回答题目并写出处；翻错页照样可能答错。",
+        "business": "无需每次重训模型就能接入更新的业务资料，但要验证召回、引用和错答率。",
+        "caveat": "RAG 只能减少部分无依据回答，不能彻底消除幻觉。",
+        "audience": "cfo",
+        "mode": "explain",
+        "source": "curated-offline-glossary",
+        "audience_guidance": "财务决策：与原流程比较总成本与节省的人力，要求核实检索命中率、引用正确率和无依据回答率。",
+        "language": "zh",
+        "industry_scenario": "【假设案例·Banking / Fintech】在“交易对账与反欺诈复核”中，可以先检索经授权的资料、附上出处，再给答复。这只是应用示意，不代表某机构已部署。",
+        "industry_measurement": "优先验证：错误警报、漏报率及人工复核时间；同时比较上线前基线，不预设节省金额。",
+        "connection_note": "Think of this as removing the jargon wrapper, not adding another manual."
+      },
+      "error": ""
+    },
+    {
+      "industry": "finance",
+      "mode": "decode",
+      "tone": "playful",
+      "passed": true,
+      "check": "conditional interpretations and actionable question",
+      "input": "领导说反欺诈验证要闭环，我有点困惑。",
+      "output": {
+        "mode": "decode",
+        "input": "领导说反欺诈验证要闭环，我有点困惑。",
+        "matches": [
+          {
+            "phrase": "action items",
+            "plain_english": "Concrete tasks with owners and dates.",
+            "plain_language": "把讨论转成有负责人和截止时间的具体任务。",
+            "possible_subtext": "只说闭环却没有责任人与时间表，仍然无法执行。"
+          }
+        ],
+        "summary": "以下只是可能的解读，不能仅凭黑话推断发言者的真实意图。",
+        "certainty": "可能的解读，发言者动机未经证实",
+        "clarifying_question": "这件事由谁负责、何时完成、用什么指标判断效果？",
+        "source": "offline-phrasebook",
+        "industry_followup": "如何核验错误警报、漏报率及人工复核时间？",
+        "connection_note": "先给黑话开个灯：下一步由谁做、什么时候做？"
+      },
+      "error": ""
+    },
+    {
+      "industry": "finance",
+      "mode": "encode",
+      "tone": "playful",
+      "passed": true,
+      "check": "no fabricated metrics, pending validation or deployment preserved",
+      "input": "修复反欺诈告警展示问题，目前只在测试环境验证。",
+      "output": {
+        "mode": "encode",
+        "source_note": "修复反欺诈告警展示问题，目前只在测试环境验证。",
+        "executive_update": "修复反欺诈告警展示问题，目前仅在测试环境验证。",
+        "headline": "进展：修复反欺诈告警展示问题，目前仅在测试环境验证",
+        "business_relevance": "优先验证：错误警报、漏报率及人工复核时间；同时比较上线前基线，不预设节省金额。",
+        "impact": "原始记录尚未给出可核实的量化收益。",
+        "next_step": "完成待办验证并确认上线范围；不要把测试结果写成生产收益。",
+        "risk_flags": [
+          "restricted_evidence_or_rollout"
+        ],
+        "evidence_ledger": {
+          "numeric_claims_in_source": [],
+          "new_numbers_in_output": [],
+          "independent_verification": false
+        },
+        "style": "executive",
+        "source": "offline-conservative-rewrite",
+        "connection_note": "真正的成果不靠 PPT 里的魔法百分比撑场面。"
+      },
+      "error": ""
+    },
+    {
+      "industry": "healthcare",
+      "mode": "explain",
+      "tone": "neutral",
+      "passed": true,
+      "check": "metaphor + grounded constraints + industry scene",
+      "input": "Agent",
+      "output": {
+        "term": "Agent",
+        "technical": "由模型规划步骤、调用工具、处理结果的自动化软件系统。",
+        "human": "像有工具箱和门禁权限的新同事。你交代目标，他可以查资料、填表、提交草稿；但付款或删库仍需要主管授权。",
+        "business": "适合步骤明确、可审核的重复任务；计算人工节省时也要扣除监督、工具调用与异常处理成本。",
+        "caveat": "Agent 不是无权限限制的自动员工，关键操作必须有人审查和技术授权。",
+        "audience": "cfo",
+        "mode": "explain",
+        "source": "curated-offline-glossary",
+        "audience_guidance": "财务决策：与原流程比较总成本与节省的人力，要求核实任务完成率、人工介入与单次运行成本。",
+        "language": "zh",
+        "industry_scenario": "【假设案例·Healthcare / Hospital】在“预约指引与院内知识查询”中，可以在人工授权范围内执行多步任务并处理异常。这只是应用示意，不代表某机构已部署。",
+        "industry_measurement": "优先验证：引用准确率、错误建议率及人工复核；同时比较上线前基线，不预设节省金额。"
+      },
+      "error": ""
+    },
+    {
+      "industry": "healthcare",
+      "mode": "decode",
+      "tone": "neutral",
+      "passed": true,
+      "check": "conditional interpretations and actionable question",
+      "input": "医院排班项目要先对齐流程，我有点烦。",
+      "output": {
+        "mode": "decode",
+        "input": "医院排班项目要先对齐流程，我有点烦。",
+        "matches": [
+          {
+            "phrase": "alignment",
+            "plain_english": "Reach agreement on goals and responsibilities.",
+            "plain_language": "让各方就目标、规则和分工达成一致。",
+            "possible_subtext": "可能存在口径不统一或尚未作出的决定。"
+          }
+        ],
+        "summary": "以下只是可能的解读，不能仅凭黑话推断发言者的真实意图。",
+        "certainty": "可能的解读，发言者动机未经证实",
+        "clarifying_question": "这件事由谁负责、何时完成、用什么指标判断效果？",
+        "source": "offline-phrasebook",
+        "industry_followup": "如何核验引用准确率、错误建议率及人工复核？"
+      },
+      "error": ""
+    },
+    {
+      "industry": "healthcare",
+      "mode": "encode",
+      "tone": "neutral",
+      "passed": true,
+      "check": "no fabricated metrics, pending validation or deployment preserved",
+      "input": "医院预约页面已修复显示问题，尚未上线。",
+      "output": {
+        "mode": "encode",
+        "source_note": "医院预约页面已修复显示问题，尚未上线。",
+        "executive_update": "医院预约页面已修复显示问题，尚未上线。",
+        "headline": "进展：医院预约页面已修复显示问题，尚未上线",
+        "business_relevance": "优先验证：引用准确率、错误建议率及人工复核；同时比较上线前基线，不预设节省金额。",
+        "impact": "原始记录尚未给出可核实的量化收益。",
+        "next_step": "完成待办验证并确认上线范围；不要把测试结果写成生产收益。",
+        "risk_flags": [
+          "restricted_evidence_or_rollout"
+        ],
+        "evidence_ledger": {
+          "numeric_claims_in_source": [],
+          "new_numbers_in_output": [],
+          "independent_verification": false
+        },
+        "style": "executive",
+        "source": "offline-conservative-rewrite"
+      },
+      "error": ""
+    },
+    {
+      "industry": "healthcare",
+      "mode": "explain",
+      "tone": "playful",
+      "passed": true,
+      "check": "metaphor + grounded constraints + industry scene",
+      "input": "Agent",
+      "output": {
+        "term": "Agent",
+        "technical": "由模型规划步骤、调用工具、处理结果的自动化软件系统。",
+        "human": "像有工具箱和门禁权限的新同事。你交代目标，他可以查资料、填表、提交草稿；但付款或删库仍需要主管授权。",
+        "business": "适合步骤明确、可审核的重复任务；计算人工节省时也要扣除监督、工具调用与异常处理成本。",
+        "caveat": "Agent 不是无权限限制的自动员工，关键操作必须有人审查和技术授权。",
+        "audience": "cfo",
+        "mode": "explain",
+        "source": "curated-offline-glossary",
+        "audience_guidance": "财务决策：与原流程比较总成本与节省的人力，要求核实任务完成率、人工介入与单次运行成本。",
+        "language": "zh",
+        "industry_scenario": "【假设案例·Healthcare / Hospital】在“预约指引与院内知识查询”中，可以在人工授权范围内执行多步任务并处理异常。这只是应用示意，不代表某机构已部署。",
+        "industry_measurement": "优先验证：引用准确率、错误建议率及人工复核；同时比较上线前基线，不预设节省金额。",
+        "connection_note": "Think of this as removing the jargon wrapper, not adding another manual."
+      },
+      "error": ""
+    },
+    {
+      "industry": "healthcare",
+      "mode": "decode",
+      "tone": "playful",
+      "passed": true,
+      "check": "conditional interpretations and actionable question",
+      "input": "医院排班项目要先对齐流程，我有点烦。",
+      "output": {
+        "mode": "decode",
+        "input": "医院排班项目要先对齐流程，我有点烦。",
+        "matches": [
+          {
+            "phrase": "alignment",
+            "plain_english": "Reach agreement on goals and responsibilities.",
+            "plain_language": "让各方就目标、规则和分工达成一致。",
+            "possible_subtext": "可能存在口径不统一或尚未作出的决定。"
+          }
+        ],
+        "summary": "以下只是可能的解读，不能仅凭黑话推断发言者的真实意图。",
+        "certainty": "可能的解读，发言者动机未经证实",
+        "clarifying_question": "这件事由谁负责、何时完成、用什么指标判断效果？",
+        "source": "offline-phrasebook",
+        "industry_followup": "如何核验引用准确率、错误建议率及人工复核？",
+        "connection_note": "先给黑话开个灯：下一步由谁做、什么时候做？"
+      },
+      "error": ""
+    },
+    {
+      "industry": "healthcare",
+      "mode": "encode",
+      "tone": "playful",
+      "passed": true,
+      "check": "no fabricated metrics, pending validation or deployment preserved",
+      "input": "医院预约页面已修复显示问题，尚未上线。",
+      "output": {
+        "mode": "encode",
+        "source_note": "医院预约页面已修复显示问题，尚未上线。",
+        "executive_update": "医院预约页面已修复显示问题，尚未上线。",
+        "headline": "进展：医院预约页面已修复显示问题，尚未上线",
+        "business_relevance": "优先验证：引用准确率、错误建议率及人工复核；同时比较上线前基线，不预设节省金额。",
+        "impact": "原始记录尚未给出可核实的量化收益。",
+        "next_step": "完成待办验证并确认上线范围；不要把测试结果写成生产收益。",
+        "risk_flags": [
+          "restricted_evidence_or_rollout"
+        ],
+        "evidence_ledger": {
+          "numeric_claims_in_source": [],
+          "new_numbers_in_output": [],
+          "independent_verification": false
+        },
+        "style": "executive",
+        "source": "offline-conservative-rewrite",
+        "connection_note": "真正的成果不靠 PPT 里的魔法百分比撑场面。"
+      },
+      "error": ""
+    },
+    {
+      "industry": "manufacturing",
+      "mode": "explain",
+      "tone": "neutral",
+      "passed": true,
+      "check": "metaphor + grounded constraints + industry scene",
+      "input": "Quantization",
+      "output": {
+        "term": "Quantization",
+        "technical": "使用更低的数字精度表示模型中的数值，以减少体积或计算需求。",
+        "human": "像把一张详细地图压缩成口袋地图，携带更方便，但细小标记可能看不清。",
+        "business": "可能降低部署显存与成本，但应在真实硬件上测量速度、准确率和功耗。",
+        "caveat": "精度下降会带来质量风险，提速效果取决于硬件和软件实现。",
+        "audience": "cfo",
+        "mode": "explain",
+        "source": "curated-offline-glossary",
+        "audience_guidance": "财务决策：与原流程比较总成本与节省的人力，要求核实模型准确度、运行速度与显存需求。",
+        "language": "zh",
+        "industry_scenario": "【假设案例·Manufacturing / Factory】在“设备维护与质量巡检”中，可以在低精度部署下验证速度、成本和质量。这只是应用示意，不代表某机构已部署。",
+        "industry_measurement": "优先验证：停机时长、误报与人工复核成本；同时比较上线前基线，不预设节省金额。"
+      },
+      "error": ""
+    },
+    {
+      "industry": "manufacturing",
+      "mode": "decode",
+      "tone": "neutral",
+      "passed": true,
+      "check": "conditional interpretations and actionable question",
+      "input": "生产线检测需求要拉齐，我有点头大。",
+      "output": {
+        "mode": "decode",
+        "input": "生产线检测需求要拉齐，我有点头大。",
+        "matches": [
+          {
+            "phrase": "alignment",
+            "plain_english": "Reach agreement on goals and responsibilities.",
+            "plain_language": "让各方就目标、规则和分工达成一致。",
+            "possible_subtext": "可能存在口径不统一或尚未作出的决定。"
+          }
+        ],
+        "summary": "以下只是可能的解读，不能仅凭黑话推断发言者的真实意图。",
+        "certainty": "可能的解读，发言者动机未经证实",
+        "clarifying_question": "这件事由谁负责、何时完成、用什么指标判断效果？",
+        "source": "offline-phrasebook",
+        "industry_followup": "如何核验停机时长、误报与人工复核成本？"
+      },
+      "error": ""
+    },
+    {
+      "industry": "manufacturing",
+      "mode": "encode",
+      "tone": "neutral",
+      "passed": true,
+      "check": "no fabricated metrics, pending validation or deployment preserved",
+      "input": "修好了生产线巡检日报的缺陷，还要压测。",
+      "output": {
+        "mode": "encode",
+        "source_note": "修好了生产线巡检日报的缺陷，还要压测。",
+        "executive_update": "已修复生产线巡检日报的缺陷，仍需压力测试。",
+        "headline": "进展：已修复生产线巡检日报的缺陷，仍需压力测试",
+        "business_relevance": "优先验证：停机时长、误报与人工复核成本；同时比较上线前基线，不预设节省金额。",
+        "impact": "原始记录尚未给出可核实的量化收益。",
+        "next_step": "完成待办验证并确认上线范围；不要把测试结果写成生产收益。",
+        "risk_flags": [
+          "restricted_evidence_or_rollout"
+        ],
+        "evidence_ledger": {
+          "numeric_claims_in_source": [],
+          "new_numbers_in_output": [],
+          "independent_verification": false
+        },
+        "style": "executive",
+        "source": "offline-conservative-rewrite"
+      },
+      "error": ""
+    },
+    {
+      "industry": "manufacturing",
+      "mode": "explain",
+      "tone": "playful",
+      "passed": true,
+      "check": "metaphor + grounded constraints + industry scene",
+      "input": "Quantization",
+      "output": {
+        "term": "Quantization",
+        "technical": "使用更低的数字精度表示模型中的数值，以减少体积或计算需求。",
+        "human": "像把一张详细地图压缩成口袋地图，携带更方便，但细小标记可能看不清。",
+        "business": "可能降低部署显存与成本，但应在真实硬件上测量速度、准确率和功耗。",
+        "caveat": "精度下降会带来质量风险，提速效果取决于硬件和软件实现。",
+        "audience": "cfo",
+        "mode": "explain",
+        "source": "curated-offline-glossary",
+        "audience_guidance": "财务决策：与原流程比较总成本与节省的人力，要求核实模型准确度、运行速度与显存需求。",
+        "language": "zh",
+        "industry_scenario": "【假设案例·Manufacturing / Factory】在“设备维护与质量巡检”中，可以在低精度部署下验证速度、成本和质量。这只是应用示意，不代表某机构已部署。",
+        "industry_measurement": "优先验证：停机时长、误报与人工复核成本；同时比较上线前基线，不预设节省金额。",
+        "connection_note": "Think of this as removing the jargon wrapper, not adding another manual."
+      },
+      "error": ""
+    },
+    {
+      "industry": "manufacturing",
+      "mode": "decode",
+      "tone": "playful",
+      "passed": true,
+      "check": "conditional interpretations and actionable question",
+      "input": "生产线检测需求要拉齐，我有点头大。",
+      "output": {
+        "mode": "decode",
+        "input": "生产线检测需求要拉齐，我有点头大。",
+        "matches": [
+          {
+            "phrase": "alignment",
+            "plain_english": "Reach agreement on goals and responsibilities.",
+            "plain_language": "让各方就目标、规则和分工达成一致。",
+            "possible_subtext": "可能存在口径不统一或尚未作出的决定。"
+          }
+        ],
+        "summary": "以下只是可能的解读，不能仅凭黑话推断发言者的真实意图。",
+        "certainty": "可能的解读，发言者动机未经证实",
+        "clarifying_question": "这件事由谁负责、何时完成、用什么指标判断效果？",
+        "source": "offline-phrasebook",
+        "industry_followup": "如何核验停机时长、误报与人工复核成本？",
+        "connection_note": "先给黑话开个灯：下一步由谁做、什么时候做？"
+      },
+      "error": ""
+    },
+    {
+      "industry": "manufacturing",
+      "mode": "encode",
+      "tone": "playful",
+      "passed": true,
+      "check": "no fabricated metrics, pending validation or deployment preserved",
+      "input": "修好了生产线巡检日报的缺陷，还要压测。",
+      "output": {
+        "mode": "encode",
+        "source_note": "修好了生产线巡检日报的缺陷，还要压测。",
+        "executive_update": "已修复生产线巡检日报的缺陷，仍需压力测试。",
+        "headline": "进展：已修复生产线巡检日报的缺陷，仍需压力测试",
+        "business_relevance": "优先验证：停机时长、误报与人工复核成本；同时比较上线前基线，不预设节省金额。",
+        "impact": "原始记录尚未给出可核实的量化收益。",
+        "next_step": "完成待办验证并确认上线范围；不要把测试结果写成生产收益。",
+        "risk_flags": [
+          "restricted_evidence_or_rollout"
+        ],
+        "evidence_ledger": {
+          "numeric_claims_in_source": [],
+          "new_numbers_in_output": [],
+          "independent_verification": false
+        },
+        "style": "executive",
+        "source": "offline-conservative-rewrite",
+        "connection_note": "真正的成果不靠 PPT 里的魔法百分比撑场面。"
+      },
+      "error": ""
+    },
+    {
+      "industry": "education",
+      "mode": "explain",
+      "tone": "neutral",
+      "passed": true,
+      "check": "metaphor + grounded constraints + industry scene",
+      "input": "Fine-tuning",
+      "output": {
+        "term": "Fine-tuning",
+        "technical": "用专门训练数据进一步更新模型参数，使其适应特定任务。",
+        "human": "像让好厨师长期练习餐厅的招牌菜，而不是每次点餐再重新讲一遍做法。",
+        "business": "适合大量重复且规则稳定的输出任务，需与只改提示词或用 RAG 的方案比较投入。",
+        "caveat": "微调不等于更新实时知识，也不能保证内容一定正确。",
+        "audience": "cfo",
+        "mode": "explain",
+        "source": "curated-offline-glossary",
+        "audience_guidance": "财务决策：与原流程比较总成本与节省的人力，要求核实实际效果、成本和人工复核情况。",
+        "language": "zh",
+        "industry_scenario": "【假设案例·Education / EdTech】在“课程资料检索与学习答疑”中，可以以已授权样本训练，再对比基线效果。这只是应用示意，不代表某机构已部署。",
+        "industry_measurement": "优先验证：答题准确率、引用覆盖与教师复核；同时比较上线前基线，不预设节省金额。"
+      },
+      "error": ""
+    },
+    {
+      "industry": "education",
+      "mode": "decode",
+      "tone": "neutral",
+      "passed": true,
+      "check": "conditional interpretations and actionable question",
+      "input": "教研团队说要先闭环，我有点困惑。",
+      "output": {
+        "mode": "decode",
+        "input": "教研团队说要先闭环，我有点困惑。",
+        "matches": [
+          {
+            "phrase": "action items",
+            "plain_english": "Concrete tasks with owners and dates.",
+            "plain_language": "把讨论转成有负责人和截止时间的具体任务。",
+            "possible_subtext": "只说闭环却没有责任人与时间表，仍然无法执行。"
+          }
+        ],
+        "summary": "以下只是可能的解读，不能仅凭黑话推断发言者的真实意图。",
+        "certainty": "可能的解读，发言者动机未经证实",
+        "clarifying_question": "这件事由谁负责、何时完成、用什么指标判断效果？",
+        "source": "offline-phrasebook",
+        "industry_followup": "如何核验答题准确率、引用覆盖与教师复核？"
+      },
+      "error": ""
+    },
+    {
+      "industry": "education",
+      "mode": "encode",
+      "tone": "neutral",
+      "passed": true,
+      "check": "no fabricated metrics, pending validation or deployment preserved",
+      "input": "课程检索的错链已修复，尚未验收。",
+      "output": {
+        "mode": "encode",
+        "source_note": "课程检索的错链已修复，尚未验收。",
+        "executive_update": "课程检索的错链已修复，尚未验收。",
+        "headline": "进展：课程检索的错链已修复，尚未验收",
+        "business_relevance": "优先验证：答题准确率、引用覆盖与教师复核；同时比较上线前基线，不预设节省金额。",
+        "impact": "原始记录尚未给出可核实的量化收益。",
+        "next_step": "完成待办验证并确认上线范围；不要把测试结果写成生产收益。",
+        "risk_flags": [
+          "restricted_evidence_or_rollout"
+        ],
+        "evidence_ledger": {
+          "numeric_claims_in_source": [],
+          "new_numbers_in_output": [],
+          "independent_verification": false
+        },
+        "style": "executive",
+        "source": "offline-conservative-rewrite"
+      },
+      "error": ""
+    },
+    {
+      "industry": "education",
+      "mode": "explain",
+      "tone": "playful",
+      "passed": true,
+      "check": "metaphor + grounded constraints + industry scene",
+      "input": "Fine-tuning",
+      "output": {
+        "term": "Fine-tuning",
+        "technical": "用专门训练数据进一步更新模型参数，使其适应特定任务。",
+        "human": "像让好厨师长期练习餐厅的招牌菜，而不是每次点餐再重新讲一遍做法。",
+        "business": "适合大量重复且规则稳定的输出任务，需与只改提示词或用 RAG 的方案比较投入。",
+        "caveat": "微调不等于更新实时知识，也不能保证内容一定正确。",
+        "audience": "cfo",
+        "mode": "explain",
+        "source": "curated-offline-glossary",
+        "audience_guidance": "财务决策：与原流程比较总成本与节省的人力，要求核实实际效果、成本和人工复核情况。",
+        "language": "zh",
+        "industry_scenario": "【假设案例·Education / EdTech】在“课程资料检索与学习答疑”中，可以以已授权样本训练，再对比基线效果。这只是应用示意，不代表某机构已部署。",
+        "industry_measurement": "优先验证：答题准确率、引用覆盖与教师复核；同时比较上线前基线，不预设节省金额。",
+        "connection_note": "Think of this as removing the jargon wrapper, not adding another manual."
+      },
+      "error": ""
+    },
+    {
+      "industry": "education",
+      "mode": "decode",
+      "tone": "playful",
+      "passed": true,
+      "check": "conditional interpretations and actionable question",
+      "input": "教研团队说要先闭环，我有点困惑。",
+      "output": {
+        "mode": "decode",
+        "input": "教研团队说要先闭环，我有点困惑。",
+        "matches": [
+          {
+            "phrase": "action items",
+            "plain_english": "Concrete tasks with owners and dates.",
+            "plain_language": "把讨论转成有负责人和截止时间的具体任务。",
+            "possible_subtext": "只说闭环却没有责任人与时间表，仍然无法执行。"
+          }
+        ],
+        "summary": "以下只是可能的解读，不能仅凭黑话推断发言者的真实意图。",
+        "certainty": "可能的解读，发言者动机未经证实",
+        "clarifying_question": "这件事由谁负责、何时完成、用什么指标判断效果？",
+        "source": "offline-phrasebook",
+        "industry_followup": "如何核验答题准确率、引用覆盖与教师复核？",
+        "connection_note": "先给黑话开个灯：下一步由谁做、什么时候做？"
+      },
+      "error": ""
+    },
+    {
+      "industry": "education",
+      "mode": "encode",
+      "tone": "playful",
+      "passed": true,
+      "check": "no fabricated metrics, pending validation or deployment preserved",
+      "input": "课程检索的错链已修复，尚未验收。",
+      "output": {
+        "mode": "encode",
+        "source_note": "课程检索的错链已修复，尚未验收。",
+        "executive_update": "课程检索的错链已修复，尚未验收。",
+        "headline": "进展：课程检索的错链已修复，尚未验收",
+        "business_relevance": "优先验证：答题准确率、引用覆盖与教师复核；同时比较上线前基线，不预设节省金额。",
+        "impact": "原始记录尚未给出可核实的量化收益。",
+        "next_step": "完成待办验证并确认上线范围；不要把测试结果写成生产收益。",
+        "risk_flags": [
+          "restricted_evidence_or_rollout"
+        ],
+        "evidence_ledger": {
+          "numeric_claims_in_source": [],
+          "new_numbers_in_output": [],
+          "independent_verification": false
+        },
+        "style": "executive",
+        "source": "offline-conservative-rewrite",
+        "connection_note": "真正的成果不靠 PPT 里的魔法百分比撑场面。"
+      },
+      "error": ""
+    },
+    {
+      "industry": "retail",
+      "mode": "explain",
+      "tone": "neutral",
+      "passed": true,
+      "check": "metaphor + grounded constraints + industry scene",
+      "input": "API",
+      "output": {
+        "term": "API",
+        "technical": "软件之间按约定格式交换请求与响应的接口。",
+        "human": "像酒店前台。你按规定报房号、说明需求，前台才把请求交给对应服务；不是让每个客人自己跑到机房操作。",
+        "business": "通过现成接口接入能力可以减少自建成本，但要核算服务费、稳定性、权限与迁移风险。",
+        "caveat": "API 不是物理插口；‘套个壳’也可能需要大量工程、运营和安全投入。",
+        "audience": "cfo",
+        "mode": "explain",
+        "source": "curated-offline-glossary",
+        "audience_guidance": "财务决策：与原流程比较总成本与节省的人力，要求核实接口稳定性、维护时间及调用成本。",
+        "language": "zh",
+        "industry_scenario": "【假设案例·Retail / Restaurants】在“门店库存查询与客服支持”中，可以连接业务系统并追踪调用失败、权限与费用。这只是应用示意，不代表某机构已部署。",
+        "industry_measurement": "优先验证：库存准确率、误导回答与处理时间；同时比较上线前基线，不预设节省金额。"
+      },
+      "error": ""
+    },
+    {
+      "industry": "retail",
+      "mode": "decode",
+      "tone": "neutral",
+      "passed": true,
+      "check": "conditional interpretations and actionable question",
+      "input": "门店同步项目说先对齐，我有点烦。",
+      "output": {
+        "mode": "decode",
+        "input": "门店同步项目说先对齐，我有点烦。",
+        "matches": [
+          {
+            "phrase": "alignment",
+            "plain_english": "Reach agreement on goals and responsibilities.",
+            "plain_language": "让各方就目标、规则和分工达成一致。",
+            "possible_subtext": "可能存在口径不统一或尚未作出的决定。"
+          }
+        ],
+        "summary": "以下只是可能的解读，不能仅凭黑话推断发言者的真实意图。",
+        "certainty": "可能的解读，发言者动机未经证实",
+        "clarifying_question": "这件事由谁负责、何时完成、用什么指标判断效果？",
+        "source": "offline-phrasebook",
+        "industry_followup": "如何核验库存准确率、误导回答与处理时间？"
+      },
+      "error": ""
+    },
+    {
+      "industry": "retail",
+      "mode": "encode",
+      "tone": "neutral",
+      "passed": true,
+      "check": "no fabricated metrics, pending validation or deployment preserved",
+      "input": "把库存展示的问题修了，还没上线。",
+      "output": {
+        "mode": "encode",
+        "source_note": "把库存展示的问题修了，还没上线。",
+        "executive_update": "已修复库存展示的问题，尚未上线。",
+        "headline": "进展：已修复库存展示的问题，尚未上线",
+        "business_relevance": "优先验证：库存准确率、误导回答与处理时间；同时比较上线前基线，不预设节省金额。",
+        "impact": "原始记录尚未给出可核实的量化收益。",
+        "next_step": "完成待办验证并确认上线范围；不要把测试结果写成生产收益。",
+        "risk_flags": [
+          "restricted_evidence_or_rollout"
+        ],
+        "evidence_ledger": {
+          "numeric_claims_in_source": [],
+          "new_numbers_in_output": [],
+          "independent_verification": false
+        },
+        "style": "executive",
+        "source": "offline-conservative-rewrite"
+      },
+      "error": ""
+    },
+    {
+      "industry": "retail",
+      "mode": "explain",
+      "tone": "playful",
+      "passed": true,
+      "check": "metaphor + grounded constraints + industry scene",
+      "input": "API",
+      "output": {
+        "term": "API",
+        "technical": "软件之间按约定格式交换请求与响应的接口。",
+        "human": "像酒店前台。你按规定报房号、说明需求，前台才把请求交给对应服务；不是让每个客人自己跑到机房操作。",
+        "business": "通过现成接口接入能力可以减少自建成本，但要核算服务费、稳定性、权限与迁移风险。",
+        "caveat": "API 不是物理插口；‘套个壳’也可能需要大量工程、运营和安全投入。",
+        "audience": "cfo",
+        "mode": "explain",
+        "source": "curated-offline-glossary",
+        "audience_guidance": "财务决策：与原流程比较总成本与节省的人力，要求核实接口稳定性、维护时间及调用成本。",
+        "language": "zh",
+        "industry_scenario": "【假设案例·Retail / Restaurants】在“门店库存查询与客服支持”中，可以连接业务系统并追踪调用失败、权限与费用。这只是应用示意，不代表某机构已部署。",
+        "industry_measurement": "优先验证：库存准确率、误导回答与处理时间；同时比较上线前基线，不预设节省金额。",
+        "connection_note": "Think of this as removing the jargon wrapper, not adding another manual."
+      },
+      "error": ""
+    },
+    {
+      "industry": "retail",
+      "mode": "decode",
+      "tone": "playful",
+      "passed": true,
+      "check": "conditional interpretations and actionable question",
+      "input": "门店同步项目说先对齐，我有点烦。",
+      "output": {
+        "mode": "decode",
+        "input": "门店同步项目说先对齐，我有点烦。",
+        "matches": [
+          {
+            "phrase": "alignment",
+            "plain_english": "Reach agreement on goals and responsibilities.",
+            "plain_language": "让各方就目标、规则和分工达成一致。",
+            "possible_subtext": "可能存在口径不统一或尚未作出的决定。"
+          }
+        ],
+        "summary": "以下只是可能的解读，不能仅凭黑话推断发言者的真实意图。",
+        "certainty": "可能的解读，发言者动机未经证实",
+        "clarifying_question": "这件事由谁负责、何时完成、用什么指标判断效果？",
+        "source": "offline-phrasebook",
+        "industry_followup": "如何核验库存准确率、误导回答与处理时间？",
+        "connection_note": "先给黑话开个灯：下一步由谁做、什么时候做？"
+      },
+      "error": ""
+    },
+    {
+      "industry": "retail",
+      "mode": "encode",
+      "tone": "playful",
+      "passed": true,
+      "check": "no fabricated metrics, pending validation or deployment preserved",
+      "input": "把库存展示的问题修了，还没上线。",
+      "output": {
+        "mode": "encode",
+        "source_note": "把库存展示的问题修了，还没上线。",
+        "executive_update": "已修复库存展示的问题，尚未上线。",
+        "headline": "进展：已修复库存展示的问题，尚未上线",
+        "business_relevance": "优先验证：库存准确率、误导回答与处理时间；同时比较上线前基线，不预设节省金额。",
+        "impact": "原始记录尚未给出可核实的量化收益。",
+        "next_step": "完成待办验证并确认上线范围；不要把测试结果写成生产收益。",
+        "risk_flags": [
+          "restricted_evidence_or_rollout"
+        ],
+        "evidence_ledger": {
+          "numeric_claims_in_source": [],
+          "new_numbers_in_output": [],
+          "independent_verification": false
+        },
+        "style": "executive",
+        "source": "offline-conservative-rewrite",
+        "connection_note": "真正的成果不靠 PPT 里的魔法百分比撑场面。"
+      },
+      "error": ""
+    },
+    {
+      "industry": "logistics",
+      "mode": "explain",
+      "tone": "neutral",
+      "passed": true,
+      "check": "metaphor + grounded constraints + industry scene",
+      "input": "Vector Embeddings",
+      "output": {
+        "term": "Vector Embeddings",
+        "technical": "将文本或其他对象编码成向量，以便通过相似度进行比较与检索。",
+        "human": "像给图书馆重新画一张‘意思地图’，把‘跑鞋’和‘慢跑装备’放近些，即使字面不一样也容易找到。",
+        "business": "能改善语义搜索与发现，但要把检索命中效果和向量存储、更新成本一起评估。",
+        "caveat": "相似度高不代表事实等价，误匹配和偏差仍需测量。",
+        "audience": "cfo",
+        "mode": "explain",
+        "source": "curated-offline-glossary",
+        "audience_guidance": "财务决策：与原流程比较总成本与节省的人力，要求核实搜索相关性与维护成本。",
+        "language": "zh",
+        "industry_scenario": "【假设案例·Logistics / Supply Chain】在“包裹状态查询与异常派单”中，可以检索语义相近的历史记录，复核误匹配。这只是应用示意，不代表某机构已部署。",
+        "industry_measurement": "优先验证：错派率、处理时间与通知准确率；同时比较上线前基线，不预设节省金额。"
+      },
+      "error": ""
+    },
+    {
+      "industry": "logistics",
+      "mode": "decode",
+      "tone": "neutral",
+      "passed": true,
+      "check": "conditional interpretations and actionable question",
+      "input": "配送异常要闭环，我看不懂是谁负责。",
+      "output": {
+        "mode": "decode",
+        "input": "配送异常要闭环，我看不懂是谁负责。",
+        "matches": [
+          {
+            "phrase": "action items",
+            "plain_english": "Concrete tasks with owners and dates.",
+            "plain_language": "把讨论转成有负责人和截止时间的具体任务。",
+            "possible_subtext": "只说闭环却没有责任人与时间表，仍然无法执行。"
+          }
+        ],
+        "summary": "以下只是可能的解读，不能仅凭黑话推断发言者的真实意图。",
+        "certainty": "可能的解读，发言者动机未经证实",
+        "clarifying_question": "这件事由谁负责、何时完成、用什么指标判断效果？",
+        "source": "offline-phrasebook",
+        "industry_followup": "如何核验错派率、处理时间与通知准确率？"
+      },
+      "error": ""
+    },
+    {
+      "industry": "logistics",
+      "mode": "encode",
+      "tone": "neutral",
+      "passed": true,
+      "check": "no fabricated metrics, pending validation or deployment preserved",
+      "input": "已修复物流扫码卡顿，目前测试环境验证。",
+      "output": {
+        "mode": "encode",
+        "source_note": "已修复物流扫码卡顿，目前测试环境验证。",
+        "executive_update": "已修复物流扫码卡顿，目前测试环境验证。",
+        "headline": "进展：已修复物流扫码卡顿，目前测试环境验证",
+        "business_relevance": "优先验证：错派率、处理时间与通知准确率；同时比较上线前基线，不预设节省金额。",
+        "impact": "原始记录尚未给出可核实的量化收益。",
+        "next_step": "完成待办验证并确认上线范围；不要把测试结果写成生产收益。",
+        "risk_flags": [
+          "restricted_evidence_or_rollout"
+        ],
+        "evidence_ledger": {
+          "numeric_claims_in_source": [],
+          "new_numbers_in_output": [],
+          "independent_verification": false
+        },
+        "style": "executive",
+        "source": "offline-conservative-rewrite"
+      },
+      "error": ""
+    },
+    {
+      "industry": "logistics",
+      "mode": "explain",
+      "tone": "playful",
+      "passed": true,
+      "check": "metaphor + grounded constraints + industry scene",
+      "input": "Vector Embeddings",
+      "output": {
+        "term": "Vector Embeddings",
+        "technical": "将文本或其他对象编码成向量，以便通过相似度进行比较与检索。",
+        "human": "像给图书馆重新画一张‘意思地图’，把‘跑鞋’和‘慢跑装备’放近些，即使字面不一样也容易找到。",
+        "business": "能改善语义搜索与发现，但要把检索命中效果和向量存储、更新成本一起评估。",
+        "caveat": "相似度高不代表事实等价，误匹配和偏差仍需测量。",
+        "audience": "cfo",
+        "mode": "explain",
+        "source": "curated-offline-glossary",
+        "audience_guidance": "财务决策：与原流程比较总成本与节省的人力，要求核实搜索相关性与维护成本。",
+        "language": "zh",
+        "industry_scenario": "【假设案例·Logistics / Supply Chain】在“包裹状态查询与异常派单”中，可以检索语义相近的历史记录，复核误匹配。这只是应用示意，不代表某机构已部署。",
+        "industry_measurement": "优先验证：错派率、处理时间与通知准确率；同时比较上线前基线，不预设节省金额。",
+        "connection_note": "Think of this as removing the jargon wrapper, not adding another manual."
+      },
+      "error": ""
+    },
+    {
+      "industry": "logistics",
+      "mode": "decode",
+      "tone": "playful",
+      "passed": true,
+      "check": "conditional interpretations and actionable question",
+      "input": "配送异常要闭环，我看不懂是谁负责。",
+      "output": {
+        "mode": "decode",
+        "input": "配送异常要闭环，我看不懂是谁负责。",
+        "matches": [
+          {
+            "phrase": "action items",
+            "plain_english": "Concrete tasks with owners and dates.",
+            "plain_language": "把讨论转成有负责人和截止时间的具体任务。",
+            "possible_subtext": "只说闭环却没有责任人与时间表，仍然无法执行。"
+          }
+        ],
+        "summary": "以下只是可能的解读，不能仅凭黑话推断发言者的真实意图。",
+        "certainty": "可能的解读，发言者动机未经证实",
+        "clarifying_question": "这件事由谁负责、何时完成、用什么指标判断效果？",
+        "source": "offline-phrasebook",
+        "industry_followup": "如何核验错派率、处理时间与通知准确率？",
+        "connection_note": "先给黑话开个灯：下一步由谁做、什么时候做？"
+      },
+      "error": ""
+    },
+    {
+      "industry": "logistics",
+      "mode": "encode",
+      "tone": "playful",
+      "passed": true,
+      "check": "no fabricated metrics, pending validation or deployment preserved",
+      "input": "已修复物流扫码卡顿，目前测试环境验证。",
+      "output": {
+        "mode": "encode",
+        "source_note": "已修复物流扫码卡顿，目前测试环境验证。",
+        "executive_update": "已修复物流扫码卡顿，目前测试环境验证。",
+        "headline": "进展：已修复物流扫码卡顿，目前测试环境验证",
+        "business_relevance": "优先验证：错派率、处理时间与通知准确率；同时比较上线前基线，不预设节省金额。",
+        "impact": "原始记录尚未给出可核实的量化收益。",
+        "next_step": "完成待办验证并确认上线范围；不要把测试结果写成生产收益。",
+        "risk_flags": [
+          "restricted_evidence_or_rollout"
+        ],
+        "evidence_ledger": {
+          "numeric_claims_in_source": [],
+          "new_numbers_in_output": [],
+          "independent_verification": false
+        },
+        "style": "executive",
+        "source": "offline-conservative-rewrite",
+        "connection_note": "真正的成果不靠 PPT 里的魔法百分比撑场面。"
+      },
+      "error": ""
+    },
+    {
+      "industry": "government",
+      "mode": "explain",
+      "tone": "neutral",
+      "passed": true,
+      "check": "metaphor + grounded constraints + industry scene",
+      "input": "Guardrails",
+      "output": {
+        "term": "Guardrails",
+        "technical": "用于限制输入、工具执行和输出的技术及流程控制。",
+        "human": "像安全带、红绿灯、驾照考试加起来，哪一道都不能保证绝不出事故，但每道都能拦住部分错误。",
+        "business": "通过权限、校验、日志和人工审批减少高风险操作；要衡量误拦与漏拦。",
+        "caveat": "只写一段‘请注意安全’的提示词，并不等于建立了真正的安全边界。",
+        "audience": "cfo",
+        "mode": "explain",
+        "source": "curated-offline-glossary",
+        "audience_guidance": "财务决策：与原流程比较总成本与节省的人力，要求核实实际效果、成本和人工复核情况。",
+        "language": "zh",
+        "industry_scenario": "【假设案例·Government / Public Service】在“政务事项指引与工单分流”中，可以拦截高风险请求并追踪误拦与漏拦。这只是应用示意，不代表某机构已部署。",
+        "industry_measurement": "优先验证：错误指引率、可追溯性与申诉路径；同时比较上线前基线，不预设节省金额。"
+      },
+      "error": ""
+    },
+    {
+      "industry": "government",
+      "mode": "decode",
+      "tone": "neutral",
+      "passed": true,
+      "check": "conditional interpretations and actionable question",
+      "input": "政务工单分流说先拉齐，我有点懵。",
+      "output": {
+        "mode": "decode",
+        "input": "政务工单分流说先拉齐，我有点懵。",
+        "matches": [
+          {
+            "phrase": "alignment",
+            "plain_english": "Reach agreement on goals and responsibilities.",
+            "plain_language": "让各方就目标、规则和分工达成一致。",
+            "possible_subtext": "可能存在口径不统一或尚未作出的决定。"
+          }
+        ],
+        "summary": "以下只是可能的解读，不能仅凭黑话推断发言者的真实意图。",
+        "certainty": "可能的解读，发言者动机未经证实",
+        "clarifying_question": "这件事由谁负责、何时完成、用什么指标判断效果？",
+        "source": "offline-phrasebook",
+        "industry_followup": "如何核验错误指引率、可追溯性与申诉路径？"
+      },
+      "error": ""
+    },
+    {
+      "industry": "government",
+      "mode": "encode",
+      "tone": "neutral",
+      "passed": true,
+      "check": "no fabricated metrics, pending validation or deployment preserved",
+      "input": "政务表单的提交提示已修复，还在回归测试。",
+      "output": {
+        "mode": "encode",
+        "source_note": "政务表单的提交提示已修复，还在回归测试。",
+        "executive_update": "政务表单的提交提示已修复，回归测试仍在进行。",
+        "headline": "进展：政务表单的提交提示已修复，回归测试仍在进行",
+        "business_relevance": "优先验证：错误指引率、可追溯性与申诉路径；同时比较上线前基线，不预设节省金额。",
+        "impact": "原始记录尚未给出可核实的量化收益。",
+        "next_step": "完成待办验证并确认上线范围；不要把测试结果写成生产收益。",
+        "risk_flags": [
+          "restricted_evidence_or_rollout"
+        ],
+        "evidence_ledger": {
+          "numeric_claims_in_source": [],
+          "new_numbers_in_output": [],
+          "independent_verification": false
+        },
+        "style": "executive",
+        "source": "offline-conservative-rewrite"
+      },
+      "error": ""
+    },
+    {
+      "industry": "government",
+      "mode": "explain",
+      "tone": "playful",
+      "passed": true,
+      "check": "metaphor + grounded constraints + industry scene",
+      "input": "Guardrails",
+      "output": {
+        "term": "Guardrails",
+        "technical": "用于限制输入、工具执行和输出的技术及流程控制。",
+        "human": "像安全带、红绿灯、驾照考试加起来，哪一道都不能保证绝不出事故，但每道都能拦住部分错误。",
+        "business": "通过权限、校验、日志和人工审批减少高风险操作；要衡量误拦与漏拦。",
+        "caveat": "只写一段‘请注意安全’的提示词，并不等于建立了真正的安全边界。",
+        "audience": "cfo",
+        "mode": "explain",
+        "source": "curated-offline-glossary",
+        "audience_guidance": "财务决策：与原流程比较总成本与节省的人力，要求核实实际效果、成本和人工复核情况。",
+        "language": "zh",
+        "industry_scenario": "【假设案例·Government / Public Service】在“政务事项指引与工单分流”中，可以拦截高风险请求并追踪误拦与漏拦。这只是应用示意，不代表某机构已部署。",
+        "industry_measurement": "优先验证：错误指引率、可追溯性与申诉路径；同时比较上线前基线，不预设节省金额。",
+        "connection_note": "Think of this as removing the jargon wrapper, not adding another manual."
+      },
+      "error": ""
+    },
+    {
+      "industry": "government",
+      "mode": "decode",
+      "tone": "playful",
+      "passed": true,
+      "check": "conditional interpretations and actionable question",
+      "input": "政务工单分流说先拉齐，我有点懵。",
+      "output": {
+        "mode": "decode",
+        "input": "政务工单分流说先拉齐，我有点懵。",
+        "matches": [
+          {
+            "phrase": "alignment",
+            "plain_english": "Reach agreement on goals and responsibilities.",
+            "plain_language": "让各方就目标、规则和分工达成一致。",
+            "possible_subtext": "可能存在口径不统一或尚未作出的决定。"
+          }
+        ],
+        "summary": "以下只是可能的解读，不能仅凭黑话推断发言者的真实意图。",
+        "certainty": "可能的解读，发言者动机未经证实",
+        "clarifying_question": "这件事由谁负责、何时完成、用什么指标判断效果？",
+        "source": "offline-phrasebook",
+        "industry_followup": "如何核验错误指引率、可追溯性与申诉路径？",
+        "connection_note": "先给黑话开个灯：下一步由谁做、什么时候做？"
+      },
+      "error": ""
+    },
+    {
+      "industry": "government",
+      "mode": "encode",
+      "tone": "playful",
+      "passed": true,
+      "check": "no fabricated metrics, pending validation or deployment preserved",
+      "input": "政务表单的提交提示已修复，还在回归测试。",
+      "output": {
+        "mode": "encode",
+        "source_note": "政务表单的提交提示已修复，还在回归测试。",
+        "executive_update": "政务表单的提交提示已修复，回归测试仍在进行。",
+        "headline": "进展：政务表单的提交提示已修复，回归测试仍在进行",
+        "business_relevance": "优先验证：错误指引率、可追溯性与申诉路径；同时比较上线前基线，不预设节省金额。",
+        "impact": "原始记录尚未给出可核实的量化收益。",
+        "next_step": "完成待办验证并确认上线范围；不要把测试结果写成生产收益。",
+        "risk_flags": [
+          "restricted_evidence_or_rollout"
+        ],
+        "evidence_ledger": {
+          "numeric_claims_in_source": [],
+          "new_numbers_in_output": [],
+          "independent_verification": false
+        },
+        "style": "executive",
+        "source": "offline-conservative-rewrite",
+        "connection_note": "真正的成果不靠 PPT 里的魔法百分比撑场面。"
+      },
+      "error": ""
+    },
+    {
+      "industry": "energy",
+      "mode": "explain",
+      "tone": "neutral",
+      "passed": true,
+      "check": "metaphor + grounded constraints + industry scene",
+      "input": "Agentic Workflows",
+      "output": {
+        "term": "Agentic Workflows",
+        "technical": "将模型决策、工具执行、检查和重试组织成多步骤流程。",
+        "human": "像餐厅流水线：前台接单、后厨备料、厨师出餐、店长处理投诉，各司其职还要有人盯异常。",
+        "business": "有机会缩短跨系统任务的人工衔接时间，但必须计算失败率、审批开销与总体运行费用。",
+        "caveat": "步骤越多，不确定性、延迟和权限风险也可能越大。",
+        "audience": "cfo",
+        "mode": "explain",
+        "source": "curated-offline-glossary",
+        "audience_guidance": "财务决策：与原流程比较总成本与节省的人力，要求核实实际效果、成本和人工复核情况。",
+        "language": "zh",
+        "industry_scenario": "【假设案例·Energy / Utilities】在“巡检知识查询与设备告警”中，可以协调检索、审批、执行与异常回退。这只是应用示意，不代表某机构已部署。",
+        "industry_measurement": "优先验证：漏报率、安全审查与响应时间；同时比较上线前基线，不预设节省金额。"
+      },
+      "error": ""
+    },
+    {
+      "industry": "energy",
+      "mode": "decode",
+      "tone": "neutral",
+      "passed": true,
+      "check": "conditional interpretations and actionable question",
+      "input": "巡检报表要闭环，我有点困惑。",
+      "output": {
+        "mode": "decode",
+        "input": "巡检报表要闭环，我有点困惑。",
+        "matches": [
+          {
+            "phrase": "action items",
+            "plain_english": "Concrete tasks with owners and dates.",
+            "plain_language": "把讨论转成有负责人和截止时间的具体任务。",
+            "possible_subtext": "只说闭环却没有责任人与时间表，仍然无法执行。"
+          }
+        ],
+        "summary": "以下只是可能的解读，不能仅凭黑话推断发言者的真实意图。",
+        "certainty": "可能的解读，发言者动机未经证实",
+        "clarifying_question": "这件事由谁负责、何时完成、用什么指标判断效果？",
+        "source": "offline-phrasebook",
+        "industry_followup": "如何核验漏报率、安全审查与响应时间？"
+      },
+      "error": ""
+    },
+    {
+      "industry": "energy",
+      "mode": "encode",
+      "tone": "neutral",
+      "passed": true,
+      "check": "no fabricated metrics, pending validation or deployment preserved",
+      "input": "修好了告警通知问题，尚未上线。",
+      "output": {
+        "mode": "encode",
+        "source_note": "修好了告警通知问题，尚未上线。",
+        "executive_update": "已修复告警通知问题，尚未上线。",
+        "headline": "进展：已修复告警通知问题，尚未上线",
+        "business_relevance": "优先验证：漏报率、安全审查与响应时间；同时比较上线前基线，不预设节省金额。",
+        "impact": "原始记录尚未给出可核实的量化收益。",
+        "next_step": "完成待办验证并确认上线范围；不要把测试结果写成生产收益。",
+        "risk_flags": [
+          "restricted_evidence_or_rollout"
+        ],
+        "evidence_ledger": {
+          "numeric_claims_in_source": [],
+          "new_numbers_in_output": [],
+          "independent_verification": false
+        },
+        "style": "executive",
+        "source": "offline-conservative-rewrite"
+      },
+      "error": ""
+    },
+    {
+      "industry": "energy",
+      "mode": "explain",
+      "tone": "playful",
+      "passed": true,
+      "check": "metaphor + grounded constraints + industry scene",
+      "input": "Agentic Workflows",
+      "output": {
+        "term": "Agentic Workflows",
+        "technical": "将模型决策、工具执行、检查和重试组织成多步骤流程。",
+        "human": "像餐厅流水线：前台接单、后厨备料、厨师出餐、店长处理投诉，各司其职还要有人盯异常。",
+        "business": "有机会缩短跨系统任务的人工衔接时间，但必须计算失败率、审批开销与总体运行费用。",
+        "caveat": "步骤越多，不确定性、延迟和权限风险也可能越大。",
+        "audience": "cfo",
+        "mode": "explain",
+        "source": "curated-offline-glossary",
+        "audience_guidance": "财务决策：与原流程比较总成本与节省的人力，要求核实实际效果、成本和人工复核情况。",
+        "language": "zh",
+        "industry_scenario": "【假设案例·Energy / Utilities】在“巡检知识查询与设备告警”中，可以协调检索、审批、执行与异常回退。这只是应用示意，不代表某机构已部署。",
+        "industry_measurement": "优先验证：漏报率、安全审查与响应时间；同时比较上线前基线，不预设节省金额。",
+        "connection_note": "Think of this as removing the jargon wrapper, not adding another manual."
+      },
+      "error": ""
+    },
+    {
+      "industry": "energy",
+      "mode": "decode",
+      "tone": "playful",
+      "passed": true,
+      "check": "conditional interpretations and actionable question",
+      "input": "巡检报表要闭环，我有点困惑。",
+      "output": {
+        "mode": "decode",
+        "input": "巡检报表要闭环，我有点困惑。",
+        "matches": [
+          {
+            "phrase": "action items",
+            "plain_english": "Concrete tasks with owners and dates.",
+            "plain_language": "把讨论转成有负责人和截止时间的具体任务。",
+            "possible_subtext": "只说闭环却没有责任人与时间表，仍然无法执行。"
+          }
+        ],
+        "summary": "以下只是可能的解读，不能仅凭黑话推断发言者的真实意图。",
+        "certainty": "可能的解读，发言者动机未经证实",
+        "clarifying_question": "这件事由谁负责、何时完成、用什么指标判断效果？",
+        "source": "offline-phrasebook",
+        "industry_followup": "如何核验漏报率、安全审查与响应时间？",
+        "connection_note": "先给黑话开个灯：下一步由谁做、什么时候做？"
+      },
+      "error": ""
+    },
+    {
+      "industry": "energy",
+      "mode": "encode",
+      "tone": "playful",
+      "passed": true,
+      "check": "no fabricated metrics, pending validation or deployment preserved",
+      "input": "修好了告警通知问题，尚未上线。",
+      "output": {
+        "mode": "encode",
+        "source_note": "修好了告警通知问题，尚未上线。",
+        "executive_update": "已修复告警通知问题，尚未上线。",
+        "headline": "进展：已修复告警通知问题，尚未上线",
+        "business_relevance": "优先验证：漏报率、安全审查与响应时间；同时比较上线前基线，不预设节省金额。",
+        "impact": "原始记录尚未给出可核实的量化收益。",
+        "next_step": "完成待办验证并确认上线范围；不要把测试结果写成生产收益。",
+        "risk_flags": [
+          "restricted_evidence_or_rollout"
+        ],
+        "evidence_ledger": {
+          "numeric_claims_in_source": [],
+          "new_numbers_in_output": [],
+          "independent_verification": false
+        },
+        "style": "executive",
+        "source": "offline-conservative-rewrite",
+        "connection_note": "真正的成果不靠 PPT 里的魔法百分比撑场面。"
+      },
+      "error": ""
+    },
+    {
+      "industry": "media",
+      "mode": "explain",
+      "tone": "neutral",
+      "passed": true,
+      "check": "metaphor + grounded constraints + industry scene",
+      "input": "Caching",
+      "output": {
+        "term": "Caching",
+        "technical": "复用以前的计算或回答，避免重复处理相同内容。",
+        "human": "像餐馆把常点的配菜提前备好，不必每桌都从洗菜开始；但隔夜食材不能无限复用。",
+        "business": "重复请求多时可能降低费用和延迟，需关注命中率、数据更新与隐私隔离。",
+        "caveat": "缓存失效策略至关重要；过期信息可能比节省的费用更贵。",
+        "audience": "cfo",
+        "mode": "explain",
+        "source": "curated-offline-glossary",
+        "audience_guidance": "财务决策：与原流程比较总成本与节省的人力，要求核实实际效果、成本和人工复核情况。",
+        "language": "zh",
+        "industry_scenario": "【假设案例·Media / Publishing】在“内容归档与版权信息查询”中，可以复用可复用的结果并严格检查时效。这只是应用示意，不代表某机构已部署。",
+        "industry_measurement": "优先验证：检索准确率、版权核验与人工编辑时间；同时比较上线前基线，不预设节省金额。"
+      },
+      "error": ""
+    },
+    {
+      "industry": "media",
+      "mode": "decode",
+      "tone": "neutral",
+      "passed": true,
+      "check": "conditional interpretations and actionable question",
+      "input": "栏目归档项目要对齐，我有点烦。",
+      "output": {
+        "mode": "decode",
+        "input": "栏目归档项目要对齐，我有点烦。",
+        "matches": [
+          {
+            "phrase": "alignment",
+            "plain_english": "Reach agreement on goals and responsibilities.",
+            "plain_language": "让各方就目标、规则和分工达成一致。",
+            "possible_subtext": "可能存在口径不统一或尚未作出的决定。"
+          }
+        ],
+        "summary": "以下只是可能的解读，不能仅凭黑话推断发言者的真实意图。",
+        "certainty": "可能的解读，发言者动机未经证实",
+        "clarifying_question": "这件事由谁负责、何时完成、用什么指标判断效果？",
+        "source": "offline-phrasebook",
+        "industry_followup": "如何核验检索准确率、版权核验与人工编辑时间？"
+      },
+      "error": ""
+    },
+    {
+      "industry": "media",
+      "mode": "encode",
+      "tone": "neutral",
+      "passed": true,
+      "check": "no fabricated metrics, pending validation or deployment preserved",
+      "input": "内容列表的加载问题修了，还没上线。",
+      "output": {
+        "mode": "encode",
+        "source_note": "内容列表的加载问题修了，还没上线。",
+        "executive_update": "内容列表的加载问题已修复，尚未上线。",
+        "headline": "进展：内容列表的加载问题已修复，尚未上线",
+        "business_relevance": "优先验证：检索准确率、版权核验与人工编辑时间；同时比较上线前基线，不预设节省金额。",
+        "impact": "原始记录尚未给出可核实的量化收益。",
+        "next_step": "完成待办验证并确认上线范围；不要把测试结果写成生产收益。",
+        "risk_flags": [
+          "restricted_evidence_or_rollout"
+        ],
+        "evidence_ledger": {
+          "numeric_claims_in_source": [],
+          "new_numbers_in_output": [],
+          "independent_verification": false
+        },
+        "style": "executive",
+        "source": "offline-conservative-rewrite"
+      },
+      "error": ""
+    },
+    {
+      "industry": "media",
+      "mode": "explain",
+      "tone": "playful",
+      "passed": true,
+      "check": "metaphor + grounded constraints + industry scene",
+      "input": "Caching",
+      "output": {
+        "term": "Caching",
+        "technical": "复用以前的计算或回答，避免重复处理相同内容。",
+        "human": "像餐馆把常点的配菜提前备好，不必每桌都从洗菜开始；但隔夜食材不能无限复用。",
+        "business": "重复请求多时可能降低费用和延迟，需关注命中率、数据更新与隐私隔离。",
+        "caveat": "缓存失效策略至关重要；过期信息可能比节省的费用更贵。",
+        "audience": "cfo",
+        "mode": "explain",
+        "source": "curated-offline-glossary",
+        "audience_guidance": "财务决策：与原流程比较总成本与节省的人力，要求核实实际效果、成本和人工复核情况。",
+        "language": "zh",
+        "industry_scenario": "【假设案例·Media / Publishing】在“内容归档与版权信息查询”中，可以复用可复用的结果并严格检查时效。这只是应用示意，不代表某机构已部署。",
+        "industry_measurement": "优先验证：检索准确率、版权核验与人工编辑时间；同时比较上线前基线，不预设节省金额。",
+        "connection_note": "Think of this as removing the jargon wrapper, not adding another manual."
+      },
+      "error": ""
+    },
+    {
+      "industry": "media",
+      "mode": "decode",
+      "tone": "playful",
+      "passed": true,
+      "check": "conditional interpretations and actionable question",
+      "input": "栏目归档项目要对齐，我有点烦。",
+      "output": {
+        "mode": "decode",
+        "input": "栏目归档项目要对齐，我有点烦。",
+        "matches": [
+          {
+            "phrase": "alignment",
+            "plain_english": "Reach agreement on goals and responsibilities.",
+            "plain_language": "让各方就目标、规则和分工达成一致。",
+            "possible_subtext": "可能存在口径不统一或尚未作出的决定。"
+          }
+        ],
+        "summary": "以下只是可能的解读，不能仅凭黑话推断发言者的真实意图。",
+        "certainty": "可能的解读，发言者动机未经证实",
+        "clarifying_question": "这件事由谁负责、何时完成、用什么指标判断效果？",
+        "source": "offline-phrasebook",
+        "industry_followup": "如何核验检索准确率、版权核验与人工编辑时间？",
+        "connection_note": "先给黑话开个灯：下一步由谁做、什么时候做？"
+      },
+      "error": ""
+    },
+    {
+      "industry": "media",
+      "mode": "encode",
+      "tone": "playful",
+      "passed": true,
+      "check": "no fabricated metrics, pending validation or deployment preserved",
+      "input": "内容列表的加载问题修了，还没上线。",
+      "output": {
+        "mode": "encode",
+        "source_note": "内容列表的加载问题修了，还没上线。",
+        "executive_update": "内容列表的加载问题已修复，尚未上线。",
+        "headline": "进展：内容列表的加载问题已修复，尚未上线",
+        "business_relevance": "优先验证：检索准确率、版权核验与人工编辑时间；同时比较上线前基线，不预设节省金额。",
+        "impact": "原始记录尚未给出可核实的量化收益。",
+        "next_step": "完成待办验证并确认上线范围；不要把测试结果写成生产收益。",
+        "risk_flags": [
+          "restricted_evidence_or_rollout"
+        ],
+        "evidence_ledger": {
+          "numeric_claims_in_source": [],
+          "new_numbers_in_output": [],
+          "independent_verification": false
+        },
+        "style": "executive",
+        "source": "offline-conservative-rewrite",
+        "connection_note": "真正的成果不靠 PPT 里的魔法百分比撑场面。"
+      },
+      "error": ""
+    },
+    {
+      "industry": "gaming",
+      "mode": "explain",
+      "tone": "neutral",
+      "passed": true,
+      "check": "metaphor + grounded constraints + industry scene",
+      "input": "Context Window",
+      "output": {
+        "term": "Context Window",
+        "technical": "模型单次处理输入与输出时可用的 Token 容量上限。",
+        "human": "像会议桌面，文件堆满就得把旧材料挪走或总结成便签。桌子变大不等于所有纸张都能永远记住。",
+        "business": "决定一次能放多少文档或对话，影响长文效果、检索策略和费用。",
+        "caveat": "上下文窗口不是永久记忆；放得下也不代表能准确检索每个细节。",
+        "audience": "cfo",
+        "mode": "explain",
+        "source": "curated-offline-glossary",
+        "audience_guidance": "财务决策：与原流程比较总成本与节省的人力，要求核实实际效果、成本和人工复核情况。",
+        "language": "zh",
+        "industry_scenario": "【假设案例·Gaming / Entertainment】在“游戏客服与玩家反馈归类”中，可以处理长记录时监测遗漏、截断与费用。这只是应用示意，不代表某机构已部署。",
+        "industry_measurement": "优先验证：误分流率、答复质量与延迟；同时比较上线前基线，不预设节省金额。"
+      },
+      "error": ""
+    },
+    {
+      "industry": "gaming",
+      "mode": "decode",
+      "tone": "neutral",
+      "passed": true,
+      "check": "conditional interpretations and actionable question",
+      "input": "游戏客服工单先对齐，我有点懵。",
+      "output": {
+        "mode": "decode",
+        "input": "游戏客服工单先对齐，我有点懵。",
+        "matches": [
+          {
+            "phrase": "alignment",
+            "plain_english": "Reach agreement on goals and responsibilities.",
+            "plain_language": "让各方就目标、规则和分工达成一致。",
+            "possible_subtext": "可能存在口径不统一或尚未作出的决定。"
+          }
+        ],
+        "summary": "以下只是可能的解读，不能仅凭黑话推断发言者的真实意图。",
+        "certainty": "可能的解读，发言者动机未经证实",
+        "clarifying_question": "这件事由谁负责、何时完成、用什么指标判断效果？",
+        "source": "offline-phrasebook",
+        "industry_followup": "如何核验误分流率、答复质量与延迟？"
+      },
+      "error": ""
+    },
+    {
+      "industry": "gaming",
+      "mode": "encode",
+      "tone": "neutral",
+      "passed": true,
+      "check": "no fabricated metrics, pending validation or deployment preserved",
+      "input": "修好了匹配状态的展示问题，尚未上线。",
+      "output": {
+        "mode": "encode",
+        "source_note": "修好了匹配状态的展示问题，尚未上线。",
+        "executive_update": "已修复匹配状态的展示问题，尚未上线。",
+        "headline": "进展：已修复匹配状态的展示问题，尚未上线",
+        "business_relevance": "优先验证：误分流率、答复质量与延迟；同时比较上线前基线，不预设节省金额。",
+        "impact": "原始记录尚未给出可核实的量化收益。",
+        "next_step": "完成待办验证并确认上线范围；不要把测试结果写成生产收益。",
+        "risk_flags": [
+          "restricted_evidence_or_rollout"
+        ],
+        "evidence_ledger": {
+          "numeric_claims_in_source": [],
+          "new_numbers_in_output": [],
+          "independent_verification": false
+        },
+        "style": "executive",
+        "source": "offline-conservative-rewrite"
+      },
+      "error": ""
+    },
+    {
+      "industry": "gaming",
+      "mode": "explain",
+      "tone": "playful",
+      "passed": true,
+      "check": "metaphor + grounded constraints + industry scene",
+      "input": "Context Window",
+      "output": {
+        "term": "Context Window",
+        "technical": "模型单次处理输入与输出时可用的 Token 容量上限。",
+        "human": "像会议桌面，文件堆满就得把旧材料挪走或总结成便签。桌子变大不等于所有纸张都能永远记住。",
+        "business": "决定一次能放多少文档或对话，影响长文效果、检索策略和费用。",
+        "caveat": "上下文窗口不是永久记忆；放得下也不代表能准确检索每个细节。",
+        "audience": "cfo",
+        "mode": "explain",
+        "source": "curated-offline-glossary",
+        "audience_guidance": "财务决策：与原流程比较总成本与节省的人力，要求核实实际效果、成本和人工复核情况。",
+        "language": "zh",
+        "industry_scenario": "【假设案例·Gaming / Entertainment】在“游戏客服与玩家反馈归类”中，可以处理长记录时监测遗漏、截断与费用。这只是应用示意，不代表某机构已部署。",
+        "industry_measurement": "优先验证：误分流率、答复质量与延迟；同时比较上线前基线，不预设节省金额。",
+        "connection_note": "Think of this as removing the jargon wrapper, not adding another manual."
+      },
+      "error": ""
+    },
+    {
+      "industry": "gaming",
+      "mode": "decode",
+      "tone": "playful",
+      "passed": true,
+      "check": "conditional interpretations and actionable question",
+      "input": "游戏客服工单先对齐，我有点懵。",
+      "output": {
+        "mode": "decode",
+        "input": "游戏客服工单先对齐，我有点懵。",
+        "matches": [
+          {
+            "phrase": "alignment",
+            "plain_english": "Reach agreement on goals and responsibilities.",
+            "plain_language": "让各方就目标、规则和分工达成一致。",
+            "possible_subtext": "可能存在口径不统一或尚未作出的决定。"
+          }
+        ],
+        "summary": "以下只是可能的解读，不能仅凭黑话推断发言者的真实意图。",
+        "certainty": "可能的解读，发言者动机未经证实",
+        "clarifying_question": "这件事由谁负责、何时完成、用什么指标判断效果？",
+        "source": "offline-phrasebook",
+        "industry_followup": "如何核验误分流率、答复质量与延迟？",
+        "connection_note": "先给黑话开个灯：下一步由谁做、什么时候做？"
+      },
+      "error": ""
+    },
+    {
+      "industry": "gaming",
+      "mode": "encode",
+      "tone": "playful",
+      "passed": true,
+      "check": "no fabricated metrics, pending validation or deployment preserved",
+      "input": "修好了匹配状态的展示问题，尚未上线。",
+      "output": {
+        "mode": "encode",
+        "source_note": "修好了匹配状态的展示问题，尚未上线。",
+        "executive_update": "已修复匹配状态的展示问题，尚未上线。",
+        "headline": "进展：已修复匹配状态的展示问题，尚未上线",
+        "business_relevance": "优先验证：误分流率、答复质量与延迟；同时比较上线前基线，不预设节省金额。",
+        "impact": "原始记录尚未给出可核实的量化收益。",
+        "next_step": "完成待办验证并确认上线范围；不要把测试结果写成生产收益。",
+        "risk_flags": [
+          "restricted_evidence_or_rollout"
+        ],
+        "evidence_ledger": {
+          "numeric_claims_in_source": [],
+          "new_numbers_in_output": [],
+          "independent_verification": false
+        },
+        "style": "executive",
+        "source": "offline-conservative-rewrite",
+        "connection_note": "真正的成果不靠 PPT 里的魔法百分比撑场面。"
+      },
+      "error": ""
+    },
+    {
+      "industry": "ecommerce",
+      "mode": "explain",
+      "tone": "neutral",
+      "passed": true,
+      "check": "metaphor + grounded constraints + industry scene",
+      "input": "Multimodal",
+      "output": {
+        "term": "Multimodal",
+        "technical": "同一模型或系统处理文字、图像、音频等多种数据类型。",
+        "human": "像助理原本只会看纸条，现在也能看照片、听语音、读图表；但不代表每种材料都看得同样好。",
+        "business": "可以打通图片工单、语音记录和文本处理，但需核算不同模态的质量、费用与隐私风险。",
+        "caveat": "具体能力依赖模型与接入方式，不能假设每个模型都支持视频等全部模态。",
+        "audience": "cfo",
+        "mode": "explain",
+        "source": "curated-offline-glossary",
+        "audience_guidance": "财务决策：与原流程比较总成本与节省的人力，要求核实实际效果、成本和人工复核情况。",
+        "language": "zh",
+        "industry_scenario": "【假设案例·E-commerce / Marketplace】在“商品检索与售后咨询”中，可以结合文字与图像等输入，并保护隐私。这只是应用示意，不代表某机构已部署。",
+        "industry_measurement": "优先验证：检索准确率、退款错误率与响应时长；同时比较上线前基线，不预设节省金额。"
+      },
+      "error": ""
+    },
+    {
+      "industry": "ecommerce",
+      "mode": "decode",
+      "tone": "neutral",
+      "passed": true,
+      "check": "conditional interpretations and actionable question",
+      "input": "商品搜索要闭环，我有点困惑。",
+      "output": {
+        "mode": "decode",
+        "input": "商品搜索要闭环，我有点困惑。",
+        "matches": [
+          {
+            "phrase": "action items",
+            "plain_english": "Concrete tasks with owners and dates.",
+            "plain_language": "把讨论转成有负责人和截止时间的具体任务。",
+            "possible_subtext": "只说闭环却没有责任人与时间表，仍然无法执行。"
+          }
+        ],
+        "summary": "以下只是可能的解读，不能仅凭黑话推断发言者的真实意图。",
+        "certainty": "可能的解读，发言者动机未经证实",
+        "clarifying_question": "这件事由谁负责、何时完成、用什么指标判断效果？",
+        "source": "offline-phrasebook",
+        "industry_followup": "如何核验检索准确率、退款错误率与响应时长？"
+      },
+      "error": ""
+    },
+    {
+      "industry": "ecommerce",
+      "mode": "encode",
+      "tone": "neutral",
+      "passed": true,
+      "check": "no fabricated metrics, pending validation or deployment preserved",
+      "input": "把商品搜索的错词问题修了，目前测试环境验证。",
+      "output": {
+        "mode": "encode",
+        "source_note": "把商品搜索的错词问题修了，目前测试环境验证。",
+        "executive_update": "把商品搜索的错词问题已修复，目前测试环境验证。",
+        "headline": "进展：把商品搜索的错词问题已修复，目前测试环境验证",
+        "business_relevance": "优先验证：检索准确率、退款错误率与响应时长；同时比较上线前基线，不预设节省金额。",
+        "impact": "原始记录尚未给出可核实的量化收益。",
+        "next_step": "完成待办验证并确认上线范围；不要把测试结果写成生产收益。",
+        "risk_flags": [
+          "restricted_evidence_or_rollout"
+        ],
+        "evidence_ledger": {
+          "numeric_claims_in_source": [],
+          "new_numbers_in_output": [],
+          "independent_verification": false
+        },
+        "style": "executive",
+        "source": "offline-conservative-rewrite"
+      },
+      "error": ""
+    },
+    {
+      "industry": "ecommerce",
+      "mode": "explain",
+      "tone": "playful",
+      "passed": true,
+      "check": "metaphor + grounded constraints + industry scene",
+      "input": "Multimodal",
+      "output": {
+        "term": "Multimodal",
+        "technical": "同一模型或系统处理文字、图像、音频等多种数据类型。",
+        "human": "像助理原本只会看纸条，现在也能看照片、听语音、读图表；但不代表每种材料都看得同样好。",
+        "business": "可以打通图片工单、语音记录和文本处理，但需核算不同模态的质量、费用与隐私风险。",
+        "caveat": "具体能力依赖模型与接入方式，不能假设每个模型都支持视频等全部模态。",
+        "audience": "cfo",
+        "mode": "explain",
+        "source": "curated-offline-glossary",
+        "audience_guidance": "财务决策：与原流程比较总成本与节省的人力，要求核实实际效果、成本和人工复核情况。",
+        "language": "zh",
+        "industry_scenario": "【假设案例·E-commerce / Marketplace】在“商品检索与售后咨询”中，可以结合文字与图像等输入，并保护隐私。这只是应用示意，不代表某机构已部署。",
+        "industry_measurement": "优先验证：检索准确率、退款错误率与响应时长；同时比较上线前基线，不预设节省金额。",
+        "connection_note": "Think of this as removing the jargon wrapper, not adding another manual."
+      },
+      "error": ""
+    },
+    {
+      "industry": "ecommerce",
+      "mode": "decode",
+      "tone": "playful",
+      "passed": true,
+      "check": "conditional interpretations and actionable question",
+      "input": "商品搜索要闭环，我有点困惑。",
+      "output": {
+        "mode": "decode",
+        "input": "商品搜索要闭环，我有点困惑。",
+        "matches": [
+          {
+            "phrase": "action items",
+            "plain_english": "Concrete tasks with owners and dates.",
+            "plain_language": "把讨论转成有负责人和截止时间的具体任务。",
+            "possible_subtext": "只说闭环却没有责任人与时间表，仍然无法执行。"
+          }
+        ],
+        "summary": "以下只是可能的解读，不能仅凭黑话推断发言者的真实意图。",
+        "certainty": "可能的解读，发言者动机未经证实",
+        "clarifying_question": "这件事由谁负责、何时完成、用什么指标判断效果？",
+        "source": "offline-phrasebook",
+        "industry_followup": "如何核验检索准确率、退款错误率与响应时长？",
+        "connection_note": "先给黑话开个灯：下一步由谁做、什么时候做？"
+      },
+      "error": ""
+    },
+    {
+      "industry": "ecommerce",
+      "mode": "encode",
+      "tone": "playful",
+      "passed": true,
+      "check": "no fabricated metrics, pending validation or deployment preserved",
+      "input": "把商品搜索的错词问题修了，目前测试环境验证。",
+      "output": {
+        "mode": "encode",
+        "source_note": "把商品搜索的错词问题修了，目前测试环境验证。",
+        "executive_update": "把商品搜索的错词问题已修复，目前测试环境验证。",
+        "headline": "进展：把商品搜索的错词问题已修复，目前测试环境验证",
+        "business_relevance": "优先验证：检索准确率、退款错误率与响应时长；同时比较上线前基线，不预设节省金额。",
+        "impact": "原始记录尚未给出可核实的量化收益。",
+        "next_step": "完成待办验证并确认上线范围；不要把测试结果写成生产收益。",
+        "risk_flags": [
+          "restricted_evidence_or_rollout"
+        ],
+        "evidence_ledger": {
+          "numeric_claims_in_source": [],
+          "new_numbers_in_output": [],
+          "independent_verification": false
+        },
+        "style": "executive",
+        "source": "offline-conservative-rewrite",
+        "connection_note": "真正的成果不靠 PPT 里的魔法百分比撑场面。"
+      },
+      "error": ""
+    },
+    {
+      "industry": "hr",
+      "mode": "explain",
+      "tone": "neutral",
+      "passed": true,
+      "check": "metaphor + grounded constraints + industry scene",
+      "input": "Hallucination",
+      "output": {
+        "term": "Hallucination",
+        "technical": "模型输出了缺乏事实支持或与事实不符的内容。",
+        "human": "像导游不知道路，却特别自信地报了一个根本不存在的街名；流畅不代表正确。",
+        "business": "需要用证据核查、人工复核和错误监控降低业务风险。",
+        "caveat": "引用资料和知识库也不能完全防止错误答案。",
+        "audience": "cfo",
+        "mode": "explain",
+        "source": "curated-offline-glossary",
+        "audience_guidance": "财务决策：与原流程比较总成本与节省的人力，要求核实实际效果、成本和人工复核情况。",
+        "language": "zh",
+        "industry_scenario": "【假设案例·HR / Recruiting】在“招聘政策问答与候选人沟通”中，可以抽检无依据的结论并设置人工复核。这只是应用示意，不代表某机构已部署。",
+        "industry_measurement": "优先验证：错误建议率、人工复核与公平性检查；同时比较上线前基线，不预设节省金额。"
+      },
+      "error": ""
+    },
+    {
+      "industry": "hr",
+      "mode": "decode",
+      "tone": "neutral",
+      "passed": true,
+      "check": "conditional interpretations and actionable question",
+      "input": "招聘流程要对齐，我有点烦。",
+      "output": {
+        "mode": "decode",
+        "input": "招聘流程要对齐，我有点烦。",
+        "matches": [
+          {
+            "phrase": "alignment",
+            "plain_english": "Reach agreement on goals and responsibilities.",
+            "plain_language": "让各方就目标、规则和分工达成一致。",
+            "possible_subtext": "可能存在口径不统一或尚未作出的决定。"
+          }
+        ],
+        "summary": "以下只是可能的解读，不能仅凭黑话推断发言者的真实意图。",
+        "certainty": "可能的解读，发言者动机未经证实",
+        "clarifying_question": "这件事由谁负责、何时完成、用什么指标判断效果？",
+        "source": "offline-phrasebook",
+        "industry_followup": "如何核验错误建议率、人工复核与公平性检查？"
+      },
+      "error": ""
+    },
+    {
+      "industry": "hr",
+      "mode": "encode",
+      "tone": "neutral",
+      "passed": true,
+      "check": "no fabricated metrics, pending validation or deployment preserved",
+      "input": "已修复候选人通知重复发送问题，尚未上线。",
+      "output": {
+        "mode": "encode",
+        "source_note": "已修复候选人通知重复发送问题，尚未上线。",
+        "executive_update": "已修复候选人通知重复发送问题，尚未上线。",
+        "headline": "进展：已修复候选人通知重复发送问题，尚未上线",
+        "business_relevance": "优先验证：错误建议率、人工复核与公平性检查；同时比较上线前基线，不预设节省金额。",
+        "impact": "原始记录尚未给出可核实的量化收益。",
+        "next_step": "完成待办验证并确认上线范围；不要把测试结果写成生产收益。",
+        "risk_flags": [
+          "restricted_evidence_or_rollout"
+        ],
+        "evidence_ledger": {
+          "numeric_claims_in_source": [],
+          "new_numbers_in_output": [],
+          "independent_verification": false
+        },
+        "style": "executive",
+        "source": "offline-conservative-rewrite"
+      },
+      "error": ""
+    },
+    {
+      "industry": "hr",
+      "mode": "explain",
+      "tone": "playful",
+      "passed": true,
+      "check": "metaphor + grounded constraints + industry scene",
+      "input": "Hallucination",
+      "output": {
+        "term": "Hallucination",
+        "technical": "模型输出了缺乏事实支持或与事实不符的内容。",
+        "human": "像导游不知道路，却特别自信地报了一个根本不存在的街名；流畅不代表正确。",
+        "business": "需要用证据核查、人工复核和错误监控降低业务风险。",
+        "caveat": "引用资料和知识库也不能完全防止错误答案。",
+        "audience": "cfo",
+        "mode": "explain",
+        "source": "curated-offline-glossary",
+        "audience_guidance": "财务决策：与原流程比较总成本与节省的人力，要求核实实际效果、成本和人工复核情况。",
+        "language": "zh",
+        "industry_scenario": "【假设案例·HR / Recruiting】在“招聘政策问答与候选人沟通”中，可以抽检无依据的结论并设置人工复核。这只是应用示意，不代表某机构已部署。",
+        "industry_measurement": "优先验证：错误建议率、人工复核与公平性检查；同时比较上线前基线，不预设节省金额。",
+        "connection_note": "Think of this as removing the jargon wrapper, not adding another manual."
+      },
+      "error": ""
+    },
+    {
+      "industry": "hr",
+      "mode": "decode",
+      "tone": "playful",
+      "passed": true,
+      "check": "conditional interpretations and actionable question",
+      "input": "招聘流程要对齐，我有点烦。",
+      "output": {
+        "mode": "decode",
+        "input": "招聘流程要对齐，我有点烦。",
+        "matches": [
+          {
+            "phrase": "alignment",
+            "plain_english": "Reach agreement on goals and responsibilities.",
+            "plain_language": "让各方就目标、规则和分工达成一致。",
+            "possible_subtext": "可能存在口径不统一或尚未作出的决定。"
+          }
+        ],
+        "summary": "以下只是可能的解读，不能仅凭黑话推断发言者的真实意图。",
+        "certainty": "可能的解读，发言者动机未经证实",
+        "clarifying_question": "这件事由谁负责、何时完成、用什么指标判断效果？",
+        "source": "offline-phrasebook",
+        "industry_followup": "如何核验错误建议率、人工复核与公平性检查？",
+        "connection_note": "先给黑话开个灯：下一步由谁做、什么时候做？"
+      },
+      "error": ""
+    },
+    {
+      "industry": "hr",
+      "mode": "encode",
+      "tone": "playful",
+      "passed": true,
+      "check": "no fabricated metrics, pending validation or deployment preserved",
+      "input": "已修复候选人通知重复发送问题，尚未上线。",
+      "output": {
+        "mode": "encode",
+        "source_note": "已修复候选人通知重复发送问题，尚未上线。",
+        "executive_update": "已修复候选人通知重复发送问题，尚未上线。",
+        "headline": "进展：已修复候选人通知重复发送问题，尚未上线",
+        "business_relevance": "优先验证：错误建议率、人工复核与公平性检查；同时比较上线前基线，不预设节省金额。",
+        "impact": "原始记录尚未给出可核实的量化收益。",
+        "next_step": "完成待办验证并确认上线范围；不要把测试结果写成生产收益。",
+        "risk_flags": [
+          "restricted_evidence_or_rollout"
+        ],
+        "evidence_ledger": {
+          "numeric_claims_in_source": [],
+          "new_numbers_in_output": [],
+          "independent_verification": false
+        },
+        "style": "executive",
+        "source": "offline-conservative-rewrite",
+        "connection_note": "真正的成果不靠 PPT 里的魔法百分比撑场面。"
+      },
+      "error": ""
+    },
+    {
+      "industry": "security",
+      "mode": "explain",
+      "tone": "neutral",
+      "passed": true,
+      "check": "metaphor + grounded constraints + industry scene",
+      "input": "Function Calling",
+      "output": {
+        "term": "Function Calling",
+        "technical": "模型生成结构化工具调用参数，再由外部程序校验并执行。",
+        "human": "像维修工从工具架上选对扳手，但仓库管理员仍然决定谁能领工具、什么时候能动设备。",
+        "business": "把口头建议变成可追踪的系统动作，提高流程自动化程度，并保留审批日志。",
+        "caveat": "模型只提出调用请求；真正执行由宿主程序负责。",
+        "audience": "cfo",
+        "mode": "explain",
+        "source": "curated-offline-glossary",
+        "audience_guidance": "财务决策：与原流程比较总成本与节省的人力，要求核实实际效果、成本和人工复核情况。",
+        "language": "zh",
+        "industry_scenario": "【假设案例·Cybersecurity / IT】在“告警归类与事件排查”中，可以经权限校验后调用外部工具，避免误操作。这只是应用示意，不代表某机构已部署。",
+        "industry_measurement": "优先验证：漏报率、误报率与人工审批；同时比较上线前基线，不预设节省金额。"
+      },
+      "error": ""
+    },
+    {
+      "industry": "security",
+      "mode": "decode",
+      "tone": "neutral",
+      "passed": true,
+      "check": "conditional interpretations and actionable question",
+      "input": "安全告警要拉齐，我很困惑。",
+      "output": {
+        "mode": "decode",
+        "input": "安全告警要拉齐，我很困惑。",
+        "matches": [
+          {
+            "phrase": "alignment",
+            "plain_english": "Reach agreement on goals and responsibilities.",
+            "plain_language": "让各方就目标、规则和分工达成一致。",
+            "possible_subtext": "可能存在口径不统一或尚未作出的决定。"
+          }
+        ],
+        "summary": "以下只是可能的解读，不能仅凭黑话推断发言者的真实意图。",
+        "certainty": "可能的解读，发言者动机未经证实",
+        "clarifying_question": "这件事由谁负责、何时完成、用什么指标判断效果？",
+        "source": "offline-phrasebook",
+        "industry_followup": "如何核验漏报率、误报率与人工审批？"
+      },
+      "error": ""
+    },
+    {
+      "industry": "security",
+      "mode": "encode",
+      "tone": "neutral",
+      "passed": true,
+      "check": "no fabricated metrics, pending validation or deployment preserved",
+      "input": "安全日志过滤页面修了，还没全量验证。",
+      "output": {
+        "mode": "encode",
+        "source_note": "安全日志过滤页面修了，还没全量验证。",
+        "executive_update": "安全日志过滤页面已修复，尚未全量验证。",
+        "headline": "进展：安全日志过滤页面已修复，尚未全量验证",
+        "business_relevance": "优先验证：漏报率、误报率与人工审批；同时比较上线前基线，不预设节省金额。",
+        "impact": "原始记录尚未给出可核实的量化收益。",
+        "next_step": "补充可核实的前后对比、负责人和上线状态。",
+        "risk_flags": [],
+        "evidence_ledger": {
+          "numeric_claims_in_source": [],
+          "new_numbers_in_output": [],
+          "independent_verification": false
+        },
+        "style": "executive",
+        "source": "offline-conservative-rewrite"
+      },
+      "error": ""
+    },
+    {
+      "industry": "security",
+      "mode": "explain",
+      "tone": "playful",
+      "passed": true,
+      "check": "metaphor + grounded constraints + industry scene",
+      "input": "Function Calling",
+      "output": {
+        "term": "Function Calling",
+        "technical": "模型生成结构化工具调用参数，再由外部程序校验并执行。",
+        "human": "像维修工从工具架上选对扳手，但仓库管理员仍然决定谁能领工具、什么时候能动设备。",
+        "business": "把口头建议变成可追踪的系统动作，提高流程自动化程度，并保留审批日志。",
+        "caveat": "模型只提出调用请求；真正执行由宿主程序负责。",
+        "audience": "cfo",
+        "mode": "explain",
+        "source": "curated-offline-glossary",
+        "audience_guidance": "财务决策：与原流程比较总成本与节省的人力，要求核实实际效果、成本和人工复核情况。",
+        "language": "zh",
+        "industry_scenario": "【假设案例·Cybersecurity / IT】在“告警归类与事件排查”中，可以经权限校验后调用外部工具，避免误操作。这只是应用示意，不代表某机构已部署。",
+        "industry_measurement": "优先验证：漏报率、误报率与人工审批；同时比较上线前基线，不预设节省金额。",
+        "connection_note": "Think of this as removing the jargon wrapper, not adding another manual."
+      },
+      "error": ""
+    },
+    {
+      "industry": "security",
+      "mode": "decode",
+      "tone": "playful",
+      "passed": true,
+      "check": "conditional interpretations and actionable question",
+      "input": "安全告警要拉齐，我很困惑。",
+      "output": {
+        "mode": "decode",
+        "input": "安全告警要拉齐，我很困惑。",
+        "matches": [
+          {
+            "phrase": "alignment",
+            "plain_english": "Reach agreement on goals and responsibilities.",
+            "plain_language": "让各方就目标、规则和分工达成一致。",
+            "possible_subtext": "可能存在口径不统一或尚未作出的决定。"
+          }
+        ],
+        "summary": "以下只是可能的解读，不能仅凭黑话推断发言者的真实意图。",
+        "certainty": "可能的解读，发言者动机未经证实",
+        "clarifying_question": "这件事由谁负责、何时完成、用什么指标判断效果？",
+        "source": "offline-phrasebook",
+        "industry_followup": "如何核验漏报率、误报率与人工审批？",
+        "connection_note": "先给黑话开个灯：下一步由谁做、什么时候做？"
+      },
+      "error": ""
+    },
+    {
+      "industry": "security",
+      "mode": "encode",
+      "tone": "playful",
+      "passed": true,
+      "check": "no fabricated metrics, pending validation or deployment preserved",
+      "input": "安全日志过滤页面修了，还没全量验证。",
+      "output": {
+        "mode": "encode",
+        "source_note": "安全日志过滤页面修了，还没全量验证。",
+        "executive_update": "安全日志过滤页面已修复，尚未全量验证。",
+        "headline": "进展：安全日志过滤页面已修复，尚未全量验证",
+        "business_relevance": "优先验证：漏报率、误报率与人工审批；同时比较上线前基线，不预设节省金额。",
+        "impact": "原始记录尚未给出可核实的量化收益。",
+        "next_step": "补充可核实的前后对比、负责人和上线状态。",
+        "risk_flags": [],
+        "evidence_ledger": {
+          "numeric_claims_in_source": [],
+          "new_numbers_in_output": [],
+          "independent_verification": false
+        },
+        "style": "executive",
+        "source": "offline-conservative-rewrite",
+        "connection_note": "真正的成果不靠 PPT 里的魔法百分比撑场面。"
+      },
+      "error": ""
+    },
+    {
+      "industry": "realestate",
+      "mode": "explain",
+      "tone": "neutral",
+      "passed": true,
+      "check": "metaphor + grounded constraints + industry scene",
+      "input": "LoRA",
+      "output": {
+        "term": "LoRA",
+        "technical": "冻结模型的大部分基础权重，只训练少量低秩适配参数的微调技术。",
+        "human": "像给现成西装加一套可更换的定制配件，不必从头织一件新衣服。",
+        "business": "通常减少需要训练的参数与显存占用，适合探索小成本定制；仍需测试效果和部署复杂度。",
+        "caveat": "并非零成本，也不保证在所有任务上都比其他训练方式更好。",
+        "audience": "cfo",
+        "mode": "explain",
+        "source": "curated-offline-glossary",
+        "audience_guidance": "财务决策：与原流程比较总成本与节省的人力，要求核实实际效果、成本和人工复核情况。",
+        "language": "zh",
+        "industry_scenario": "【假设案例·Real Estate / Construction】在“施工文档检索与报修派单”中，可以用较少的可训练参数做领域适配并验证性能。这只是应用示意，不代表某机构已部署。",
+        "industry_measurement": "优先验证：工单准确率、现场复核与错误成本；同时比较上线前基线，不预设节省金额。"
+      },
+      "error": ""
+    },
+    {
+      "industry": "realestate",
+      "mode": "decode",
+      "tone": "neutral",
+      "passed": true,
+      "check": "conditional interpretations and actionable question",
+      "input": "物业工单流程先对齐，我有点头大。",
+      "output": {
+        "mode": "decode",
+        "input": "物业工单流程先对齐，我有点头大。",
+        "matches": [
+          {
+            "phrase": "alignment",
+            "plain_english": "Reach agreement on goals and responsibilities.",
+            "plain_language": "让各方就目标、规则和分工达成一致。",
+            "possible_subtext": "可能存在口径不统一或尚未作出的决定。"
+          }
+        ],
+        "summary": "以下只是可能的解读，不能仅凭黑话推断发言者的真实意图。",
+        "certainty": "可能的解读，发言者动机未经证实",
+        "clarifying_question": "这件事由谁负责、何时完成、用什么指标判断效果？",
+        "source": "offline-phrasebook",
+        "industry_followup": "如何核验工单准确率、现场复核与错误成本？"
+      },
+      "error": ""
+    },
+    {
+      "industry": "realestate",
+      "mode": "encode",
+      "tone": "neutral",
+      "passed": true,
+      "check": "no fabricated metrics, pending validation or deployment preserved",
+      "input": "已修复报修系统排序异常，尚未上线。",
+      "output": {
+        "mode": "encode",
+        "source_note": "已修复报修系统排序异常，尚未上线。",
+        "executive_update": "已修复报修系统排序异常，尚未上线。",
+        "headline": "进展：已修复报修系统排序异常，尚未上线",
+        "business_relevance": "优先验证：工单准确率、现场复核与错误成本；同时比较上线前基线，不预设节省金额。",
+        "impact": "原始记录尚未给出可核实的量化收益。",
+        "next_step": "完成待办验证并确认上线范围；不要把测试结果写成生产收益。",
+        "risk_flags": [
+          "restricted_evidence_or_rollout"
+        ],
+        "evidence_ledger": {
+          "numeric_claims_in_source": [],
+          "new_numbers_in_output": [],
+          "independent_verification": false
+        },
+        "style": "executive",
+        "source": "offline-conservative-rewrite"
+      },
+      "error": ""
+    },
+    {
+      "industry": "realestate",
+      "mode": "explain",
+      "tone": "playful",
+      "passed": true,
+      "check": "metaphor + grounded constraints + industry scene",
+      "input": "LoRA",
+      "output": {
+        "term": "LoRA",
+        "technical": "冻结模型的大部分基础权重，只训练少量低秩适配参数的微调技术。",
+        "human": "像给现成西装加一套可更换的定制配件，不必从头织一件新衣服。",
+        "business": "通常减少需要训练的参数与显存占用，适合探索小成本定制；仍需测试效果和部署复杂度。",
+        "caveat": "并非零成本，也不保证在所有任务上都比其他训练方式更好。",
+        "audience": "cfo",
+        "mode": "explain",
+        "source": "curated-offline-glossary",
+        "audience_guidance": "财务决策：与原流程比较总成本与节省的人力，要求核实实际效果、成本和人工复核情况。",
+        "language": "zh",
+        "industry_scenario": "【假设案例·Real Estate / Construction】在“施工文档检索与报修派单”中，可以用较少的可训练参数做领域适配并验证性能。这只是应用示意，不代表某机构已部署。",
+        "industry_measurement": "优先验证：工单准确率、现场复核与错误成本；同时比较上线前基线，不预设节省金额。",
+        "connection_note": "Think of this as removing the jargon wrapper, not adding another manual."
+      },
+      "error": ""
+    },
+    {
+      "industry": "realestate",
+      "mode": "decode",
+      "tone": "playful",
+      "passed": true,
+      "check": "conditional interpretations and actionable question",
+      "input": "物业工单流程先对齐，我有点头大。",
+      "output": {
+        "mode": "decode",
+        "input": "物业工单流程先对齐，我有点头大。",
+        "matches": [
+          {
+            "phrase": "alignment",
+            "plain_english": "Reach agreement on goals and responsibilities.",
+            "plain_language": "让各方就目标、规则和分工达成一致。",
+            "possible_subtext": "可能存在口径不统一或尚未作出的决定。"
+          }
+        ],
+        "summary": "以下只是可能的解读，不能仅凭黑话推断发言者的真实意图。",
+        "certainty": "可能的解读，发言者动机未经证实",
+        "clarifying_question": "这件事由谁负责、何时完成、用什么指标判断效果？",
+        "source": "offline-phrasebook",
+        "industry_followup": "如何核验工单准确率、现场复核与错误成本？",
+        "connection_note": "先给黑话开个灯：下一步由谁做、什么时候做？"
+      },
+      "error": ""
+    },
+    {
+      "industry": "realestate",
+      "mode": "encode",
+      "tone": "playful",
+      "passed": true,
+      "check": "no fabricated metrics, pending validation or deployment preserved",
+      "input": "已修复报修系统排序异常，尚未上线。",
+      "output": {
+        "mode": "encode",
+        "source_note": "已修复报修系统排序异常，尚未上线。",
+        "executive_update": "已修复报修系统排序异常，尚未上线。",
+        "headline": "进展：已修复报修系统排序异常，尚未上线",
+        "business_relevance": "优先验证：工单准确率、现场复核与错误成本；同时比较上线前基线，不预设节省金额。",
+        "impact": "原始记录尚未给出可核实的量化收益。",
+        "next_step": "完成待办验证并确认上线范围；不要把测试结果写成生产收益。",
+        "risk_flags": [
+          "restricted_evidence_or_rollout"
+        ],
+        "evidence_ledger": {
+          "numeric_claims_in_source": [],
+          "new_numbers_in_output": [],
+          "independent_verification": false
+        },
+        "style": "executive",
+        "source": "offline-conservative-rewrite",
+        "connection_note": "真正的成果不靠 PPT 里的魔法百分比撑场面。"
+      },
+      "error": ""
+    }
+  ]
+}

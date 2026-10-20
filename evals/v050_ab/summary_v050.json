@@ -1,0 +1,69 @@
+{
+  "version": "0.5.0",
+  "method": "offline rule/CLI comparison, not live Cursor/Codex/Claude or model A/B",
+  "original_replayed_200": {
+    "rounds": 10,
+    "per_round": 20,
+    "modes": [
+      "explain",
+      "decode",
+      "encode",
+      "align"
+    ],
+    "decode": {
+      "cases": 50,
+      "old_disclaimer_count": 50,
+      "new_disclaimer_count": 0,
+      "old_expected_jargon_found": 45,
+      "new_expected_jargon_found": 45,
+      "new_errors": 0
+    },
+    "unchanged_other_modes": "Explain still fails on 5 multi-concept inputs; remaining Encode/Align quality not improved by this Decode-focused release."
+  },
+  "new_focused_decode_200": {
+    "rounds": 10,
+    "per_round": 20,
+    "distribution": {
+      "new-glossary": 80,
+      "legacy-glossary": 50,
+      "paraphrase": 40,
+      "plain-control": 20,
+      "boundary-control": 10
+    },
+    "before": {
+      "exact_requested_phrase_matches": 0,
+      "any_lexicon_match": 11,
+      "generic_disclaimer_or_no_hit": 200,
+      "no_hit_cli_hint": 189,
+      "errors": 0
+    },
+    "after": {
+      "exact_requested_phrase_matches": 130,
+      "any_lexicon_match": 130,
+      "semantic_fallback": 39,
+      "plain_language": 31,
+      "generic_disclaimer_or_no_hit": 0,
+      "no_hit_cli_hint": 0,
+      "errors": 0
+    },
+    "controls": {
+      "plain_controls": 20,
+      "plain_controls_with_unnecessary_question": 0,
+      "boundary_mentions": 10,
+      "boundary_mentions_falsely_matched": 0,
+      "boundary_mentions_unnecessary_question": 0
+    }
+  },
+  "glossary": {
+    "total": 355,
+    "industries": 17,
+    "note": "Original curated examples plus assistant-generated additions; no external verification for every term."
+  },
+  "limitations": [
+    "80 scenarios intentionally sample newly added terms, so these are in-vocabulary checks, not unseen-model generalization.",
+    "40 paraphrased goals do not measure semantic correctness just by producing an answer.",
+    "Baseline is v0.4.0 offline CLI, not unaided GPT/Claude/Cursor.",
+    "Some complex multi-term explain and English specialized wording remain weak.",
+    "Heuristic fallback may still be repetitive or incorrectly infer the operational priority."
+  ]
+}

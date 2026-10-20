@@ -1,0 +1,3282 @@
+{
+  "disclaimer": "Static asset checks + keyword-routing proxy (not a real agent/model run). Scoring requires full contract readiness, so baseline can undercount partial compatibility.",
+  "sample_cases_per_platform": 120,
+  "total_checks": 360,
+  "passed": 0,
+  "by_platform": {
+    "cursor": {
+      "passed": 0,
+      "total": 120
+    },
+    "codex": {
+      "passed": 0,
+      "total": 120
+    },
+    "claude": {
+      "passed": 0,
+      "total": 120
+    }
+  },
+  "integration_contracts": {
+    "cursor": {
+      "discoverable": true,
+      "scoped": false,
+      "references_self_contained": false,
+      "entry": ".cursor/rules/say-human.mdc"
+    },
+    "codex": {
+      "discoverable": false,
+      "scoped": false,
+      "references_self_contained": false,
+      "entry": ".agents/skills/say-human/SKILL.md"
+    },
+    "claude": {
+      "discoverable": true,
+      "scoped": false,
+      "references_self_contained": false,
+      "entry": ".claude/skills/say-human/SKILL.md"
+    }
+  },
+  "records": [
+    {
+      "platform": "cursor",
+      "industry": "ai_saas",
+      "category": "explain",
+      "task": "Explain RAG in LLM token costs to a project sponsor using an everyday metaphor.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "ai_saas",
+      "category": "decode",
+      "task": "Decode this ambiguous managerial email about LLM token costs without mind-reading.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "ai_saas",
+      "category": "encode",
+      "task": "Turn today's developer note about LLM token costs into an honest weekly progress update.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "ai_saas",
+      "category": "requirements",
+      "task": "Translate 'make LLM token costs frictionless' into acceptance criteria.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "ai_saas",
+      "category": "fix",
+      "task": "Fix the failing LLM token costs unit test without rewriting the design document.",
+      "expected_trigger": false,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "ai_saas",
+      "category": "code",
+      "task": "Implement a database index for LLM token costs and run performance tests.",
+      "expected_trigger": false,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "ai_saas",
+      "category": "refactor",
+      "task": "Refactor LLM token costs Python imports while preserving public APIs.",
+      "expected_trigger": false,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "ai_saas",
+      "category": "security",
+      "task": "Review LLM token costs dependency versions for known vulnerabilities.",
+      "expected_trigger": false,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "healthcare",
+      "category": "explain",
+      "task": "Explain RAG in hospital appointment scheduling to a project sponsor using an everyday metaphor.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "healthcare",
+      "category": "decode",
+      "task": "Decode this ambiguous managerial email about hospital appointment scheduling without mind-reading.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "healthcare",
+      "category": "encode",
+      "task": "Turn today's developer note about hospital appointment scheduling into an honest weekly progress update.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "healthcare",
+      "category": "requirements",
+      "task": "Translate 'make hospital appointment scheduling frictionless' into acceptance criteria.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "healthcare",
+      "category": "fix",
+      "task": "Fix the failing hospital appointment scheduling unit test without rewriting the design document.",
+      "expected_trigger": false,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "healthcare",
+      "category": "code",
+      "task": "Implement a database index for hospital appointment scheduling and run performance tests.",
+      "expected_trigger": false,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "healthcare",
+      "category": "refactor",
+      "task": "Refactor hospital appointment scheduling Python imports while preserving public APIs.",
+      "expected_trigger": false,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "healthcare",
+      "category": "security",
+      "task": "Review hospital appointment scheduling dependency versions for known vulnerabilities.",
+      "expected_trigger": false,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "finance",
+      "category": "explain",
+      "task": "Explain RAG in credit card fraud screening to a project sponsor using an everyday metaphor.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "finance",
+      "category": "decode",
+      "task": "Decode this ambiguous managerial email about credit card fraud screening without mind-reading.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "finance",
+      "category": "encode",
+      "task": "Turn today's developer note about credit card fraud screening into an honest weekly progress update.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "finance",
+      "category": "requirements",
+      "task": "Translate 'make credit card fraud screening frictionless' into acceptance criteria.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "finance",
+      "category": "fix",
+      "task": "Fix the failing credit card fraud screening unit test without rewriting the design document.",
+      "expected_trigger": false,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "finance",
+      "category": "code",
+      "task": "Implement a database index for credit card fraud screening and run performance tests.",
+      "expected_trigger": false,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "finance",
+      "category": "refactor",
+      "task": "Refactor credit card fraud screening Python imports while preserving public APIs.",
+      "expected_trigger": false,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "finance",
+      "category": "security",
+      "task": "Review credit card fraud screening dependency versions for known vulnerabilities.",
+      "expected_trigger": false,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "manufacturing",
+      "category": "explain",
+      "task": "Explain RAG in factory sensor drift to a project sponsor using an everyday metaphor.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "manufacturing",
+      "category": "decode",
+      "task": "Decode this ambiguous managerial email about factory sensor drift without mind-reading.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "manufacturing",
+      "category": "encode",
+      "task": "Turn today's developer note about factory sensor drift into an honest weekly progress update.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "manufacturing",
+      "category": "requirements",
+      "task": "Translate 'make factory sensor drift frictionless' into acceptance criteria.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "manufacturing",
+      "category": "fix",
+      "task": "Fix the failing factory sensor drift unit test without rewriting the design document.",
+      "expected_trigger": false,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "manufacturing",
+      "category": "code",
+      "task": "Implement a database index for factory sensor drift and run performance tests.",
+      "expected_trigger": false,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "manufacturing",
+      "category": "refactor",
+      "task": "Refactor factory sensor drift Python imports while preserving public APIs.",
+      "expected_trigger": false,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "manufacturing",
+      "category": "security",
+      "task": "Review factory sensor drift dependency versions for known vulnerabilities.",
+      "expected_trigger": false,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "education",
+      "category": "explain",
+      "task": "Explain RAG in online learning assessments to a project sponsor using an everyday metaphor.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "education",
+      "category": "decode",
+      "task": "Decode this ambiguous managerial email about online learning assessments without mind-reading.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "education",
+      "category": "encode",
+      "task": "Turn today's developer note about online learning assessments into an honest weekly progress update.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "education",
+      "category": "requirements",
+      "task": "Translate 'make online learning assessments frictionless' into acceptance criteria.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "education",
+      "category": "fix",
+      "task": "Fix the failing online learning assessments unit test without rewriting the design document.",
+      "expected_trigger": false,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "education",
+      "category": "code",
+      "task": "Implement a database index for online learning assessments and run performance tests.",
+      "expected_trigger": false,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "education",
+      "category": "refactor",
+      "task": "Refactor online learning assessments Python imports while preserving public APIs.",
+      "expected_trigger": false,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "education",
+      "category": "security",
+      "task": "Review online learning assessments dependency versions for known vulnerabilities.",
+      "expected_trigger": false,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "retail",
+      "category": "explain",
+      "task": "Explain RAG in store inventory forecasts to a project sponsor using an everyday metaphor.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "retail",
+      "category": "decode",
+      "task": "Decode this ambiguous managerial email about store inventory forecasts without mind-reading.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "retail",
+      "category": "encode",
+      "task": "Turn today's developer note about store inventory forecasts into an honest weekly progress update.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "retail",
+      "category": "requirements",
+      "task": "Translate 'make store inventory forecasts frictionless' into acceptance criteria.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "retail",
+      "category": "fix",
+      "task": "Fix the failing store inventory forecasts unit test without rewriting the design document.",
+      "expected_trigger": false,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "retail",
+      "category": "code",
+      "task": "Implement a database index for store inventory forecasts and run performance tests.",
+      "expected_trigger": false,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "retail",
+      "category": "refactor",
+      "task": "Refactor store inventory forecasts Python imports while preserving public APIs.",
+      "expected_trigger": false,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "retail",
+      "category": "security",
+      "task": "Review store inventory forecasts dependency versions for known vulnerabilities.",
+      "expected_trigger": false,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "logistics",
+      "category": "explain",
+      "task": "Explain RAG in warehouse parcel tracking to a project sponsor using an everyday metaphor.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "logistics",
+      "category": "decode",
+      "task": "Decode this ambiguous managerial email about warehouse parcel tracking without mind-reading.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "logistics",
+      "category": "encode",
+      "task": "Turn today's developer note about warehouse parcel tracking into an honest weekly progress update.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "logistics",
+      "category": "requirements",
+      "task": "Translate 'make warehouse parcel tracking frictionless' into acceptance criteria.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "logistics",
+      "category": "fix",
+      "task": "Fix the failing warehouse parcel tracking unit test without rewriting the design document.",
+      "expected_trigger": false,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "logistics",
+      "category": "code",
+      "task": "Implement a database index for warehouse parcel tracking and run performance tests.",
+      "expected_trigger": false,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "logistics",
+      "category": "refactor",
+      "task": "Refactor warehouse parcel tracking Python imports while preserving public APIs.",
+      "expected_trigger": false,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "logistics",
+      "category": "security",
+      "task": "Review warehouse parcel tracking dependency versions for known vulnerabilities.",
+      "expected_trigger": false,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "government",
+      "category": "explain",
+      "task": "Explain RAG in public service ticket routing to a project sponsor using an everyday metaphor.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "government",
+      "category": "decode",
+      "task": "Decode this ambiguous managerial email about public service ticket routing without mind-reading.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "government",
+      "category": "encode",
+      "task": "Turn today's developer note about public service ticket routing into an honest weekly progress update.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "government",
+      "category": "requirements",
+      "task": "Translate 'make public service ticket routing frictionless' into acceptance criteria.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "government",
+      "category": "fix",
+      "task": "Fix the failing public service ticket routing unit test without rewriting the design document.",
+      "expected_trigger": false,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "government",
+      "category": "code",
+      "task": "Implement a database index for public service ticket routing and run performance tests.",
+      "expected_trigger": false,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "government",
+      "category": "refactor",
+      "task": "Refactor public service ticket routing Python imports while preserving public APIs.",
+      "expected_trigger": false,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "government",
+      "category": "security",
+      "task": "Review public service ticket routing dependency versions for known vulnerabilities.",
+      "expected_trigger": false,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "energy",
+      "category": "explain",
+      "task": "Explain RAG in solar inverter alerts to a project sponsor using an everyday metaphor.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "energy",
+      "category": "decode",
+      "task": "Decode this ambiguous managerial email about solar inverter alerts without mind-reading.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "energy",
+      "category": "encode",
+      "task": "Turn today's developer note about solar inverter alerts into an honest weekly progress update.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "energy",
+      "category": "requirements",
+      "task": "Translate 'make solar inverter alerts frictionless' into acceptance criteria.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "energy",
+      "category": "fix",
+      "task": "Fix the failing solar inverter alerts unit test without rewriting the design document.",
+      "expected_trigger": false,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "energy",
+      "category": "code",
+      "task": "Implement a database index for solar inverter alerts and run performance tests.",
+      "expected_trigger": false,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "energy",
+      "category": "refactor",
+      "task": "Refactor solar inverter alerts Python imports while preserving public APIs.",
+      "expected_trigger": false,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "energy",
+      "category": "security",
+      "task": "Review solar inverter alerts dependency versions for known vulnerabilities.",
+      "expected_trigger": false,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "media",
+      "category": "explain",
+      "task": "Explain RAG in subscription churn analytics to a project sponsor using an everyday metaphor.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "media",
+      "category": "decode",
+      "task": "Decode this ambiguous managerial email about subscription churn analytics without mind-reading.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "media",
+      "category": "encode",
+      "task": "Turn today's developer note about subscription churn analytics into an honest weekly progress update.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "media",
+      "category": "requirements",
+      "task": "Translate 'make subscription churn analytics frictionless' into acceptance criteria.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "media",
+      "category": "fix",
+      "task": "Fix the failing subscription churn analytics unit test without rewriting the design document.",
+      "expected_trigger": false,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "media",
+      "category": "code",
+      "task": "Implement a database index for subscription churn analytics and run performance tests.",
+      "expected_trigger": false,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "media",
+      "category": "refactor",
+      "task": "Refactor subscription churn analytics Python imports while preserving public APIs.",
+      "expected_trigger": false,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "media",
+      "category": "security",
+      "task": "Review subscription churn analytics dependency versions for known vulnerabilities.",
+      "expected_trigger": false,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "gaming",
+      "category": "explain",
+      "task": "Explain RAG in matchmaking latency to a project sponsor using an everyday metaphor.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "gaming",
+      "category": "decode",
+      "task": "Decode this ambiguous managerial email about matchmaking latency without mind-reading.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "gaming",
+      "category": "encode",
+      "task": "Turn today's developer note about matchmaking latency into an honest weekly progress update.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "gaming",
+      "category": "requirements",
+      "task": "Translate 'make matchmaking latency frictionless' into acceptance criteria.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "gaming",
+      "category": "fix",
+      "task": "Fix the failing matchmaking latency unit test without rewriting the design document.",
+      "expected_trigger": false,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "gaming",
+      "category": "code",
+      "task": "Implement a database index for matchmaking latency and run performance tests.",
+      "expected_trigger": false,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "gaming",
+      "category": "refactor",
+      "task": "Refactor matchmaking latency Python imports while preserving public APIs.",
+      "expected_trigger": false,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "gaming",
+      "category": "security",
+      "task": "Review matchmaking latency dependency versions for known vulnerabilities.",
+      "expected_trigger": false,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "ecommerce",
+      "category": "explain",
+      "task": "Explain RAG in product recommendation ranking to a project sponsor using an everyday metaphor.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "ecommerce",
+      "category": "decode",
+      "task": "Decode this ambiguous managerial email about product recommendation ranking without mind-reading.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "ecommerce",
+      "category": "encode",
+      "task": "Turn today's developer note about product recommendation ranking into an honest weekly progress update.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "ecommerce",
+      "category": "requirements",
+      "task": "Translate 'make product recommendation ranking frictionless' into acceptance criteria.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "ecommerce",
+      "category": "fix",
+      "task": "Fix the failing product recommendation ranking unit test without rewriting the design document.",
+      "expected_trigger": false,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "ecommerce",
+      "category": "code",
+      "task": "Implement a database index for product recommendation ranking and run performance tests.",
+      "expected_trigger": false,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "ecommerce",
+      "category": "refactor",
+      "task": "Refactor product recommendation ranking Python imports while preserving public APIs.",
+      "expected_trigger": false,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "ecommerce",
+      "category": "security",
+      "task": "Review product recommendation ranking dependency versions for known vulnerabilities.",
+      "expected_trigger": false,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "hr",
+      "category": "explain",
+      "task": "Explain RAG in job application review to a project sponsor using an everyday metaphor.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "hr",
+      "category": "decode",
+      "task": "Decode this ambiguous managerial email about job application review without mind-reading.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "hr",
+      "category": "encode",
+      "task": "Turn today's developer note about job application review into an honest weekly progress update.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "hr",
+      "category": "requirements",
+      "task": "Translate 'make job application review frictionless' into acceptance criteria.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "hr",
+      "category": "fix",
+      "task": "Fix the failing job application review unit test without rewriting the design document.",
+      "expected_trigger": false,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "hr",
+      "category": "code",
+      "task": "Implement a database index for job application review and run performance tests.",
+      "expected_trigger": false,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "hr",
+      "category": "refactor",
+      "task": "Refactor job application review Python imports while preserving public APIs.",
+      "expected_trigger": false,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "hr",
+      "category": "security",
+      "task": "Review job application review dependency versions for known vulnerabilities.",
+      "expected_trigger": false,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "security",
+      "category": "explain",
+      "task": "Explain RAG in authentication audit logs to a project sponsor using an everyday metaphor.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "security",
+      "category": "decode",
+      "task": "Decode this ambiguous managerial email about authentication audit logs without mind-reading.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "security",
+      "category": "encode",
+      "task": "Turn today's developer note about authentication audit logs into an honest weekly progress update.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "security",
+      "category": "requirements",
+      "task": "Translate 'make authentication audit logs frictionless' into acceptance criteria.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "security",
+      "category": "fix",
+      "task": "Fix the failing authentication audit logs unit test without rewriting the design document.",
+      "expected_trigger": false,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "security",
+      "category": "code",
+      "task": "Implement a database index for authentication audit logs and run performance tests.",
+      "expected_trigger": false,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "security",
+      "category": "refactor",
+      "task": "Refactor authentication audit logs Python imports while preserving public APIs.",
+      "expected_trigger": false,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "security",
+      "category": "security",
+      "task": "Review authentication audit logs dependency versions for known vulnerabilities.",
+      "expected_trigger": false,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "real_estate",
+      "category": "explain",
+      "task": "Explain RAG in property listing search to a project sponsor using an everyday metaphor.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "real_estate",
+      "category": "decode",
+      "task": "Decode this ambiguous managerial email about property listing search without mind-reading.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "real_estate",
+      "category": "encode",
+      "task": "Turn today's developer note about property listing search into an honest weekly progress update.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "real_estate",
+      "category": "requirements",
+      "task": "Translate 'make property listing search frictionless' into acceptance criteria.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "real_estate",
+      "category": "fix",
+      "task": "Fix the failing property listing search unit test without rewriting the design document.",
+      "expected_trigger": false,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "real_estate",
+      "category": "code",
+      "task": "Implement a database index for property listing search and run performance tests.",
+      "expected_trigger": false,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "real_estate",
+      "category": "refactor",
+      "task": "Refactor property listing search Python imports while preserving public APIs.",
+      "expected_trigger": false,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "cursor",
+      "industry": "real_estate",
+      "category": "security",
+      "task": "Review property listing search dependency versions for known vulnerabilities.",
+      "expected_trigger": false,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "ai_saas",
+      "category": "explain",
+      "task": "Explain RAG in LLM token costs to a project sponsor using an everyday metaphor.",
+      "expected_trigger": true,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "ai_saas",
+      "category": "decode",
+      "task": "Decode this ambiguous managerial email about LLM token costs without mind-reading.",
+      "expected_trigger": true,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "ai_saas",
+      "category": "encode",
+      "task": "Turn today's developer note about LLM token costs into an honest weekly progress update.",
+      "expected_trigger": true,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "ai_saas",
+      "category": "requirements",
+      "task": "Translate 'make LLM token costs frictionless' into acceptance criteria.",
+      "expected_trigger": true,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "ai_saas",
+      "category": "fix",
+      "task": "Fix the failing LLM token costs unit test without rewriting the design document.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "ai_saas",
+      "category": "code",
+      "task": "Implement a database index for LLM token costs and run performance tests.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "ai_saas",
+      "category": "refactor",
+      "task": "Refactor LLM token costs Python imports while preserving public APIs.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "ai_saas",
+      "category": "security",
+      "task": "Review LLM token costs dependency versions for known vulnerabilities.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "healthcare",
+      "category": "explain",
+      "task": "Explain RAG in hospital appointment scheduling to a project sponsor using an everyday metaphor.",
+      "expected_trigger": true,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "healthcare",
+      "category": "decode",
+      "task": "Decode this ambiguous managerial email about hospital appointment scheduling without mind-reading.",
+      "expected_trigger": true,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "healthcare",
+      "category": "encode",
+      "task": "Turn today's developer note about hospital appointment scheduling into an honest weekly progress update.",
+      "expected_trigger": true,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "healthcare",
+      "category": "requirements",
+      "task": "Translate 'make hospital appointment scheduling frictionless' into acceptance criteria.",
+      "expected_trigger": true,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "healthcare",
+      "category": "fix",
+      "task": "Fix the failing hospital appointment scheduling unit test without rewriting the design document.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "healthcare",
+      "category": "code",
+      "task": "Implement a database index for hospital appointment scheduling and run performance tests.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "healthcare",
+      "category": "refactor",
+      "task": "Refactor hospital appointment scheduling Python imports while preserving public APIs.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "healthcare",
+      "category": "security",
+      "task": "Review hospital appointment scheduling dependency versions for known vulnerabilities.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "finance",
+      "category": "explain",
+      "task": "Explain RAG in credit card fraud screening to a project sponsor using an everyday metaphor.",
+      "expected_trigger": true,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "finance",
+      "category": "decode",
+      "task": "Decode this ambiguous managerial email about credit card fraud screening without mind-reading.",
+      "expected_trigger": true,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "finance",
+      "category": "encode",
+      "task": "Turn today's developer note about credit card fraud screening into an honest weekly progress update.",
+      "expected_trigger": true,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "finance",
+      "category": "requirements",
+      "task": "Translate 'make credit card fraud screening frictionless' into acceptance criteria.",
+      "expected_trigger": true,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "finance",
+      "category": "fix",
+      "task": "Fix the failing credit card fraud screening unit test without rewriting the design document.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "finance",
+      "category": "code",
+      "task": "Implement a database index for credit card fraud screening and run performance tests.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "finance",
+      "category": "refactor",
+      "task": "Refactor credit card fraud screening Python imports while preserving public APIs.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "finance",
+      "category": "security",
+      "task": "Review credit card fraud screening dependency versions for known vulnerabilities.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "manufacturing",
+      "category": "explain",
+      "task": "Explain RAG in factory sensor drift to a project sponsor using an everyday metaphor.",
+      "expected_trigger": true,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "manufacturing",
+      "category": "decode",
+      "task": "Decode this ambiguous managerial email about factory sensor drift without mind-reading.",
+      "expected_trigger": true,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "manufacturing",
+      "category": "encode",
+      "task": "Turn today's developer note about factory sensor drift into an honest weekly progress update.",
+      "expected_trigger": true,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "manufacturing",
+      "category": "requirements",
+      "task": "Translate 'make factory sensor drift frictionless' into acceptance criteria.",
+      "expected_trigger": true,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "manufacturing",
+      "category": "fix",
+      "task": "Fix the failing factory sensor drift unit test without rewriting the design document.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "manufacturing",
+      "category": "code",
+      "task": "Implement a database index for factory sensor drift and run performance tests.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "manufacturing",
+      "category": "refactor",
+      "task": "Refactor factory sensor drift Python imports while preserving public APIs.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "manufacturing",
+      "category": "security",
+      "task": "Review factory sensor drift dependency versions for known vulnerabilities.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "education",
+      "category": "explain",
+      "task": "Explain RAG in online learning assessments to a project sponsor using an everyday metaphor.",
+      "expected_trigger": true,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "education",
+      "category": "decode",
+      "task": "Decode this ambiguous managerial email about online learning assessments without mind-reading.",
+      "expected_trigger": true,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "education",
+      "category": "encode",
+      "task": "Turn today's developer note about online learning assessments into an honest weekly progress update.",
+      "expected_trigger": true,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "education",
+      "category": "requirements",
+      "task": "Translate 'make online learning assessments frictionless' into acceptance criteria.",
+      "expected_trigger": true,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "education",
+      "category": "fix",
+      "task": "Fix the failing online learning assessments unit test without rewriting the design document.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "education",
+      "category": "code",
+      "task": "Implement a database index for online learning assessments and run performance tests.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "education",
+      "category": "refactor",
+      "task": "Refactor online learning assessments Python imports while preserving public APIs.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "education",
+      "category": "security",
+      "task": "Review online learning assessments dependency versions for known vulnerabilities.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "retail",
+      "category": "explain",
+      "task": "Explain RAG in store inventory forecasts to a project sponsor using an everyday metaphor.",
+      "expected_trigger": true,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "retail",
+      "category": "decode",
+      "task": "Decode this ambiguous managerial email about store inventory forecasts without mind-reading.",
+      "expected_trigger": true,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "retail",
+      "category": "encode",
+      "task": "Turn today's developer note about store inventory forecasts into an honest weekly progress update.",
+      "expected_trigger": true,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "retail",
+      "category": "requirements",
+      "task": "Translate 'make store inventory forecasts frictionless' into acceptance criteria.",
+      "expected_trigger": true,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "retail",
+      "category": "fix",
+      "task": "Fix the failing store inventory forecasts unit test without rewriting the design document.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "retail",
+      "category": "code",
+      "task": "Implement a database index for store inventory forecasts and run performance tests.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "retail",
+      "category": "refactor",
+      "task": "Refactor store inventory forecasts Python imports while preserving public APIs.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "retail",
+      "category": "security",
+      "task": "Review store inventory forecasts dependency versions for known vulnerabilities.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "logistics",
+      "category": "explain",
+      "task": "Explain RAG in warehouse parcel tracking to a project sponsor using an everyday metaphor.",
+      "expected_trigger": true,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "logistics",
+      "category": "decode",
+      "task": "Decode this ambiguous managerial email about warehouse parcel tracking without mind-reading.",
+      "expected_trigger": true,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "logistics",
+      "category": "encode",
+      "task": "Turn today's developer note about warehouse parcel tracking into an honest weekly progress update.",
+      "expected_trigger": true,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "logistics",
+      "category": "requirements",
+      "task": "Translate 'make warehouse parcel tracking frictionless' into acceptance criteria.",
+      "expected_trigger": true,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "logistics",
+      "category": "fix",
+      "task": "Fix the failing warehouse parcel tracking unit test without rewriting the design document.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "logistics",
+      "category": "code",
+      "task": "Implement a database index for warehouse parcel tracking and run performance tests.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "logistics",
+      "category": "refactor",
+      "task": "Refactor warehouse parcel tracking Python imports while preserving public APIs.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "logistics",
+      "category": "security",
+      "task": "Review warehouse parcel tracking dependency versions for known vulnerabilities.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "government",
+      "category": "explain",
+      "task": "Explain RAG in public service ticket routing to a project sponsor using an everyday metaphor.",
+      "expected_trigger": true,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "government",
+      "category": "decode",
+      "task": "Decode this ambiguous managerial email about public service ticket routing without mind-reading.",
+      "expected_trigger": true,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "government",
+      "category": "encode",
+      "task": "Turn today's developer note about public service ticket routing into an honest weekly progress update.",
+      "expected_trigger": true,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "government",
+      "category": "requirements",
+      "task": "Translate 'make public service ticket routing frictionless' into acceptance criteria.",
+      "expected_trigger": true,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "government",
+      "category": "fix",
+      "task": "Fix the failing public service ticket routing unit test without rewriting the design document.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "government",
+      "category": "code",
+      "task": "Implement a database index for public service ticket routing and run performance tests.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "government",
+      "category": "refactor",
+      "task": "Refactor public service ticket routing Python imports while preserving public APIs.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "government",
+      "category": "security",
+      "task": "Review public service ticket routing dependency versions for known vulnerabilities.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "energy",
+      "category": "explain",
+      "task": "Explain RAG in solar inverter alerts to a project sponsor using an everyday metaphor.",
+      "expected_trigger": true,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "energy",
+      "category": "decode",
+      "task": "Decode this ambiguous managerial email about solar inverter alerts without mind-reading.",
+      "expected_trigger": true,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "energy",
+      "category": "encode",
+      "task": "Turn today's developer note about solar inverter alerts into an honest weekly progress update.",
+      "expected_trigger": true,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "energy",
+      "category": "requirements",
+      "task": "Translate 'make solar inverter alerts frictionless' into acceptance criteria.",
+      "expected_trigger": true,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "energy",
+      "category": "fix",
+      "task": "Fix the failing solar inverter alerts unit test without rewriting the design document.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "energy",
+      "category": "code",
+      "task": "Implement a database index for solar inverter alerts and run performance tests.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "energy",
+      "category": "refactor",
+      "task": "Refactor solar inverter alerts Python imports while preserving public APIs.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "energy",
+      "category": "security",
+      "task": "Review solar inverter alerts dependency versions for known vulnerabilities.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "media",
+      "category": "explain",
+      "task": "Explain RAG in subscription churn analytics to a project sponsor using an everyday metaphor.",
+      "expected_trigger": true,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "media",
+      "category": "decode",
+      "task": "Decode this ambiguous managerial email about subscription churn analytics without mind-reading.",
+      "expected_trigger": true,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "media",
+      "category": "encode",
+      "task": "Turn today's developer note about subscription churn analytics into an honest weekly progress update.",
+      "expected_trigger": true,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "media",
+      "category": "requirements",
+      "task": "Translate 'make subscription churn analytics frictionless' into acceptance criteria.",
+      "expected_trigger": true,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "media",
+      "category": "fix",
+      "task": "Fix the failing subscription churn analytics unit test without rewriting the design document.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "media",
+      "category": "code",
+      "task": "Implement a database index for subscription churn analytics and run performance tests.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "media",
+      "category": "refactor",
+      "task": "Refactor subscription churn analytics Python imports while preserving public APIs.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "media",
+      "category": "security",
+      "task": "Review subscription churn analytics dependency versions for known vulnerabilities.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "gaming",
+      "category": "explain",
+      "task": "Explain RAG in matchmaking latency to a project sponsor using an everyday metaphor.",
+      "expected_trigger": true,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "gaming",
+      "category": "decode",
+      "task": "Decode this ambiguous managerial email about matchmaking latency without mind-reading.",
+      "expected_trigger": true,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "gaming",
+      "category": "encode",
+      "task": "Turn today's developer note about matchmaking latency into an honest weekly progress update.",
+      "expected_trigger": true,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "gaming",
+      "category": "requirements",
+      "task": "Translate 'make matchmaking latency frictionless' into acceptance criteria.",
+      "expected_trigger": true,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "gaming",
+      "category": "fix",
+      "task": "Fix the failing matchmaking latency unit test without rewriting the design document.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "gaming",
+      "category": "code",
+      "task": "Implement a database index for matchmaking latency and run performance tests.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "gaming",
+      "category": "refactor",
+      "task": "Refactor matchmaking latency Python imports while preserving public APIs.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "gaming",
+      "category": "security",
+      "task": "Review matchmaking latency dependency versions for known vulnerabilities.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "ecommerce",
+      "category": "explain",
+      "task": "Explain RAG in product recommendation ranking to a project sponsor using an everyday metaphor.",
+      "expected_trigger": true,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "ecommerce",
+      "category": "decode",
+      "task": "Decode this ambiguous managerial email about product recommendation ranking without mind-reading.",
+      "expected_trigger": true,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "ecommerce",
+      "category": "encode",
+      "task": "Turn today's developer note about product recommendation ranking into an honest weekly progress update.",
+      "expected_trigger": true,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "ecommerce",
+      "category": "requirements",
+      "task": "Translate 'make product recommendation ranking frictionless' into acceptance criteria.",
+      "expected_trigger": true,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "ecommerce",
+      "category": "fix",
+      "task": "Fix the failing product recommendation ranking unit test without rewriting the design document.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "ecommerce",
+      "category": "code",
+      "task": "Implement a database index for product recommendation ranking and run performance tests.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "ecommerce",
+      "category": "refactor",
+      "task": "Refactor product recommendation ranking Python imports while preserving public APIs.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "ecommerce",
+      "category": "security",
+      "task": "Review product recommendation ranking dependency versions for known vulnerabilities.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "hr",
+      "category": "explain",
+      "task": "Explain RAG in job application review to a project sponsor using an everyday metaphor.",
+      "expected_trigger": true,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "hr",
+      "category": "decode",
+      "task": "Decode this ambiguous managerial email about job application review without mind-reading.",
+      "expected_trigger": true,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "hr",
+      "category": "encode",
+      "task": "Turn today's developer note about job application review into an honest weekly progress update.",
+      "expected_trigger": true,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "hr",
+      "category": "requirements",
+      "task": "Translate 'make job application review frictionless' into acceptance criteria.",
+      "expected_trigger": true,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "hr",
+      "category": "fix",
+      "task": "Fix the failing job application review unit test without rewriting the design document.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "hr",
+      "category": "code",
+      "task": "Implement a database index for job application review and run performance tests.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "hr",
+      "category": "refactor",
+      "task": "Refactor job application review Python imports while preserving public APIs.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "hr",
+      "category": "security",
+      "task": "Review job application review dependency versions for known vulnerabilities.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "security",
+      "category": "explain",
+      "task": "Explain RAG in authentication audit logs to a project sponsor using an everyday metaphor.",
+      "expected_trigger": true,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "security",
+      "category": "decode",
+      "task": "Decode this ambiguous managerial email about authentication audit logs without mind-reading.",
+      "expected_trigger": true,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "security",
+      "category": "encode",
+      "task": "Turn today's developer note about authentication audit logs into an honest weekly progress update.",
+      "expected_trigger": true,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "security",
+      "category": "requirements",
+      "task": "Translate 'make authentication audit logs frictionless' into acceptance criteria.",
+      "expected_trigger": true,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "security",
+      "category": "fix",
+      "task": "Fix the failing authentication audit logs unit test without rewriting the design document.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "security",
+      "category": "code",
+      "task": "Implement a database index for authentication audit logs and run performance tests.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "security",
+      "category": "refactor",
+      "task": "Refactor authentication audit logs Python imports while preserving public APIs.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "security",
+      "category": "security",
+      "task": "Review authentication audit logs dependency versions for known vulnerabilities.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "real_estate",
+      "category": "explain",
+      "task": "Explain RAG in property listing search to a project sponsor using an everyday metaphor.",
+      "expected_trigger": true,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "real_estate",
+      "category": "decode",
+      "task": "Decode this ambiguous managerial email about property listing search without mind-reading.",
+      "expected_trigger": true,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "real_estate",
+      "category": "encode",
+      "task": "Turn today's developer note about property listing search into an honest weekly progress update.",
+      "expected_trigger": true,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "real_estate",
+      "category": "requirements",
+      "task": "Translate 'make property listing search frictionless' into acceptance criteria.",
+      "expected_trigger": true,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "real_estate",
+      "category": "fix",
+      "task": "Fix the failing property listing search unit test without rewriting the design document.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "real_estate",
+      "category": "code",
+      "task": "Implement a database index for property listing search and run performance tests.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "real_estate",
+      "category": "refactor",
+      "task": "Refactor property listing search Python imports while preserving public APIs.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "codex",
+      "industry": "real_estate",
+      "category": "security",
+      "task": "Review property listing search dependency versions for known vulnerabilities.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "ai_saas",
+      "category": "explain",
+      "task": "Explain RAG in LLM token costs to a project sponsor using an everyday metaphor.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "ai_saas",
+      "category": "decode",
+      "task": "Decode this ambiguous managerial email about LLM token costs without mind-reading.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "ai_saas",
+      "category": "encode",
+      "task": "Turn today's developer note about LLM token costs into an honest weekly progress update.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "ai_saas",
+      "category": "requirements",
+      "task": "Translate 'make LLM token costs frictionless' into acceptance criteria.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "ai_saas",
+      "category": "fix",
+      "task": "Fix the failing LLM token costs unit test without rewriting the design document.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "ai_saas",
+      "category": "code",
+      "task": "Implement a database index for LLM token costs and run performance tests.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "ai_saas",
+      "category": "refactor",
+      "task": "Refactor LLM token costs Python imports while preserving public APIs.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "ai_saas",
+      "category": "security",
+      "task": "Review LLM token costs dependency versions for known vulnerabilities.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "healthcare",
+      "category": "explain",
+      "task": "Explain RAG in hospital appointment scheduling to a project sponsor using an everyday metaphor.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "healthcare",
+      "category": "decode",
+      "task": "Decode this ambiguous managerial email about hospital appointment scheduling without mind-reading.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "healthcare",
+      "category": "encode",
+      "task": "Turn today's developer note about hospital appointment scheduling into an honest weekly progress update.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "healthcare",
+      "category": "requirements",
+      "task": "Translate 'make hospital appointment scheduling frictionless' into acceptance criteria.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "healthcare",
+      "category": "fix",
+      "task": "Fix the failing hospital appointment scheduling unit test without rewriting the design document.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "healthcare",
+      "category": "code",
+      "task": "Implement a database index for hospital appointment scheduling and run performance tests.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "healthcare",
+      "category": "refactor",
+      "task": "Refactor hospital appointment scheduling Python imports while preserving public APIs.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "healthcare",
+      "category": "security",
+      "task": "Review hospital appointment scheduling dependency versions for known vulnerabilities.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "finance",
+      "category": "explain",
+      "task": "Explain RAG in credit card fraud screening to a project sponsor using an everyday metaphor.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "finance",
+      "category": "decode",
+      "task": "Decode this ambiguous managerial email about credit card fraud screening without mind-reading.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "finance",
+      "category": "encode",
+      "task": "Turn today's developer note about credit card fraud screening into an honest weekly progress update.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "finance",
+      "category": "requirements",
+      "task": "Translate 'make credit card fraud screening frictionless' into acceptance criteria.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "finance",
+      "category": "fix",
+      "task": "Fix the failing credit card fraud screening unit test without rewriting the design document.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "finance",
+      "category": "code",
+      "task": "Implement a database index for credit card fraud screening and run performance tests.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "finance",
+      "category": "refactor",
+      "task": "Refactor credit card fraud screening Python imports while preserving public APIs.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "finance",
+      "category": "security",
+      "task": "Review credit card fraud screening dependency versions for known vulnerabilities.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "manufacturing",
+      "category": "explain",
+      "task": "Explain RAG in factory sensor drift to a project sponsor using an everyday metaphor.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "manufacturing",
+      "category": "decode",
+      "task": "Decode this ambiguous managerial email about factory sensor drift without mind-reading.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "manufacturing",
+      "category": "encode",
+      "task": "Turn today's developer note about factory sensor drift into an honest weekly progress update.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "manufacturing",
+      "category": "requirements",
+      "task": "Translate 'make factory sensor drift frictionless' into acceptance criteria.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "manufacturing",
+      "category": "fix",
+      "task": "Fix the failing factory sensor drift unit test without rewriting the design document.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "manufacturing",
+      "category": "code",
+      "task": "Implement a database index for factory sensor drift and run performance tests.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "manufacturing",
+      "category": "refactor",
+      "task": "Refactor factory sensor drift Python imports while preserving public APIs.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "manufacturing",
+      "category": "security",
+      "task": "Review factory sensor drift dependency versions for known vulnerabilities.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "education",
+      "category": "explain",
+      "task": "Explain RAG in online learning assessments to a project sponsor using an everyday metaphor.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "education",
+      "category": "decode",
+      "task": "Decode this ambiguous managerial email about online learning assessments without mind-reading.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "education",
+      "category": "encode",
+      "task": "Turn today's developer note about online learning assessments into an honest weekly progress update.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "education",
+      "category": "requirements",
+      "task": "Translate 'make online learning assessments frictionless' into acceptance criteria.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "education",
+      "category": "fix",
+      "task": "Fix the failing online learning assessments unit test without rewriting the design document.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "education",
+      "category": "code",
+      "task": "Implement a database index for online learning assessments and run performance tests.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "education",
+      "category": "refactor",
+      "task": "Refactor online learning assessments Python imports while preserving public APIs.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "education",
+      "category": "security",
+      "task": "Review online learning assessments dependency versions for known vulnerabilities.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "retail",
+      "category": "explain",
+      "task": "Explain RAG in store inventory forecasts to a project sponsor using an everyday metaphor.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "retail",
+      "category": "decode",
+      "task": "Decode this ambiguous managerial email about store inventory forecasts without mind-reading.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "retail",
+      "category": "encode",
+      "task": "Turn today's developer note about store inventory forecasts into an honest weekly progress update.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "retail",
+      "category": "requirements",
+      "task": "Translate 'make store inventory forecasts frictionless' into acceptance criteria.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "retail",
+      "category": "fix",
+      "task": "Fix the failing store inventory forecasts unit test without rewriting the design document.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "retail",
+      "category": "code",
+      "task": "Implement a database index for store inventory forecasts and run performance tests.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "retail",
+      "category": "refactor",
+      "task": "Refactor store inventory forecasts Python imports while preserving public APIs.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "retail",
+      "category": "security",
+      "task": "Review store inventory forecasts dependency versions for known vulnerabilities.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "logistics",
+      "category": "explain",
+      "task": "Explain RAG in warehouse parcel tracking to a project sponsor using an everyday metaphor.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "logistics",
+      "category": "decode",
+      "task": "Decode this ambiguous managerial email about warehouse parcel tracking without mind-reading.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "logistics",
+      "category": "encode",
+      "task": "Turn today's developer note about warehouse parcel tracking into an honest weekly progress update.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "logistics",
+      "category": "requirements",
+      "task": "Translate 'make warehouse parcel tracking frictionless' into acceptance criteria.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "logistics",
+      "category": "fix",
+      "task": "Fix the failing warehouse parcel tracking unit test without rewriting the design document.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "logistics",
+      "category": "code",
+      "task": "Implement a database index for warehouse parcel tracking and run performance tests.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "logistics",
+      "category": "refactor",
+      "task": "Refactor warehouse parcel tracking Python imports while preserving public APIs.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "logistics",
+      "category": "security",
+      "task": "Review warehouse parcel tracking dependency versions for known vulnerabilities.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "government",
+      "category": "explain",
+      "task": "Explain RAG in public service ticket routing to a project sponsor using an everyday metaphor.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "government",
+      "category": "decode",
+      "task": "Decode this ambiguous managerial email about public service ticket routing without mind-reading.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "government",
+      "category": "encode",
+      "task": "Turn today's developer note about public service ticket routing into an honest weekly progress update.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "government",
+      "category": "requirements",
+      "task": "Translate 'make public service ticket routing frictionless' into acceptance criteria.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "government",
+      "category": "fix",
+      "task": "Fix the failing public service ticket routing unit test without rewriting the design document.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "government",
+      "category": "code",
+      "task": "Implement a database index for public service ticket routing and run performance tests.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "government",
+      "category": "refactor",
+      "task": "Refactor public service ticket routing Python imports while preserving public APIs.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "government",
+      "category": "security",
+      "task": "Review public service ticket routing dependency versions for known vulnerabilities.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "energy",
+      "category": "explain",
+      "task": "Explain RAG in solar inverter alerts to a project sponsor using an everyday metaphor.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "energy",
+      "category": "decode",
+      "task": "Decode this ambiguous managerial email about solar inverter alerts without mind-reading.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "energy",
+      "category": "encode",
+      "task": "Turn today's developer note about solar inverter alerts into an honest weekly progress update.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "energy",
+      "category": "requirements",
+      "task": "Translate 'make solar inverter alerts frictionless' into acceptance criteria.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "energy",
+      "category": "fix",
+      "task": "Fix the failing solar inverter alerts unit test without rewriting the design document.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "energy",
+      "category": "code",
+      "task": "Implement a database index for solar inverter alerts and run performance tests.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "energy",
+      "category": "refactor",
+      "task": "Refactor solar inverter alerts Python imports while preserving public APIs.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "energy",
+      "category": "security",
+      "task": "Review solar inverter alerts dependency versions for known vulnerabilities.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "media",
+      "category": "explain",
+      "task": "Explain RAG in subscription churn analytics to a project sponsor using an everyday metaphor.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "media",
+      "category": "decode",
+      "task": "Decode this ambiguous managerial email about subscription churn analytics without mind-reading.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "media",
+      "category": "encode",
+      "task": "Turn today's developer note about subscription churn analytics into an honest weekly progress update.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "media",
+      "category": "requirements",
+      "task": "Translate 'make subscription churn analytics frictionless' into acceptance criteria.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "media",
+      "category": "fix",
+      "task": "Fix the failing subscription churn analytics unit test without rewriting the design document.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "media",
+      "category": "code",
+      "task": "Implement a database index for subscription churn analytics and run performance tests.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "media",
+      "category": "refactor",
+      "task": "Refactor subscription churn analytics Python imports while preserving public APIs.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "media",
+      "category": "security",
+      "task": "Review subscription churn analytics dependency versions for known vulnerabilities.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "gaming",
+      "category": "explain",
+      "task": "Explain RAG in matchmaking latency to a project sponsor using an everyday metaphor.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "gaming",
+      "category": "decode",
+      "task": "Decode this ambiguous managerial email about matchmaking latency without mind-reading.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "gaming",
+      "category": "encode",
+      "task": "Turn today's developer note about matchmaking latency into an honest weekly progress update.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "gaming",
+      "category": "requirements",
+      "task": "Translate 'make matchmaking latency frictionless' into acceptance criteria.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "gaming",
+      "category": "fix",
+      "task": "Fix the failing matchmaking latency unit test without rewriting the design document.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "gaming",
+      "category": "code",
+      "task": "Implement a database index for matchmaking latency and run performance tests.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "gaming",
+      "category": "refactor",
+      "task": "Refactor matchmaking latency Python imports while preserving public APIs.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "gaming",
+      "category": "security",
+      "task": "Review matchmaking latency dependency versions for known vulnerabilities.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "ecommerce",
+      "category": "explain",
+      "task": "Explain RAG in product recommendation ranking to a project sponsor using an everyday metaphor.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "ecommerce",
+      "category": "decode",
+      "task": "Decode this ambiguous managerial email about product recommendation ranking without mind-reading.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "ecommerce",
+      "category": "encode",
+      "task": "Turn today's developer note about product recommendation ranking into an honest weekly progress update.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "ecommerce",
+      "category": "requirements",
+      "task": "Translate 'make product recommendation ranking frictionless' into acceptance criteria.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "ecommerce",
+      "category": "fix",
+      "task": "Fix the failing product recommendation ranking unit test without rewriting the design document.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "ecommerce",
+      "category": "code",
+      "task": "Implement a database index for product recommendation ranking and run performance tests.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "ecommerce",
+      "category": "refactor",
+      "task": "Refactor product recommendation ranking Python imports while preserving public APIs.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "ecommerce",
+      "category": "security",
+      "task": "Review product recommendation ranking dependency versions for known vulnerabilities.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "hr",
+      "category": "explain",
+      "task": "Explain RAG in job application review to a project sponsor using an everyday metaphor.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "hr",
+      "category": "decode",
+      "task": "Decode this ambiguous managerial email about job application review without mind-reading.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "hr",
+      "category": "encode",
+      "task": "Turn today's developer note about job application review into an honest weekly progress update.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "hr",
+      "category": "requirements",
+      "task": "Translate 'make job application review frictionless' into acceptance criteria.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "hr",
+      "category": "fix",
+      "task": "Fix the failing job application review unit test without rewriting the design document.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "hr",
+      "category": "code",
+      "task": "Implement a database index for job application review and run performance tests.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "hr",
+      "category": "refactor",
+      "task": "Refactor job application review Python imports while preserving public APIs.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "hr",
+      "category": "security",
+      "task": "Review job application review dependency versions for known vulnerabilities.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "security",
+      "category": "explain",
+      "task": "Explain RAG in authentication audit logs to a project sponsor using an everyday metaphor.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "security",
+      "category": "decode",
+      "task": "Decode this ambiguous managerial email about authentication audit logs without mind-reading.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "security",
+      "category": "encode",
+      "task": "Turn today's developer note about authentication audit logs into an honest weekly progress update.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "security",
+      "category": "requirements",
+      "task": "Translate 'make authentication audit logs frictionless' into acceptance criteria.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "security",
+      "category": "fix",
+      "task": "Fix the failing authentication audit logs unit test without rewriting the design document.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "security",
+      "category": "code",
+      "task": "Implement a database index for authentication audit logs and run performance tests.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "security",
+      "category": "refactor",
+      "task": "Refactor authentication audit logs Python imports while preserving public APIs.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "security",
+      "category": "security",
+      "task": "Review authentication audit logs dependency versions for known vulnerabilities.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "real_estate",
+      "category": "explain",
+      "task": "Explain RAG in property listing search to a project sponsor using an everyday metaphor.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "real_estate",
+      "category": "decode",
+      "task": "Decode this ambiguous managerial email about property listing search without mind-reading.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "real_estate",
+      "category": "encode",
+      "task": "Turn today's developer note about property listing search into an honest weekly progress update.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "real_estate",
+      "category": "requirements",
+      "task": "Translate 'make property listing search frictionless' into acceptance criteria.",
+      "expected_trigger": true,
+      "simulated_trigger": true,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "real_estate",
+      "category": "fix",
+      "task": "Fix the failing property listing search unit test without rewriting the design document.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "real_estate",
+      "category": "code",
+      "task": "Implement a database index for property listing search and run performance tests.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "real_estate",
+      "category": "refactor",
+      "task": "Refactor property listing search Python imports while preserving public APIs.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    },
+    {
+      "platform": "claude",
+      "industry": "real_estate",
+      "category": "security",
+      "task": "Review property listing search dependency versions for known vulnerabilities.",
+      "expected_trigger": false,
+      "simulated_trigger": false,
+      "pass": false
+    }
+  ]
+}

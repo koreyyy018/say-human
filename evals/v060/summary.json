@@ -1,0 +1,17 @@
+{
+  "compare": {
+    "sample_size": 20,
+    "v0.5_pass": 0,
+    "v0.6_pass": 20
+  },
+  "audit": {
+    "sample_size": 10,
+    "v0.5_pass": 4,
+    "v0.6_pass": 10
+  },
+  "encode": {
+    "sample_size": 10,
+    "v0.5_pass": 5,
+    "v0.6_pass": 10
+  }
+}

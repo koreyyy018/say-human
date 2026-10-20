@@ -1,0 +1,20 @@
+{
+  "total": 210,
+  "passed": 210,
+  "failures": [],
+  "subprocess_smoke": [
+    {
+      "id": "01-EX-01",
+      "passed": true
+    },
+    {
+      "id": "01-DE-01",
+      "passed": true
+    },
+    {
+      "id": "01-EN-01",
+      "passed": true
+    }
+  ],
+  "definition": "210 in-process CLI parser/run requests + 3 real CLI subprocess requests. Successful parseable JSON with correct mode and input attribution; no remote LLM."
+}

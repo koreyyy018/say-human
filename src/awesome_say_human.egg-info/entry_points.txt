@@ -1,0 +1,2 @@
+[console_scripts]
+sayhuman = sayhuman.cli:main

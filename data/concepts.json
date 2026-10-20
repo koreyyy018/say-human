@@ -1,0 +1,170 @@
+[
+  {
+    "term": "Prompt",
+    "aliases": [
+      "prompts"
+    ],
+    "technical": "Instructions and context supplied to a model to guide its response.",
+    "human": "Ordering dinner: 'make food' is vague; 'chili pork, less salt, no ginger, plated for a photo' gives the cook a useful brief.",
+    "business": "A clearer spec can reduce rework and review cycles; measure task success and revisions, not vibes.",
+    "caveat": "A prompt cannot guarantee compliance or correctness."
+  },
+  {
+    "term": "Agent",
+    "aliases": [
+      "ai agent"
+    ],
+    "technical": "Software that uses a model to plan and invoke tools across multiple steps toward a goal.",
+    "human": "A junior teammate with a checklist, access badge, tools and a supervisor—not a magical employee who can enter every room.",
+    "business": "Automates bounded workflows; compare labor saved with supervision, API and exception-handling costs.",
+    "caveat": "Needs permissions, tool outputs, observability and approval for risky actions."
+  },
+  {
+    "term": "Context Window",
+    "aliases": [
+      "context length"
+    ],
+    "technical": "The maximum sequence of model input and output tokens available in one request or interaction.",
+    "human": "A meeting table with limited space: once it's full, notes must be moved, summarized or removed.",
+    "business": "Determines how much document/chat material fits; affects retrieval strategy and per-request spend.",
+    "caveat": "Context capacity is not permanent memory or guaranteed recall."
+  },
+  {
+    "term": "API",
+    "aliases": [
+      "application programming interface"
+    ],
+    "technical": "A documented interface through which software systems exchange requests and responses.",
+    "human": "A standardized hotel reception desk: submit a known request format and get an agreed response.",
+    "business": "Faster integrations versus rebuilding core services; budget vendor fees, uptime, security and switching costs.",
+    "caveat": "APIs are logical interfaces, not literal physical sockets; API wrappers can still involve substantial engineering."
+  },
+  {
+    "term": "Function Calling",
+    "aliases": [
+      "tool calling"
+    ],
+    "technical": "Model-generated structured arguments indicating that a host application should invoke a specified tool.",
+    "human": "A mechanic chooses a wrench from a labeled toolbox, while the shop manager still checks authorization before using it.",
+    "business": "Connects assistant recommendations to verifiable workflow steps, with auditable execution.",
+    "caveat": "The model doesn't execute a tool by wishing: the application must validate and run it."
+  },
+  {
+    "term": "RAG",
+    "aliases": [
+      "retrieval augmented generation",
+      "rag (retrieval-augmented generation)"
+    ],
+    "technical": "Retrieves relevant content from an external corpus and supplies it as context for generation.",
+    "human": "An open-book exam: find the relevant pages before answering and point to where the answer came from.",
+    "business": "Connects changing internal documentation without full retraining; evaluate retrieval quality and error rates.",
+    "caveat": "Retrieval reduces some errors but does not eliminate fabricated or irrelevant answers."
+  },
+  {
+    "term": "Multimodal",
+    "aliases": [
+      "multi-modal",
+      "multimodal ai"
+    ],
+    "technical": "A model or system that processes or produces more than one modality of data.",
+    "human": "An assistant who can read the sign, hear the voicemail, and inspect the photo—if equipped for each.",
+    "business": "Turns images, voice and documents into one workflow; verify supported formats and per-modal costs.",
+    "caveat": "Support varies by provider and modality."
+  },
+  {
+    "term": "Tokens",
+    "aliases": [
+      "token"
+    ],
+    "technical": "Model-specific units used to represent and process inputs and outputs; often a billing unit.",
+    "human": "Taxi meter ticks rather than counting letters: the fare depends on the meter's rules and distance.",
+    "business": "Estimate spend from input/output token volume, tool usage and model pricing.",
+    "caveat": "Tokens are not characters and token prices are not universally negligible."
+  },
+  {
+    "term": "Hallucination",
+    "aliases": [
+      "ai hallucination"
+    ],
+    "technical": "A generated claim that is false, ungrounded or unsupported by available evidence.",
+    "human": "A tour guide who invents a street name instead of saying they don't know, and sounds convincing.",
+    "business": "Risk to trust and compliance; mitigate with retrieval, citations, checks and human review.",
+    "caveat": "A fluent answer may still be incorrect, and retrieval alone is insufficient."
+  },
+  {
+    "term": "Vector Embeddings",
+    "aliases": [
+      "embeddings",
+      "vector embedding"
+    ],
+    "technical": "Dense numeric representations learned so related items can be compared by distance or similarity.",
+    "human": "A supermarket map that shelves 'sneakers' near 'running shoes' even when the labels use different words.",
+    "business": "Can improve semantic search and discovery; measure search relevance and time-to-answer against index cost.",
+    "caveat": "Similarity is not factual equivalence or guaranteed intent understanding."
+  },
+  {
+    "term": "Fine-tuning",
+    "aliases": [
+      "finetuning",
+      "fine tuning"
+    ],
+    "technical": "Updating model parameters with task-specific training examples.",
+    "human": "Training a capable chef on your restaurant's house recipes—not shouting the recipe before every order.",
+    "business": "Useful for repeatable style or formats at scale; compare dataset, training and maintenance cost to prompting/RAG.",
+    "caveat": "Fine-tuning does not automatically add fresh facts or guarantee accuracy."
+  },
+  {
+    "term": "Agentic Workflows",
+    "aliases": [
+      "agentic workflow",
+      "multi-step agents"
+    ],
+    "technical": "Orchestrated loops of model decisions, tool execution and result checks.",
+    "human": "A relay kitchen: order taker, prep cook, chef and checker pass the ticket along, with a manager for exceptions.",
+    "business": "Automate multi-step operations while tracking completion, failure rates, approvals and net operating cost.",
+    "caveat": "More steps introduce latency, error surfaces and governance needs."
+  },
+  {
+    "term": "LoRA",
+    "aliases": [
+      "low-rank adaptation"
+    ],
+    "technical": "Parameter-efficient fine-tuning that trains small low-rank adapter matrices while most base weights stay frozen.",
+    "human": "A tailor alters a reusable jacket with a small set of custom panels instead of weaving a whole new fabric.",
+    "business": "Reduces trainable parameters and often training memory for specialization; benchmark quality and serving complexity.",
+    "caveat": "Not zero-cost; some tasks need other methods and merged/adapted deployment still matters."
+  },
+  {
+    "term": "Quantization",
+    "aliases": [
+      "model quantization",
+      "4-bit quantization",
+      "8-bit quantization"
+    ],
+    "technical": "Representing model numbers at lower numerical precision to reduce size or compute requirements.",
+    "human": "Packing the same road map into a smaller suitcase: easier to carry, but some fine detail can blur.",
+    "business": "May cut model memory requirements and improve deployment economics; benchmark latency, accuracy and hardware.",
+    "caveat": "Lower precision can reduce quality; speedups depend on kernels and hardware."
+  },
+  {
+    "term": "Caching",
+    "aliases": [
+      "prompt caching",
+      "llm cache"
+    ],
+    "technical": "Reusing prior computation or responses instead of repeating the same work.",
+    "human": "Keep yesterday's popular lunch prepped rather than chopping identical vegetables for every order.",
+    "business": "May reduce latency and spend for repeat requests; monitor cache hit rates, staleness and privacy.",
+    "caveat": "Caching requires careful invalidation; provider pricing differs."
+  },
+  {
+    "term": "Guardrails",
+    "aliases": [
+      "ai guardrails"
+    ],
+    "technical": "Technical and procedural checks that constrain inputs, tool use and outputs.",
+    "human": "Seatbelts, traffic lights and driving lessons: none guarantees no crash, but each blocks a class of mistakes.",
+    "business": "Protect high-cost workflows with permissions, validation, monitoring and human approvals.",
+    "caveat": "Prompt-only guardrails are not a security boundary."
+  }
+]

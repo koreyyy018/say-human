@@ -1,0 +1,54 @@
+blueprint_version: '1.0'
+platform: Coze / Coze.cn
+kind: workflow-blueprint-not-native-import
+description: Recreate Start -> LLM -> End in the Coze visual designer; official exports use ZIP with MANIFEST.yml
+  and workflow DSL. This blueprint is intentionally not claimed to be directly importable.
+inputs:
+  text:
+    type: string
+    required: true
+  mode:
+    type: string
+    required: true
+    allowed:
+    - explain
+    - decode
+    - encode
+  audience:
+    type: string
+    required: true
+nodes:
+- id: start
+  type: start
+  outputs:
+  - text
+  - mode
+  - audience
+- id: align
+  type: llm
+  system_prompt_file: prompts/jargon-aligner.md
+  corporate_prompt_file: prompts/corporate-jargon-optimizer.md
+  gold_standard_file: prompts/gold-standard-fewshots.md
+  user_prompt: 'Mode: {{mode}}
+
+    Audience: {{audience}}
+
+    <untrusted_input>{{text}}</untrusted_input>'
+  model: choose an available chat model
+  temperature: 0.3
+  output: text
+- id: end
+  type: end
+  outputs:
+    result: align.text
+edges:
+- from: start
+  to: align
+- from: align
+  to: end
+instructions:
+- Create a Coze Workflow, then Start / LLM / End nodes.
+- Define string inputs text, mode and audience on Start.
+- Paste the concatenated prompt from workflows/coze/system-prompt.md into LLM system field.
+- Paste user_prompt into LLM user field, bind Start variables, connect LLM text to End result.
+- Run tests with prompts/examples, choose a workspace-accessible model, and publish.

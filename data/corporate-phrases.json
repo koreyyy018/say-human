@@ -1,0 +1,4054 @@
+[
+  {
+    "phrase": "synergy",
+    "aliases": [
+      "协同",
+      "跨部门联动",
+      "部门联动"
+    ],
+    "plain_english": "Teams are expected to coordinate or share resources.",
+    "possible_subtext": "Accountability, budget and concrete ownership may still be unspecified.",
+    "plain_zh": "希望几个团队配合，可能需要共享信息或资源。",
+    "possible_subtext_zh": "但跨团队负责人、费用和决策权限可能还不明确。",
+    "industry": "general"
+  },
+  {
+    "phrase": "low-hanging fruit",
+    "aliases": [
+      "低垂果实",
+      "容易见效的事"
+    ],
+    "plain_english": "Start with the easiest useful task.",
+    "possible_subtext": "A quick win may be favored over tackling the difficult root cause.",
+    "plain_zh": "优先做那些成本低、见效快的任务。",
+    "possible_subtext_zh": "这可能是合理的优先级，也可能绕开了真正难的问题。",
+    "industry": "general"
+  },
+  {
+    "phrase": "touch base",
+    "aliases": [
+      "碰一下",
+      "碰头",
+      "碰个头"
+    ],
+    "plain_english": "Have a brief check-in.",
+    "possible_subtext": "The organizer may want a status update without a formal meeting.",
+    "plain_zh": "安排一次简短沟通或进度确认。",
+    "possible_subtext_zh": "可能只是例行沟通，最好明确会议要解决什么。",
+    "industry": "general"
+  },
+  {
+    "phrase": "circle back",
+    "aliases": [
+      "回头讨论",
+      "回头再议",
+      "后面再讨论"
+    ],
+    "plain_english": "Revisit this later.",
+    "possible_subtext": "The issue may be postponed; ask for a specific date.",
+    "plain_zh": "这件事以后再讨论。",
+    "possible_subtext_zh": "可能是暂缓而非拒绝，最好敲定重新讨论的时间。",
+    "industry": "general"
+  },
+  {
+    "phrase": "paradigm shift",
+    "aliases": [
+      "范式转变",
+      "颠覆性转型"
+    ],
+    "plain_english": "A major change in approach is being proposed.",
+    "possible_subtext": "The scope and measurable impact have not necessarily been defined.",
+    "plain_zh": "准备大幅调整现有做法。",
+    "possible_subtext_zh": "具体范围、资源和衡量指标未必已经明确。",
+    "industry": "general"
+  },
+  {
+    "phrase": "bandwidth",
+    "aliases": [
+      "no bandwidth",
+      "带宽",
+      "没带宽",
+      "没有精力",
+      "抽不出人手"
+    ],
+    "plain_english": "Available time or capacity.",
+    "possible_subtext": "A capacity constraint or prioritization decision might be involved.",
+    "plain_zh": "当前时间、人力或处理能力有限。",
+    "possible_subtext_zh": "可能确实资源不足，也可能需要重新明确优先级。",
+    "industry": "general"
+  },
+  {
+    "phrase": "move the needle",
+    "aliases": [
+      "拿出实质结果",
+      "取得实质进展"
+    ],
+    "plain_english": "Produce a meaningful measurable change.",
+    "possible_subtext": "No metric or baseline has necessarily been agreed.",
+    "plain_zh": "希望某个结果指标出现可衡量的改善。",
+    "possible_subtext_zh": "如果没有具体目标和基线，这句话尚不能指导执行。",
+    "industry": "general"
+  },
+  {
+    "phrase": "right-size",
+    "aliases": [
+      "rightsizing",
+      "人员优化",
+      "优化编制",
+      "rightsized",
+      "right-sizing"
+    ],
+    "plain_english": "Adjust staffing, spending or resources to a target.",
+    "possible_subtext": "The phrase may conceal cuts; ask what will change.",
+    "plain_zh": "按照目标调整人员、预算或资源配置。",
+    "possible_subtext_zh": "有时意味着缩编或削减预算，应直接询问实际影响。",
+    "industry": "general"
+  },
+  {
+    "phrase": "take ownership",
+    "aliases": [
+      "ownership",
+      "扛起来",
+      "负责到底",
+      "把责任扛起来"
+    ],
+    "plain_english": "Be accountable for a specific outcome.",
+    "possible_subtext": "Responsibility may be assigned without enough authority or resources.",
+    "plain_zh": "要求某人对任务结果负责。",
+    "possible_subtext_zh": "责任是否配套了足够权限和资源，需要进一步确认。",
+    "industry": "general"
+  },
+  {
+    "phrase": "visibility",
+    "aliases": [
+      "increase visibility",
+      "可见度",
+      "提高曝光度"
+    ],
+    "plain_english": "Make progress or a topic visible to stakeholders.",
+    "possible_subtext": "Leadership may want reporting, rather than new work.",
+    "plain_zh": "希望相关进展更容易被管理者或其他团队看到。",
+    "possible_subtext_zh": "可能需要加强汇报，未必意味着工作质量本身有问题。",
+    "industry": "general"
+  },
+  {
+    "phrase": "alignment",
+    "aliases": [
+      "get aligned",
+      "对齐",
+      "拉齐",
+      "aligned",
+      "align",
+      "aligning"
+    ],
+    "plain_english": "Reach agreement on goals and responsibilities.",
+    "possible_subtext": "Current stakeholders may disagree or lack a decision.",
+    "plain_zh": "让各方就目标、规则和分工达成一致。",
+    "possible_subtext_zh": "可能存在口径不统一或尚未作出的决定。",
+    "industry": "general"
+  },
+  {
+    "phrase": "action items",
+    "aliases": [
+      "闭环",
+      "行动项",
+      "明确行动项"
+    ],
+    "plain_english": "Concrete tasks with owners and dates.",
+    "possible_subtext": "Until owners and deadlines exist, these are just ideas.",
+    "plain_zh": "把讨论转成有负责人和截止时间的具体任务。",
+    "possible_subtext_zh": "只说闭环却没有责任人与时间表，仍然无法执行。",
+    "industry": "general"
+  },
+  {
+    "phrase": "enablement",
+    "aliases": [
+      "赋能",
+      "助力赋能"
+    ],
+    "plain_english": "Provide tools, training or permission that enable others to do a specified task.",
+    "possible_subtext": "A concrete beneficiary, resource and measurable target may still be missing.",
+    "plain_zh": "提供工具、培训或资源，让特定团队真正能把某件事做成。",
+    "possible_subtext_zh": "如果没说清服务对象、具体支持和验收标准，就暂时只是口号。",
+    "industry": "general"
+  },
+  {
+    "phrase": "actionable lever",
+    "aliases": [
+      "抓手",
+      "工作抓手",
+      "关键抓手"
+    ],
+    "plain_english": "A specific action, mechanism, owner or resource lever that moves an outcome.",
+    "possible_subtext": "The word may be standing in for an undecided next step or owner.",
+    "plain_zh": "需要找到一项可以实际推动结果的措施、机制或负责人。",
+    "possible_subtext_zh": "最好追问具体做什么、谁来做，以及如何验收。",
+    "industry": "general"
+  },
+  {
+    "phrase": "granularity",
+    "aliases": [
+      "颗粒度",
+      "颗粒度更细",
+      "把粒度打细"
+    ],
+    "plain_english": "More detailed distinctions in data, decisions or responsibilities.",
+    "possible_subtext": "The needed level of detail or added cost may not have been defined.",
+    "plain_zh": "希望把问题、数据或责任拆得更细。",
+    "possible_subtext_zh": "拆分到什么层级、给谁使用、增加多少维护成本，还需要确认。",
+    "industry": "general"
+  },
+  {
+    "phrase": "拉通",
+    "aliases": [
+      "拉通资源",
+      "全链路拉通"
+    ],
+    "plain_zh": "把相关部门或负责人请到一起解决问题。",
+    "possible_subtext_zh": "要明确谁来拍板，不然容易开会但无人负责。",
+    "plain_english": "拉通: 把相关部门或负责人请到一起解决问题 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "要明确谁来拍板，不然容易开会但无人负责",
+    "followup_zh": "这件事谁来牵头、最终由谁确认？",
+    "industry": "general",
+    "kind": "workplace"
+  },
+  {
+    "phrase": "底层逻辑",
+    "aliases": [
+      "底层方法论"
+    ],
+    "plain_zh": "说清楚判断这件事的核心依据。",
+    "possible_subtext_zh": "要区分已验证的事实和个人假设。",
+    "plain_english": "底层逻辑: 说清楚判断这件事的核心依据 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "要区分已验证的事实和个人假设",
+    "followup_zh": "我们这次决策最关键的依据是什么？",
+    "industry": "general",
+    "kind": "workplace"
+  },
+  {
+    "phrase": "复盘",
+    "aliases": [
+      "复盘一下"
+    ],
+    "plain_zh": "回顾发生了什么、为什么、下次怎么改。",
+    "possible_subtext_zh": "如果只有感想没有改动，就不能防止复发。",
+    "plain_english": "复盘: 回顾发生了什么、为什么、下次怎么改 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "如果只有感想没有改动，就不能防止复发",
+    "followup_zh": "这次要留下哪一项可执行改进？",
+    "industry": "general",
+    "kind": "workplace"
+  },
+  {
+    "phrase": "沉淀",
+    "aliases": [
+      "方法沉淀"
+    ],
+    "plain_zh": "把一次性的经验整理成以后可复用的材料。",
+    "possible_subtext_zh": "需要明确产物是什么、放在哪里。",
+    "plain_english": "沉淀: 把一次性的经验整理成以后可复用的材料 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "需要明确产物是什么、放在哪里",
+    "followup_zh": "这次准备沉淀成文档、模板还是流程？",
+    "industry": "general",
+    "kind": "workplace"
+  },
+  {
+    "phrase": "打法",
+    "aliases": [
+      "打法升级"
+    ],
+    "plain_zh": "一套达成目标的操作方法。",
+    "possible_subtext_zh": "口号需要落到步骤、负责人和检查点。",
+    "plain_english": "打法: 一套达成目标的操作方法 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "口号需要落到步骤、负责人和检查点",
+    "followup_zh": "能否先明确第一步和验收标准？",
+    "industry": "general",
+    "kind": "workplace"
+  },
+  {
+    "phrase": "对标",
+    "aliases": [
+      "行业对标"
+    ],
+    "plain_zh": "拿可比较的对象或指标做参考。",
+    "possible_subtext_zh": "口径或场景不同会让比较失真。",
+    "plain_english": "对标: 拿可比较的对象或指标做参考 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "口径或场景不同会让比较失真",
+    "followup_zh": "我们对标的是哪项指标和哪段时间？",
+    "industry": "general",
+    "kind": "workplace"
+  },
+  {
+    "phrase": "降本增效",
+    "aliases": [
+      "提效降本"
+    ],
+    "plain_zh": "用更少资源实现相同或更好效果。",
+    "possible_subtext_zh": "先确定成本基线，避免只看人力削减。",
+    "plain_english": "降本增效: 用更少资源实现相同或更好效果 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "先确定成本基线，避免只看人力削减",
+    "followup_zh": "先用哪个指标验证成本与服务质量？",
+    "industry": "general",
+    "kind": "workplace"
+  },
+  {
+    "phrase": "提效",
+    "aliases": [
+      "提升人效",
+      "人效提升"
+    ],
+    "plain_zh": "缩短时间、减少返工或提高产出。",
+    "possible_subtext_zh": "如果没测量，就只能说计划改善。",
+    "plain_english": "提效: 缩短时间、减少返工或提高产出 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "如果没测量，就只能说计划改善",
+    "followup_zh": "具体希望缩短哪一步耗时？",
+    "industry": "general",
+    "kind": "workplace"
+  },
+  {
+    "phrase": "攻坚",
+    "aliases": [
+      "攻坚战"
+    ],
+    "plain_zh": "集中力量解决难处理的问题。",
+    "possible_subtext_zh": "要确认决策权限和可用资源。",
+    "plain_english": "攻坚: 集中力量解决难处理的问题 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "要确认决策权限和可用资源",
+    "followup_zh": "这项难题卡在哪，谁可以协调资源？",
+    "industry": "general",
+    "kind": "workplace"
+  },
+  {
+    "phrase": "顶层设计",
+    "aliases": [
+      "顶层规划"
+    ],
+    "plain_zh": "先确定整体原则和架构再推进细节。",
+    "possible_subtext_zh": "宏观方向需要明确边界与阶段成果。",
+    "plain_english": "顶层设计: 先确定整体原则和架构再推进细节 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "宏观方向需要明确边界与阶段成果",
+    "followup_zh": "这一阶段需要确定哪三项决策？",
+    "industry": "general",
+    "kind": "workplace"
+  },
+  {
+    "phrase": "收口",
+    "aliases": [
+      "及时收口"
+    ],
+    "plain_zh": "让讨论或需求停止发散并进入决策。",
+    "possible_subtext_zh": "应写清哪些问题已定、哪些推后处理。",
+    "plain_english": "收口: 让讨论或需求停止发散并进入决策 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "应写清哪些问题已定、哪些推后处理",
+    "followup_zh": "这轮要定下哪些事项？",
+    "industry": "general",
+    "kind": "workplace"
+  },
+  {
+    "phrase": "倒排工期",
+    "aliases": [
+      "倒排计划"
+    ],
+    "plain_zh": "从交付节点往前安排各阶段工作。",
+    "possible_subtext_zh": "关键依赖与缓冲时间容易被忽略。",
+    "plain_english": "倒排工期: 从交付节点往前安排各阶段工作 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "关键依赖与缓冲时间容易被忽略",
+    "followup_zh": "哪几个里程碑需要先确定负责人？",
+    "industry": "general",
+    "kind": "workplace"
+  },
+  {
+    "phrase": "强执行",
+    "aliases": [
+      "执行力拉满"
+    ],
+    "plain_zh": "希望快速推进并按时交付。",
+    "possible_subtext_zh": "需要具体任务和可用资源配套。",
+    "plain_english": "强执行: 希望快速推进并按时交付 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "需要具体任务和可用资源配套",
+    "followup_zh": "本周优先完成哪一项交付？",
+    "industry": "general",
+    "kind": "workplace"
+  },
+  {
+    "phrase": "矩阵管理",
+    "aliases": [
+      "矩阵协同"
+    ],
+    "plain_zh": "项目同时协调多个职能负责人。",
+    "possible_subtext_zh": "容易出现多个指挥链。",
+    "plain_english": "矩阵管理: 项目同时协调多个职能负责人 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "容易出现多个指挥链",
+    "followup_zh": "出现冲突时由谁最终裁决？",
+    "industry": "general",
+    "kind": "workplace"
+  },
+  {
+    "phrase": "战略定力",
+    "aliases": [
+      "坚持战略定力"
+    ],
+    "plain_zh": "保持既定重点，不轻易调整方向。",
+    "possible_subtext_zh": "也要约定何时根据新证据调整。",
+    "plain_english": "战略定力: 保持既定重点，不轻易调整方向 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "也要约定何时根据新证据调整",
+    "followup_zh": "我们依据哪个指标决定继续还是调整？",
+    "industry": "general",
+    "kind": "workplace"
+  },
+  {
+    "phrase": "闭门沟通",
+    "aliases": [
+      "私下对齐"
+    ],
+    "plain_zh": "把议题放到小范围讨论。",
+    "possible_subtext_zh": "通常意味着不适合在大群里展开。",
+    "plain_english": "闭门沟通: 把议题放到小范围讨论 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "通常意味着不适合在大群里展开",
+    "followup_zh": "我们安排谁参加、什么时候给出结论？",
+    "industry": "general",
+    "kind": "workplace"
+  },
+  {
+    "phrase": "北极星指标",
+    "aliases": [
+      "北极星"
+    ],
+    "plain_zh": "用一个最核心的指标指导优先级。",
+    "possible_subtext_zh": "单一指标也可能忽略副作用。",
+    "plain_english": "北极星指标: 用一个最核心的指标指导优先级 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "单一指标也可能忽略副作用",
+    "followup_zh": "同时用什么指标防止顾此失彼？",
+    "industry": "general",
+    "kind": "workplace"
+  },
+  {
+    "phrase": "快赢",
+    "aliases": [
+      "quick win",
+      "短期见效"
+    ],
+    "plain_zh": "先完成可见的短期成果。",
+    "possible_subtext_zh": "短期效果不代表根本问题解决。",
+    "plain_english": "快赢: 先完成可见的短期成果 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "短期效果不代表根本问题解决",
+    "followup_zh": "这项快赢之后还要处理什么根因？",
+    "industry": "general",
+    "kind": "workplace"
+  },
+  {
+    "phrase": "赛马机制",
+    "aliases": [
+      "赛马"
+    ],
+    "plain_zh": "让多个方案并行尝试再比较。",
+    "possible_subtext_zh": "评价口径与资源投入需要公平。",
+    "plain_english": "赛马机制: 让多个方案并行尝试再比较 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "评价口径与资源投入需要公平",
+    "followup_zh": "采用哪些统一标准来决定方案？",
+    "industry": "general",
+    "kind": "workplace"
+  },
+  {
+    "phrase": "责任到人",
+    "aliases": [
+      "责任落实到人"
+    ],
+    "plain_zh": "为每项交付指定明确负责人。",
+    "possible_subtext_zh": "负责人还需要执行权限与资源。",
+    "plain_english": "责任到人: 为每项交付指定明确负责人 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "负责人还需要执行权限与资源",
+    "followup_zh": "负责人是谁、遇到障碍找谁决策？",
+    "industry": "general",
+    "kind": "workplace"
+  },
+  {
+    "phrase": "口径统一",
+    "aliases": [
+      "统一口径"
+    ],
+    "plain_zh": "对外或跨团队使用相同的数据定义和说法。",
+    "possible_subtext_zh": "先确认事实来源与更新负责人。",
+    "plain_english": "口径统一: 对外或跨团队使用相同的数据定义和说法 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "先确认事实来源与更新负责人",
+    "followup_zh": "最终以哪份数据与说明为准？",
+    "industry": "general",
+    "kind": "workplace"
+  },
+  {
+    "phrase": "看板化",
+    "aliases": [
+      "可视化管理"
+    ],
+    "plain_zh": "用清单或图表持续呈现进度。",
+    "possible_subtext_zh": "关键是数据是否真实及时。",
+    "plain_english": "看板化: 用清单或图表持续呈现进度 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "关键是数据是否真实及时",
+    "followup_zh": "看板多久更新一次，由谁维护？",
+    "industry": "general",
+    "kind": "workplace"
+  },
+  {
+    "phrase": "提级处理",
+    "aliases": [
+      "提级协调"
+    ],
+    "plain_zh": "把处理权限提升到更高层级。",
+    "possible_subtext_zh": "应交代原因、现状及需决策事项。",
+    "plain_english": "提级处理: 把处理权限提升到更高层级 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "应交代原因、现状及需决策事项",
+    "followup_zh": "希望上级具体协调什么？",
+    "industry": "general",
+    "kind": "workplace"
+  },
+  {
+    "phrase": "资源倾斜",
+    "aliases": [
+      "重点倾斜"
+    ],
+    "plain_zh": "把更多预算或人力分配给某个重点。",
+    "possible_subtext_zh": "其他工作的代价需要明确。",
+    "plain_english": "资源倾斜: 把更多预算或人力分配给某个重点 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "其他工作的代价需要明确",
+    "followup_zh": "调整资源后，哪些任务要顺延？",
+    "industry": "general",
+    "kind": "workplace"
+  },
+  {
+    "phrase": "组合拳",
+    "aliases": [
+      "一套组合拳"
+    ],
+    "plain_zh": "多项措施一起实施。",
+    "possible_subtext_zh": "需要分别解释每项措施作用。",
+    "plain_english": "组合拳: 多项措施一起实施 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "需要分别解释每项措施作用",
+    "followup_zh": "先实施哪一项，如何判断是否有效？",
+    "industry": "general",
+    "kind": "workplace"
+  },
+  {
+    "phrase": "打通链路",
+    "aliases": [
+      "端到端打通"
+    ],
+    "plain_zh": "把多个步骤或系统衔接起来。",
+    "possible_subtext_zh": "要确认每个接口及交接节点。",
+    "plain_english": "打通链路: 把多个步骤或系统衔接起来 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "要确认每个接口及交接节点",
+    "followup_zh": "当前是哪一个交接点卡住了？",
+    "industry": "general",
+    "kind": "workplace"
+  },
+  {
+    "phrase": "边界感",
+    "aliases": [
+      "明确边界"
+    ],
+    "plain_zh": "明确职责和可承担的工作范围。",
+    "possible_subtext_zh": "容易被误读成拒绝协作。",
+    "plain_english": "边界感: 明确职责和可承担的工作范围 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "容易被误读成拒绝协作",
+    "followup_zh": "这件事我负责哪部分，超出部分找谁？",
+    "industry": "general",
+    "kind": "workplace"
+  },
+  {
+    "phrase": "甩锅",
+    "aliases": [
+      "踢皮球"
+    ],
+    "plain_zh": "将责任推给别人而不解决问题。",
+    "possible_subtext_zh": "需要核对责任事实，而非先判断动机。",
+    "plain_english": "甩锅: 将责任推给别人而不解决问题 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "需要核对责任事实，而非先判断动机",
+    "followup_zh": "我们按记录把责任与下一步确认一下？",
+    "industry": "general",
+    "kind": "workplace"
+  },
+  {
+    "phrase": "画饼",
+    "aliases": [
+      "愿景激励"
+    ],
+    "plain_zh": "谈未来收益但不给时间表或可核实依据。",
+    "possible_subtext_zh": "需要区分目标、承诺和条件。",
+    "plain_english": "画饼: 谈未来收益但不给时间表或可核实依据 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "需要区分目标、承诺和条件",
+    "followup_zh": "这项承诺需要满足哪些条件和时间点？",
+    "industry": "general",
+    "kind": "workplace"
+  },
+  {
+    "phrase": "压实责任",
+    "aliases": [
+      "压紧压实"
+    ],
+    "plain_zh": "要求明确责任人及验收结果。",
+    "possible_subtext_zh": "要区分责任、权限与支持。",
+    "plain_english": "压实责任: 要求明确责任人及验收结果 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "要区分责任、权限与支持",
+    "followup_zh": "具体由谁交付，遇到阻塞怎么升级？",
+    "industry": "general",
+    "kind": "workplace"
+  },
+  {
+    "phrase": "AI原生",
+    "aliases": [
+      "AI native"
+    ],
+    "plain_zh": "希望流程从设计阶段就考虑模型参与。",
+    "possible_subtext_zh": "不是接了API就完成流程改造。",
+    "plain_english": "AI原生: 希望流程从设计阶段就考虑模型参与 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "不是接了API就完成流程改造",
+    "followup_zh": "哪个环节必须由AI参与，什么情况下人工接管？",
+    "industry": "ai",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "模型效果对齐",
+    "aliases": [
+      "模型对齐"
+    ],
+    "plain_zh": "统一如何评估模型输出质量。",
+    "possible_subtext_zh": "需定义样本、评审标准与基线。",
+    "plain_english": "模型效果对齐: 统一如何评估模型输出质量 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "需定义样本、评审标准与基线",
+    "followup_zh": "这次用哪组样本和哪项指标判断？",
+    "industry": "ai",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "幻觉治理",
+    "aliases": [
+      "治理幻觉"
+    ],
+    "plain_zh": "减少模型无依据的回答。",
+    "possible_subtext_zh": "不能把零幻觉当作自然承诺。",
+    "plain_english": "幻觉治理: 减少模型无依据的回答 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "不能把零幻觉当作自然承诺",
+    "followup_zh": "哪些回答必须给出处或转人工？",
+    "industry": "ai",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "Agent落地",
+    "aliases": [
+      "智能体落地"
+    ],
+    "plain_zh": "让智能体在真实业务中完成有限任务。",
+    "possible_subtext_zh": "先确认权限、失败回退与审批。",
+    "plain_english": "Agent落地: 让智能体在真实业务中完成有限任务 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "先确认权限、失败回退与审批",
+    "followup_zh": "第一阶段允许自动执行到哪一步？",
+    "industry": "ai",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "降Token成本",
+    "aliases": [
+      "省Token"
+    ],
+    "plain_zh": "减少模型调用产生的费用。",
+    "possible_subtext_zh": "不能忽略回答质量下降和重试成本。",
+    "plain_english": "降Token成本: 减少模型调用产生的费用 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "不能忽略回答质量下降和重试成本",
+    "followup_zh": "比较哪个任务的单次合格输出成本？",
+    "industry": "ai",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "灰度发布",
+    "aliases": [
+      "灰度上线"
+    ],
+    "plain_zh": "先让部分用户或流量体验新功能。",
+    "possible_subtext_zh": "要定义监控、回滚和分流规则。",
+    "plain_english": "灰度发布: 先让部分用户或流量体验新功能 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "要定义监控、回滚和分流规则",
+    "followup_zh": "出现哪些问题必须立即回滚？",
+    "industry": "ai",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "知识库治理",
+    "aliases": [
+      "知识资产治理"
+    ],
+    "plain_zh": "维护可检索资料的准确性、权限及时效。",
+    "possible_subtext_zh": "旧文档和敏感数据可能影响回答。",
+    "plain_english": "知识库治理: 维护可检索资料的准确性、权限及时效 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "旧文档和敏感数据可能影响回答",
+    "followup_zh": "谁负责更新和删除过期资料？",
+    "industry": "ai",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "效果闭环",
+    "aliases": [
+      "AI效果闭环"
+    ],
+    "plain_zh": "把用户反馈反哺模型或流程优化。",
+    "possible_subtext_zh": "需要建立反馈到改动的跟踪关系。",
+    "plain_english": "效果闭环: 把用户反馈反哺模型或流程优化 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "需要建立反馈到改动的跟踪关系",
+    "followup_zh": "差评如何转成具体修复任务？",
+    "industry": "ai",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "敞口管理",
+    "aliases": [
+      "风险敞口"
+    ],
+    "plain_zh": "监控可能承担损失的风险规模。",
+    "possible_subtext_zh": "要区分名义金额与实际风险。",
+    "plain_english": "敞口管理: 监控可能承担损失的风险规模 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "要区分名义金额与实际风险",
+    "followup_zh": "当前敞口依据什么情景测算？",
+    "industry": "finance",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "穿透式核查",
+    "aliases": [
+      "穿透核验"
+    ],
+    "plain_zh": "追溯资金、交易或权益的最终来源和去向。",
+    "possible_subtext_zh": "需要可靠底层凭证与权限。",
+    "plain_english": "穿透式核查: 追溯资金、交易或权益的最终来源和去向 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "需要可靠底层凭证与权限",
+    "followup_zh": "本次需要核查到哪一级实际主体？",
+    "industry": "finance",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "风险偏好",
+    "aliases": [
+      "风险容忍度"
+    ],
+    "plain_zh": "机构愿意承受的风险范围。",
+    "possible_subtext_zh": "需要转为可执行阈值与审批规则。",
+    "plain_english": "风险偏好: 机构愿意承受的风险范围 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "需要转为可执行阈值与审批规则",
+    "followup_zh": "哪些情形必须升级审批？",
+    "industry": "finance",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "不良压降",
+    "aliases": [
+      "压降不良"
+    ],
+    "plain_zh": "减少或处置出现风险的贷款资产。",
+    "possible_subtext_zh": "不能仅靠改变分类掩盖真实质量。",
+    "plain_english": "不良压降: 减少或处置出现风险的贷款资产 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "不能仅靠改变分类掩盖真实质量",
+    "followup_zh": "本次关注回收、迁徙还是新增不良？",
+    "industry": "finance",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "授信提效",
+    "aliases": [
+      "授信效率"
+    ],
+    "plain_zh": "缩短信贷审批耗时并保持必要核验。",
+    "possible_subtext_zh": "提速不能省略关键风控环节。",
+    "plain_english": "授信提效: 缩短信贷审批耗时并保持必要核验 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "提速不能省略关键风控环节",
+    "followup_zh": "具体哪个审核环节可以改进？",
+    "industry": "finance",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "资金归集",
+    "aliases": [
+      "归集资金"
+    ],
+    "plain_zh": "将分散账户资金集中管理。",
+    "possible_subtext_zh": "要核对归属、授权和支付安排。",
+    "plain_english": "资金归集: 将分散账户资金集中管理 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "要核对归属、授权和支付安排",
+    "followup_zh": "资金转入需要哪些授权？",
+    "industry": "finance",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "流动性安全垫",
+    "aliases": [
+      "流动性缓冲"
+    ],
+    "plain_zh": "预留应对资金波动的余量。",
+    "possible_subtext_zh": "应明确期限、压力情境与可动用资金。",
+    "plain_english": "流动性安全垫: 预留应对资金波动的余量 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "应明确期限、压力情境与可动用资金",
+    "followup_zh": "采用什么情景测试这笔缓冲？",
+    "industry": "finance",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "久期匹配",
+    "aliases": [
+      "久期管理"
+    ],
+    "plain_zh": "使资产负债对利率变化的敏感程度协调。",
+    "possible_subtext_zh": "并非单纯对齐到期日期。",
+    "plain_english": "久期匹配: 使资产负债对利率变化的敏感程度协调 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "并非单纯对齐到期日期",
+    "followup_zh": "采用哪种利率情景测算缺口？",
+    "industry": "finance",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "医联体协同",
+    "aliases": [
+      "医共体协同"
+    ],
+    "plain_zh": "不同医疗机构协调转诊、服务和资源。",
+    "possible_subtext_zh": "需要患者授权及清晰的责任边界。",
+    "plain_english": "医联体协同: 不同医疗机构协调转诊、服务和资源 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "需要患者授权及清晰的责任边界",
+    "followup_zh": "转诊记录由谁接收和确认？",
+    "industry": "healthcare",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "临床路径",
+    "aliases": [
+      "路径管理"
+    ],
+    "plain_zh": "按规范安排诊疗流程和检查节点。",
+    "possible_subtext_zh": "不能代替医生针对患者的判断。",
+    "plain_english": "临床路径: 按规范安排诊疗流程和检查节点 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "不能代替医生针对患者的判断",
+    "followup_zh": "偏离既定路径需要谁确认？",
+    "industry": "healthcare",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "院感闭环",
+    "aliases": [
+      "感染防控闭环"
+    ],
+    "plain_zh": "追踪感染防控问题的发现、整改和复核。",
+    "possible_subtext_zh": "整改记录不等于感染风险消失。",
+    "plain_english": "院感闭环: 追踪感染防控问题的发现、整改和复核 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "整改记录不等于感染风险消失",
+    "followup_zh": "什么证据表明整改已复核？",
+    "industry": "healthcare",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "分级诊疗",
+    "aliases": [
+      "双向转诊"
+    ],
+    "plain_zh": "按病情和资源把患者引导至合适机构。",
+    "possible_subtext_zh": "需要明确转诊条件和接续机制。",
+    "plain_english": "分级诊疗: 按病情和资源把患者引导至合适机构 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "需要明确转诊条件和接续机制",
+    "followup_zh": "哪些患者适合上转或下转？",
+    "industry": "healthcare",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "合理用药",
+    "aliases": [
+      "处方点评"
+    ],
+    "plain_zh": "核对用药适应证、相互作用等风险。",
+    "possible_subtext_zh": "需临床人员审核而非单靠系统建议。",
+    "plain_english": "合理用药: 核对用药适应证、相互作用等风险 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "需临床人员审核而非单靠系统建议",
+    "followup_zh": "异常处方由谁进行复核？",
+    "industry": "healthcare",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "医保控费",
+    "aliases": [
+      "医保费用管控"
+    ],
+    "plain_zh": "管理医保相关费用与支付规则。",
+    "possible_subtext_zh": "不能只为节费影响必要诊疗。",
+    "plain_english": "医保控费: 管理医保相关费用与支付规则 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "不能只为节费影响必要诊疗",
+    "followup_zh": "质量和患者结局如何同时监测？",
+    "industry": "healthcare",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "床位周转",
+    "aliases": [
+      "周转床位"
+    ],
+    "plain_zh": "优化床位使用与住院流程。",
+    "possible_subtext_zh": "不应把提前出院等同于更高质量。",
+    "plain_english": "床位周转: 优化床位使用与住院流程 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "不应把提前出院等同于更高质量",
+    "followup_zh": "同时监测哪些安全或再入院指标？",
+    "industry": "healthcare",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "病历质控",
+    "aliases": [
+      "病历质量控制"
+    ],
+    "plain_zh": "检查临床记录完整性、规范性和一致性。",
+    "possible_subtext_zh": "写得完整不代表临床判断正确。",
+    "plain_english": "病历质控: 检查临床记录完整性、规范性和一致性 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "写得完整不代表临床判断正确",
+    "followup_zh": "由谁审核高风险病历？",
+    "industry": "healthcare",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "良率爬坡",
+    "aliases": [
+      "量产爬坡"
+    ],
+    "plain_zh": "让新产线或新产品合格品比例逐渐提高。",
+    "possible_subtext_zh": "需区分试产与稳定量产。",
+    "plain_english": "良率爬坡: 让新产线或新产品合格品比例逐渐提高 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "需区分试产与稳定量产",
+    "followup_zh": "目标良率在哪个批次条件下验收？",
+    "industry": "manufacturing",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "停机损失",
+    "aliases": [
+      "非计划停机"
+    ],
+    "plain_zh": "设备停运造成的生产能力损失。",
+    "possible_subtext_zh": "应区分计划检修与意外停机。",
+    "plain_english": "停机损失: 设备停运造成的生产能力损失 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "应区分计划检修与意外停机",
+    "followup_zh": "统计口径包含哪些停机类型？",
+    "industry": "manufacturing",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "设备OEE",
+    "aliases": [
+      "综合设备效率"
+    ],
+    "plain_zh": "综合评价设备可用、性能和良品情况。",
+    "possible_subtext_zh": "单个总分可能掩盖瓶颈。",
+    "plain_english": "设备OEE: 综合评价设备可用、性能和良品情况 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "单个总分可能掩盖瓶颈",
+    "followup_zh": "先查哪个因素拖低了设备效率？",
+    "industry": "manufacturing",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "瓶颈工位",
+    "aliases": [
+      "产线瓶颈"
+    ],
+    "plain_zh": "限制整条产线产能的环节。",
+    "possible_subtext_zh": "局部加速不一定提高整线产量。",
+    "plain_english": "瓶颈工位: 限制整条产线产能的环节 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "局部加速不一定提高整线产量",
+    "followup_zh": "整线吞吐由哪个工位决定？",
+    "industry": "manufacturing",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "首件确认",
+    "aliases": [
+      "首件检验"
+    ],
+    "plain_zh": "批量生产前检查首件是否符合要求。",
+    "possible_subtext_zh": "需要定义检验标准和授权人。",
+    "plain_english": "首件确认: 批量生产前检查首件是否符合要求 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "需要定义检验标准和授权人",
+    "followup_zh": "哪些尺寸和参数必须先签字？",
+    "industry": "manufacturing",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "精益改善",
+    "aliases": [
+      "精益生产"
+    ],
+    "plain_zh": "减少生产过程中的浪费和不必要步骤。",
+    "possible_subtext_zh": "不能以牺牲安全或质量换效率。",
+    "plain_english": "精益改善: 减少生产过程中的浪费和不必要步骤 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "不能以牺牲安全或质量换效率",
+    "followup_zh": "先量化哪一种浪费？",
+    "industry": "manufacturing",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "来料异常",
+    "aliases": [
+      "IQC异常"
+    ],
+    "plain_zh": "供应商交付原材料不符合规定要求。",
+    "possible_subtext_zh": "必须隔离批次并追溯影响范围。",
+    "plain_english": "来料异常: 供应商交付原材料不符合规定要求 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "必须隔离批次并追溯影响范围",
+    "followup_zh": "问题物料涉及哪些批次？",
+    "industry": "manufacturing",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "变更受控",
+    "aliases": [
+      "工艺变更管理"
+    ],
+    "plain_zh": "工艺或物料变更应经过审批和记录。",
+    "possible_subtext_zh": "口头允许不等于完成变更评估。",
+    "plain_english": "变更受控: 工艺或物料变更应经过审批和记录 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "口头允许不等于完成变更评估",
+    "followup_zh": "谁审批这次工艺参数变更？",
+    "industry": "manufacturing",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "GMV冲量",
+    "aliases": [
+      "冲GMV"
+    ],
+    "plain_zh": "短期提高成交总额。",
+    "possible_subtext_zh": "成交额不等于到账利润。",
+    "plain_english": "GMV冲量: 短期提高成交总额 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "成交额不等于到账利润",
+    "followup_zh": "退款率和毛利是否一起跟踪？",
+    "industry": "ecommerce",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "投产比",
+    "aliases": [
+      "ROI投产"
+    ],
+    "plain_zh": "广告或推广投入与对应产出的比例。",
+    "possible_subtext_zh": "不同平台对收入归因口径可能不同。",
+    "plain_english": "投产比: 广告或推广投入与对应产出的比例 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "不同平台对收入归因口径可能不同",
+    "followup_zh": "投产比统计是否扣除退货和补贴？",
+    "industry": "ecommerce",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "自然流量",
+    "aliases": [
+      "免费流量"
+    ],
+    "plain_zh": "不直接按广告点击付费获得的访问。",
+    "possible_subtext_zh": "并不表示获取用户没有成本。",
+    "plain_english": "自然流量: 不直接按广告点击付费获得的访问 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "并不表示获取用户没有成本",
+    "followup_zh": "哪些渠道计入自然流量？",
+    "industry": "ecommerce",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "千人千面",
+    "aliases": [
+      "个性化推荐"
+    ],
+    "plain_zh": "为不同用户展示差异化商品或内容。",
+    "possible_subtext_zh": "要防止个性化导致误导或不公平。",
+    "plain_english": "千人千面: 为不同用户展示差异化商品或内容 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "要防止个性化导致误导或不公平",
+    "followup_zh": "推荐效果与投诉如何一起评估？",
+    "industry": "ecommerce",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "店铺动销",
+    "aliases": [
+      "商品动销"
+    ],
+    "plain_zh": "有成交的商品或库存正在流转。",
+    "possible_subtext_zh": "动销率需明确观察周期和商品范围。",
+    "plain_english": "店铺动销: 有成交的商品或库存正在流转 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "动销率需明确观察周期和商品范围",
+    "followup_zh": "统计的是多少天内有销量的商品？",
+    "industry": "ecommerce",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "客单价提升",
+    "aliases": [
+      "提升客单"
+    ],
+    "plain_zh": "提高平均每笔订单成交额。",
+    "possible_subtext_zh": "加购金额增加不等于利润提升。",
+    "plain_english": "客单价提升: 提高平均每笔订单成交额 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "加购金额增加不等于利润提升",
+    "followup_zh": "同时观察退货率和复购率吗？",
+    "industry": "ecommerce",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "坑位资源",
+    "aliases": [
+      "资源坑位"
+    ],
+    "plain_zh": "平台或活动提供的展示位置。",
+    "possible_subtext_zh": "曝光位置不保证销售结果。",
+    "plain_english": "坑位资源: 平台或活动提供的展示位置 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "曝光位置不保证销售结果",
+    "followup_zh": "曝光后看点击、成交还是毛利？",
+    "industry": "ecommerce",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "私域承接",
+    "aliases": [
+      "私域转化"
+    ],
+    "plain_zh": "把公开渠道触达的客户引导到自有服务场景。",
+    "possible_subtext_zh": "要尊重用户同意与平台规则。",
+    "plain_english": "私域承接: 把公开渠道触达的客户引导到自有服务场景 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "要尊重用户同意与平台规则",
+    "followup_zh": "用户如何选择是否接收后续消息？",
+    "industry": "ecommerce",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "分层教学",
+    "aliases": [
+      "因材施教"
+    ],
+    "plain_zh": "根据学生掌握情况调整教学难度和内容。",
+    "possible_subtext_zh": "不能靠简单标签固定学生能力。",
+    "plain_english": "分层教学: 根据学生掌握情况调整教学难度和内容 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "不能靠简单标签固定学生能力",
+    "followup_zh": "学生分层依据哪些可复核测评？",
+    "industry": "education",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "双师课堂",
+    "aliases": [
+      "双师模式"
+    ],
+    "plain_zh": "现场人员与远程教师分工协作授课。",
+    "possible_subtext_zh": "要明确谁负责答疑和学习反馈。",
+    "plain_english": "双师课堂: 现场人员与远程教师分工协作授课 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "要明确谁负责答疑和学习反馈",
+    "followup_zh": "谁跟进课堂外的个别问题？",
+    "industry": "education",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "教研共建",
+    "aliases": [
+      "共建教研"
+    ],
+    "plain_zh": "教师共同设计课程并复核教学质量。",
+    "possible_subtext_zh": "要明确成果归属和更新周期。",
+    "plain_english": "教研共建: 教师共同设计课程并复核教学质量 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "要明确成果归属和更新周期",
+    "followup_zh": "课程版本由谁最终审批？",
+    "industry": "education",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "学情画像",
+    "aliases": [
+      "学生画像"
+    ],
+    "plain_zh": "汇总学习记录用于了解学习进展。",
+    "possible_subtext_zh": "不能根据单一行为推断能力或个性。",
+    "plain_english": "学情画像: 汇总学习记录用于了解学习进展 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "不能根据单一行为推断能力或个性",
+    "followup_zh": "哪些数据经过授权且对教学有用？",
+    "industry": "education",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "到课转化",
+    "aliases": [
+      "出勤转化"
+    ],
+    "plain_zh": "从报名或邀约到实际参加课程的人数变化。",
+    "possible_subtext_zh": "需要区分报名、到课和付费。",
+    "plain_english": "到课转化: 从报名或邀约到实际参加课程的人数变化 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "需要区分报名、到课和付费",
+    "followup_zh": "本次转化率的分母是什么？",
+    "industry": "education",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "完课率",
+    "aliases": [
+      "课程完课"
+    ],
+    "plain_zh": "已开始学习者中完成课程的比例。",
+    "possible_subtext_zh": "完成点击不等于掌握知识。",
+    "plain_english": "完课率: 已开始学习者中完成课程的比例 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "完成点击不等于掌握知识",
+    "followup_zh": "如何同时验证学习效果？",
+    "industry": "education",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "家校协同",
+    "aliases": [
+      "家校共育"
+    ],
+    "plain_zh": "家庭与学校共同配合教育支持。",
+    "possible_subtext_zh": "需避免将责任单方面推给家长。",
+    "plain_english": "家校协同: 家庭与学校共同配合教育支持 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "需避免将责任单方面推给家长",
+    "followup_zh": "哪些事项由学校承担、哪些需家长配合？",
+    "industry": "education",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "知识点过关",
+    "aliases": [
+      "过关测评"
+    ],
+    "plain_zh": "确认学生掌握某个学习目标。",
+    "possible_subtext_zh": "一次正确作答不代表长期掌握。",
+    "plain_english": "知识点过关: 确认学生掌握某个学习目标 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "一次正确作答不代表长期掌握",
+    "followup_zh": "需要怎样的复测和迁移题？",
+    "industry": "education",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "干线拉通",
+    "aliases": [
+      "干线协同"
+    ],
+    "plain_zh": "协调不同城市之间的主运输路线。",
+    "possible_subtext_zh": "须确认承运方、班次和交接责任。",
+    "plain_english": "干线拉通: 协调不同城市之间的主运输路线 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "须确认承运方、班次和交接责任",
+    "followup_zh": "这一段运输由谁承运并签收？",
+    "industry": "logistics",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "末端履约",
+    "aliases": [
+      "末端配送"
+    ],
+    "plain_zh": "货物送达收件人的最后配送阶段。",
+    "possible_subtext_zh": "要区分妥投扫描与真实签收。",
+    "plain_english": "末端履约: 货物送达收件人的最后配送阶段 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "要区分妥投扫描与真实签收",
+    "followup_zh": "异常签收由谁复核？",
+    "industry": "logistics",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "仓配一体",
+    "aliases": [
+      "仓配协同"
+    ],
+    "plain_zh": "把仓储作业和配送安排统一协调。",
+    "possible_subtext_zh": "需看库存准确率与出库时效。",
+    "plain_english": "仓配一体: 把仓储作业和配送安排统一协调 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "需看库存准确率与出库时效",
+    "followup_zh": "仓库和车队之间谁负责交接？",
+    "industry": "logistics",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "在途可视化",
+    "aliases": [
+      "运输可视化"
+    ],
+    "plain_zh": "持续查看货物当前位置与运输状态。",
+    "possible_subtext_zh": "轨迹数据可能延迟或缺失。",
+    "plain_english": "在途可视化: 持续查看货物当前位置与运输状态 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "轨迹数据可能延迟或缺失",
+    "followup_zh": "异常多久触发一次提醒？",
+    "industry": "logistics",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "逆向物流",
+    "aliases": [
+      "退货物流"
+    ],
+    "plain_zh": "处理退货、回收或维修件的运输流程。",
+    "possible_subtext_zh": "需明确验货、退款与责任边界。",
+    "plain_english": "逆向物流: 处理退货、回收或维修件的运输流程 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "需明确验货、退款与责任边界",
+    "followup_zh": "退回商品在哪个节点完成验收？",
+    "industry": "logistics",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "爆仓",
+    "aliases": [
+      "仓库爆量"
+    ],
+    "plain_zh": "待处理件超过仓库或网点短期处理能力。",
+    "possible_subtext_zh": "要区分节假日峰值与长期产能不足。",
+    "plain_english": "爆仓: 待处理件超过仓库或网点短期处理能力 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "要区分节假日峰值与长期产能不足",
+    "followup_zh": "优先增派哪种资源缓解积压？",
+    "industry": "logistics",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "签收闭环",
+    "aliases": [
+      "妥投闭环"
+    ],
+    "plain_zh": "追踪派送、签收与异常申诉。",
+    "possible_subtext_zh": "签收状态不一定代表收件人认可。",
+    "plain_english": "签收闭环: 追踪派送、签收与异常申诉 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "签收状态不一定代表收件人认可",
+    "followup_zh": "异常签收如何反馈和处理？",
+    "industry": "logistics",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "库存周转",
+    "aliases": [
+      "存货周转"
+    ],
+    "plain_zh": "衡量货物从入库到售出的流转效率。",
+    "possible_subtext_zh": "过度压库存可能导致缺货。",
+    "plain_english": "库存周转: 衡量货物从入库到售出的流转效率 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "过度压库存可能导致缺货",
+    "followup_zh": "周转加快是否增加缺货率？",
+    "industry": "logistics",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "人才盘点",
+    "aliases": [
+      "组织盘点"
+    ],
+    "plain_zh": "评估当前岗位能力和人员配置。",
+    "possible_subtext_zh": "评价标准必须一致并允许复核。",
+    "plain_english": "人才盘点: 评估当前岗位能力和人员配置 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "评价标准必须一致并允许复核",
+    "followup_zh": "按哪些岗位要求和证据评估？",
+    "industry": "hr",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "人才梯队",
+    "aliases": [
+      "后备梯队"
+    ],
+    "plain_zh": "为重要岗位准备培养或接替人选。",
+    "possible_subtext_zh": "不能把发展意向当作确定任命。",
+    "plain_english": "人才梯队: 为重要岗位准备培养或接替人选 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "不能把发展意向当作确定任命",
+    "followup_zh": "不同岗位的接替准备到哪一步？",
+    "industry": "hr",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "组织优化",
+    "aliases": [
+      "组织结构优化"
+    ],
+    "plain_zh": "调整组织结构、职责或人员安排。",
+    "possible_subtext_zh": "不等于必然裁员，需明确具体变化。",
+    "plain_english": "组织优化: 调整组织结构、职责或人员安排 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "不等于必然裁员，需明确具体变化",
+    "followup_zh": "此次调整涉及职责、汇报线还是岗位？",
+    "industry": "hr",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "绩效校准",
+    "aliases": [
+      "绩效对齐"
+    ],
+    "plain_zh": "统一不同部门的绩效评价尺度。",
+    "possible_subtext_zh": "应核对目标差异与打分证据。",
+    "plain_english": "绩效校准: 统一不同部门的绩效评价尺度 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "应核对目标差异与打分证据",
+    "followup_zh": "哪些评价维度需要跨团队校准？",
+    "industry": "hr",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "胜任力模型",
+    "aliases": [
+      "能力模型"
+    ],
+    "plain_zh": "定义岗位所需的技能和工作表现。",
+    "possible_subtext_zh": "模型不能代替具体工作证据。",
+    "plain_english": "胜任力模型: 定义岗位所需的技能和工作表现 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "模型不能代替具体工作证据",
+    "followup_zh": "哪些能力有可观察的行为标准？",
+    "industry": "hr",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "人才密度",
+    "aliases": [
+      "提升人才密度"
+    ],
+    "plain_zh": "描述团队整体能力水平的管理用语。",
+    "possible_subtext_zh": "不能用模糊标签合理化不公平决策。",
+    "plain_english": "人才密度: 描述团队整体能力水平的管理用语 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "不能用模糊标签合理化不公平决策",
+    "followup_zh": "这里具体考察哪些岗位能力？",
+    "industry": "hr",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "薪酬带宽",
+    "aliases": [
+      "薪酬区间"
+    ],
+    "plain_zh": "某一职级或岗位的薪酬允许范围。",
+    "possible_subtext_zh": "各地劳动法规与内部规则可能不同。",
+    "plain_english": "薪酬带宽: 某一职级或岗位的薪酬允许范围 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "各地劳动法规与内部规则可能不同",
+    "followup_zh": "该岗位的薪酬范围由什么决定？",
+    "industry": "hr",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "低绩效管理",
+    "aliases": [
+      "绩效改进"
+    ],
+    "plain_zh": "针对持续未达到岗位要求的情形进行管理。",
+    "possible_subtext_zh": "需要客观记录、支持与合规流程。",
+    "plain_english": "低绩效管理: 针对持续未达到岗位要求的情形进行管理 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "需要客观记录、支持与合规流程",
+    "followup_zh": "期望表现和改进支持能否书面确认？",
+    "industry": "hr",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "一网通办",
+    "aliases": [
+      "政务一网通办"
+    ],
+    "plain_zh": "将多个公共服务事项整合到统一办理入口。",
+    "possible_subtext_zh": "仍需核对哪些业务可在线完成。",
+    "plain_english": "一网通办: 将多个公共服务事项整合到统一办理入口 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "仍需核对哪些业务可在线完成",
+    "followup_zh": "哪些材料能线上提交、哪些必须线下？",
+    "industry": "government",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "容缺受理",
+    "aliases": [
+      "容缺办理"
+    ],
+    "plain_zh": "部分非关键材料暂缺时先受理事项。",
+    "possible_subtext_zh": "补齐期限和不适用情形必须明确。",
+    "plain_english": "容缺受理: 部分非关键材料暂缺时先受理事项 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "补齐期限和不适用情形必须明确",
+    "followup_zh": "哪些材料允许后补、期限是什么？",
+    "industry": "government",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "联审联办",
+    "aliases": [
+      "联合审批"
+    ],
+    "plain_zh": "多个部门共同审核或协同办理事项。",
+    "possible_subtext_zh": "需要明确每部门权限与时限。",
+    "plain_english": "联审联办: 多个部门共同审核或协同办理事项 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "需要明确每部门权限与时限",
+    "followup_zh": "最终由哪个部门通知结果？",
+    "industry": "government",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "网格化治理",
+    "aliases": [
+      "网格治理"
+    ],
+    "plain_zh": "按区域划分责任单元开展基层服务。",
+    "possible_subtext_zh": "重点是问题登记、处理与反馈。",
+    "plain_english": "网格化治理: 按区域划分责任单元开展基层服务 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "重点是问题登记、处理与反馈",
+    "followup_zh": "群众反映的问题由谁处理并回访？",
+    "industry": "government",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "事项下沉",
+    "aliases": [
+      "服务下沉"
+    ],
+    "plain_zh": "将服务权限或办理窗口延伸至基层。",
+    "possible_subtext_zh": "要配套人员培训与授权范围。",
+    "plain_english": "事项下沉: 将服务权限或办理窗口延伸至基层 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "要配套人员培训与授权范围",
+    "followup_zh": "哪些事项真的可以就近办结？",
+    "industry": "government",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "数据共享",
+    "aliases": [
+      "政务数据互通"
+    ],
+    "plain_zh": "部门依法依规交换必要业务数据。",
+    "possible_subtext_zh": "隐私、授权与数据质量需要保障。",
+    "plain_english": "数据共享: 部门依法依规交换必要业务数据 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "隐私、授权与数据质量需要保障",
+    "followup_zh": "哪些字段必须共享、谁能访问？",
+    "industry": "government",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "放管服",
+    "aliases": [
+      "简政放权"
+    ],
+    "plain_zh": "围绕行政审批、监管和服务改进流程。",
+    "possible_subtext_zh": "不能等同于取消所有监管。",
+    "plain_english": "放管服: 围绕行政审批、监管和服务改进流程 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "不能等同于取消所有监管",
+    "followup_zh": "这次减少哪一步审批、保留哪些核验？",
+    "industry": "government",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "一次办好",
+    "aliases": [
+      "最多跑一次"
+    ],
+    "plain_zh": "争取让群众一轮材料准备后完成办理。",
+    "possible_subtext_zh": "应界定适用事项与补正要求。",
+    "plain_english": "一次办好: 争取让群众一轮材料准备后完成办理 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "应界定适用事项与补正要求",
+    "followup_zh": "哪些情况下仍需补材料？",
+    "industry": "government",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "坪效",
+    "aliases": [
+      "门店坪效"
+    ],
+    "plain_zh": "单位经营面积创造的营业额或利润表现。",
+    "possible_subtext_zh": "必须区分营业额和利润口径。",
+    "plain_english": "坪效: 单位经营面积创造的营业额或利润表现 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "必须区分营业额和利润口径",
+    "followup_zh": "采用哪个期间、哪个面积作为分母？",
+    "industry": "retail",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "连带率",
+    "aliases": [
+      "连带销售"
+    ],
+    "plain_zh": "每笔成交中平均带走的商品件数。",
+    "possible_subtext_zh": "捆绑销售可能影响顾客体验。",
+    "plain_english": "连带率: 每笔成交中平均带走的商品件数 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "捆绑销售可能影响顾客体验",
+    "followup_zh": "连带提升是否影响退货和投诉？",
+    "industry": "retail",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "同店增长",
+    "aliases": [
+      "可比店增长"
+    ],
+    "plain_zh": "比较已有门店在可比期间的销售变化。",
+    "possible_subtext_zh": "开闭店口径和促销影响需统一。",
+    "plain_english": "同店增长: 比较已有门店在可比期间的销售变化 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "开闭店口径和促销影响需统一",
+    "followup_zh": "对比的是哪些可比门店和月份？",
+    "industry": "retail",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "陈列动线",
+    "aliases": [
+      "门店动线"
+    ],
+    "plain_zh": "安排顾客在门店内的行走和商品展示路径。",
+    "possible_subtext_zh": "调整动线要验证安全、拥堵和体验。",
+    "plain_english": "陈列动线: 安排顾客在门店内的行走和商品展示路径 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "调整动线要验证安全、拥堵和体验",
+    "followup_zh": "优先改善哪个区域的到达或转化？",
+    "industry": "retail",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "损耗管控",
+    "aliases": [
+      "损耗率控制"
+    ],
+    "plain_zh": "降低库存损坏、过期或账实差异。",
+    "possible_subtext_zh": "不能仅凭账面减少证明损耗下降。",
+    "plain_english": "损耗管控: 降低库存损坏、过期或账实差异 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "不能仅凭账面减少证明损耗下降",
+    "followup_zh": "损耗发生在入库、保管还是销售？",
+    "industry": "retail",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "门店赋能",
+    "aliases": [
+      "终端赋能"
+    ],
+    "plain_zh": "为门店员工提供培训、工具和运营支持。",
+    "possible_subtext_zh": "不能让门店额外填报替代实际支持。",
+    "plain_english": "门店赋能: 为门店员工提供培训、工具和运营支持 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "不能让门店额外填报替代实际支持",
+    "followup_zh": "总部具体提供什么人、工具或预算？",
+    "industry": "retail",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "会员唤醒",
+    "aliases": [
+      "沉睡会员唤醒"
+    ],
+    "plain_zh": "重新联系长期未活跃的会员。",
+    "possible_subtext_zh": "要考虑退订权和沟通频率。",
+    "plain_english": "会员唤醒: 重新联系长期未活跃的会员 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "要考虑退订权和沟通频率",
+    "followup_zh": "用什么合规方式触达并衡量复购？",
+    "industry": "retail",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "前场后厨联动",
+    "aliases": [
+      "前后场协同"
+    ],
+    "plain_zh": "协调点单、备餐和出餐信息。",
+    "possible_subtext_zh": "应明确超时、缺货和取消处理。",
+    "plain_english": "前场后厨联动: 协调点单、备餐和出餐信息 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "应明确超时、缺货和取消处理",
+    "followup_zh": "高峰期哪个交接节点最慢？",
+    "industry": "retail",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "内容中台",
+    "aliases": [
+      "内容资产中台"
+    ],
+    "plain_zh": "统一管理可复用的内容素材和工作流程。",
+    "possible_subtext_zh": "要明确版权、标签和权限。",
+    "plain_english": "内容中台: 统一管理可复用的内容素材和工作流程 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "要明确版权、标签和权限",
+    "followup_zh": "谁负责素材授权与版本更新？",
+    "industry": "media",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "选题池",
+    "aliases": [
+      "选题库"
+    ],
+    "plain_zh": "集中存放待评估的内容选题。",
+    "possible_subtext_zh": "不是所有入池选题都要制作。",
+    "plain_english": "选题池: 集中存放待评估的内容选题 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "不是所有入池选题都要制作",
+    "followup_zh": "采用什么标准决定优先制作？",
+    "industry": "media",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "完读率",
+    "aliases": [
+      "阅读完成率"
+    ],
+    "plain_zh": "读者阅读到指定完成位置的比例。",
+    "possible_subtext_zh": "平台口径不同且不等于满意度。",
+    "plain_english": "完读率: 读者阅读到指定完成位置的比例 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "平台口径不同且不等于满意度",
+    "followup_zh": "完读率与停留时长怎么定义？",
+    "industry": "media",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "版权链",
+    "aliases": [
+      "版权链条"
+    ],
+    "plain_zh": "记录内容使用权利的来源与授权范围。",
+    "possible_subtext_zh": "素材能访问不代表可以商业使用。",
+    "plain_english": "版权链: 记录内容使用权利的来源与授权范围 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "素材能访问不代表可以商业使用",
+    "followup_zh": "哪些平台与用途已获得授权？",
+    "industry": "media",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "矩阵分发",
+    "aliases": [
+      "多平台分发"
+    ],
+    "plain_zh": "在多个渠道同步发布或改编内容。",
+    "possible_subtext_zh": "渠道要求和授权范围可能不同。",
+    "plain_english": "矩阵分发: 在多个渠道同步发布或改编内容 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "渠道要求和授权范围可能不同",
+    "followup_zh": "每个平台的版本和审核由谁负责？",
+    "industry": "media",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "内容冷启动",
+    "aliases": [
+      "新号冷启动"
+    ],
+    "plain_zh": "为新账号或新作品获取第一批受众。",
+    "possible_subtext_zh": "曝光增长不保证长期留存。",
+    "plain_english": "内容冷启动: 为新账号或新作品获取第一批受众 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "曝光增长不保证长期留存",
+    "followup_zh": "首批反馈怎么收集和复盘？",
+    "industry": "media",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "商业化闭环",
+    "aliases": [
+      "内容变现闭环"
+    ],
+    "plain_zh": "把内容生产、获客和收入持续连接起来。",
+    "possible_subtext_zh": "需要真实转化数据，而非只看阅读量。",
+    "plain_english": "商业化闭环: 把内容生产、获客和收入持续连接起来 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "需要真实转化数据，而非只看阅读量",
+    "followup_zh": "收入来自哪一步转化？",
+    "industry": "media",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "AIGC标注",
+    "aliases": [
+      "AI生成内容标识"
+    ],
+    "plain_zh": "按平台或适用规定披露生成内容使用情况。",
+    "possible_subtext_zh": "要求因平台、地区和内容类型而异。",
+    "plain_english": "AIGC标注: 按平台或适用规定披露生成内容使用情况 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "要求因平台、地区和内容类型而异",
+    "followup_zh": "本次发布需遵守哪项具体规则？",
+    "industry": "media",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "零信任落地",
+    "aliases": [
+      "零信任改造"
+    ],
+    "plain_zh": "每次访问都按身份、设备和环境核验权限。",
+    "possible_subtext_zh": "不等于买了一套产品就安全。",
+    "plain_english": "零信任落地: 每次访问都按身份、设备和环境核验权限 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "不等于买了一套产品就安全",
+    "followup_zh": "第一阶段保护哪个高风险访问路径？",
+    "industry": "security",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "风险收敛",
+    "aliases": [
+      "漏洞收敛"
+    ],
+    "plain_zh": "逐步降低暴露面和高风险问题数量。",
+    "possible_subtext_zh": "漏洞数下降不等于风险完全消除。",
+    "plain_english": "风险收敛: 逐步降低暴露面和高风险问题数量 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "漏洞数下降不等于风险完全消除",
+    "followup_zh": "高危资产与剩余风险如何记录？",
+    "industry": "security",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "红蓝对抗",
+    "aliases": [
+      "攻防演练"
+    ],
+    "plain_zh": "攻防团队模拟真实攻击与防御。",
+    "possible_subtext_zh": "须事先明确授权范围和停止条件。",
+    "plain_english": "红蓝对抗: 攻防团队模拟真实攻击与防御 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "须事先明确授权范围和停止条件",
+    "followup_zh": "本次演练授权覆盖哪些系统？",
+    "industry": "security",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "最小权限",
+    "aliases": [
+      "权限最小化"
+    ],
+    "plain_zh": "只给用户或程序完成任务所必需的权限。",
+    "possible_subtext_zh": "需考虑临时授权和权限回收。",
+    "plain_english": "最小权限: 只给用户或程序完成任务所必需的权限 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "需考虑临时授权和权限回收",
+    "followup_zh": "谁批准临时提权并负责回收？",
+    "industry": "security",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "安全左移",
+    "aliases": [
+      "shift left"
+    ],
+    "plain_zh": "在开发早期纳入必要的安全评审。",
+    "possible_subtext_zh": "不能简单把全部安全责任推给开发者。",
+    "plain_english": "安全左移: 在开发早期纳入必要的安全评审 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "不能简单把全部安全责任推给开发者",
+    "followup_zh": "哪类漏洞应在合并前阻断？",
+    "industry": "security",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "误报治理",
+    "aliases": [
+      "告警降噪"
+    ],
+    "plain_zh": "减少监控系统无意义或错误报警。",
+    "possible_subtext_zh": "降低误报时不能提高漏报风险。",
+    "plain_english": "误报治理: 减少监控系统无意义或错误报警 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "降低误报时不能提高漏报风险",
+    "followup_zh": "调整规则后怎么监测漏报？",
+    "industry": "security",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "事件定级",
+    "aliases": [
+      "故障定级"
+    ],
+    "plain_zh": "按照影响范围和严重程度确定事件级别。",
+    "possible_subtext_zh": "需要依照预先定义的标准。",
+    "plain_english": "事件定级: 按照影响范围和严重程度确定事件级别 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "需要依照预先定义的标准",
+    "followup_zh": "此次定级依据哪些可核实影响？",
+    "industry": "security",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "攻防闭环",
+    "aliases": [
+      "安全闭环"
+    ],
+    "plain_zh": "将风险发现、处置和复测串起来。",
+    "possible_subtext_zh": "只修报告不复测不算完成。",
+    "plain_english": "攻防闭环: 将风险发现、处置和复测串起来 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "只修报告不复测不算完成",
+    "followup_zh": "谁负责验证漏洞不可再复现？",
+    "industry": "security",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "长线运营",
+    "aliases": [
+      "长线化运营"
+    ],
+    "plain_zh": "围绕长期留存持续更新游戏服务和内容。",
+    "possible_subtext_zh": "不能只看短期充值数据。",
+    "plain_english": "长线运营: 围绕长期留存持续更新游戏服务和内容 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "不能只看短期充值数据",
+    "followup_zh": "用什么指标衡量玩家的长期体验？",
+    "industry": "gaming",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "首日留存",
+    "aliases": [
+      "D1留存"
+    ],
+    "plain_zh": "新玩家次日是否继续使用产品的比例。",
+    "possible_subtext_zh": "不同统计窗口需保持一致。",
+    "plain_english": "首日留存: 新玩家次日是否继续使用产品的比例 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "不同统计窗口需保持一致",
+    "followup_zh": "首日留存的分组和观察期是什么？",
+    "industry": "gaming",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "数值膨胀",
+    "aliases": [
+      "数值通胀"
+    ],
+    "plain_zh": "游戏属性或资源增长失去平衡。",
+    "possible_subtext_zh": "可能伤害老玩家体验和玩法多样性。",
+    "plain_english": "数值膨胀: 游戏属性或资源增长失去平衡 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "可能伤害老玩家体验和玩法多样性",
+    "followup_zh": "先评估哪个玩法的平衡性？",
+    "industry": "gaming",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "付费转化",
+    "aliases": [
+      "商业化转化"
+    ],
+    "plain_zh": "从参与游戏到发生付费的变化。",
+    "possible_subtext_zh": "需避免误导性设计和未成年人风险。",
+    "plain_english": "付费转化: 从参与游戏到发生付费的变化 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "需避免误导性设计和未成年人风险",
+    "followup_zh": "付费指标是否同时观察投诉？",
+    "industry": "gaming",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "内容消耗",
+    "aliases": [
+      "版本内容消耗"
+    ],
+    "plain_zh": "玩家较快完成现有可玩内容。",
+    "possible_subtext_zh": "需要区分硬核玩家和普通玩家节奏。",
+    "plain_english": "内容消耗: 玩家较快完成现有可玩内容 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "需要区分硬核玩家和普通玩家节奏",
+    "followup_zh": "哪类玩家在什么阶段缺少目标？",
+    "industry": "gaming",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "版本节奏",
+    "aliases": [
+      "迭代节奏"
+    ],
+    "plain_zh": "安排更新、活动及修复的发布周期。",
+    "possible_subtext_zh": "需兼顾质量验证和玩家预期。",
+    "plain_english": "版本节奏: 安排更新、活动及修复的发布周期 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "需兼顾质量验证和玩家预期",
+    "followup_zh": "每次版本上线前有何验收门槛？",
+    "industry": "gaming",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "流失召回",
+    "aliases": [
+      "玩家回流"
+    ],
+    "plain_zh": "鼓励一段时间未登录的玩家回归。",
+    "possible_subtext_zh": "需要合规触达及真正的新价值。",
+    "plain_english": "流失召回: 鼓励一段时间未登录的玩家回归 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "需要合规触达及真正的新价值",
+    "followup_zh": "有哪些用户值得召回、依据是什么？",
+    "industry": "gaming",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "社区舆情",
+    "aliases": [
+      "玩家舆情"
+    ],
+    "plain_zh": "整理玩家对游戏内容和运营的反馈。",
+    "possible_subtext_zh": "热门观点不等于所有玩家意见。",
+    "plain_english": "社区舆情: 整理玩家对游戏内容和运营的反馈 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "热门观点不等于所有玩家意见",
+    "followup_zh": "按什么样本和证据判断问题规模？",
+    "industry": "gaming",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "削峰填谷",
+    "aliases": [
+      "峰谷调节"
+    ],
+    "plain_zh": "调整用电或储能时段以缓解峰谷负荷差。",
+    "possible_subtext_zh": "需要核对实际计价方式和约束。",
+    "plain_english": "削峰填谷: 调整用电或储能时段以缓解峰谷负荷差 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "需要核对实际计价方式和约束",
+    "followup_zh": "哪些设备能安全转移负荷？",
+    "industry": "energy",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "负荷预测",
+    "aliases": [
+      "电力负荷预测"
+    ],
+    "plain_zh": "预测未来用电需求或设备负载。",
+    "possible_subtext_zh": "需披露误差及极端情景。",
+    "plain_english": "负荷预测: 预测未来用电需求或设备负载 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "需披露误差及极端情景",
+    "followup_zh": "误差增大时如何人工接管？",
+    "industry": "energy",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "设备消缺",
+    "aliases": [
+      "缺陷消除"
+    ],
+    "plain_zh": "定位并处理设备隐患和缺陷。",
+    "possible_subtext_zh": "完成工单不代表风险已经消除。",
+    "plain_english": "设备消缺: 定位并处理设备隐患和缺陷 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "完成工单不代表风险已经消除",
+    "followup_zh": "整改后采用什么复核标准？",
+    "industry": "energy",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "双碳路径",
+    "aliases": [
+      "碳减排路线"
+    ],
+    "plain_zh": "制定减排或能源管理的实施计划。",
+    "possible_subtext_zh": "需要清楚范围和排放核算基线。",
+    "plain_english": "双碳路径: 制定减排或能源管理的实施计划 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "需要清楚范围和排放核算基线",
+    "followup_zh": "减排数据的统计边界是什么？",
+    "industry": "energy",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "安全生产红线",
+    "aliases": [
+      "安全红线"
+    ],
+    "plain_zh": "不能突破的关键安全要求。",
+    "possible_subtext_zh": "不得因进度或成本压力而简化。",
+    "plain_english": "安全生产红线: 不能突破的关键安全要求 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "不得因进度或成本压力而简化",
+    "followup_zh": "哪些作业必须停工复核？",
+    "industry": "energy",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "储能套利",
+    "aliases": [
+      "峰谷套利"
+    ],
+    "plain_zh": "利用不同时段电价差安排储能充放电。",
+    "possible_subtext_zh": "收益需扣除损耗、寿命和相关费用。",
+    "plain_english": "储能套利: 利用不同时段电价差安排储能充放电 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "收益需扣除损耗、寿命和相关费用",
+    "followup_zh": "用哪个价差和设备成本模型测算？",
+    "industry": "energy",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "调度协同",
+    "aliases": [
+      "电力调度协同"
+    ],
+    "plain_zh": "协调设备出力和运行安排。",
+    "possible_subtext_zh": "需符合系统安全稳定和审批要求。",
+    "plain_english": "调度协同: 协调设备出力和运行安排 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "需符合系统安全稳定和审批要求",
+    "followup_zh": "谁具有最终调度权限？",
+    "industry": "energy",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "能耗对标",
+    "aliases": [
+      "用能对标"
+    ],
+    "plain_zh": "与可比设施比较单位产出能耗。",
+    "possible_subtext_zh": "必须统一工况和生产负荷。",
+    "plain_english": "能耗对标: 与可比设施比较单位产出能耗 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "必须统一工况和生产负荷",
+    "followup_zh": "是否采用同等条件下的单位能耗？",
+    "industry": "energy",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "去化周期",
+    "aliases": [
+      "库存去化"
+    ],
+    "plain_zh": "按现有销售速度消化存量房源的预估时间。",
+    "possible_subtext_zh": "销售节奏和价格变化会影响估算。",
+    "plain_english": "去化周期: 按现有销售速度消化存量房源的预估时间 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "销售节奏和价格变化会影响估算",
+    "followup_zh": "以哪个区间的实际成交速度测算？",
+    "industry": "realestate",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "交付兑现",
+    "aliases": [
+      "交付达成"
+    ],
+    "plain_zh": "按合同及承诺完成项目交付。",
+    "possible_subtext_zh": "需要逐项核对质量、文件和验收。",
+    "plain_english": "交付兑现: 按合同及承诺完成项目交付 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "需要逐项核对质量、文件和验收",
+    "followup_zh": "哪些交付项目已经实际验收？",
+    "industry": "realestate",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "工程签证",
+    "aliases": [
+      "现场签证"
+    ],
+    "plain_zh": "记录施工过程中经授权确认的变更事项。",
+    "possible_subtext_zh": "口头变更未必形成有效凭证。",
+    "plain_english": "工程签证: 记录施工过程中经授权确认的变更事项 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "口头变更未必形成有效凭证",
+    "followup_zh": "谁批准了工程量和价格变更？",
+    "industry": "realestate",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "节点倒排",
+    "aliases": [
+      "节点排期"
+    ],
+    "plain_zh": "从施工或交付目标倒推各工序时间。",
+    "possible_subtext_zh": "应考虑天气、物料和安全缓冲。",
+    "plain_english": "节点倒排: 从施工或交付目标倒推各工序时间 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "应考虑天气、物料和安全缓冲",
+    "followup_zh": "哪条关键路径最可能延期？",
+    "industry": "realestate",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "成本动态管控",
+    "aliases": [
+      "动态成本控制"
+    ],
+    "plain_zh": "持续跟踪项目预算与实际成本差异。",
+    "possible_subtext_zh": "不能只压缩采购价忽视质量。",
+    "plain_english": "成本动态管控: 持续跟踪项目预算与实际成本差异 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "不能只压缩采购价忽视质量",
+    "followup_zh": "哪些成本偏差需要提前预警？",
+    "industry": "realestate",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "销控策略",
+    "aliases": [
+      "房源销控"
+    ],
+    "plain_zh": "安排房源推售节奏和房源信息管理。",
+    "possible_subtext_zh": "应遵守真实、透明的销售规则。",
+    "plain_english": "销控策略: 安排房源推售节奏和房源信息管理 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "应遵守真实、透明的销售规则",
+    "followup_zh": "哪些房源可以如实对外展示？",
+    "industry": "realestate",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "存量盘活",
+    "aliases": [
+      "盘活存量资产"
+    ],
+    "plain_zh": "让闲置物业或土地重新产生使用价值。",
+    "possible_subtext_zh": "需要核查权属、改造成本及需求。",
+    "plain_english": "存量盘活: 让闲置物业或土地重新产生使用价值 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "需要核查权属、改造成本及需求",
+    "followup_zh": "先核实权属和可使用条件了吗？",
+    "industry": "realestate",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "EPC总承包",
+    "aliases": [
+      "EPC模式"
+    ],
+    "plain_zh": "由承包方统筹设计、采购和施工等工作。",
+    "possible_subtext_zh": "要明确合同边界与变更责任。",
+    "plain_english": "EPC总承包: 由承包方统筹设计、采购和施工等工作 (Chinese workplace/domain shorthand).",
+    "possible_subtext": "要明确合同边界与变更责任",
+    "followup_zh": "设计变更由谁确认并承担成本？",
+    "industry": "realestate",
+    "kind": "industry-term"
+  },
+  {
+    "phrase": "模型路由",
+    "aliases": [],
+    "industry": "ai",
+    "plain_zh": "按问题难度选择不同模型处理，避免所有请求都走最贵的模型。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：不同任务怎么分流、失败时怎么回退？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "不同任务怎么分流、失败时怎么回退？"
+  },
+  {
+    "phrase": "成本归因",
+    "aliases": [],
+    "industry": "ai",
+    "plain_zh": "把模型和算力费用对应到具体产品、团队或任务。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：按哪个维度统计成本，谁负责核账？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "按哪个维度统计成本，谁负责核账？"
+  },
+  {
+    "phrase": "推理弹性",
+    "aliases": [],
+    "industry": "ai",
+    "plain_zh": "业务忙时扩充推理资源，闲时缩减。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：高峰时延和资源预算分别是多少？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "高峰时延和资源预算分别是多少？"
+  },
+  {
+    "phrase": "评测集污染",
+    "aliases": [],
+    "industry": "ai",
+    "plain_zh": "测试样本可能已经出现在训练或调参过程中。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：评测数据如何隔离，是否有独立留出集？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "评测数据如何隔离，是否有独立留出集？"
+  },
+  {
+    "phrase": "人机协同",
+    "aliases": [],
+    "industry": "ai",
+    "plain_zh": "让人工接管模型处理不了或风险较高的环节。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：什么情况下必须转人工，交接信息有哪些？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "什么情况下必须转人工，交接信息有哪些？"
+  },
+  {
+    "phrase": "模型回退",
+    "aliases": [],
+    "industry": "ai",
+    "plain_zh": "新模型异常时切回已经验证的版本。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：哪些指标触发回退，多久能恢复？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "哪些指标触发回退，多久能恢复？"
+  },
+  {
+    "phrase": "知识新鲜度",
+    "aliases": [],
+    "industry": "ai",
+    "plain_zh": "知识库内容是否及时更新、避免旧政策误导回答。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：资料多久更新一次，谁审核过期内容？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "资料多久更新一次，谁审核过期内容？"
+  },
+  {
+    "phrase": "检索召回",
+    "aliases": [],
+    "industry": "ai",
+    "plain_zh": "搜索阶段能否找到回答所需的资料。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：哪些典型问题没有检索到正确文档？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "哪些典型问题没有检索到正确文档？"
+  },
+  {
+    "phrase": "幻觉拦截",
+    "aliases": [],
+    "industry": "ai",
+    "plain_zh": "在答案发送前识别没有依据的内容。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：引用缺失时如何处理，误拦截有多少？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "引用缺失时如何处理，误拦截有多少？"
+  },
+  {
+    "phrase": "会话隔离",
+    "aliases": [],
+    "industry": "ai",
+    "plain_zh": "不同用户或会话的数据不能混入彼此的回答。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：如何验证用户间信息不会串线？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "如何验证用户间信息不会串线？"
+  },
+  {
+    "phrase": "推理预算",
+    "aliases": [],
+    "industry": "ai",
+    "plain_zh": "给单次任务设置响应时间和花费上限。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：超限是降级、退出还是申请批准？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "超限是降级、退出还是申请批准？"
+  },
+  {
+    "phrase": "工具编排",
+    "aliases": [],
+    "industry": "ai",
+    "plain_zh": "安排模型调用外部工具的先后步骤。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：每一步的权限、失败重试和人工审批是什么？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "每一步的权限、失败重试和人工审批是什么？"
+  },
+  {
+    "phrase": "贷后预警",
+    "aliases": [],
+    "industry": "finance",
+    "plain_zh": "尽早发现借款人偿还能力发生变化。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：预警依据是什么，谁负责复核？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "预警依据是什么，谁负责复核？"
+  },
+  {
+    "phrase": "风险迁徙",
+    "aliases": [],
+    "industry": "finance",
+    "plain_zh": "贷款在不同风险等级之间发生变化。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：迁徙率按哪个期间和口径计算？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "迁徙率按哪个期间和口径计算？"
+  },
+  {
+    "phrase": "反洗钱筛查",
+    "aliases": [],
+    "industry": "finance",
+    "plain_zh": "检查交易是否符合反洗钱风险规则。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：命中如何复核，正常交易如何避免误伤？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "命中如何复核，正常交易如何避免误伤？"
+  },
+  {
+    "phrase": "资产负债匹配",
+    "aliases": [],
+    "industry": "finance",
+    "plain_zh": "协调资产和负债的期限、成本及风险。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：要控制哪类期限缺口或资金压力？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "要控制哪类期限缺口或资金压力？"
+  },
+  {
+    "phrase": "净息差承压",
+    "aliases": [],
+    "industry": "finance",
+    "plain_zh": "存贷款之间的利差变小，影响利息收入。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：主要是哪一类资产或负债推动变化？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "主要是哪一类资产或负债推动变化？"
+  },
+  {
+    "phrase": "客户分群经营",
+    "aliases": [],
+    "industry": "finance",
+    "plain_zh": "按客户需求和风险特点分组提供服务。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：分组依据、适用服务及合规审核是什么？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "分组依据、适用服务及合规审核是什么？"
+  },
+  {
+    "phrase": "同业对标",
+    "aliases": [],
+    "industry": "finance",
+    "plain_zh": "与类似金融机构的指标作可比比较。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：规模和会计口径一致吗？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "规模和会计口径一致吗？"
+  },
+  {
+    "phrase": "授信穿透",
+    "aliases": [],
+    "industry": "finance",
+    "plain_zh": "核实借款主体背后的实际关联方和风险。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：关联关系查到哪一层、缺什么材料？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "关联关系查到哪一层、缺什么材料？"
+  },
+  {
+    "phrase": "拨备覆盖",
+    "aliases": [],
+    "industry": "finance",
+    "plain_zh": "已有风险准备能覆盖多少潜在不良损失。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：使用哪个监管和财报口径？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "使用哪个监管和财报口径？"
+  },
+  {
+    "phrase": "集中度管控",
+    "aliases": [],
+    "industry": "finance",
+    "plain_zh": "限制对单一客户、行业或地区的过度暴露。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：当前最集中的风险在哪里？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "当前最集中的风险在哪里？"
+  },
+  {
+    "phrase": "投后赋能",
+    "aliases": [],
+    "industry": "finance",
+    "plain_zh": "投资后提供经营、资源或管理支持。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：具体提供什么、是否有可验证的改进？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "具体提供什么、是否有可验证的改进？"
+  },
+  {
+    "phrase": "净值回撤",
+    "aliases": [],
+    "industry": "finance",
+    "plain_zh": "产品价值从高点跌下来多少。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：统计周期、基准和投资者影响是什么？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "统计周期、基准和投资者影响是什么？"
+  },
+  {
+    "phrase": "DRG控费",
+    "aliases": [],
+    "industry": "healthcare",
+    "plain_zh": "按病组管理住院资源消耗和医保支付。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：是否兼顾诊疗质量与病例差异？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "是否兼顾诊疗质量与病例差异？"
+  },
+  {
+    "phrase": "DIP付费",
+    "aliases": [],
+    "industry": "healthcare",
+    "plain_zh": "按病种分值等规则进行医保支付管理。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：哪个病种的结算偏差最值得排查？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "哪个病种的结算偏差最值得排查？"
+  },
+  {
+    "phrase": "预检分诊",
+    "aliases": [],
+    "industry": "healthcare",
+    "plain_zh": "就诊前判断需要先进入哪个诊疗流程。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：异常症状如何升级到人工医护？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "异常症状如何升级到人工医护？"
+  },
+  {
+    "phrase": "门诊削峰",
+    "aliases": [],
+    "industry": "healthcare",
+    "plain_zh": "把就诊人流从拥挤时段引导到其他时段。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：候诊时长、失约率如何变化？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "候诊时长、失约率如何变化？"
+  },
+  {
+    "phrase": "危急值闭环",
+    "aliases": [],
+    "industry": "healthcare",
+    "plain_zh": "重要检查异常要及时通知并确认处理。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：从检出到医生接收耗时多少？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "从检出到医生接收耗时多少？"
+  },
+  {
+    "phrase": "临床质控",
+    "aliases": [],
+    "industry": "healthcare",
+    "plain_zh": "按照院内标准核查诊疗记录和流程质量。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：哪些问题属于必须整改的缺陷？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "哪些问题属于必须整改的缺陷？"
+  },
+  {
+    "phrase": "药事会审",
+    "aliases": [],
+    "industry": "healthcare",
+    "plain_zh": "由适当的专业委员会评估用药方案或目录。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：审批依据、责任人和例外流程是什么？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "审批依据、责任人和例外流程是什么？"
+  },
+  {
+    "phrase": "医保拒付",
+    "aliases": [],
+    "industry": "healthcare",
+    "plain_zh": "医保机构拒绝支付某项费用。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：拒付原因、申诉材料和责任环节是什么？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "拒付原因、申诉材料和责任环节是什么？"
+  },
+  {
+    "phrase": "医疗数据脱敏",
+    "aliases": [],
+    "industry": "healthcare",
+    "plain_zh": "隐藏或处理能够识别患者身份的信息。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：哪些字段仍可重新识别患者？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "哪些字段仍可重新识别患者？"
+  },
+  {
+    "phrase": "病区床旁交接",
+    "aliases": [],
+    "industry": "healthcare",
+    "plain_zh": "护士在患者身边核对并移交关键信息。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：谁签收、哪些高风险事项必须复述？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "谁签收、哪些高风险事项必须复述？"
+  },
+  {
+    "phrase": "预约爽约",
+    "aliases": [],
+    "industry": "healthcare",
+    "plain_zh": "患者预约后未按约定时间就诊。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：按什么口径计算，是否设置合理提醒？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "按什么口径计算，是否设置合理提醒？"
+  },
+  {
+    "phrase": "分时段预约",
+    "aliases": [],
+    "industry": "healthcare",
+    "plain_zh": "将门诊预约细分到具体时间段。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：峰值等待和医生实际接诊能力匹配吗？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "峰值等待和医生实际接诊能力匹配吗？"
+  },
+  {
+    "phrase": "CTQ关键质量特性",
+    "aliases": [],
+    "industry": "manufacturing",
+    "plain_zh": "产品中最影响客户体验或安全的质量要求。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：哪些特性必须检测，超限谁停线？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "哪些特性必须检测，超限谁停线？"
+  },
+  {
+    "phrase": "SPC过程控制",
+    "aliases": [],
+    "industry": "manufacturing",
+    "plain_zh": "用过程数据监测生产是否稳定。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：异常规则、采样频率和处理流程是什么？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "异常规则、采样频率和处理流程是什么？"
+  },
+  {
+    "phrase": "工艺窗口",
+    "aliases": [],
+    "industry": "manufacturing",
+    "plain_zh": "生产参数允许正常工作的范围。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：参数上下限是谁验证的？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "参数上下限是谁验证的？"
+  },
+  {
+    "phrase": "直通率",
+    "aliases": [],
+    "industry": "manufacturing",
+    "plain_zh": "产品首次经过流程就合格的比例。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：返工品是否计入，统计口径是什么？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "返工品是否计入，统计口径是什么？"
+  },
+  {
+    "phrase": "返工返修",
+    "aliases": [],
+    "industry": "manufacturing",
+    "plain_zh": "不合格产品需要再次加工或修复。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：根因查到了吗，如何避免反复返工？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "根因查到了吗，如何避免反复返工？"
+  },
+  {
+    "phrase": "试产转量产",
+    "aliases": [],
+    "industry": "manufacturing",
+    "plain_zh": "从小批量验证切换到稳定批量生产。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：质量、产能和交付条件是否满足？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "质量、产能和交付条件是否满足？"
+  },
+  {
+    "phrase": "换线损失",
+    "aliases": [],
+    "industry": "manufacturing",
+    "plain_zh": "切换生产产品时损失的工时与产能。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：哪道工序造成的停机最多？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "哪道工序造成的停机最多？"
+  },
+  {
+    "phrase": "追溯链条",
+    "aliases": [],
+    "industry": "manufacturing",
+    "plain_zh": "记录原料、设备、人员到成品的关联信息。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：出现缺陷能追到哪些批次？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "出现缺陷能追到哪些批次？"
+  },
+  {
+    "phrase": "EHS红线",
+    "aliases": [],
+    "industry": "manufacturing",
+    "plain_zh": "环境、职业健康和安全方面不可突破的要求。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：谁批准作业，危险条件如何停工？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "谁批准作业，危险条件如何停工？"
+  },
+  {
+    "phrase": "瓶颈节拍",
+    "aliases": [],
+    "industry": "manufacturing",
+    "plain_zh": "制约整条产线速度的工序时间。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：瓶颈工位的实际节拍是多少？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "瓶颈工位的实际节拍是多少？"
+  },
+  {
+    "phrase": "供应商PPM",
+    "aliases": [],
+    "industry": "manufacturing",
+    "plain_zh": "每百万件来料中的不良数量。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：样本量和缺陷分类怎么统计？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "样本量和缺陷分类怎么统计？"
+  },
+  {
+    "phrase": "交期兑现",
+    "aliases": [],
+    "industry": "manufacturing",
+    "plain_zh": "是否按承诺日期交付订单。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：延期订单如何分级和通知客户？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "延期订单如何分级和通知客户？"
+  },
+  {
+    "phrase": "流量承接",
+    "aliases": [],
+    "industry": "ecommerce",
+    "plain_zh": "把进来的访客引导到浏览、咨询或下单。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：流量主要掉在流程的哪一步？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "流量主要掉在流程的哪一步？"
+  },
+  {
+    "phrase": "货盘优化",
+    "aliases": [],
+    "industry": "ecommerce",
+    "plain_zh": "调整商品组合、库存和定价。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：优先调整哪些SKU、依据什么指标？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "优先调整哪些SKU、依据什么指标？"
+  },
+  {
+    "phrase": "爆品孵化",
+    "aliases": [],
+    "industry": "ecommerce",
+    "plain_zh": "集中测试有望卖得好的商品。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：目标用户、测试预算和退出条件是什么？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "目标用户、测试预算和退出条件是什么？"
+  },
+  {
+    "phrase": "复购心智",
+    "aliases": [],
+    "industry": "ecommerce",
+    "plain_zh": "让用户在再次需要时能想起商品或品牌。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：复购率按什么周期与用户群统计？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "复购率按什么周期与用户群统计？"
+  },
+  {
+    "phrase": "直播排品",
+    "aliases": [],
+    "industry": "ecommerce",
+    "plain_zh": "决定直播间商品出现的顺序。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：顺序如何兼顾库存、利润和用户需求？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "顺序如何兼顾库存、利润和用户需求？"
+  },
+  {
+    "phrase": "退货率治理",
+    "aliases": [],
+    "industry": "ecommerce",
+    "plain_zh": "查找导致用户退货的原因并改善。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：退货原因中哪类最常见？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "退货原因中哪类最常见？"
+  },
+  {
+    "phrase": "活动蓄水",
+    "aliases": [],
+    "industry": "ecommerce",
+    "plain_zh": "在促销前积累潜在购买用户。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：蓄水用户是否真实，转化怎么计算？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "蓄水用户是否真实，转化怎么计算？"
+  },
+  {
+    "phrase": "券核销漏斗",
+    "aliases": [],
+    "industry": "ecommerce",
+    "plain_zh": "追踪优惠券领取到实际使用的比例。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：用户在哪一步没有完成核销？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "用户在哪一步没有完成核销？"
+  },
+  {
+    "phrase": "投放归因",
+    "aliases": [],
+    "industry": "ecommerce",
+    "plain_zh": "判断销售转化归功于哪些广告或渠道。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：归因窗口和自然转化如何区分？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "归因窗口和自然转化如何区分？"
+  },
+  {
+    "phrase": "库存深度",
+    "aliases": [],
+    "industry": "ecommerce",
+    "plain_zh": "现有货量能支撑多少预期销售。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：高峰活动会不会缺货？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "高峰活动会不会缺货？"
+  },
+  {
+    "phrase": "SKU动销",
+    "aliases": [],
+    "industry": "ecommerce",
+    "plain_zh": "各个具体商品是否真正产生销售。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：滞销和断货分别如何处理？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "滞销和断货分别如何处理？"
+  },
+  {
+    "phrase": "售后工单积压",
+    "aliases": [],
+    "industry": "ecommerce",
+    "plain_zh": "用户售后请求未能及时处理。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：积压量、最长等待时间和负责团队是谁？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "积压量、最长等待时间和负责团队是谁？"
+  },
+  {
+    "phrase": "教学生态闭环",
+    "aliases": [],
+    "industry": "education",
+    "plain_zh": "把备课、教学、练习与反馈联系起来。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：哪一步没人负责或缺少记录？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "哪一步没人负责或缺少记录？"
+  },
+  {
+    "phrase": "知识图谱补弱",
+    "aliases": [],
+    "industry": "education",
+    "plain_zh": "找出薄弱知识点并安排练习。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：薄弱点依据什么测评，如何验证提高？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "薄弱点依据什么测评，如何验证提高？"
+  },
+  {
+    "phrase": "分层作业",
+    "aliases": [],
+    "industry": "education",
+    "plain_zh": "根据学生实际水平布置不同练习。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：如何避免把学生固定贴标签？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "如何避免把学生固定贴标签？"
+  },
+  {
+    "phrase": "学情预警",
+    "aliases": [],
+    "industry": "education",
+    "plain_zh": "尽早发现可能落后的学习情况。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：触发预警的证据和教师复核流程是什么？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "触发预警的证据和教师复核流程是什么？"
+  },
+  {
+    "phrase": "教研磨课",
+    "aliases": [],
+    "industry": "education",
+    "plain_zh": "反复讨论和改进课程设计。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：这次要解决课堂哪一个具体问题？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "这次要解决课堂哪一个具体问题？"
+  },
+  {
+    "phrase": "入班转化",
+    "aliases": [],
+    "industry": "education",
+    "plain_zh": "从报名意向到实际进入班级的人数变化。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：转化率分母是什么，哪个环节流失最多？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "转化率分母是什么，哪个环节流失最多？"
+  },
+  {
+    "phrase": "续费留存",
+    "aliases": [],
+    "industry": "education",
+    "plain_zh": "已有学员是否继续购买课程。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：继续学习是否确实满足学生需要？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "继续学习是否确实满足学生需要？"
+  },
+  {
+    "phrase": "考核口径拉齐",
+    "aliases": [],
+    "industry": "education",
+    "plain_zh": "各老师按同一标准评价作业。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：评分标准在哪里，如何处理分歧？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "评分标准在哪里，如何处理分歧？"
+  },
+  {
+    "phrase": "课堂有效互动",
+    "aliases": [],
+    "industry": "education",
+    "plain_zh": "学生参与讨论并形成有效学习反馈。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：怎样区分热闹与真正学会？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "怎样区分热闹与真正学会？"
+  },
+  {
+    "phrase": "课程颗粒度",
+    "aliases": [],
+    "industry": "education",
+    "plain_zh": "将教学目标拆到章节、课时或知识点。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：要细化到哪一级才方便教学？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "要细化到哪一级才方便教学？"
+  },
+  {
+    "phrase": "双减合规",
+    "aliases": [],
+    "industry": "education",
+    "plain_zh": "教育服务满足适用政策要求。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：当前地区和课程类别适用什么规定？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "当前地区和课程类别适用什么规定？"
+  },
+  {
+    "phrase": "招生漏斗",
+    "aliases": [],
+    "industry": "education",
+    "plain_zh": "从了解课程到报名入学各阶段的转化。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：哪个阶段出现大量流失？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "哪个阶段出现大量流失？"
+  },
+  {
+    "phrase": "干支线协同",
+    "aliases": [],
+    "industry": "logistics",
+    "plain_zh": "主干运输和末端支线按时衔接。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：中转等待由谁负责？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "中转等待由谁负责？"
+  },
+  {
+    "phrase": "时效达成",
+    "aliases": [],
+    "industry": "logistics",
+    "plain_zh": "是否在承诺时间内把货送达。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：承诺时效按发货还是揽收计算？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "承诺时效按发货还是揽收计算？"
+  },
+  {
+    "phrase": "妥投率",
+    "aliases": [],
+    "industry": "logistics",
+    "plain_zh": "包裹是否送到并获得有效签收。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：异常签收如何核查？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "异常签收如何核查？"
+  },
+  {
+    "phrase": "波次拣货",
+    "aliases": [],
+    "industry": "logistics",
+    "plain_zh": "将仓库订单分批安排拣货。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：每波订单怎么分组才能减少拥堵？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "每波订单怎么分组才能减少拥堵？"
+  },
+  {
+    "phrase": "在途异常",
+    "aliases": [],
+    "industry": "logistics",
+    "plain_zh": "运输途中出现延误、破损或定位缺失。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：异常发现后谁通知客户？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "异常发现后谁通知客户？"
+  },
+  {
+    "phrase": "揽派平衡",
+    "aliases": [],
+    "industry": "logistics",
+    "plain_zh": "快递网点收件和派送工作量的平衡。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：高峰人力如何调配？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "高峰人力如何调配？"
+  },
+  {
+    "phrase": "库位优化",
+    "aliases": [],
+    "industry": "logistics",
+    "plain_zh": "重新安排货架位置减少拣货路程。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：是否影响安全和先进先出？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "是否影响安全和先进先出？"
+  },
+  {
+    "phrase": "运力池化",
+    "aliases": [],
+    "industry": "logistics",
+    "plain_zh": "不同线路或团队共用可调配车辆与司机。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：谁有调度权，高峰如何分配？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "谁有调度权，高峰如何分配？"
+  },
+  {
+    "phrase": "逆向件治理",
+    "aliases": [],
+    "industry": "logistics",
+    "plain_zh": "改进退货或拒收包裹的处理流程。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：滞留在退货流程的哪个环节？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "滞留在退货流程的哪个环节？"
+  },
+  {
+    "phrase": "冷链断链",
+    "aliases": [],
+    "industry": "logistics",
+    "plain_zh": "温控货物运输过程中温度超标。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：超标数据如何记录、产品如何处置？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "超标数据如何记录、产品如何处置？"
+  },
+  {
+    "phrase": "满载率",
+    "aliases": [],
+    "industry": "logistics",
+    "plain_zh": "车辆运载量占可用容量的比例。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：是否为追求满载牺牲时效？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "是否为追求满载牺牲时效？"
+  },
+  {
+    "phrase": "异常件闭环",
+    "aliases": [],
+    "industry": "logistics",
+    "plain_zh": "追踪问题快件到处理完毕并告知用户。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：谁负责回复客户、何时完成？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "谁负责回复客户、何时完成？"
+  },
+  {
+    "phrase": "绩效分布校准",
+    "aliases": [],
+    "industry": "hr",
+    "plain_zh": "团队间统一绩效评级标准并核查差异。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：同岗位评价依据是否一致？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "同岗位评价依据是否一致？"
+  },
+  {
+    "phrase": "梯队断层",
+    "aliases": [],
+    "industry": "hr",
+    "plain_zh": "未来关键岗位没有足够准备好的人选。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：关键岗位的继任计划是什么？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "关键岗位的继任计划是什么？"
+  },
+  {
+    "phrase": "岗位画像",
+    "aliases": [],
+    "industry": "hr",
+    "plain_zh": "写清岗位需要的技能、经验和任务。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：哪些要求是必须的，哪些可以培训？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "哪些要求是必须的，哪些可以培训？"
+  },
+  {
+    "phrase": "组织活力",
+    "aliases": [],
+    "industry": "hr",
+    "plain_zh": "描述员工协作、投入和人员流动状态。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：具体使用哪些可核查指标？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "具体使用哪些可核查指标？"
+  },
+  {
+    "phrase": "人才九宫格",
+    "aliases": [],
+    "industry": "hr",
+    "plain_zh": "按绩效和潜力等维度讨论人才发展。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：数据来源是什么，如何防止主观偏见？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "数据来源是什么，如何防止主观偏见？"
+  },
+  {
+    "phrase": "试用期校准",
+    "aliases": [],
+    "industry": "hr",
+    "plain_zh": "确认新员工试用期间的具体标准。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：标准是否提前告知并留存记录？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "标准是否提前告知并留存记录？"
+  },
+  {
+    "phrase": "人才盘活",
+    "aliases": [],
+    "industry": "hr",
+    "plain_zh": "调整岗位或培养方式以发挥已有员工能力。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：员工意愿和业务需要如何兼顾？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "员工意愿和业务需要如何兼顾？"
+  },
+  {
+    "phrase": "用工弹性",
+    "aliases": [],
+    "industry": "hr",
+    "plain_zh": "通过不同排班或用工方式应对业务波动。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：成本、劳动法规和员工保障怎么核对？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "成本、劳动法规和员工保障怎么核对？"
+  },
+  {
+    "phrase": "绩效改进计划",
+    "aliases": [],
+    "industry": "hr",
+    "plain_zh": "与员工讨论具体改进目标和支持措施。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：期望、支持资源与评估期是否明确？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "期望、支持资源与评估期是否明确？"
+  },
+  {
+    "phrase": "关键岗位保留",
+    "aliases": [],
+    "industry": "hr",
+    "plain_zh": "降低核心岗位人员离职风险。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：流失原因和改善措施有什么依据？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "流失原因和改善措施有什么依据？"
+  },
+  {
+    "phrase": "HRBP前置",
+    "aliases": [],
+    "industry": "hr",
+    "plain_zh": "让人力资源在业务规划早期就参与。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：人力团队需要参与哪次具体决策？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "人力团队需要参与哪次具体决策？"
+  },
+  {
+    "phrase": "薪酬竞争力",
+    "aliases": [],
+    "industry": "hr",
+    "plain_zh": "企业薪酬待遇与可比市场水平的关系。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：比较的城市、岗位和总包口径一致吗？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "比较的城市、岗位和总包口径一致吗？"
+  },
+  {
+    "phrase": "政策找人",
+    "aliases": [],
+    "industry": "government",
+    "plain_zh": "通过服务条件识别可能符合政策的人群并主动通知。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：依据哪些合法数据，是否需要当事人申请？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "依据哪些合法数据，是否需要当事人申请？"
+  },
+  {
+    "phrase": "免申即享",
+    "aliases": [],
+    "industry": "government",
+    "plain_zh": "符合条件的对象无需另填申请即可获得政策服务。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：资格如何核验，错发如何纠正？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "资格如何核验，错发如何纠正？"
+  },
+  {
+    "phrase": "基层减负",
+    "aliases": [],
+    "industry": "government",
+    "plain_zh": "减少一线工作人员不必要的报表与审批。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：具体删掉哪些重复流程？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "具体删掉哪些重复流程？"
+  },
+  {
+    "phrase": "政务事项颗粒化",
+    "aliases": [],
+    "industry": "government",
+    "plain_zh": "把办事服务拆到明确的材料、步骤和职责。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：群众要提交什么，哪些材料可以共享？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "群众要提交什么，哪些材料可以共享？"
+  },
+  {
+    "phrase": "窗口综办",
+    "aliases": [],
+    "industry": "government",
+    "plain_zh": "让一个窗口受理多种关联业务。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：复杂事项如何转到专业人员？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "复杂事项如何转到专业人员？"
+  },
+  {
+    "phrase": "跨省通办",
+    "aliases": [],
+    "industry": "government",
+    "plain_zh": "申请人在异地也能办理指定政务事项。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：哪些事项真正支持，身份如何核验？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "哪些事项真正支持，身份如何核验？"
+  },
+  {
+    "phrase": "电子证照互认",
+    "aliases": [],
+    "industry": "government",
+    "plain_zh": "不同部门按规则承认同类电子凭证。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：哪些部门和情形支持互认？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "哪些部门和情形支持互认？"
+  },
+  {
+    "phrase": "事项清单化",
+    "aliases": [],
+    "industry": "government",
+    "plain_zh": "把服务项目、办理条件和责任部门列成清单。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：是否公开材料与时限？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "是否公开材料与时限？"
+  },
+  {
+    "phrase": "一件事一次办",
+    "aliases": [],
+    "industry": "government",
+    "plain_zh": "把相关手续合并成一个办事流程。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：群众还要重复提交哪些信息？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "群众还要重复提交哪些信息？"
+  },
+  {
+    "phrase": "网格事件上报",
+    "aliases": [],
+    "industry": "government",
+    "plain_zh": "基层人员记录并跟进社区问题。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：谁核实事实、谁负责处理？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "谁核实事实、谁负责处理？"
+  },
+  {
+    "phrase": "政务数据授权",
+    "aliases": [],
+    "industry": "government",
+    "plain_zh": "明确政府数据在合法范围内的使用权限。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：授权依据、用途和留存时间是什么？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "授权依据、用途和留存时间是什么？"
+  },
+  {
+    "phrase": "便民触达",
+    "aliases": [],
+    "industry": "government",
+    "plain_zh": "把服务信息发给需要办理的人。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：谁可以接收，如何保护个人隐私？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "谁可以接收，如何保护个人隐私？"
+  },
+  {
+    "phrase": "资产暴露面",
+    "aliases": [],
+    "industry": "security",
+    "plain_zh": "外部能访问到哪些系统、接口和服务。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：哪些公开服务不必要地对外开放？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "哪些公开服务不必要地对外开放？"
+  },
+  {
+    "phrase": "身份治理",
+    "aliases": [],
+    "industry": "security",
+    "plain_zh": "管理账号生命周期与访问权限。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：离职账户多久失效、谁批准高权权限？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "离职账户多久失效、谁批准高权权限？"
+  },
+  {
+    "phrase": "漏洞优先级",
+    "aliases": [],
+    "industry": "security",
+    "plain_zh": "按可利用性和影响决定先修哪个漏洞。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：哪些系统直接面向互联网？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "哪些系统直接面向互联网？"
+  },
+  {
+    "phrase": "告警疲劳",
+    "aliases": [],
+    "industry": "security",
+    "plain_zh": "安全告警太多导致团队难以发现真正危险。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：误报率和平均响应时间如何变化？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "误报率和平均响应时间如何变化？"
+  },
+  {
+    "phrase": "横向移动",
+    "aliases": [],
+    "industry": "security",
+    "plain_zh": "攻击者从一台系统尝试进入其他系统。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：哪些异常权限链条可以检测？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "哪些异常权限链条可以检测？"
+  },
+  {
+    "phrase": "攻防复盘",
+    "aliases": [],
+    "industry": "security",
+    "plain_zh": "根据安全演练结果改进检测和响应。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：发现的漏洞谁负责修复和复测？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "发现的漏洞谁负责修复和复测？"
+  },
+  {
+    "phrase": "供应链安全",
+    "aliases": [],
+    "industry": "security",
+    "plain_zh": "检查引入的软件包、设备或供应商风险。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：关键依赖来自哪里，更新由谁审核？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "关键依赖来自哪里，更新由谁审核？"
+  },
+  {
+    "phrase": "补丁窗口",
+    "aliases": [],
+    "industry": "security",
+    "plain_zh": "允许进行系统安全更新的时间段。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：窗口期前后怎么验证业务不中断？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "窗口期前后怎么验证业务不中断？"
+  },
+  {
+    "phrase": "密钥轮换",
+    "aliases": [],
+    "industry": "security",
+    "plain_zh": "定期更换凭证、减少泄露长期影响。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：如何避免旧密钥继续可用？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "如何避免旧密钥继续可用？"
+  },
+  {
+    "phrase": "安全例外审批",
+    "aliases": [],
+    "industry": "security",
+    "plain_zh": "对无法立即执行的防护要求作有期限的审批。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：补偿措施、批准人和到期日是什么？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "补偿措施、批准人和到期日是什么？"
+  },
+  {
+    "phrase": "数据分级分类",
+    "aliases": [],
+    "industry": "security",
+    "plain_zh": "按敏感程度和业务要求对数据进行分类。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：哪些字段属于敏感信息？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "哪些字段属于敏感信息？"
+  },
+  {
+    "phrase": "应急预案演练",
+    "aliases": [],
+    "industry": "security",
+    "plain_zh": "模拟安全事故并验证响应流程。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：谁负责决策、什么时候对外通知？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "谁负责决策、什么时候对外通知？"
+  },
+  {
+    "phrase": "动销结构",
+    "aliases": [],
+    "industry": "retail",
+    "plain_zh": "看不同商品类别的实际销售表现。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：哪些品类卖得慢且占库存？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "哪些品类卖得慢且占库存？"
+  },
+  {
+    "phrase": "货架转化",
+    "aliases": [],
+    "industry": "retail",
+    "plain_zh": "到店顾客经过货架后有多少形成购买。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：陈列调整有没有对照观察？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "陈列调整有没有对照观察？"
+  },
+  {
+    "phrase": "客流热区",
+    "aliases": [],
+    "industry": "retail",
+    "plain_zh": "门店里顾客集中走动或停留的区域。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：是否影响通行安全和隐私？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "是否影响通行安全和隐私？"
+  },
+  {
+    "phrase": "缺货损失",
+    "aliases": [],
+    "industry": "retail",
+    "plain_zh": "因商品缺货造成的潜在销售损失。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：缺货记录和销量基线如何估算？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "缺货记录和销量基线如何估算？"
+  },
+  {
+    "phrase": "品类角色",
+    "aliases": [],
+    "industry": "retail",
+    "plain_zh": "确定某品类是引流、盈利还是补充选择。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：门店客群支持这种定位吗？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "门店客群支持这种定位吗？"
+  },
+  {
+    "phrase": "补货频次",
+    "aliases": [],
+    "industry": "retail",
+    "plain_zh": "商品多久补一次、如何减少断货。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：高峰时段会不会缺货？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "高峰时段会不会缺货？"
+  },
+  {
+    "phrase": "前置仓履约",
+    "aliases": [],
+    "industry": "retail",
+    "plain_zh": "从附近仓库处理线上订单并送达。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：仓内准确率和配送时效如何验证？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "仓内准确率和配送时效如何验证？"
+  },
+  {
+    "phrase": "收银排队治理",
+    "aliases": [],
+    "industry": "retail",
+    "plain_zh": "改进结账时排队太久的问题。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：高峰平均等待时间是多少？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "高峰平均等待时间是多少？"
+  },
+  {
+    "phrase": "内容破圈",
+    "aliases": [],
+    "industry": "publishing",
+    "plain_zh": "作品触达到原有读者群之外的人。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：新增读者实际从哪个渠道来？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "新增读者实际从哪个渠道来？"
+  },
+  {
+    "phrase": "开篇钩子",
+    "aliases": [],
+    "industry": "publishing",
+    "plain_zh": "作品开头用于吸引读者继续阅读的冲突或悬念。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：第一章读者在哪里流失？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "第一章读者在哪里流失？"
+  },
+  {
+    "phrase": "章节追读",
+    "aliases": [],
+    "industry": "publishing",
+    "plain_zh": "读者读完一章后继续读下一章的情况。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：按哪种阅读人群和周期统计？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "按哪种阅读人群和周期统计？"
+  },
+  {
+    "phrase": "版权确权",
+    "aliases": [],
+    "industry": "publishing",
+    "plain_zh": "证明作品授权主体和权利范围。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：合同是否包括改编、翻译和二次分发？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "合同是否包括改编、翻译和二次分发？"
+  },
+  {
+    "phrase": "流量池冷启动",
+    "aliases": [],
+    "industry": "publishing",
+    "plain_zh": "新作品如何获得最初的曝光和反馈。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：前几轮推荐和转化数据怎样？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "前几轮推荐和转化数据怎样？"
+  },
+  {
+    "phrase": "书单承接",
+    "aliases": [],
+    "industry": "publishing",
+    "plain_zh": "读者从推荐页进入作品并继续阅读。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：进入后的阅读完成率如何？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "进入后的阅读完成率如何？"
+  },
+  {
+    "phrase": "多语言本地化",
+    "aliases": [],
+    "industry": "publishing",
+    "plain_zh": "按目标市场的语言习惯改写而非机械翻译。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：谁审核文化表达和授权范围？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "谁审核文化表达和授权范围？"
+  },
+  {
+    "phrase": "内容合规审核",
+    "aliases": [],
+    "industry": "publishing",
+    "plain_zh": "按平台规定检查内容发布风险。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：适用哪一平台的规则？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "适用哪一平台的规则？"
+  },
+  {
+    "phrase": "新手流失节点",
+    "aliases": [],
+    "industry": "gaming",
+    "plain_zh": "玩家刚开始玩时最容易退出的步骤。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：在哪一关或哪个界面流失？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "在哪一关或哪个界面流失？"
+  },
+  {
+    "phrase": "版本肝度",
+    "aliases": [],
+    "industry": "gaming",
+    "plain_zh": "游戏更新后玩家为了完成任务需投入多少时间。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：每日任务平均耗时是多少？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "每日任务平均耗时是多少？"
+  },
+  {
+    "phrase": "战斗数值平衡",
+    "aliases": [],
+    "industry": "gaming",
+    "plain_zh": "不同角色、技能和装备的强弱调整。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：按哪个段位和使用率评估？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "按哪个段位和使用率评估？"
+  },
+  {
+    "phrase": "抽卡保底",
+    "aliases": [],
+    "industry": "gaming",
+    "plain_zh": "在规定次数内保证获得某类奖励的机制。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：概率展示与实际规则是否一致？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "概率展示与实际规则是否一致？"
+  },
+  {
+    "phrase": "活跃回流",
+    "aliases": [],
+    "industry": "gaming",
+    "plain_zh": "吸引长时间未登录的玩家重新参与。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：回流玩家是否能持续留下？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "回流玩家是否能持续留下？"
+  },
+  {
+    "phrase": "付费深度",
+    "aliases": [],
+    "industry": "gaming",
+    "plain_zh": "付费用户平均愿意支付的程度。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：是否存在影响公平的设计？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "是否存在影响公平的设计？"
+  },
+  {
+    "phrase": "匹配体验",
+    "aliases": [],
+    "industry": "gaming",
+    "plain_zh": "多人游戏队友与对手匹配是否合理。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：匹配耗时和胜负差异如何？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "匹配耗时和胜负差异如何？"
+  },
+  {
+    "phrase": "活动消耗",
+    "aliases": [],
+    "industry": "gaming",
+    "plain_zh": "玩家在活动期间完成任务需要的时间和资源。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：是否存在无法正常完成的环节？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "是否存在无法正常完成的环节？"
+  },
+  {
+    "phrase": "弃风弃光",
+    "aliases": [],
+    "industry": "energy",
+    "plain_zh": "可再生能源已经发出或可发却不能被电网接纳。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：限制发生在哪些时段和区域？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "限制发生在哪些时段和区域？"
+  },
+  {
+    "phrase": "调峰能力",
+    "aliases": [],
+    "industry": "energy",
+    "plain_zh": "电力系统随需求变化调整供电输出的能力。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：高峰缺口和调节速度怎样？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "高峰缺口和调节速度怎样？"
+  },
+  {
+    "phrase": "新能源消纳",
+    "aliases": [],
+    "industry": "energy",
+    "plain_zh": "让风电、光伏等发电真正接入并被使用。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：消纳比例和调度约束是什么？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "消纳比例和调度约束是什么？"
+  },
+  {
+    "phrase": "预测偏差",
+    "aliases": [],
+    "industry": "energy",
+    "plain_zh": "预测的电量与实际发生的电量不一致。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：误差高发在哪些天气或时段？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "误差高发在哪些天气或时段？"
+  },
+  {
+    "phrase": "储能循环效率",
+    "aliases": [],
+    "industry": "energy",
+    "plain_zh": "储能系统充电后再放电实际回收了多少能量。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：计量边界和损耗如何定义？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "计量边界和损耗如何定义？"
+  },
+  {
+    "phrase": "能效诊断",
+    "aliases": [],
+    "industry": "energy",
+    "plain_zh": "寻找设备或建筑中浪费能源的环节。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：是否有可比的能耗基线？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "是否有可比的能耗基线？"
+  },
+  {
+    "phrase": "容量补偿",
+    "aliases": [],
+    "industry": "energy",
+    "plain_zh": "为保持可用供电容量而设计的支付或补贴机制。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：对应什么市场规则和条件？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "对应什么市场规则和条件？"
+  },
+  {
+    "phrase": "双重预防机制",
+    "aliases": [],
+    "industry": "energy",
+    "plain_zh": "将风险分级管控与隐患排查治理结合。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：高风险点位由谁负责排查？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "高风险点位由谁负责排查？"
+  },
+  {
+    "phrase": "现金流回正",
+    "aliases": [],
+    "industry": "realestate",
+    "plain_zh": "项目现金流从持续净流出恢复到净流入。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：预计依据哪些合同和回款？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "预计依据哪些合同和回款？"
+  },
+  {
+    "phrase": "以销定产",
+    "aliases": [],
+    "industry": "realestate",
+    "plain_zh": "按销售情况安排项目开发和建设节奏。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：销售预测是否过于乐观？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "销售预测是否过于乐观？"
+  },
+  {
+    "phrase": "交房节点兑现",
+    "aliases": [],
+    "industry": "realestate",
+    "plain_zh": "按承诺时间交付符合条件的房屋。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：竣工、验收和交付是否分别满足要求？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "竣工、验收和交付是否分别满足要求？"
+  },
+  {
+    "phrase": "房源去化率",
+    "aliases": [],
+    "industry": "realestate",
+    "plain_zh": "一定期间内已售房源占可售房源的比例。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：统计范围和时间窗口是什么？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "统计范围和时间窗口是什么？"
+  },
+  {
+    "phrase": "资产轻量化",
+    "aliases": [],
+    "industry": "realestate",
+    "plain_zh": "减少企业自己长期持有的重资产。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：处置后收入和成本如何变化？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "处置后收入和成本如何变化？"
+  },
+  {
+    "phrase": "成本锁定",
+    "aliases": [],
+    "industry": "realestate",
+    "plain_zh": "通过已确定的合同控制未来工程成本。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：哪些变更仍可能引起追加费用？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "哪些变更仍可能引起追加费用？"
+  },
+  {
+    "phrase": "回款攻坚",
+    "aliases": [],
+    "industry": "realestate",
+    "plain_zh": "集中解决客户或项目欠款未收回的问题。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：应收账款的账龄和责任人是谁？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "应收账款的账龄和责任人是谁？"
+  },
+  {
+    "phrase": "商办盘活",
+    "aliases": [],
+    "industry": "realestate",
+    "plain_zh": "提高闲置商业或办公物业的实际利用。",
+    "possible_subtext_zh": "要推进到可执行层面，重点需要确认：改造投入和未来出租需求能否对应？",
+    "plain_english": "An industry-specific operational term; see the Chinese plain-language interpretation.",
+    "possible_subtext": "Clarify the owner, deadline, and measurable outcome.",
+    "next_question_zh": "改造投入和未来出租需求能否对应？"
+  },
+  {
+    "phrase": "增长飞轮",
+    "aliases": [],
+    "industry": "general",
+    "plain_zh": "让获客、转化、复购等环节互相促进、形成持续经营效果。",
+    "possible_subtext_zh": "要落到具体行动，重点是：先验证哪个环节真正能带动下一个环节？",
+    "next_question_zh": "先验证哪个环节真正能带动下一个环节？",
+    "plain_english": "A broad business phrase; ask for its concrete deliverable and baseline.",
+    "possible_subtext": "The measurable scope and owner remain to be clarified."
+  },
+  {
+    "phrase": "全域运营",
+    "aliases": [],
+    "industry": "general",
+    "plain_zh": "把线上线下或不同平台的客户运营联系起来。",
+    "possible_subtext_zh": "要落到具体行动，重点是：哪些渠道参与、数据能否合法打通？",
+    "next_question_zh": "哪些渠道参与、数据能否合法打通？",
+    "plain_english": "A broad business phrase; ask for its concrete deliverable and baseline.",
+    "possible_subtext": "The measurable scope and owner remain to be clarified."
+  },
+  {
+    "phrase": "精细化运营",
+    "aliases": [],
+    "industry": "general",
+    "plain_zh": "按不同用户或任务类型调整具体措施。",
+    "possible_subtext_zh": "要落到具体行动，重点是：分组依据和验证指标是什么？",
+    "next_question_zh": "分组依据和验证指标是什么？",
+    "plain_english": "A broad business phrase; ask for its concrete deliverable and baseline.",
+    "possible_subtext": "The measurable scope and owner remain to be clarified."
+  },
+  {
+    "phrase": "深水区",
+    "aliases": [],
+    "industry": "general",
+    "plain_zh": "项目进入更困难、更需要解决结构性问题的阶段。",
+    "possible_subtext_zh": "要落到具体行动，重点是：最难突破的是哪一个具体障碍？",
+    "next_question_zh": "最难突破的是哪一个具体障碍？",
+    "plain_english": "A broad business phrase; ask for its concrete deliverable and baseline.",
+    "possible_subtext": "The measurable scope and owner remain to be clarified."
+  },
+  {
+    "phrase": "多点突破",
+    "aliases": [],
+    "industry": "general",
+    "plain_zh": "在多个业务问题上同时试行改进措施。",
+    "possible_subtext_zh": "要落到具体行动，重点是：要优先交付哪两个可检验的结果？",
+    "next_question_zh": "要优先交付哪两个可检验的结果？",
+    "plain_english": "A broad business phrase; ask for its concrete deliverable and baseline.",
+    "possible_subtext": "The measurable scope and owner remain to be clarified."
+  },
+  {
+    "phrase": "穿透风险",
+    "aliases": [],
+    "industry": "general",
+    "plain_zh": "把上层概括的风险追踪到具体部门、流程或责任点。",
+    "possible_subtext_zh": "要落到具体行动，重点是：每一层的责任人和控制措施是什么？",
+    "next_question_zh": "每一层的责任人和控制措施是什么？",
+    "plain_english": "A broad business phrase; ask for its concrete deliverable and baseline.",
+    "possible_subtext": "The measurable scope and owner remain to be clarified."
+  },
+  {
+    "phrase": "第二增长曲线",
+    "aliases": [],
+    "industry": "general",
+    "plain_zh": "探索现有业务之外的另一种收入来源。",
+    "possible_subtext_zh": "要落到具体行动，重点是：新业务的验证成本和退出条件是什么？",
+    "next_question_zh": "新业务的验证成本和退出条件是什么？",
+    "plain_english": "A broad business phrase; ask for its concrete deliverable and baseline.",
+    "possible_subtext": "The measurable scope and owner remain to be clarified."
+  },
+  {
+    "phrase": "用户旅程",
+    "aliases": [],
+    "industry": "general",
+    "plain_zh": "用户从开始接触产品到完成目标的全过程。",
+    "possible_subtext_zh": "要落到具体行动，重点是：用户在哪一步遇到了障碍？",
+    "next_question_zh": "用户在哪一步遇到了障碍？",
+    "plain_english": "A broad business phrase; ask for its concrete deliverable and baseline.",
+    "possible_subtext": "The measurable scope and owner remain to be clarified."
+  },
+  {
+    "phrase": "拉平差异",
+    "aliases": [],
+    "industry": "general",
+    "plain_zh": "让不同团队或地区按可比标准进行协作。",
+    "possible_subtext_zh": "要落到具体行动，重点是：是统一口径还是要求所有结果一样？",
+    "next_question_zh": "是统一口径还是要求所有结果一样？",
+    "plain_english": "A broad business phrase; ask for its concrete deliverable and baseline.",
+    "possible_subtext": "The measurable scope and owner remain to be clarified."
+  },
+  {
+    "phrase": "一盘棋",
+    "aliases": [],
+    "industry": "general",
+    "plain_zh": "多个单位从共同目标安排资源和行动。",
+    "possible_subtext_zh": "要落到具体行动，重点是：谁协调冲突，优先级怎么定？",
+    "next_question_zh": "谁协调冲突，优先级怎么定？",
+    "plain_english": "A broad business phrase; ask for its concrete deliverable and baseline.",
+    "possible_subtext": "The measurable scope and owner remain to be clarified."
+  },
+  {
+    "phrase": "战略纵深",
+    "aliases": [],
+    "industry": "general",
+    "plain_zh": "为长期业务布局保留资源和空间。",
+    "possible_subtext_zh": "要落到具体行动，重点是：目前要做的第一步是什么？",
+    "next_question_zh": "目前要做的第一步是什么？",
+    "plain_english": "A broad business phrase; ask for its concrete deliverable and baseline.",
+    "possible_subtext": "The measurable scope and owner remain to be clarified."
+  },
+  {
+    "phrase": "经营杠杆",
+    "aliases": [],
+    "industry": "general",
+    "plain_zh": "寻找能以较少投入带来较大变化的业务环节。",
+    "possible_subtext_zh": "要落到具体行动，重点是：先验证哪一个变量真正有效？",
+    "next_question_zh": "先验证哪一个变量真正有效？",
+    "plain_english": "A broad business phrase; ask for its concrete deliverable and baseline.",
+    "possible_subtext": "The measurable scope and owner remain to be clarified."
+  },
+  {
+    "phrase": "业务飞轮",
+    "aliases": [],
+    "industry": "general",
+    "plain_zh": "多个业务环节彼此推动形成持续循环。",
+    "possible_subtext_zh": "要落到具体行动，重点是：每个环节的输入和输出如何测量？",
+    "next_question_zh": "每个环节的输入和输出如何测量？",
+    "plain_english": "A broad business phrase; ask for its concrete deliverable and baseline.",
+    "possible_subtext": "The measurable scope and owner remain to be clarified."
+  },
+  {
+    "phrase": "降维打击",
+    "aliases": [],
+    "industry": "general",
+    "plain_zh": "利用方法、资源或能力差异形成显著优势。",
+    "possible_subtext_zh": "要落到具体行动，重点是：优势体现在哪项可验证结果上？",
+    "next_question_zh": "优势体现在哪项可验证结果上？",
+    "plain_english": "A broad business phrase; ask for its concrete deliverable and baseline.",
+    "possible_subtext": "The measurable scope and owner remain to be clarified."
+  },
+  {
+    "phrase": "短链决策",
+    "aliases": [],
+    "industry": "general",
+    "plain_zh": "减少不必要的审批层级加快做决定。",
+    "possible_subtext_zh": "要落到具体行动，重点是：审批责任和风险控制如何保留？",
+    "next_question_zh": "审批责任和风险控制如何保留？",
+    "plain_english": "A broad business phrase; ask for its concrete deliverable and baseline.",
+    "possible_subtext": "The measurable scope and owner remain to be clarified."
+  },
+  {
+    "phrase": "挤水分",
+    "aliases": [],
+    "industry": "general",
+    "plain_zh": "核查数据或成果中不可靠、不重复计算的部分。",
+    "possible_subtext_zh": "要落到具体行动，重点是：哪些数字来源不清或口径重复？",
+    "next_question_zh": "哪些数字来源不清或口径重复？",
+    "plain_english": "A broad business phrase; ask for its concrete deliverable and baseline.",
+    "possible_subtext": "The measurable scope and owner remain to be clarified."
+  },
+  {
+    "phrase": "全量覆盖",
+    "aliases": [],
+    "industry": "general",
+    "plain_zh": "让目标范围内的所有对象都被处理或触达。",
+    "possible_subtext_zh": "要落到具体行动，重点是：目标总数、例外名单和验收方法是什么？",
+    "next_question_zh": "目标总数、例外名单和验收方法是什么？",
+    "plain_english": "A broad business phrase; ask for its concrete deliverable and baseline.",
+    "possible_subtext": "The measurable scope and owner remain to be clarified."
+  },
+  {
+    "phrase": "智能化升级",
+    "aliases": [],
+    "industry": "general",
+    "plain_zh": "在现有流程中引入自动化或智能系统。",
+    "possible_subtext_zh": "要落到具体行动，重点是：哪个具体任务改进，人工接管怎么安排？",
+    "next_question_zh": "哪个具体任务改进，人工接管怎么安排？",
+    "plain_english": "A broad business phrase; ask for its concrete deliverable and baseline.",
+    "possible_subtext": "The measurable scope and owner remain to be clarified."
+  },
+  {
+    "phrase": "数字化转型",
+    "aliases": [],
+    "industry": "general",
+    "plain_zh": "把业务流程、数据和系统逐步调整为可追踪的数字化方式。",
+    "possible_subtext_zh": "要落到具体行动，重点是：哪条流程先改、谁验收？",
+    "next_question_zh": "哪条流程先改、谁验收？",
+    "plain_english": "A broad business phrase; ask for its concrete deliverable and baseline.",
+    "possible_subtext": "The measurable scope and owner remain to be clarified."
+  },
+  {
+    "phrase": "供需匹配",
+    "aliases": [],
+    "industry": "general",
+    "plain_zh": "让资源供给与实际需求更协调。",
+    "possible_subtext_zh": "要落到具体行动，重点是：需求预测和错配成本怎么计算？",
+    "next_question_zh": "需求预测和错配成本怎么计算？",
+    "plain_english": "A broad business phrase; ask for its concrete deliverable and baseline.",
+    "possible_subtext": "The measurable scope and owner remain to be clarified."
+  },
+  {
+    "phrase": "品牌心智",
+    "aliases": [],
+    "industry": "general",
+    "plain_zh": "用户对品牌形成的认知和记忆。",
+    "possible_subtext_zh": "要落到具体行动，重点是：通过什么调查或实际行为验证？",
+    "next_question_zh": "通过什么调查或实际行为验证？",
+    "plain_english": "A broad business phrase; ask for its concrete deliverable and baseline.",
+    "possible_subtext": "The measurable scope and owner remain to be clarified."
+  },
+  {
+    "phrase": "破局点",
+    "aliases": [],
+    "industry": "general",
+    "plain_zh": "当前局面中最值得先解决的关键阻碍。",
+    "possible_subtext_zh": "要落到具体行动，重点是：谁能解决，第一步需要什么资源？",
+    "next_question_zh": "谁能解决，第一步需要什么资源？",
+    "plain_english": "A broad business phrase; ask for its concrete deliverable and baseline.",
+    "possible_subtext": "The measurable scope and owner remain to be clarified."
+  },
+  {
+    "phrase": "端到端责任",
+    "aliases": [],
+    "industry": "general",
+    "plain_zh": "从接收需求到交付结果由明确的角色跟进。",
+    "possible_subtext_zh": "要落到具体行动，重点是：中间转手环节如何防止丢单？",
+    "next_question_zh": "中间转手环节如何防止丢单？",
+    "plain_english": "A broad business phrase; ask for its concrete deliverable and baseline.",
+    "possible_subtext": "The measurable scope and owner remain to be clarified."
+  },
+  {
+    "phrase": "业务中台",
+    "aliases": [],
+    "industry": "general",
+    "plain_zh": "复用多个业务团队都需要的基础能力。",
+    "possible_subtext_zh": "要落到具体行动，重点是：哪些能力值得共享、谁维护？",
+    "next_question_zh": "哪些能力值得共享、谁维护？",
+    "plain_english": "A broad business phrase; ask for its concrete deliverable and baseline.",
+    "possible_subtext": "The measurable scope and owner remain to be clarified."
+  },
+  {
+    "phrase": "增长杠杆",
+    "aliases": [],
+    "industry": "general",
+    "plain_zh": "对用户增长或收入结果影响较大的可控环节。",
+    "possible_subtext_zh": "要落到具体行动，重点是：变化如何做实验验证？",
+    "next_question_zh": "变化如何做实验验证？",
+    "plain_english": "A broad business phrase; ask for its concrete deliverable and baseline.",
+    "possible_subtext": "The measurable scope and owner remain to be clarified."
+  },
+  {
+    "phrase": "底座能力",
+    "aliases": [],
+    "industry": "general",
+    "plain_zh": "多个产品或团队共用的基础设施和服务。",
+    "possible_subtext_zh": "要落到具体行动，重点是：服务标准、使用方和成本分摊是什么？",
+    "next_question_zh": "服务标准、使用方和成本分摊是什么？",
+    "plain_english": "A broad business phrase; ask for its concrete deliverable and baseline.",
+    "possible_subtext": "The measurable scope and owner remain to be clarified."
+  },
+  {
+    "phrase": "风险前置",
+    "aliases": [],
+    "industry": "general",
+    "plain_zh": "把风险识别和处理放到项目早期阶段。",
+    "possible_subtext_zh": "要落到具体行动，重点是：在哪个关口检查、谁有停止权限？",
+    "next_question_zh": "在哪个关口检查、谁有停止权限？",
+    "plain_english": "A broad business phrase; ask for its concrete deliverable and baseline.",
+    "possible_subtext": "The measurable scope and owner remain to be clarified."
+  },
+  {
+    "phrase": "价值闭环",
+    "aliases": [],
+    "industry": "general",
+    "plain_zh": "从投入行动到结果反馈形成可核验的链条。",
+    "possible_subtext_zh": "要落到具体行动，重点是：价值用什么指标衡量、多久复查？",
+    "next_question_zh": "价值用什么指标衡量、多久复查？",
+    "plain_english": "A broad business phrase; ask for its concrete deliverable and baseline.",
+    "possible_subtext": "The measurable scope and owner remain to be clarified."
+  },
+  {
+    "phrase": "效能提升",
+    "aliases": [],
+    "industry": "general",
+    "plain_zh": "改进流程让相同投入能完成更多有用任务。",
+    "possible_subtext_zh": "要落到具体行动，重点是：是否有统一的投入产出口径？",
+    "next_question_zh": "是否有统一的投入产出口径？",
+    "plain_english": "A broad business phrase; ask for its concrete deliverable and baseline.",
+    "possible_subtext": "The measurable scope and owner remain to be clarified."
+  },
+  {
+    "phrase": "颗粒化治理",
+    "aliases": [],
+    "industry": "general",
+    "plain_zh": "把笼统事项拆到具体对象、责任和措施。",
+    "possible_subtext_zh": "要落到具体行动，重点是：拆到什么层级才有助于执行？",
+    "next_question_zh": "拆到什么层级才有助于执行？",
+    "plain_english": "A broad business phrase; ask for its concrete deliverable and baseline.",
+    "possible_subtext": "The measurable scope and owner remain to be clarified."
+  }
+]

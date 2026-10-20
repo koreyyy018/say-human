@@ -1,3 +1,30 @@
+<div align="center">
+
+# 🗣️ Say Human｜让 AI 和职场沟通说人话
+
+**把专业术语讲明白，把职场黑话拆清楚，把做过的工作说得专业又真实。**  
+让工程师、业务负责人、老板和普通用户真正听懂彼此。
+
+[🇨🇳 完整中文介绍](README.zh-CN.md) · [🇬🇧 English below](#english-introduction)
+
+</div>
+
+### 🇨🇳 三十秒了解这个项目
+
+- **技术 → 人话**：用生动的生活比喻解释 RAG、Agent、Embedding、Fine-tuning 等概念，并说明技术边界。
+- **黑话 → 行动**：拆解“对齐、赋能、闭环、抓手”等职场表达，帮你找到真正需要做的事和得体的回复。
+- **工作 → 汇报**：把零散的工作记录整理成易读的专业表达，不虚构业绩、测试结果或上线状态。
+- **需求 → 验收**：将“系统快一点”“体验好一点”等模糊要求拆成可以讨论和验证的指标。
+
+**适用环境：** Cursor · Codex · Claude Code；也可以作为独立 Python 命令行工具使用。  
+**当前状态：** v0.6.0 Public Beta；已有本地测试，不宣称经过真实大模型对照验证。
+
+👉 **中文用户请先看：[完整中文 README 和使用方法](README.zh-CN.md)**
+
+---
+
+<a id="english-introduction"></a>
+
 > **v0.6.0 Public Beta — Say it like a human, without the disclaimer parade.** Decode now answers in plain language first, asks one tactful follow-up only when useful, and avoids falling back to an English “no match” message. 355 curated or assistant-written jargon entries span broad workplace and sector-specific communication. See [200-pair v0.4 → v0.5 Decode evaluation](docs/V050_DECODE_AB.zh-CN.md). **No live Agent/model quality lift is claimed.**
 
 <div align="center">

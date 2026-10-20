@@ -1,0 +1,66 @@
+{
+  "project": "Awesome-Say-Human",
+  "version": "0.6.0",
+  "description": "Portable prompt conventions and adapters; not a native vendor plugin manifest.",
+  "skills": [
+    {
+      "id": "jargon-aligner",
+      "modes": [
+        "explain",
+        "align"
+      ],
+      "prompt_file": "prompts/jargon-aligner.md",
+      "fewshot_file": "prompts/gold-standard-fewshots.md",
+      "output_order": [
+        "technical_truth",
+        "human_metaphor",
+        "business_value",
+        "analogy_limit"
+      ],
+      "accuracy": {
+        "invent_metrics": false,
+        "hallucination_claims": "qualify",
+        "verify_business_numbers": true
+      }
+    },
+    {
+      "id": "corporate-jargon-optimizer",
+      "modes": [
+        "decode",
+        "encode",
+        "report",
+        "audit",
+        "reply"
+      ],
+      "prompt_file": "prompts/corporate-jargon-optimizer.md",
+      "fewshot_file": "prompts/gold-standard-fewshots.md",
+      "accuracy": {
+        "infer_motives_as_fact": false,
+        "invent_metrics": false
+      }
+    }
+  ],
+  "adapters": {
+    "cursor": ".cursor/rules/say-human.mdc",
+    "cursor_legacy": ".cursorrules",
+    "claude_code": ".claude/skills/say-human/SKILL.md",
+    "agents": "AGENTS.md",
+    "dify": "workflows/dify/say-human.yml",
+    "coze": "workflows/coze/blueprint.yml",
+    "codex": ".agents/skills/say-human/SKILL.md",
+    "cursor_command": ".cursor/commands/say-human.md"
+  },
+  "defaults": {
+    "audience": "general",
+    "output_language": "same-as-input",
+    "network": "off-unless---llm"
+  },
+  "canonical_skill": "skills/say-human/SKILL.md",
+  "install": "python tools/install_agent.py --target PATH --agent all",
+  "constraints": {
+    "scope": "on-demand",
+    "sensitive_or_formal_tone": "neutral",
+    "invent_metrics": false,
+    "external_access": "opt-in"
+  }
+}

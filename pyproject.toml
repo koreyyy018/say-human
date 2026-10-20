@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "awesome-say-human"
+version = "0.6.0"
+description = "Translate AI engineering into human metaphors and business decisions; decode corporate jargon."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{name = "Awesome-Say-Human contributors"}]
+keywords = ["ai", "prompt-engineering", "cursor", "claude-code", "jargon", "metaphor", "developer-tools"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Software Development :: Documentation",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "PyYAML>=6"]
+
+[project.scripts]
+sayhuman = "sayhuman.cli:main"
+
+[tool.setuptools.package-data]
+sayhuman = ["assets/*.json", "assets/*.md"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

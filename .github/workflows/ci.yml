@@ -1,0 +1,36 @@
+name: CI
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.10', '3.11', '3.12', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install and test
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -e '.[dev]'
+          python tools/sync_assets.py --check
+          python tools/sync_skill.py
+          python tools/validate_assets.py
+          python -m pytest
+          python evals/run_benchmark.py --output evals/ci_check.json
+          python evals/run_v020.py
+          python evals/ab_compare.py --max-cases 12
+          python evals/run_cli_integration.py
+          python evals/agent_loading_sim.py --stress
+          python evals/agent_use_replay.py
+          python evals/v040_release_gate.py
+          python -m compileall -q src
+      - name: Smoke test installed CLI
+        run: sayhuman explain LoRA --format json

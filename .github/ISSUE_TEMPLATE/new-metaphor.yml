@@ -1,0 +1,38 @@
+name: Contribute a metaphor
+description: Propose a vivid, technically accurate concept explanation.
+title: "[Metaphor] "
+labels: ["metaphor"]
+body:
+  - type: input
+    id: term
+    attributes:
+      label: Term or jargon
+      placeholder: Vector databases
+    validations:
+      required: true
+  - type: textarea
+    id: technical
+    attributes:
+      label: Accurate technical meaning
+      description: What really happens under the hood?
+    validations:
+      required: true
+  - type: textarea
+    id: scene
+    attributes:
+      label: Everyday scene
+      description: Objects, actor, action, stakes; memorable but not misleading.
+    validations:
+      required: true
+  - type: textarea
+    id: value
+    attributes:
+      label: Business value and a measurement method
+    validations:
+      required: true
+  - type: textarea
+    id: caveat
+    attributes:
+      label: Where the analogy fails
+    validations:
+      required: true
